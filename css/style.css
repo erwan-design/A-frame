@@ -837,11 +837,6 @@ a { color: inherit; text-decoration: none; }
   to { translate: 0 3.5%; }
 }
 
-/* Vent dans les arbres : la toile WebGL remplace la photo quand elle est prête (js/wind.js) */
-.hero__photo--gl { opacity: 0; transition: opacity 0.6s linear; }
-.hero__bg.has-wind .hero__photo--gl { opacity: 0.7; }
-.hero__bg.has-wind img.hero__photo { visibility: hidden; }
-
 /* Repère de la carte : onde qui se propage */
 .map > .map__pulse {
   left: calc(48.92% + 12px);
@@ -937,14 +932,14 @@ html.lenis, html.lenis body { height: auto; }
 
 /* Commencer le récit */
 .start {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  bottom: 36px;
-  z-index: 2;
+  bottom: 28px;
+  z-index: 25;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  padding: 9px 12px 9px 14px;
   translate: -50% 0;
   font-family: var(--mono);
   font-variation-settings: "wdth" 100;
@@ -953,19 +948,32 @@ html.lenis, html.lenis body { height: auto; }
   letter-spacing: 0.48px;
   text-transform: uppercase;
   white-space: nowrap;
-  color: var(--light-70);
-  transition: opacity 0.5s var(--expo), color 0.3s var(--expo);
+  color: color-mix(in srgb-linear, var(--dark) calc(var(--hover) * 100%), var(--light));
+  transition: --hover 0.3s var(--ease) 10ms, opacity 0.5s var(--expo), translate 0.7s var(--expo);
 }
-.start:hover, .start:focus-visible { color: var(--light); }
-.start__arrow { font-family: var(--sans); font-size: 14px; }
-.motion .start__arrow { animation: start-bob 2.4s var(--expo) infinite; }
-.start.is-hidden { opacity: 0; pointer-events: none; }
-@keyframes start-bob {
-  0% { translate: 0 -6px; opacity: 0; }
-  30% { opacity: 1; }
-  70% { translate: 0 6px; opacity: 1; }
-  100% { translate: 0 10px; opacity: 0; }
+/* même matière que les boutons du menu : voile clair flouté, qui s'inverse au survol */
+.start::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: color-mix(in srgb-linear, var(--light) calc(var(--hover) * 100%), var(--light-10));
+  -webkit-backdrop-filter: blur(calc(8px - 8px * var(--hover)));
+  backdrop-filter: blur(calc(8px - 8px * var(--hover)));
+  pointer-events: none;
 }
+.start > span { position: relative; }
+.start:hover, .start:focus-visible { --hover: 1; }
+.start__arrow { display: block; width: 10px; height: 12px; overflow: hidden; }
+.start__arrow svg { display: block; width: 10px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.motion .start__arrow svg { animation: start-arrow 2s var(--expo) infinite; }
+@keyframes start-arrow {
+  0% { translate: 0 -110%; }
+  40%, 62% { translate: 0 0; }
+  100% { translate: 0 110%; }
+}
+.motion .start { animation: start-in 1.2s var(--expo) 1.6s backwards; }
+@keyframes start-in { from { opacity: 0; translate: -50% 14px; } }
+.start.is-hidden { opacity: 0; translate: -50% 14px; pointer-events: none; }
 
 /* Repère de progression */
 .story {
@@ -1114,7 +1122,7 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .lightbox__nav--next { right: 16px; }
 
 @media (width < 800px) {
-  .start { bottom: 18px; flex-direction: row; gap: 8px; }
+  .start { bottom: 20px; }
   .story { left: 12px; right: 12px; translate: 0 16px; }
   .story.is-visible { translate: 0 0; }
   .story__toggle { flex: 1; min-width: 0; gap: 12px; }
@@ -1127,10 +1135,10 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   .lightbox__caption { padding: 0 16px 72px; }
 }
 
-/* Croquis de l'aménagement : filigrane, puis dessin trait par trait au survol (js/sketch.js) */
+/* Croquis de l'aménagement : affiché terminé, redessiné depuis zéro au survol (js/sketch.js) */
 .amenagement__canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.amenagement__sketch > .is-sketch img { opacity: 0; transition: opacity 1.1s var(--expo); }
-.amenagement__sketch > .is-sketch.is-drawn img { opacity: 1; transition-duration: 0.7s; }
+.amenagement__sketch > .is-sketch img { opacity: 0; transition: opacity 0.12s linear; }
+.amenagement__sketch > .is-sketch.is-drawn img { opacity: 1; transition: opacity 0.45s var(--expo); }
 
 /* Badge en relief (js/motion.js) */
 .badge3d { position: relative; width: 138px; height: 153px; flex-shrink: 0; transform-style: preserve-3d; will-change: transform; }

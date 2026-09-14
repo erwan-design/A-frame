@@ -1,4 +1,4 @@
-"""Vérifie les animations : erreurs JS, vent WebGL, apparitions, état final, interactions."""
+"""Vérifie les animations : erreurs JS, apparitions, état final, interactions."""
 import json, sys, time, io, base64
 from PIL import Image, ImageStat
 from cdp import Chrome
@@ -24,14 +24,8 @@ for width, height in ((1440, 900), (375, 812)):
             frames.append((t, shot(c)))
         time.sleep(1.5)
         state = json.loads(c.js("""JSON.stringify({motion: document.documentElement.classList.contains('motion'),
-          wind: document.querySelector('.hero__bg').classList.contains('has-wind'),
-          canvas: !!document.querySelector('canvas.hero__photo--gl'),
           heroRevealed: [...document.querySelectorAll('.hero [data-reveal]')].filter(e=>e.classList.contains('is-done')).length + '/' + document.querySelectorAll('.hero [data-reveal]').length,
           errors: window.__errors})"""))
-        # le vent bouge-t-il ? deux captures de la zone des arbres à 700 ms d'écart
-        a = shot(c, (0, 40, width, 260)); time.sleep(0.7); b = shot(c, (0, 40, width, 260))
-        from PIL import ImageChops
-        motion_px = ImageStat.Stat(ImageChops.difference(a, b).convert("L")).mean[0]
         H = c.js("document.documentElement.scrollHeight")
         c.step_scroll(0, H, step=300, pause=0.12, settle=2.5)
         c.js("(HTMLMediaElement.prototype.play = () => Promise.resolve(), document.querySelectorAll('video').forEach(v => { v.pause(); v.currentTime = 0; }), 1)")
@@ -46,7 +40,6 @@ for width, height in ((1440, 900), (375, 812)):
         bad = [(a["t"], a["b"], b and b["b"]) for a, b in match_texts(live["texts"], local["texts"])
                if not a["t"].endswith("UTC+2") and (b is None or max(abs(p - q) for p, q in zip(a["b"], b["b"])) > 0.3)]
         print(f"== {width}px : {state}")
-        print(f"   vent : variation moyenne de la zone des arbres en 700 ms = {motion_px:.2f}")
         print(f"   éléments jamais révélés après défilement complet : {hidden}")
         print(f"   hauteur page {local['h']} (Figma {live['h']}), textes décalés > 0,3 px : {len(bad)}", bad[:5])
         sheet = Image.new("RGB", (width * 4 // 3 + 30, height // 3), (255, 255, 255))

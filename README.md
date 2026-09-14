@@ -25,7 +25,6 @@ js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison
 js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
 js/ambience.js    ambiance sonore de forêt (Web Audio)
 js/sketch.js      croquis de l'aménagement qui se dessine au survol
-js/wind.js        vent dans les arbres (WebGL) sur la photo du héros
 assets/img        photos, variantes srcset identiques à celles servies par Figma (AVIF/WebP)
 assets/svg        pictogrammes, couleurs intégrées
 assets/fonts      Chillon, Mortega, GT Kotoheim Mono, Poppins
@@ -83,15 +82,14 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   titres, photos, filets, rayures), photos qui glissent dans leur cadre, aperçu des chapitres
   au curseur dans le sommaire, cartes du journal qui s'inclinent, pulsation du repère de la carte,
   horloge qui bat la seconde. L'état final de chaque apparition est celui de la maquette.
-- **Vent dans les arbres** (`js/wind.js`) : la photo du héros est redessinée en WebGL et son
-  feuillage ondule ; la structure en A et le sol restent immobiles.
 - **Défilement lissé** (Lenis, `js/vendor/lenis.min.js`, licence MIT) : avec une souris ou un
   trackpad, la position de défilement est interpolée à chaque image (les à-coups de la molette
   et de la Magic Mouse ne se voient plus). Le tactile garde le défilement natif.
 - **Vidéos** : rien n'est téléchargé à l'ouverture (`preload="none"`) ; chaque vidéo se charge et
   se lance à l'approche de l'écran (600 px avant).
 - **Récit** (`js/story.js`, section « Récit » de `css/style.css`) :
-  - « Commencer le récit ↓ » sous le héros, masqué dès qu'on défile ;
+  - bouton « Commencer le récit » fixé en bas de l'écran à l'arrivée (style des boutons du menu),
+    masqué dès qu'on défile ;
   - repère fixe en bas d'écran pendant les chapitres : numéro, titre, date, trait de progression,
     menu pour sauter d'un chapitre à l'autre ;
   - les trois citations s'éclairent mot à mot au défilement ;
@@ -103,11 +101,11 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   Avec « réduire les animations », citations et zoom de la carte sont désactivés ; le repère,
   le plein écran et le son restent. Positions et hauteurs de page inchangées (`tools/story_check.py`
   vérifie le comportement).
-- **Croquis de l'aménagement** (chapitre 05, `js/sketch.js`) : il apparaît en filigrane et se
-  dessine trait par trait au survol (lignes de construction, structure, hachures), puis l'image
-  d'origine reprend sa place ; retour au filigrane 1,4 s après avoir quitté le croquis. Sur écran
-  tactile, il se dessine une fois en arrivant à l'écran. Les 629 traits de
-  `assets/data/sketch-interieur.json` ont été relevés sur l'image (squelette + transformée de Hough).
+- **Croquis de l'aménagement** (chapitre 05, `js/sketch.js`) : affiché terminé ; au survol, il
+  repart d'une page vierge et se redessine trait par trait (lignes de construction, structure,
+  hachures), puis l'image d'origine reprend sa place. Sur écran tactile, il se dessine une fois en
+  arrivant à l'écran. Les 629 traits de `assets/data/sketch-interieur.json` ont été relevés sur
+  l'image (squelette + transformée de Hough).
 - **Badge « Frame Oise »** (chapitre 04, fin de `js/motion.js`) : objet en relief (épaisseur,
   reflet), qui flotte et se tourne vers le curseur ; il n'a plus d'apparition au défilement.
   Position identique à la maquette.
