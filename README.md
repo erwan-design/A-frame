@@ -45,6 +45,9 @@ de chaque image, et les pixels par bandes de 100 px.
 python3 tools/compare.py 1440,800,375 --shots --threshold 8 --tol 0.2
 ```
 
+Le site Figma a été dépublié le 14/09/2026 : `compare.py` ne peut plus s'y comparer, les
+captures de référence restent dans `refs/` (non versionné).
+
 Résultat au 14/09/2026 : hauteurs et positions identiques à 1440, 1280, 1100, 1024, 800,
 600, 414 et 375 px ; aucun écart de pixel à 1440. À 800, une vignette du sommaire diffère
 parce que le site publié réutilise une image déjà en cache (course de chargement du
@@ -61,6 +64,9 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - **Titre du héros en mobile** : sur le site Figma, entre 380 et 800 px, le titre se tasse à
   côté de la carte (une lettre par ligne sur iPhone 390/414). Ici il prend toute la largeur,
   comme sur la maquette mobile à 375 px (identique au pixel à cette largeur).
+- **Parallax sur la photo du héros** : elle défile à 70 % de la vitesse de la page
+  (`animation-timeline`, calculé par le compositeur). Sans prise en charge (Firefox) ou avec
+  « réduire les animations », la photo reste fixe comme sur l'original.
 - **Vidéos** : mises en pause quand elles sont hors écran, pour ne pas alourdir le défilement.
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.
 
