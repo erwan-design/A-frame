@@ -96,7 +96,7 @@ a { color: inherit; text-decoration: none; }
 .hero__bg { position: absolute; inset: 0; overflow: clip; pointer-events: none; }
 .hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
 
-/* Parallax (ajout, absent de la maquette Figma) : la photo défile à 70 % de la vitesse de la
+/* Parallax (ajout, absent de la maquette Figma) : la photo défile à 50 % de la vitesse de la
    page tant que l'en-tête est visible. Animation pilotée par le défilement, calculée par le
    compositeur (pas de script sur l'événement scroll, donc pas d'à-coups). Sans prise en charge
    (Firefox) ou avec « réduire les animations », la photo reste fixe comme sur l'original. */
@@ -112,7 +112,7 @@ a { color: inherit; text-decoration: none; }
 }
 @keyframes hero-parallax {
   from { transform: translateY(0); }
-  to { transform: translateY(30%); }
+  to { transform: translateY(50%); }
 }
 .hero__fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 29, 31, 0) 0%, #141d1f 100%); }
 

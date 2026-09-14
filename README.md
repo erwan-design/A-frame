@@ -64,7 +64,7 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - **Titre du héros en mobile** : sur le site Figma, entre 380 et 800 px, le titre se tasse à
   côté de la carte (une lettre par ligne sur iPhone 390/414). Ici il prend toute la largeur,
   comme sur la maquette mobile à 375 px (identique au pixel à cette largeur).
-- **Parallax sur la photo du héros** : elle défile à 70 % de la vitesse de la page
+- **Parallax sur la photo du héros** : elle défile à 50 % de la vitesse de la page
   (`animation-timeline`, calculé par le compositeur). Sans prise en charge (Firefox) ou avec
   « réduire les animations », la photo reste fixe comme sur l'original.
 - **Vidéos** : mises en pause quand elles sont hors écran, pour ne pas alourdir le défilement.
