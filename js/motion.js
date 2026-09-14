@@ -356,4 +356,9 @@
       }
     }, { rootMargin: "100px 0px" }).observe(stage);
   }
+
+  // Cercles du badge « 1,45 ha » : l'onde ne tourne que lorsqu'elle est à l'écran
+  document.querySelectorAll(".badge__icon").forEach((icon) => {
+    new IntersectionObserver(([entry]) => icon.classList.toggle("is-live", entry.isIntersecting)).observe(icon);
+  });
 })();

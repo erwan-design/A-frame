@@ -360,6 +360,94 @@
         }
       });
     });
+    // Lentille : sur les photos agrandissables, un disque translucide suit la souris avec un
+    // léger retard, s'étire dans le sens du mouvement et apparaît avec un petit rebond.
+    if (motion && matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      const lens = document.createElement("div");
+      lens.className = "lens";
+      lens.setAttribute("aria-hidden", "true");
+      lens.innerHTML = '<span class="lens__disc"></span><span class="lens__label">Voir</span>';
+      document.body.append(lens);
+      const disc = lens.firstElementChild;
+      disc.style.transform = "scale(0)";
+      disc.style.scale = "1";
+      const label = lens.lastElementChild;
+      const lensState = { x: 0, y: 0, tx: 0, ty: 0, size: 0, speed: 0, target: 0, press: 1, running: false, current: null };
+
+      const lensTick = () => {
+        const dx = lensState.tx - lensState.x;
+        const dy = lensState.ty - lensState.y;
+        lensState.x += dx * 0.2;
+        lensState.y += dy * 0.2;
+        // ressort amorti : la taille dépasse un peu sa cible puis s'y pose
+        lensState.speed = (lensState.speed + (lensState.target * lensState.press - lensState.size) * 0.16) * 0.7;
+        lensState.size += lensState.speed;
+        const velocity = Math.hypot(dx, dy) * 0.2;
+        const stretch = Math.min(velocity * 0.018, 0.38);
+        const angle = Math.atan2(dy, dx);
+        const size = Math.max(0, lensState.size);
+        lens.style.transform = `translate3d(${lensState.x.toFixed(1)}px, ${lensState.y.toFixed(1)}px, 0)`;
+        disc.style.transform = `rotate(${angle.toFixed(3)}rad) scale(${(size * (1 + stretch)).toFixed(3)}, ${(size * (1 - stretch * 0.55)).toFixed(3)})`;
+        label.style.opacity = Math.max(0, Math.min(1, size * 1.4 - 0.4)).toFixed(3);
+        label.style.transform = `scale(${(0.8 + 0.2 * Math.min(size, 1)).toFixed(3)})`;
+        const settled = Math.abs(dx) < 0.1 && Math.abs(dy) < 0.1 && Math.abs(lensState.speed) < 0.001 && Math.abs(lensState.target * lensState.press - lensState.size) < 0.002;
+        if (settled && lensState.target === 0) {
+          lensState.running = false;
+          return;
+        }
+        requestAnimationFrame(lensTick);
+      };
+      const lensRun = () => {
+        if (lensState.running) return;
+        lensState.running = true;
+        requestAnimationFrame(lensTick);
+      };
+      const hideLens = () => {
+        if (lensState.current) lensState.current.classList.remove("is-lensed");
+        lensState.current = null;
+        lensState.target = 0;
+        lensRun();
+      };
+
+      photos.forEach((img) => {
+        const trigger = img.closest(".fig__media, .prologue__photo, .jcard__media");
+        const activate = (event) => {
+          if (event.pointerType !== "mouse" || box.open) return;
+          if (lensState.target === 0 && lensState.size < 0.05) {
+            lensState.x = event.clientX;
+            lensState.y = event.clientY;
+          }
+          lensState.tx = event.clientX;
+          lensState.ty = event.clientY;
+          lensState.current = trigger;
+          trigger.classList.add("is-lensed");
+          lensState.target = 1;
+          lensRun();
+        };
+        trigger.addEventListener("pointerenter", activate);
+        trigger.addEventListener("pointermove", (event) => {
+          if (lensState.current !== trigger) return activate(event);
+          lensState.tx = event.clientX;
+          lensState.ty = event.clientY;
+          lensRun();
+        });
+        trigger.addEventListener("pointerleave", () => {
+          if (lensState.current === trigger) hideLens();
+        });
+        trigger.addEventListener("pointerdown", () => {
+          lensState.press = 0.82;
+          lensRun();
+        });
+        trigger.addEventListener("pointerup", () => {
+          lensState.press = 1;
+          lensRun();
+        });
+        trigger.addEventListener("click", hideLens);
+      });
+      box.addEventListener("close", () => { lensState.press = 1; });
+      addEventListener("scroll", () => { if (lensState.current) hideLens(); }, { passive: true });
+    }
+
     box.querySelector(".lightbox__close").addEventListener("click", close);
     prev.addEventListener("click", () => step(-1));
     next.addEventListener("click", () => step(1));

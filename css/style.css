@@ -1066,27 +1066,39 @@ html.lenis, html.lenis body { height: auto; }
 
 /* Photos en plein écran */
 .fig__media[role="button"], .prologue__photo[role="button"], .jcard__media[role="button"] { cursor: pointer; }
-/* icône « agrandir » au survol, en haut à droite de la photo */
-.fig__media[role="button"]::after, .prologue__photo[role="button"]::after, .jcard__media[role="button"]::after {
-  content: "";
+/* Lentille : un disque qui suit la souris sur les photos agrandissables (js/story.js) */
+.is-lensed { cursor: none !important; }
+.is-zoomable { transition: transform 1.4s var(--expo); }
+.is-lensed > .is-zoomable { transform: scale(1.045); }
+.lens { position: fixed; left: 0; top: 0; z-index: 40; width: 0; height: 0; pointer-events: none; will-change: transform; }
+.lens__disc {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 2;
-  width: 34px;
-  height: 34px;
-  background: rgba(16, 24, 25, 0.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FBFFFE' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9'/%3E%3C/svg%3E") center / 16px no-repeat;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  left: -46px;
+  top: -46px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: rgba(251, 255, 254, 0.14);
+  border: 1px solid rgba(251, 255, 254, 0.45);
+  -webkit-backdrop-filter: blur(10px) saturate(1.25);
+  backdrop-filter: blur(10px) saturate(1.25);
+  scale: 0;
+}
+.lens__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  translate: -50% -50%;
+  font-family: var(--mono);
+  font-variation-settings: "wdth" 100;
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--light);
   opacity: 0;
-  scale: 0.85;
-  transition: opacity 0.35s var(--expo), scale 0.5s var(--expo);
-  pointer-events: none;
 }
-@media (hover: hover) {
-  .fig__media[role="button"]:hover::after, .prologue__photo[role="button"]:hover::after, .jcard__media[role="button"]:hover::after { opacity: 1; scale: 1; }
-}
-.fig__media[role="button"]:focus-visible::after, .prologue__photo[role="button"]:focus-visible::after, .jcard__media[role="button"]:focus-visible::after { opacity: 1; scale: 1; }
 .fig__media[role="button"]:focus-visible, .prologue__photo[role="button"]:focus-visible, .jcard__media[role="button"]:focus-visible { outline: 1px solid var(--light); outline-offset: 4px; }
 .jcard__media[role="button"]:focus-visible { outline-color: var(--dark); }
 html.has-lightbox { overflow: hidden; }
@@ -1155,4 +1167,36 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   mix-blend-mode: soft-light;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+}
+
+/* Cercles du badge « 1,45 ha » : une onde qui se propage depuis le centre. Quatre anneaux
+   parcourent 2 → 26 px à vitesse constante, décalés d'un quart de cycle : à chaque quart,
+   ils occupent exactement les positions des trois cercles de la maquette (8, 14, 20 px). */
+.badge__ripple { display: none; }
+.motion .badge__icon svg { visibility: hidden; }
+.motion .badge__ripple { display: block; position: absolute; inset: 0; }
+.badge__ripple i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 2px;
+  translate: -50% -50%;
+  box-sizing: border-box;
+  border: 1.4px solid var(--light);
+  border-radius: 50%;
+  opacity: 0;
+  animation: badge-ripple 3.2s linear infinite paused;
+}
+.badge__ripple i:nth-child(2) { animation-delay: -0.8s; }
+.badge__ripple i:nth-child(3) { animation-delay: -1.6s; }
+.badge__ripple i:nth-child(4) { animation-delay: -2.4s; }
+.badge__icon.is-live .badge__ripple i { animation-play-state: running; }
+@keyframes badge-ripple {
+  0% { width: 2px; height: 2px; opacity: 0; }
+  14% { opacity: 0; }
+  25% { width: 8px; height: 8px; opacity: 0.4; }
+  50% { width: 14px; height: 14px; opacity: 0.7; }
+  75% { width: 20px; height: 20px; opacity: 1; }
+  100% { width: 26px; height: 26px; opacity: 0; }
 }
