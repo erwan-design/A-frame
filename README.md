@@ -141,10 +141,25 @@ Vérification : `python3 tools/horizontal_check.py 1440 900`.
 
 ## Tailles de texte (harmonisées)
 
-Même rôle, même taille, sur tout le site : citations 30 px (Chillon), textes de chapitre 16 px
-(Poppins Light, épilogue compris), textes d'introduction 18 px (héros, prologue, journal), labels
-en capitales 14 px (GT Kotoheim Mono, badge « 1,45 ha » et versions compris). Écarts avec la
-maquette Figma d'origine : citation du résultat 28 → 30, épilogue 18 → 16, badge et versions 16 → 14.
+Un type de texte = une taille, sur tout le site :
+
+| Type | Police | Taille / interligne |
+|---|---|---|
+| Titre principal (héros, journal) | Chillon | 110 px (56 px sur mobile) |
+| Titre de section (prologue, chapitres) | Chillon | 86 px (42 px sur mobile) |
+| Titre de niveau 3 (sommaire, pied de page) | Chillon | 36 px / 1,2 |
+| Citation | Chillon | 30 px / 1,4 |
+| Chapeau | Chillon | 24 px / 1,4 |
+| Valeur (tableaux, chiffres) | Chillon | 18 px |
+| Paragraphe (héros, prologue, chapitres, épilogue, journal, pied) | Poppins Light | 16 px / 1,6 |
+| Petit texte (légendes, cartes du journal, crédit) | Poppins Light | 16 px / 1,4 |
+| Label en capitales (dates, légendes, tableaux, horloge) | GT Kotoheim Mono | 14 px |
+| Bouton | GT Kotoheim Mono | 12 px |
+
+Écarts avec la maquette Figma d'origine : paragraphes du héros, du prologue et du journal
+18 → 16, épilogue 18 → 16, citation du résultat 28 → 30, titre du pied de page 32 → 36, badge et
+versions 16 → 14, horloge (police système 15 px) → GT Kotoheim Mono 14, interligne des légendes
+1,2 → 1,4, crédit du pied de page Regular → Light.
 
 ## Publication
 
