@@ -121,23 +121,29 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 ## Prototype « défilement horizontal » (branche `prototype-horizontal`)
 
-Sur les écrans d'au moins 1440 × 720 (`js/horizontal.js`, fin de `css/style.css`) :
+Sur les écrans d'au moins 1440 × 900 (`js/horizontal.js`, fin de `css/style.css`) :
 
 - héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
   la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
 - chaque chapitre est une page de 900 px de haut composée dans Figma (fichier « Tests », page
   Test 04) : positions et tailles reprises dans `PAGES` (`js/horizontal.js`), la page entière étant
-  mise à l'échelle de la hauteur de l'écran (`zoom`) ; les textes courants et légendes gardent
-  leur taille Figma (jamais agrandis), titres et citations grandissent de moitié moins que les
-  photos ; tout contenu non prévu est ajouté à droite ;
+  mise à l'échelle de la hauteur de l'écran (`zoom`) ; les textes gardent les tailles de la version
+  verticale et du reste du site (zoom inverse) ; tout contenu non prévu est ajouté à droite ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
 - le repère, les citations mot à mot et le zoom de la carte suivent l'axe horizontal ;
-- en dessous de 1440 × 720, la mise en page tablette empile les colonnes (panneaux réduits
-  jusqu'à 36 %) : lecture verticale habituelle.
+- en dessous de 1440 × 900 : lecture verticale habituelle (les textes, à leur taille d'origine, ne
+  tiendraient pas dans une page plus petite).
 
 Vérification : `python3 tools/horizontal_check.py 1440 900`.
+
+## Tailles de texte (harmonisées)
+
+Même rôle, même taille, sur tout le site : citations 30 px (Chillon), textes de chapitre 16 px
+(Poppins Light, épilogue compris), textes d'introduction 18 px (héros, prologue, journal), labels
+en capitales 14 px (GT Kotoheim Mono, badge « 1,45 ha » et versions compris). Écarts avec la
+maquette Figma d'origine : citation du résultat 28 → 30, épilogue 18 → 16, badge et versions 16 → 14.
 
 ## Publication
 

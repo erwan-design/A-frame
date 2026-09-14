@@ -3,15 +3,15 @@
 // mise à l'échelle de la hauteur de l'écran. La molette,
 // le trackpad (dans les deux sens) et les flèches ← → font avancer ; après le chapitre 06, la
 // page reprend verticalement (journal, pied de page).
-// Réservé aux écrans d'au moins 1440 × 720 (mise en page ordinateur : aucun panneau réduit sous
-// ~78 %) ; en dessous, les colonnes s'empilent et le texte deviendrait trop petit : lecture verticale.
+// Réservé aux écrans d'au moins 1440 × 900 : les textes y gardent exactement les tailles du reste du
+// site ; en dessous, la page serait trop petite pour eux sans chevauchement : lecture verticale.
 //
 // window.__hs : { open(élément) → vrai si l'élément appartient à un chapitre, state() }
 
 (() => {
   const root = document.documentElement;
   const sections = [...document.querySelectorAll("section.chapter")];
-  if (!sections.length || !matchMedia("(min-width: 1440px) and (min-height: 720px)").matches) return;
+  if (!sections.length || !matchMedia("(min-width: 1440px) and (min-height: 900px)").matches) return;
 
   // Mise en page de chaque chapitre, reprise du fichier Figma « Tests » (page Test 04) : une page de
   // 900 px de haut où chaque bloc a sa position ; la page est mise à l'échelle de la hauteur de
@@ -39,7 +39,7 @@
     ] },
     "chapitre-03": { width: 2753, items: [
       { s: ".ctop", x: 101, y: 64, w: 610 },
-      { s: ".ctitle", x: 101, y: 144, w: 610 },
+      { s: ".ctitle", x: 101, y: 144, w: 610, c: "ctitle--inline" },
       { s: ".montage__left-in > .body", x: 101, y: 252, w: 505 },
       { s: ".versions__list", x: 101, y: 705 },
       { s: ".board", x: 840, y: 60, w: 610, h: 780 },
@@ -149,10 +149,11 @@
     // chaque page de 900 px est mise à l'échelle de la hauteur de l'écran
     const s = window.innerHeight / 900;
     track.style.setProperty("--s", s.toFixed(4));
-    // les photos suivent la hauteur de l'écran ; les textes courants et légendes gardent leur taille
-    // Figma (jamais agrandis), titres et citations grandissent de moitié moins que les photos
-    track.style.setProperty("--tz", (Math.min(s, 1) / s).toFixed(4));
-    track.style.setProperty("--dz", (Math.min(s, 1 + (s - 1) * 0.5) / s).toFixed(4));
+    // les photos et les positions suivent la hauteur de l'écran ; les textes gardent les tailles du
+    // reste du site (zoom inverse)
+    const text = (1 / s).toFixed(4);
+    track.style.setProperty("--tz", text);
+    track.style.setProperty("--dz", text);
     travel = Math.max(0, track.scrollWidth - window.innerWidth);
     wrap.style.height = `${travel + window.innerHeight}px`;
     wrapTop = wrap.getBoundingClientRect().top + window.scrollY;
