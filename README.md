@@ -128,7 +128,8 @@ Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`
 - chaque chapitre est une page de 900 px de haut composée dans Figma (fichier « Tests », page
   Test 04) : positions et tailles reprises dans `PAGES` (`js/horizontal.js`), la page entière étant
   mise à l'échelle de la hauteur de l'écran (`zoom`) ; les textes gardent les tailles de la version
-  verticale et du reste du site (zoom inverse) ; tout contenu non prévu est ajouté à droite ;
+  verticale et du reste du site (zoom inverse) ; la page grandit au plus de 1,25× : au-delà, elle
+  reste centrée verticalement ; tout contenu non prévu est ajouté à droite ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
@@ -139,12 +140,31 @@ Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`
 
 Vérification : `python3 tools/horizontal_check.py 1440 900`.
 
-## Tailles de texte (harmonisées)
+## Tailles de texte (harmonisées et fluides)
 
-Même rôle, même taille, sur tout le site : citations 30 px (Chillon), textes de chapitre 16 px
-(Poppins Light, épilogue compris), textes d'introduction 18 px (héros, prologue, journal), labels
-en capitales 14 px (GT Kotoheim Mono, badge « 1,45 ha » et versions compris). Écarts avec la
-maquette Figma d'origine : citation du résultat 28 → 30, épilogue 18 → 16, badge et versions 16 → 14.
+Un type de texte = une taille, sur tout le site. Les tailles ci-dessous sont celles d'un écran de
+1440 × 900 ou moins ; au-delà, un facteur commun `--t` (calculé dans le `<head>`) les multiplie
+toutes : il grandit de moitié moins vite que l'écran et plafonne à 1,25 (≈ 1,1 en 1920 × 1080,
+1,24 en 3440 × 1340). Les largeurs maximales des sections (1440 px) et les marges latérales
+suivent le même facteur, pour que les textes gardent la même mise en ligne.
+
+| Type | Police | Taille / interligne |
+|---|---|---|
+| Titre principal (héros, journal) | Chillon | 110 px (56 px sur mobile) |
+| Titre de section (prologue, chapitres) | Chillon | 86 px (42 px sur mobile) |
+| Titre de niveau 3 (sommaire, pied de page) | Chillon | 36 px / 1,2 |
+| Citation | Chillon | 30 px / 1,4 |
+| Chapeau | Chillon | 24 px / 1,4 |
+| Valeur (tableaux, chiffres) | Chillon | 18 px |
+| Paragraphe (héros, prologue, chapitres, épilogue, journal, pied) | Poppins Light | 16 px / 1,6 |
+| Petit texte (légendes, cartes du journal, crédit) | Poppins Light | 16 px / 1,4 |
+| Label en capitales (dates, légendes, tableaux, horloge) | GT Kotoheim Mono | 14 px |
+| Bouton | GT Kotoheim Mono | 12 px |
+
+Écarts avec la maquette Figma d'origine : paragraphes du héros, du prologue et du journal
+18 → 16, épilogue 18 → 16, citation du résultat 28 → 30, titre du pied de page 32 → 36, badge et
+versions 16 → 14, horloge (police système 15 px) → GT Kotoheim Mono 14, interligne des légendes
+1,2 → 1,4, crédit du pied de page Regular → Light.
 
 ## Publication
 

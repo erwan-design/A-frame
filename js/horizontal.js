@@ -150,6 +150,7 @@
   // texte peut donc déborder sur celui du dessous. Chaque bloc qui en chevaucherait un autre (ou s'en
   // approcherait à moins de GAP) est descendu juste en dessous. Sur 900 px et plus, rien ne bouge.
   // Mesures en unités de la page (offsetTop / offsetHeight), indépendantes des animations.
+  const MAX_SCALE = 1.25;
   const GAP = 16;
   const BOTTOM = 880; // limite basse de la page (sur 900)
   const settle = () => {
@@ -194,10 +195,11 @@
 
   const layout = () => {
     // chaque page de 900 px est mise à l'échelle de la hauteur de l'écran
-    const s = window.innerHeight / 900;
+    // la page suit la hauteur de l'écran jusqu'à 1,25× ; au-delà, elle reste centrée verticalement
+    const s = Math.min(window.innerHeight / 900, MAX_SCALE);
     track.style.setProperty("--s", s.toFixed(4));
-    // les photos et les positions suivent la hauteur de l'écran ; les textes gardent les tailles du
-    // reste du site (zoom inverse)
+    // les photos et les positions suivent la page ; les textes gardent les tailles du reste du site
+    // (zoom inverse), elles-mêmes fluides (--t, voir le <head>)
     const text = (1 / s).toFixed(4);
     track.style.setProperty("--tz", text);
     track.style.setProperty("--dz", text);
