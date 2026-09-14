@@ -16,7 +16,7 @@ DIST = os.path.join(ROOT, "dist")
 html = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
 css = open(os.path.join(ROOT, "css", "style.css"), encoding="utf-8").read()
 
-files = {"index.html", "css/style.css", "js/main.js", "robots.txt", "sitemap.xml"}
+files = {"index.html", "css/style.css", "js/main.js", "js/vendor/LICENSE-lenis.txt", "robots.txt", "sitemap.xml"}
 for attr in re.findall(r'(?:src|href|content)="([^"]+)"', html):
     attr = attr.replace("https://aframe.erwanguillou.me/", "")
     if attr.startswith("assets/"):

@@ -33,8 +33,9 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=00ed86547f">
-  <script src="js/main.js?v=79bea95bc6" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=96dafc2001">
+  <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
+  <script src="js/main.js?v=57ccd7883c" defer></script>
   <script src="js/motion.js?v=d116554871" defer></script>
   <script src="js/wind.js?v=c90c336ad8" defer></script>
 </head>
@@ -206,7 +207,7 @@
           <p class="badge__text tracked">{{44}}</p>
         </div>
         <figure class="fig">
-          <div class="fig__media" data-reveal="media" style="height:540px"><video src="assets/video/abattage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+          <div class="fig__media" data-reveal="media" style="height:540px"><video src="assets/video/abattage.mp4" loop muted playsinline preload="none" data-autoplay controlslist="nodownload"></video></div>
           <figcaption class="cap" data-reveal><p class="cap__label tracked">{{45}}</p><p class="cap__text">{{46}}</p></figcaption>
         </figure>
       </div>
@@ -321,7 +322,7 @@
       </div></div>
       <div class="ossature__right">
         <figure class="fig">
-          <div class="fig__media" data-reveal="media" style="height:340px"><video src="assets/video/montage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+          <div class="fig__media" data-reveal="media" style="height:340px"><video src="assets/video/montage.mp4" loop muted playsinline preload="none" data-autoplay controlslist="nodownload"></video></div>
           <figcaption class="cap" data-reveal><p class="cap__label tracked">{{89}}</p><p class="cap__text cap__text--spans"><span>{{90}}</span><span>{{91}}</span><span>{{92}}</span></p></figcaption>
         </figure>
       </div>
@@ -419,7 +420,7 @@
       <div class="resultat__video">
         <span class="vcorner vcorner--outer-bl"><span class="inset"><img decoding="async" src="assets/svg/video-corner-outer-a.svg" alt=""></span></span>
         <span class="vcorner vcorner--outer-tr"><span class="inset"><img decoding="async" src="assets/svg/video-corner-outer-b.svg" alt=""></span></span>
-        <div class="resultat__player" data-reveal="media"><video src="assets/video/resultat.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+        <div class="resultat__player" data-reveal="media"><video src="assets/video/resultat.mp4" loop muted playsinline preload="none" data-autoplay controlslist="nodownload"></video></div>
         <span class="vcorner vcorner--inner-tr"><span class="inset"><img decoding="async" src="assets/svg/video-corner-inner-b.svg" alt=""></span></span>
         <span class="vcorner vcorner--inner-bl"><span class="inset"><img decoding="async" src="assets/svg/video-corner-inner-a.svg" alt=""></span></span>
       </div>

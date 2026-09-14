@@ -14,8 +14,25 @@ function renderClock(el) {
   el.innerHTML = `${hours}<span class="clock__colon">:</span>${label.slice(3)}`;
 }
 
-// « Scroll to » Figma : le runtime délègue au défilement fluide natif du navigateur.
+// Défilement lissé (Lenis) : la molette et la Magic Mouse envoient le défilement par à-coups,
+// que le parallax et les photos qui glissent rendent visibles. Lenis interpole la position à
+// chaque image de l'écran. Actif seulement avec une souris ou un trackpad (le tactile garde son
+// défilement natif) et si les animations ne sont pas réduites (classe « motion »).
+let lenis = null;
+
+function startSmoothScroll() {
+  const pointer = matchMedia("(hover: hover) and (pointer: fine)");
+  if (!window.Lenis || !document.documentElement.classList.contains("motion") || !pointer.matches) return;
+  lenis = new window.Lenis({ autoRaf: true, lerp: 0.1, smoothWheel: true, syncTouch: false });
+  window.__lenis = lenis;
+}
+
+// « Scroll to » Figma : défilement fluide jusqu'à la section (Lenis s'il est actif).
 function scrollToSection(target) {
+  if (lenis) {
+    lenis.scrollTo(target, { duration: 1.2, easing: (t) => 1 - Math.pow(1 - t, 4) });
+    return;
+  }
   window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY, behavior: "smooth" });
 }
 
@@ -26,9 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(() => renderClock(clock), 1000);
   }
 
-  // Les trois vidéos tournent en boucle : hors écran, on les met en pause pour que le
-  // décodage ne ralentisse pas le défilement.
-  const videos = document.querySelectorAll("video[autoplay]");
+  startSmoothScroll();
+
+  // Vidéos : rien n'est téléchargé à l'ouverture (preload="none"). Elles se chargent et se
+  // lancent à l'approche de l'écran, et se mettent en pause quand elles en sortent.
+  const videos = document.querySelectorAll("video[data-autoplay]");
   if ("IntersectionObserver" in window && videos.length) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -37,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
           else target.pause();
         });
       },
-      { rootMargin: "200px 0px" }
+      { rootMargin: "600px 0px" }
     );
     videos.forEach((video) => observer.observe(video));
   }

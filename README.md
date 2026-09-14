@@ -19,7 +19,8 @@ et le défilement saccade.
 ```
 index.html        page unique (textes, images, SVG colorés insérés en ligne)
 css/style.css     variables Figma, mise en page desktop ≥ 1440, tablette 800–1439, mobile < 800
-js/main.js        horloge « HH:MM UTC+2 », clic sur une ligne du sommaire → défilement fluide
+js/main.js        horloge, défilement lissé, clic sur une ligne du sommaire, lecture des vidéos
+js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
 js/wind.js        vent dans les arbres (WebGL) sur la photo du héros
 assets/img        photos, variantes srcset identiques à celles servies par Figma (AVIF/WebP)
@@ -80,8 +81,13 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   horloge qui bat la seconde. L'état final de chaque apparition est celui de la maquette.
 - **Vent dans les arbres** (`js/wind.js`) : la photo du héros est redessinée en WebGL et son
   feuillage ondule ; la structure en A et le sol restent immobiles.
+- **Défilement lissé** (Lenis, `js/vendor/lenis.min.js`, licence MIT) : avec une souris ou un
+  trackpad, la position de défilement est interpolée à chaque image (les à-coups de la molette
+  et de la Magic Mouse ne se voient plus). Le tactile garde le défilement natif.
+- **Vidéos** : rien n'est téléchargé à l'ouverture (`preload="none"`) ; chaque vidéo se charge et
+  se lance à l'approche de l'écran (600 px avant).
 - Tout est désactivé si le système demande de réduire les animations ; sans JavaScript, le
-  contenu reste visible.
+  contenu reste visible (les vidéos ne se lancent alors pas).
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.
 
 ## Publication
