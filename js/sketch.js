@@ -16,15 +16,15 @@
 
   const finePointer = matchMedia("(hover: hover) and (pointer: fine)");
   const BRUSH = 7; // largeur du trait qui dévoile l'image, en pixels de l'image source
+  const FINISH = 350; // fondu final des traits vers l'image entière, en ms
 
   let data = null;
-  let canvas, context, mask, maskContext;
+  let canvas, context, mask, maskContext, layer, layerContext;
   let fit = { scale: 1, x: 0, y: 0, width: 0, height: 0, ratio: 1 };
   let drawn = null; // avancement de chaque trait (0 → 1)
   let state = "idle"; // idle → blank / drawn ⇄ drawing
   let startedAt = 0;
   let frame = 0;
-  let clearTimer = 0;
 
   const clamp = (value) => Math.max(0, Math.min(1, value));
 
@@ -33,8 +33,8 @@
     const width = Math.max(1, Math.round(holder.clientWidth * ratio));
     const height = Math.max(1, Math.round(holder.clientHeight * ratio));
     if (canvas.width === width && canvas.height === height) return;
-    canvas.width = mask.width = width;
-    canvas.height = mask.height = height;
+    canvas.width = mask.width = layer.width = width;
+    canvas.height = mask.height = layer.height = height;
     // même cadrage que l'image (object-fit: cover, centré)
     const scale = Math.max(width / data.w, height / data.h);
     fit = { scale, ratio, width: data.w * scale, height: data.h * scale, x: (width - data.w * scale) / 2, y: (height - data.h * scale) / 2 };
@@ -63,15 +63,27 @@
     maskContext.stroke();
   };
 
-  // partie déjà dessinée, et la pointe des traits en cours
-  const paint = (heads) => {
+  // partie déjà dessinée, la pointe des traits en cours, et le fondu final vers l'image entière
+  const paint = (heads, finish = 0) => {
+    layerContext.globalCompositeOperation = "source-over";
+    layerContext.clearRect(0, 0, layer.width, layer.height);
+    layerContext.drawImage(mask, 0, 0);
+    layerContext.globalCompositeOperation = "source-in";
+    layerContext.drawImage(img, fit.x, fit.y, fit.width, fit.height);
+
+    context.globalCompositeOperation = "source-over";
+    context.globalAlpha = 1 - finish;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(layer, 0, 0);
+    if (finish > 0) {
+      // « lighter » additionne les deux couches pondérées : là où le trait couvre déjà l'image,
+      // (1 − f) + f = 1, la luminosité ne bouge pas ; ailleurs, l'image apparaît en fondu
+      context.globalCompositeOperation = "lighter";
+      context.globalAlpha = finish;
+      context.drawImage(img, fit.x, fit.y, fit.width, fit.height);
+    }
     context.globalCompositeOperation = "source-over";
     context.globalAlpha = 1;
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(mask, 0, 0);
-    context.globalCompositeOperation = "source-in";
-    context.drawImage(img, fit.x, fit.y, fit.width, fit.height);
-    context.globalCompositeOperation = "source-over";
     if (heads && heads.length) {
       context.fillStyle = "rgba(251, 255, 254, 0.9)";
       context.beginPath();
@@ -95,24 +107,22 @@
       if (t > 0 && t < 1) heads.push([fit.x + (x1 + (x2 - x1) * eased) * fit.scale, fit.y + (y1 + (y2 - y1) * eased) * fit.scale]);
     });
     strokeUpTo(targets);
-    paint(heads);
-    if (elapsed < data.duration + 60) {
+    const finish = clamp((elapsed - data.duration) / FINISH);
+    if (finish < 1) {
+      paint(heads, finish);
       frame = requestAnimationFrame(tick);
       return;
     }
-    // l'image d'origine reprend sa place (fondu CSS), le rendu final est celui de la maquette ;
-    // la toile est vidée ensuite, pour ne pas s'additionner aux bords adoucis de l'image
+    // la toile montre maintenant l'image entière : on la remplace par l'image d'origine dans la
+    // même image affichée (rendu final identique à la maquette, sans double couche)
     state = "drawn";
     holder.classList.add("is-drawn");
-    clearTimer = setTimeout(() => {
-      if (state === "drawn") context.clearRect(0, 0, canvas.width, canvas.height);
-    }, 600);
+    context.clearRect(0, 0, canvas.width, canvas.height);
   };
 
   // repart d'une page vierge et dessine tout le croquis
   const draw = () => {
     if (!data || state === "drawing") return;
-    clearTimeout(clearTimer);
     cancelAnimationFrame(frame);
     drawn.fill(0);
     maskContext.clearRect(0, 0, mask.width, mask.height);
@@ -130,6 +140,8 @@
     context = canvas.getContext("2d");
     mask = document.createElement("canvas");
     maskContext = mask.getContext("2d");
+    layer = document.createElement("canvas");
+    layerContext = layer.getContext("2d");
     drawn = new Float32Array(data.strokes.length);
     holder.prepend(canvas);
     resize();
