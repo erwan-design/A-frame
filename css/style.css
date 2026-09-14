@@ -1262,8 +1262,13 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .hs__abs.versions__list .versions__list-in { padding: 0; }
 .hs__abs .versions__items { flex-direction: row; gap: 40px; }
 /* croquis de la structure : cadré comme dans Figma (planche de 1058 px agrandie pour couvrir 610 × 780) */
+/* croquis de la structure dans un cadre en hauteur (610 × 780) : les trois dessins en colonne, en
+   quinconce (gauche, droite, gauche), réduits à 80 % pour tenir en entier avec leurs annotations */
 .hs__abs.board { overflow: clip; }
-.hs__abs.board .board__inner { position: absolute; left: 50%; top: 0; width: 1058px; translate: -50% 0; scale: 0.9286; transform-origin: top center; }
+.hs__abs.board .board__inner { position: absolute; left: 0; top: 0; width: 100%; height: 100%; zoom: 0.8; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; row-gap: 0; padding: 24px 32px; }
+.hs__abs.board .sketch--structure { align-self: flex-start; }
+.hs__abs.board .sketch--face { align-self: flex-end; margin-top: -50px; }
+.hs__abs.board .sketch--terrasse { align-self: flex-start; margin-top: -60px; margin-left: 40px; }
 .is-horizontal .chapter .ctitle { padding-top: 0; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
 .is-horizontal .chapter .ctitle h2 { white-space: nowrap; text-align: left; } /* taille de la version verticale (86 px) */
 .is-horizontal .chapter .ctitle--inline { flex-wrap: nowrap; } /* compteur à côté du titre, comme dans Figma */
