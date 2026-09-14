@@ -33,10 +33,11 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=c818f2bc9a">
+  <link rel="stylesheet" href="css/style.css?v=f09aee7b2f">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
   <script src="js/main.js?v=57ccd7883c" defer></script>
   <script src="js/motion.js?v=d356759d48" defer></script>
+  <script src="js/story.js?v=1685870570" defer></script>
   <script src="js/wind.js?v=c90c336ad8" defer></script>
 </head>
 <body>
@@ -61,6 +62,8 @@
         <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">{{4}}</p></div>
       </div>
     </nav>
+
+    <a class="start" href="#prologue"><span>Commencer le récit</span><span class="start__arrow" aria-hidden="true">↓</span></a>
 
     <div class="hero__body">
       <div class="hero__top">
@@ -212,7 +215,7 @@
         </figure>
       </div>
     </div>
-    <blockquote class="quote quote--terrain"><p data-reveal="title">{{47}}</p></blockquote>
+    <blockquote class="quote quote--terrain"><p data-scrub>{{47}}</p></blockquote>
   </section>
 
   <!-- Chapitre 02 -->
@@ -275,7 +278,7 @@
     </div>
     <div class="versions">
       <div class="versions__list"><div class="versions__list-in"><div class="versions__items"><p data-reveal>{{69}}</p><p data-reveal>{{70}}</p><p data-reveal>{{71}}</p></div></div></div>
-      <blockquote class="versions__quote"><p data-reveal="title">{{72}}</p></blockquote>
+      <blockquote class="versions__quote"><p data-scrub>{{72}}</p></blockquote>
     </div>
     <div class="board" data-reveal="media">
       <img decoding="async" class="board__paper" loading="lazy" {{img:paper}} sizes="auto, 100vw" alt="">
@@ -410,7 +413,7 @@
       <h2 data-reveal="title">{{120}}</h2>
       <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{121}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
-    <div class="resultat-quote"><blockquote><p data-reveal="title">{{122}}</p></blockquote></div>
+    <div class="resultat-quote"><blockquote><p data-scrub>{{122}}</p></blockquote></div>
     <div class="resultat">
       <div class="resultat__stats resultat__stats--left"><div class="resultat__stats-in">
         <div class="stat" data-reveal><p class="stat__label">{{123}}</p><p class="stat__value">{{124}}</p></div>

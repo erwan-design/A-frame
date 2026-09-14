@@ -22,6 +22,7 @@ css/style.css     variables Figma, mise en page desktop ≥ 1440, tablette 800�
 js/main.js        horloge, défilement lissé, clic sur une ligne du sommaire, lecture des vidéos
 js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
+js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
 js/wind.js        vent dans les arbres (WebGL) sur la photo du héros
 assets/img        photos, variantes srcset identiques à celles servies par Figma (AVIF/WebP)
 assets/svg        pictogrammes, couleurs intégrées
@@ -34,7 +35,7 @@ tools/            extraction depuis le site publié et outils de comparaison
 
 `index.html` est le fichier à éditer.
 
-Après toute modification de `css/style.css` ou `js/main.js`, lancer `python3 tools/version.py` :
+Après toute modification de la CSS ou d'un fichier JS, lancer `python3 tools/version.py` :
 il met à jour le numéro de version (`?v=…`) dans `index.html`. Sans lui, un navigateur peut
 garder l'ancienne feuille de style en cache (c'est ce qui masquait le parallax).
 
@@ -86,7 +87,19 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   et de la Magic Mouse ne se voient plus). Le tactile garde le défilement natif.
 - **Vidéos** : rien n'est téléchargé à l'ouverture (`preload="none"`) ; chaque vidéo se charge et
   se lance à l'approche de l'écran (600 px avant).
-- Tout est désactivé si le système demande de réduire les animations ; sans JavaScript, le
+- **Récit** (`js/story.js`, section « Récit » de `css/style.css`) :
+  - « Commencer le récit ↓ » sous le héros, masqué dès qu'on défile ;
+  - repère fixe en bas d'écran pendant les chapitres : numéro, titre, date, trait de progression,
+    menu pour sauter d'un chapitre à l'autre ;
+  - les trois citations s'éclairent mot à mot au défilement ;
+  - sur la vue drone du chapitre 01, la carte de l'Oise zoome jusqu'à la cabane puis s'efface ;
+  - clic sur une photo : plein écran avec légende, photo précédente / suivante de la même partie
+    (flèches, clavier, balayage), Échap pour fermer ;
+  - ambiance sonore de vent (synthétisée, Web Audio), coupée par défaut, bouton dans le repère.
+  Avec « réduire les animations », citations et zoom de la carte sont désactivés ; le repère,
+  le plein écran et le son restent. Positions et hauteurs de page inchangées (`tools/story_check.py`
+  vérifie le comportement).
+- Tout le reste est désactivé si le système demande de réduire les animations ; sans JavaScript, le
   contenu reste visible (les vidéos ne se lancent alors pas).
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.
 
