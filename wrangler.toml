@@ -1,7 +1,13 @@
 name = "a-frame"
 compatibility_date = "2026-09-14"
 
-# Site statique servi directement (pas de code Worker) : les fichiers du dépôt sont
-# publiés comme assets, sauf ceux listés dans .assetsignore (outils, relevés).
+# Petit Worker uniquement pour les vidéos : il gère les requêtes Range (206), que les
+# fichiers statiques ignorent (Safari refuse sinon de lire les vidéos).
+main = "worker/index.js"
+
+# Le reste du site est servi directement comme fichiers statiques, sauf ce que liste
+# .assetsignore (outils, relevés, config).
 [assets]
 directory = "."
+binding = "ASSETS"
+run_worker_first = ["/assets/video/*"]

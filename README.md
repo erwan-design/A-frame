@@ -71,6 +71,11 @@ GitHub `erwan-design/A-frame` : **chaque push sur `main` redéploie le site** av
 `npx wrangler deploy`, sans commande de build.
 
 - `wrangler.toml` publie le dépôt tel quel en fichiers statiques (`[assets] directory = "."`).
+- `worker/index.js` ne s'exécute que pour `/assets/video/*` : les fichiers statiques de
+  Cloudflare ignorent les requêtes `Range`, or Safari (iPhone) en a besoin pour lire une vidéo.
+  Le Worker charge la vidéo une fois en mémoire et renvoie la tranche demandée (`206`).
+  Tester localement : `npx wrangler dev` (attention, `wrangler dev` tronque les gros fichiers
+  téléchargés en parallèle, même sans Worker : ce n'est pas le cas en production).
 - `.assetsignore` exclut ce qui n'est pas le site : `.git`, `tools/`, `spec/`, README, config.
 - Aucun fichier ne doit dépasser 25 Mo (limite Cloudflare) ; la plus grosse vidéo fait 12,6 Mo.
 

@@ -5,6 +5,8 @@
 .assetsignore
 .DS_Store
 wrangler.toml
+worker/
+.wrangler/
 README.md
 tools/
 spec/

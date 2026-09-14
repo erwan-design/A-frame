@@ -8,3 +8,6 @@ dist.zip
 
 # Ancien dossier créé par GitHub Desktop (remplacé par ce dépôt)
 A frame/
+
+# État local de wrangler dev
+.wrangler/
