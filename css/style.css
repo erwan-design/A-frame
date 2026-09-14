@@ -564,7 +564,7 @@ a { color: inherit; text-decoration: none; }
   grid-auto-flow: row;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, fit-content(100%));
-  gap: 32px;
+  gap: 72px 32px; /* rangées plus aérées que les colonnes */
   padding: 0 var(--side) 100px;
 }
 
@@ -763,7 +763,7 @@ a { color: inherit; text-decoration: none; }
 
   .journal__titlebar { flex-direction: column; align-items: flex-start; gap: 40px; }
   .journal__title { flex: none; min-width: 100%; font-size: 56px; }
-  .journal__grid { grid-template-columns: repeat(1, minmax(0, 1fr)); grid-template-rows: repeat(7, fit-content(100%)); padding: 0 12px 80px; }
+  .journal__grid { grid-template-columns: repeat(1, minmax(0, 1fr)); grid-template-rows: repeat(7, fit-content(100%)); row-gap: 56px; padding: 0 12px 80px; }
 
   .footer__about { min-width: 255px; max-width: none; }
   .footer__about-in { padding-right: 0; }
