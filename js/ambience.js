@@ -1,6 +1,6 @@
-// Ambiance de forêt au bord de l'eau, entièrement synthétisée (Web Audio API, aucun fichier) :
-// feuillage dans le vent (bruit clair, par rafales), souffle grave, rivière qui clapote à gauche,
-// oiseaux au loin dans un peu d'écho. Utilisée par js/story.js (bouton son du repère).
+// Ambiance calme de forêt au bord de l'eau, entièrement synthétisée (Web Audio API, aucun
+// fichier) : léger bruissement de feuilles, souffle très doux, murmure de la rivière à gauche,
+// quelques oiseaux au loin dans un peu d'écho. Utilisée par js/story.js (bouton son du repère).
 //
 // window.forestAmbience(context, destination) → { schedule(until) }
 // schedule() programme rafales et chants d'oiseaux jusqu'à l'instant `until` (secondes du
@@ -98,43 +98,43 @@
     const started = [];
     const start = (source) => { started.push(source); return source; };
 
-    // Feuillage : bruit clair, filtré entre 1,1 et ~6 kHz, qui frémit en permanence
+    // Feuillage : léger bruissement, filtré entre 900 Hz et ~3 kHz (au-delà, ça siffle comme une tempête)
     const leavesSource = start(loop(context, pink));
-    const leavesLow = filter(context, "highpass", 1100);
-    const leavesHigh = filter(context, "lowpass", 5600);
-    const leaves = gain(context, 0.3);
-    const leavesFlutter = start(loop(context, flutterBuffer(context, 5.7, 7)));
-    const leavesFlutterDepth = gain(context, 0.07);
+    const leavesLow = filter(context, "highpass", 900);
+    const leavesHigh = filter(context, "lowpass", 3000);
+    const leaves = gain(context, 0.07);
+    const leavesFlutter = start(loop(context, flutterBuffer(context, 5.7, 4)));
+    const leavesFlutterDepth = gain(context, 0.02);
     leavesFlutter.connect(leavesFlutterDepth).connect(leaves.gain);
     leavesSource.connect(leavesLow).connect(leavesHigh).connect(leaves).connect(destination);
 
-    // Souffle grave du vent
+    // Souffle grave, à peine perceptible
     const windSource = start(loop(context, brown));
-    const windBody = filter(context, "lowpass", 420);
-    const wind = gain(context, 0.22);
+    const windBody = filter(context, "lowpass", 300);
+    const wind = gain(context, 0.07);
     windSource.connect(windBody).connect(wind).connect(destination);
 
-    // Rivière, sur la gauche : un grondement doux et des clapotis plus aigus
+    // Rivière, sur la gauche : un murmure doux et quelques clapotis
     const river = panner(context, -0.4);
     river.connect(destination);
     const riverSource = start(loop(context, pink));
     riverSource.playbackRate.value = 0.93;
-    const riverBand = filter(context, "bandpass", 850, 0.55);
-    const riverGain = gain(context, 0.26);
-    const riverFlutter = start(loop(context, flutterBuffer(context, 4.3, 16)));
-    const riverFlutterDepth = gain(context, 0.08);
+    const riverBand = filter(context, "bandpass", 700, 0.7);
+    const riverGain = gain(context, 0.1);
+    const riverFlutter = start(loop(context, flutterBuffer(context, 4.3, 12)));
+    const riverFlutterDepth = gain(context, 0.03);
     riverFlutter.connect(riverFlutterDepth).connect(riverGain.gain);
     riverSource.connect(riverBand).connect(riverGain).connect(river);
 
     const splashBand = filter(context, "bandpass", 2300, 1.4);
-    const splashGain = gain(context, 0.05);
-    const splashFlutter = start(loop(context, flutterBuffer(context, 3.1, 23)));
-    const splashFlutterDepth = gain(context, 0.05);
+    const splashGain = gain(context, 0.015);
+    const splashFlutter = start(loop(context, flutterBuffer(context, 3.1, 18)));
+    const splashFlutterDepth = gain(context, 0.015);
     splashFlutter.connect(splashFlutterDepth).connect(splashGain.gain);
     riverSource.connect(splashBand).connect(splashGain).connect(river);
 
     // Oiseaux : un peu étouffés par la distance, avec l'écho du sous-bois
-    const birds = filter(context, "lowpass", 7000);
+    const birds = filter(context, "lowpass", 6000);
     const birdsDry = gain(context, 0.55);
     const reverb = context.createConvolver();
     reverb.buffer = reverbBuffer(context);
@@ -212,24 +212,24 @@
     let nextBird = 2.5;
     return {
       schedule(until) {
-        // rafales : toutes les 3 à 8 s, le vent forcit ou retombe
+        // brise : toutes les 7 à 14 s, les feuilles bruissent un peu plus ou un peu moins
         while (nextGust < until) {
-          const at = nextGust + random(3, 8);
+          const at = nextGust + random(7, 14);
           const strength = random(0, 1);
-          leaves.gain.linearRampToValueAtTime(0.16 + strength * 0.32, at);
-          leavesHigh.frequency.linearRampToValueAtTime(4200 + strength * 2600, at);
-          wind.gain.linearRampToValueAtTime(0.1 + strength * 0.26, at);
+          leaves.gain.linearRampToValueAtTime(0.04 + strength * 0.06, at);
+          leavesHigh.frequency.linearRampToValueAtTime(2400 + strength * 1000, at);
+          wind.gain.linearRampToValueAtTime(0.04 + strength * 0.05, at);
           nextGust = at;
         }
-        // oiseaux : un chant toutes les 4 à 13 s, parfois une réponse de l'autre côté
+        // oiseaux : un chant toutes les 6 à 16 s, parfois une réponse de l'autre côté
         while (nextBird < until) {
           const pan = random(-0.8, 0.8);
-          const level = random(0.12, 0.26);
+          const level = random(0.05, 0.11);
           const length = songs[Math.floor(Math.random() * songs.length)](nextBird, pan, level);
           if (Math.random() < 0.35) {
             songs[Math.floor(Math.random() * songs.length)](nextBird + length + random(0.4, 1.2), -pan * 0.8, level * 0.7);
           }
-          nextBird += length + random(4, 13);
+          nextBird += length + random(6, 16);
         }
       },
     };

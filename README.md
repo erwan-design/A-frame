@@ -97,7 +97,8 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   - clic sur une photo : plein écran avec légende, photo précédente / suivante de la même partie
     (flèches, clavier, balayage), Échap pour fermer ;
   - ambiance sonore de forêt (`js/ambience.js`, synthétisée avec Web Audio, aucun fichier audio) :
-    feuillage dans le vent, rivière, oiseaux au loin ; coupée par défaut, icône son dans le repère.
+    ambiance calme : léger bruissement de feuilles, murmure de la rivière, oiseaux au loin ;
+    coupée par défaut, icône son dans le repère.
   Avec « réduire les animations », citations et zoom de la carte sont désactivés ; le repère,
   le plein écran et le son restent. Positions et hauteurs de page inchangées (`tools/story_check.py`
   vérifie le comportement).

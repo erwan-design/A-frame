@@ -472,7 +472,7 @@
         if (!audio) build();
         audio.context.resume();
         audio.master.gain.cancelScheduledValues(audio.context.currentTime);
-        audio.master.gain.setTargetAtTime(0.8, audio.context.currentTime, 0.8);
+        audio.master.gain.setTargetAtTime(0.5, audio.context.currentTime, 1.2);
       } else if (audio) {
         audio.master.gain.cancelScheduledValues(audio.context.currentTime);
         audio.master.gain.setTargetAtTime(0, audio.context.currentTime, 0.25);
