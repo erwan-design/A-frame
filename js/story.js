@@ -360,92 +360,68 @@
         }
       });
     });
-    // Lentille : sur les photos agrandissables, un disque translucide suit la souris avec un
-    // léger retard, s'étire dans le sens du mouvement et apparaît avec un petit rebond.
+    // Étiquette « Agrandir » : sur les photos agrandissables, elle remplace le curseur et le suit
+    // avec un léger retard ; même matière que les boutons du menu, apparition en balayage.
     if (motion && matchMedia("(hover: hover) and (pointer: fine)").matches) {
-      const lens = document.createElement("div");
-      lens.className = "lens";
-      lens.setAttribute("aria-hidden", "true");
-      lens.innerHTML = '<span class="lens__disc"></span><span class="lens__label">Voir</span>';
-      document.body.append(lens);
-      const disc = lens.firstElementChild;
-      disc.style.transform = "scale(0)";
-      disc.style.scale = "1";
-      const label = lens.lastElementChild;
-      const lensState = { x: 0, y: 0, tx: 0, ty: 0, size: 0, speed: 0, target: 0, press: 1, running: false, current: null };
+      const tag = document.createElement("div");
+      tag.className = "photo-tag";
+      tag.setAttribute("aria-hidden", "true");
+      tag.innerHTML = '<span class="photo-tag__label">Agrandir</span>';
+      document.body.append(tag);
+      const tagState = { x: 0, y: 0, tx: 0, ty: 0, running: false, current: null, hiddenAt: 0 };
 
-      const lensTick = () => {
-        const dx = lensState.tx - lensState.x;
-        const dy = lensState.ty - lensState.y;
-        lensState.x += dx * 0.2;
-        lensState.y += dy * 0.2;
-        // ressort amorti : la taille dépasse un peu sa cible puis s'y pose
-        lensState.speed = (lensState.speed + (lensState.target * lensState.press - lensState.size) * 0.16) * 0.7;
-        lensState.size += lensState.speed;
-        const velocity = Math.hypot(dx, dy) * 0.2;
-        const stretch = Math.min(velocity * 0.018, 0.38);
-        const angle = Math.atan2(dy, dx);
-        const size = Math.max(0, lensState.size);
-        lens.style.transform = `translate3d(${lensState.x.toFixed(1)}px, ${lensState.y.toFixed(1)}px, 0)`;
-        disc.style.transform = `rotate(${angle.toFixed(3)}rad) scale(${(size * (1 + stretch)).toFixed(3)}, ${(size * (1 - stretch * 0.55)).toFixed(3)})`;
-        label.style.opacity = Math.max(0, Math.min(1, size * 1.4 - 0.4)).toFixed(3);
-        label.style.transform = `scale(${(0.8 + 0.2 * Math.min(size, 1)).toFixed(3)})`;
-        const settled = Math.abs(dx) < 0.1 && Math.abs(dy) < 0.1 && Math.abs(lensState.speed) < 0.001 && Math.abs(lensState.target * lensState.press - lensState.size) < 0.002;
-        if (settled && lensState.target === 0) {
-          lensState.running = false;
+      const tagTick = (now) => {
+        tagState.x += (tagState.tx - tagState.x) * 0.22;
+        tagState.y += (tagState.ty - tagState.y) * 0.22;
+        tag.style.transform = `translate3d(${tagState.x.toFixed(1)}px, ${tagState.y.toFixed(1)}px, 0)`;
+        const settled = Math.abs(tagState.tx - tagState.x) < 0.1 && Math.abs(tagState.ty - tagState.y) < 0.1;
+        // après la disparition, on laisse finir le balayage de sortie avant de s'arrêter
+        if (!tagState.current && settled && now - tagState.hiddenAt > 600) {
+          tagState.running = false;
           return;
         }
-        requestAnimationFrame(lensTick);
+        requestAnimationFrame(tagTick);
       };
-      const lensRun = () => {
-        if (lensState.running) return;
-        lensState.running = true;
-        requestAnimationFrame(lensTick);
+      const tagRun = () => {
+        if (tagState.running) return;
+        tagState.running = true;
+        requestAnimationFrame(tagTick);
       };
-      const hideLens = () => {
-        if (lensState.current) lensState.current.classList.remove("is-lensed");
-        lensState.current = null;
-        lensState.target = 0;
-        lensRun();
+      const hideTag = () => {
+        if (tagState.current) tagState.current.classList.remove("is-pointed");
+        tagState.current = null;
+        tagState.hiddenAt = performance.now();
+        tag.classList.remove("is-visible");
       };
 
       photos.forEach((img) => {
         const trigger = img.closest(".fig__media, .prologue__photo, .jcard__media");
-        const activate = (event) => {
+        const show = (event) => {
           if (event.pointerType !== "mouse" || box.open) return;
-          if (lensState.target === 0 && lensState.size < 0.05) {
-            lensState.x = event.clientX;
-            lensState.y = event.clientY;
+          if (!tag.classList.contains("is-visible")) {
+            tagState.x = event.clientX;
+            tagState.y = event.clientY;
           }
-          lensState.tx = event.clientX;
-          lensState.ty = event.clientY;
-          lensState.current = trigger;
-          trigger.classList.add("is-lensed");
-          lensState.target = 1;
-          lensRun();
+          tagState.tx = event.clientX;
+          tagState.ty = event.clientY;
+          tagState.current = trigger;
+          trigger.classList.add("is-pointed");
+          tag.classList.add("is-visible");
+          tagRun();
         };
-        trigger.addEventListener("pointerenter", activate);
+        trigger.addEventListener("pointerenter", show);
         trigger.addEventListener("pointermove", (event) => {
-          if (lensState.current !== trigger) return activate(event);
-          lensState.tx = event.clientX;
-          lensState.ty = event.clientY;
-          lensRun();
+          if (tagState.current !== trigger) return show(event);
+          tagState.tx = event.clientX;
+          tagState.ty = event.clientY;
+          tagRun();
         });
         trigger.addEventListener("pointerleave", () => {
-          if (lensState.current === trigger) hideLens();
+          if (tagState.current === trigger) hideTag();
         });
-        trigger.addEventListener("pointerdown", () => {
-          lensState.press = 0.82;
-          lensRun();
-        });
-        trigger.addEventListener("pointerup", () => {
-          lensState.press = 1;
-          lensRun();
-        });
-        trigger.addEventListener("click", hideLens);
+        trigger.addEventListener("click", hideTag);
       });
-      box.addEventListener("close", () => { lensState.press = 1; });
-      addEventListener("scroll", () => { if (lensState.current) hideLens(); }, { passive: true });
+      addEventListener("scroll", () => { if (tagState.current) hideTag(); }, { passive: true });
     }
 
     box.querySelector(".lightbox__close").addEventListener("click", close);

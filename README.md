@@ -109,8 +109,8 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - **Badge « Frame Oise »** (chapitre 04, fin de `js/motion.js`) : objet en relief (épaisseur,
   reflet), qui flotte et se tourne vers le curseur ; il n'a plus d'apparition au défilement.
   Position identique à la maquette.
-- **Photos agrandissables** : au survol, une lentille ronde « Voir » suit la souris avec un léger
-  retard, s'étire dans le sens du mouvement, et la photo s'approche doucement.
+- **Photos agrandissables** : au survol, les coins du compteur (« 01/06 ») se resserrent sur la
+  photo, qui s'approche doucement ; une étiquette « Agrandir » remplace le curseur et le suit.
 - **Cercles du badge « 1,45 ha »** (chapitre 01) : une onde se propage en continu depuis le centre ;
   à chaque quart de cycle, les anneaux sont exactement aux positions de la maquette.
 - Tout le reste est désactivé si le système demande de réduire les animations ; sans JavaScript, le

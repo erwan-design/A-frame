@@ -1066,39 +1066,52 @@ html.lenis, html.lenis body { height: auto; }
 
 /* Photos en plein écran */
 .fig__media[role="button"], .prologue__photo[role="button"], .jcard__media[role="button"] { cursor: pointer; }
-/* Lentille : un disque qui suit la souris sur les photos agrandissables (js/story.js) */
-.is-lensed { cursor: none !important; }
-.is-zoomable { transition: transform 1.4s var(--expo); }
-.is-lensed > .is-zoomable { transform: scale(1.045); }
-.lens { position: fixed; left: 0; top: 0; z-index: 40; width: 0; height: 0; pointer-events: none; will-change: transform; }
-.lens__disc {
+/* Survol des photos agrandissables : les coins du compteur (« 01/06 ») se resserrent sur la
+   photo, qui s'approche doucement ; l'étiquette « Agrandir » suit la souris (js/story.js). */
+.fig__media[role="button"]::after, .prologue__photo[role="button"]::after, .jcard__media[role="button"]::after {
+  content: "";
   position: absolute;
-  left: -46px;
-  top: -46px;
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
-  background: rgba(251, 255, 254, 0.14);
-  border: 1px solid rgba(251, 255, 254, 0.45);
-  -webkit-backdrop-filter: blur(10px) saturate(1.25);
-  backdrop-filter: blur(10px) saturate(1.25);
-  scale: 0;
+  inset: 0;
+  z-index: 2;
+  --corner: rgba(251, 255, 254, 0.9);
+  background:
+    linear-gradient(var(--corner), var(--corner)) top right / 18px 1px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) top right / 1px 18px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) bottom left / 18px 1px no-repeat,
+    linear-gradient(var(--corner), var(--corner)) bottom left / 1px 18px no-repeat;
+  opacity: 0;
+  transition: inset 0.7s var(--expo), opacity 0.4s var(--expo);
+  pointer-events: none;
 }
-.lens__label {
+@media (hover: hover) {
+  .fig__media[role="button"]:hover::after, .prologue__photo[role="button"]:hover::after, .jcard__media[role="button"]:hover::after { inset: 16px; opacity: 1; }
+}
+.fig__media[role="button"]:focus-visible::after, .prologue__photo[role="button"]:focus-visible::after, .jcard__media[role="button"]:focus-visible::after { inset: 16px; opacity: 1; }
+.is-zoomable { transition: transform 1.4s var(--expo); }
+.is-pointed { cursor: none !important; }
+.is-pointed > .is-zoomable { transform: scale(1.035); }
+.photo-tag { position: fixed; left: 0; top: 0; z-index: 40; width: 0; height: 0; pointer-events: none; will-change: transform; }
+.photo-tag__label {
   position: absolute;
   left: 0;
   top: 0;
   translate: -50% -50%;
+  padding: 7px 10px;
   font-family: var(--mono);
   font-variation-settings: "wdth" 100;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1;
-  letter-spacing: 0.44px;
+  letter-spacing: 0.48px;
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--light);
-  opacity: 0;
+  background: rgba(16, 24, 25, 0.62);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.45s var(--expo);
 }
+.photo-tag.is-visible .photo-tag__label { clip-path: inset(0 0 0 0); transition-duration: 0.6s; }
 .fig__media[role="button"]:focus-visible, .prologue__photo[role="button"]:focus-visible, .jcard__media[role="button"]:focus-visible { outline: 1px solid var(--light); outline-offset: 4px; }
 .jcard__media[role="button"]:focus-visible { outline-color: var(--dark); }
 html.has-lightbox { overflow: hidden; }
