@@ -860,6 +860,11 @@ a { color: inherit; text-decoration: none; }
   100% { opacity: 0; scale: 2.6; }
 }
 
+/* Chiffres du héros : compteur mécanique (js/motion.js) */
+.odo { display: inline-block; height: 1em; overflow: hidden; vertical-align: top; }
+.odo__strip { display: block; }
+.odo__strip > span { display: block; height: 1em; line-height: 1; }
+
 /* Horloge : les deux-points battent la seconde */
 .motion .clock__colon { animation: clock-tick 1s steps(1, end) infinite; }
 @keyframes clock-tick { 50% { opacity: 0.25; } }

@@ -19,7 +19,68 @@
   const MAX_STAGGER_STEPS = 8;
   const DURATION = 1800;
 
+  // Chiffres du héros (2024, 1 an, >2500€) : chaque chiffre défile comme un compteur
+  // mécanique jusqu'à sa valeur. Le texte d'origine est remis à la fin : rendu final identique.
+  const rollDigits = (el, delay) => {
+    const text = el && el.textContent;
+    if (!text || !/\d/.test(text) || el.dataset.rolling) return;
+    el.dataset.rolling = "true";
+    el.setAttribute("aria-label", text);
+
+    const probe = document.createElement("span");
+    probe.style.cssText = "position:absolute;visibility:hidden;white-space:pre";
+    el.append(probe);
+    const widths = {};
+    for (const digit of "0123456789") {
+      probe.textContent = digit;
+      widths[digit] = probe.getBoundingClientRect().width;
+    }
+    probe.remove();
+
+    const fragment = document.createDocumentFragment();
+    const animations = [];
+    let index = 0;
+    for (const char of text) {
+      if (char < "0" || char > "9") {
+        fragment.append(char);
+        continue;
+      }
+      const wheel = document.createElement("span");
+      wheel.className = "odo";
+      wheel.setAttribute("aria-hidden", "true");
+      wheel.style.width = `${widths[char]}px`;
+      const strip = document.createElement("span");
+      strip.className = "odo__strip";
+      const stops = 10 + Number(char); // un tour complet, puis jusqu'au chiffre voulu
+      for (let i = 0; i <= stops; i++) {
+        const line = document.createElement("span");
+        line.textContent = String(i % 10);
+        strip.append(line);
+      }
+      wheel.append(strip);
+      fragment.append(wheel);
+      animations.push({ strip, stops, order: index++ });
+    }
+    el.textContent = "";
+    el.append(fragment);
+
+    const running = animations.map(({ strip, stops, order }) =>
+      strip.animate([{ transform: "translateY(0)" }, { transform: `translateY(${-stops}em)` }], {
+        duration: 1500 + order * 150,
+        delay: delay + 150 + order * 90,
+        easing: "cubic-bezier(0.16, 1, 0.3, 1)",
+        fill: "both",
+      }).finished
+    );
+    Promise.all(running).then(() => {
+      el.textContent = text;
+      el.removeAttribute("aria-label");
+      delete el.dataset.rolling;
+    });
+  };
+
   const reveal = (el, delay) => {
+    if (el.classList.contains("fact")) rollDigits(el.querySelector(".fact__value"), delay);
     el.style.setProperty("--reveal-delay", `${delay}ms`);
     el.classList.add("is-in");
     setTimeout(() => {
