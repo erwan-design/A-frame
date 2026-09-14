@@ -66,11 +66,17 @@
     story.setAttribute("aria-label", "Chapitres du récit");
     story.innerHTML = `
       <div class="story__bar" aria-hidden="true"><span class="story__fill"></span></div>
+      <button class="story__step story__step--prev" type="button" aria-label="Chapitre précédent" title="Chapitre précédent">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 8h-9M7 4.5 3.5 8 7 11.5" /></svg>
+      </button>
       <button class="story__toggle" type="button" aria-expanded="false" aria-controls="story-menu">
         <span class="story__num"><span class="story__current">01</span><span class="story__total">/${String(chapters.length).padStart(2, "0")}</span></span>
         <span class="story__title"></span>
         <span class="story__date"></span>
         <span class="story__chevron" aria-hidden="true"></span>
+      </button>
+      <button class="story__step story__step--next" type="button" aria-label="Chapitre suivant" title="Chapitre suivant">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8h9M9 4.5 12.5 8 9 11.5" /></svg>
       </button>
       <button class="story__sound" type="button" aria-pressed="false" aria-label="Activer l'ambiance sonore" title="Ambiance sonore">
         <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
@@ -123,6 +129,16 @@
       if (!menu.hidden && !story.contains(event.target)) setMenu(false);
     });
 
+    // flèches : chapitre précédent / suivant
+    const prevButton = story.querySelector(".story__step--prev");
+    const nextButton = story.querySelector(".story__step--next");
+    const step = (delta) => {
+      const target = chapters[Math.max(0, Math.min(chapters.length - 1, active + delta))];
+      if (target && target !== chapters[active]) goTo(target.section);
+    };
+    prevButton.addEventListener("click", () => step(-1));
+    nextButton.addEventListener("click", () => step(1));
+
     let active = -1;
     const show = (index) => {
       if (index === active) return;
@@ -132,6 +148,8 @@
       title.textContent = chapter.title;
       date.textContent = chapter.date;
       menuButtons.forEach((button, i) => button.toggleAttribute("aria-current", i === index));
+      prevButton.disabled = index === 0;
+      nextButton.disabled = index === chapters.length - 1;
       if (motion) {
         story.classList.remove("is-changing");
         void story.offsetWidth; // relance l'animation de changement de titre
@@ -211,7 +229,7 @@
   // Du département au terrain : sur la vue drone du chapitre 01, la carte de l'Oise zoome
   // sur son repère puis s'efface pour laisser place à la photo.
   // ---------------------------------------------------------------------------
-  const droneFigure = document.querySelector("#chapitre-01 .terrain__left .fig__media");
+  const droneFigure = document.querySelector("#chapitre-01 figure.fig .fig__media");
   const heroMap = document.querySelector(".hero .map");
   if (motion && droneFigure && heroMap) {
     const overlay = document.createElement("div");

@@ -1,6 +1,6 @@
 // Prototype « défilement horizontal » : arrivé aux chapitres, l'écran se fige et la lecture part
-// vers la droite. Chaque chapitre devient une suite de panneaux côte à côte (ouverture avec le
-// titre, puis chaque bloc du chapitre), ramenés à la hauteur de l'écran si besoin. La molette,
+// vers la droite. Chaque chapitre devient une suite de colonnes : l'ouverture (bandeau, titre,
+// texte, données) puis les photos, vidéos et citations, ramenées à la hauteur de l'écran si besoin. La molette,
 // le trackpad (dans les deux sens) et les flèches ← → font avancer ; après le chapitre 06, la
 // page reprend verticalement (journal, pied de page).
 // Réservé aux écrans d'au moins 1440 × 720 (mise en page ordinateur : aucun panneau réduit sous
@@ -13,6 +13,48 @@
   const sections = [...document.querySelectorAll("section.chapter")];
   if (!sections.length || !matchMedia("(min-width: 1440px) and (min-height: 720px)").matches) return;
 
+  // Composition de chaque chapitre en colonnes : l'ouverture regroupe bandeau, titre, texte et
+  // données ; les colonnes suivantes portent photos, vidéos, croquis et citations.
+  // `split` : chaque élément trouvé a sa propre colonne.
+  const COMPOSITION = {
+    "chapitre-01": [
+      { intro: [".terrain__left-in > .body", ".terrain__right > .badge"] },
+      { items: [".terrain__left-in > .fig"], width: 560 },
+      { items: [".terrain__right > .fig"], width: 480 },
+      { items: [".quote"], width: 720 },
+    ],
+    "chapitre-02": [
+      { intro: [".fondations__left-in > .body", ".fondations__left-in > .table"] },
+      { items: [".fondations__right > .fig"], width: 440 },
+      { items: [".plancher__left-in > .fig"], width: 460 },
+      { items: [".plancher__right > .fig"], width: 620 },
+    ],
+    "chapitre-03": [
+      { intro: [".versions__list", ".versions__quote"] },
+      { items: [".montage__left-in > .body", ".montage__right > .table", ".montage__right > .plus"], width: 560 },
+      { items: [".board"], width: 1240 },
+      { items: [".ossature__left-in > .fig"], width: 690 },
+      { items: [".ossature__right > .fig"], width: 440 },
+    ],
+    "chapitre-04": [
+      { intro: [".isolation__col-in > .body"] },
+      { items: [".isolation__logo"], width: 220 },
+      { items: [".toiture > .toiture__fig"], width: 381, split: true },
+    ],
+    "chapitre-05": [
+      { intro: [".amenagement__text"] },
+      { items: [".amenagement__figs"], width: 560 },
+      { items: [".amenagement__sketch"], width: 408 },
+    ],
+    "chapitre-06": [
+      { intro: [".resultat-quote"] },
+      { items: [".resultat__stats--left"], width: 280 },
+      { items: [".resultat__video"], width: 560 },
+      { items: [".resultat__stats--right"], width: 280 },
+      { items: [".epilogue"], width: 720 },
+    ],
+  };
+
   // structure : .hs (hauteur = longueur du trajet) > .hs__stage (collant, plein écran) > .hs__track
   const wrap = document.createElement("div");
   wrap.className = "hs";
@@ -23,27 +65,70 @@
   stage.append(track);
   wrap.append(stage);
   sections[0].before(wrap);
+
+  const column = (className, width) => {
+    const col = document.createElement("div");
+    col.className = `hs__col ${className || ""}`.trim();
+    if (width) col.style.width = `${width}px`;
+    return col;
+  };
+  const hasContent = (element) =>
+    (element.textContent || "").trim() !== "" || element.querySelector("img, video, svg, canvas, picture");
+
   sections.forEach((section) => {
-    // ouverture du chapitre : bandeau (numéro, date) et titre dans un même panneau
-    const opener = document.createElement("div");
-    opener.className = "hs__opener";
-    const top = section.querySelector(":scope > .ctop");
-    const title = section.querySelector(":scope > .ctitle");
-    if (top) opener.append(top);
-    if (title) opener.append(title);
-    section.prepend(opener);
-    [...section.children].forEach((child) => child.classList.add("hs__panel"));
+    const original = [...section.children];
+    const columns = [];
+    const plan = COMPOSITION[section.id] || [];
+    plan.forEach((entry) => {
+      if (entry.intro) {
+        const intro = column("hs__col--intro");
+        [":scope > .ctop", ":scope > .ctitle", ...entry.intro].forEach((selector) =>
+          section.querySelectorAll(selector).forEach((element) => intro.append(element))
+        );
+        columns.push(intro);
+        return;
+      }
+      const found = entry.items.flatMap((selector) => [...section.querySelectorAll(selector)]);
+      if (!found.length) return;
+      const groups = entry.split ? found.map((element) => [element]) : [found];
+      groups.forEach((elements) => {
+        const col = column("", entry.width);
+        col.append(...elements);
+        columns.push(col);
+      });
+    });
+    // filet de sécurité : tout contenu non prévu dans la composition garde sa place, en fin de chapitre
+    original.forEach((block) => {
+      if (block.parentNode === section && hasContent(block)) {
+        const rest = column("hs__col--rest", 1240);
+        rest.append(block);
+        columns.push(rest);
+      }
+    });
+    original.forEach((block) => { if (block.parentNode === section) block.remove(); });
+    section.append(...columns);
     track.append(section);
   });
   root.classList.add("is-horizontal");
 
-  const panels = [...track.querySelectorAll(".hs__panel")];
+  const panels = [...track.querySelectorAll(".hs__col")];
   let travel = 0; // distance horizontale à parcourir
   let wrapTop = 0;
 
   // chaque panneau tient dans la hauteur de l'écran (zoom réduit si besoin), puis on mesure le trajet
+  const titles = [...track.querySelectorAll(".hs__col--intro .ctitle h2")];
   const layout = () => {
     const available = window.innerHeight - 150;
+    // titres : la plus grande taille (96 px au plus) qui tient sur la largeur de la colonne
+    titles.forEach((title) => {
+      const width = title.closest(".hs__col").clientWidth;
+      let size = 96;
+      title.style.fontSize = `${size}px`;
+      while (title.scrollWidth > width && size > 48) {
+        size -= 2;
+        title.style.fontSize = `${size}px`;
+      }
+    });
     panels.forEach((panel) => {
       panel.style.zoom = "1";
     });
