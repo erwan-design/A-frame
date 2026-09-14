@@ -72,7 +72,12 @@
         <span class="story__chevron" aria-hidden="true"></span>
       </button>
       <button class="story__sound" type="button" aria-pressed="false" aria-label="Activer l'ambiance sonore" title="Ambiance sonore">
-        <span></span><span></span><span></span><span></span>
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <path class="story__sound-speaker" d="M3.5 7.5h2.8L10 4.2v11.6l-3.7-3.3H3.5z" />
+          <path class="story__sound-wave story__sound-wave--1" d="M12.6 7.6a3.4 3.4 0 0 1 0 4.8" />
+          <path class="story__sound-wave story__sound-wave--2" d="M14.8 5.4a6.5 6.5 0 0 1 0 9.2" />
+          <path class="story__sound-mute" d="M13 7.6l4.8 4.8M17.8 7.6L13 12.4" />
+        </svg>
       </button>
       <ol class="story__menu" id="story-menu" hidden>
         ${chapters
@@ -376,61 +381,23 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Ambiance sonore (coupée par défaut) : du vent dans les arbres, synthétisé avec la
-  // Web Audio API — un bruit filtré dont l'intensité varie lentement, par rafales.
+  // Ambiance sonore (coupée par défaut) : forêt au bord de l'eau, synthétisée par
+  // js/ambience.js. Le contexte audio n'est créé qu'au premier clic (exigence des navigateurs).
   // ---------------------------------------------------------------------------
   const soundButton = story && story.querySelector(".story__sound");
-  if (soundButton && (window.AudioContext || window.webkitAudioContext)) {
+  if (soundButton && (window.AudioContext || window.webkitAudioContext) && window.forestAmbience) {
     let audio = null;
 
     const build = () => {
       const context = new (window.AudioContext || window.webkitAudioContext)();
-      const length = context.sampleRate * 6;
-      const buffer = context.createBuffer(2, length, context.sampleRate);
-      for (let channel = 0; channel < 2; channel++) {
-        const data = buffer.getChannelData(channel);
-        let last = 0;
-        for (let i = 0; i < length; i++) {
-          // bruit « brun » : grave et doux, proche du souffle du vent
-          last = (last + 0.02 * (Math.random() * 2 - 1)) / 1.02;
-          data[i] = last * 3.5;
-        }
-      }
-      const source = context.createBufferSource();
-      source.buffer = buffer;
-      source.loop = true;
-
-      const body = context.createBiquadFilter();
-      body.type = "lowpass";
-      body.frequency.value = 520;
-      const leaves = context.createBiquadFilter();
-      leaves.type = "bandpass";
-      leaves.frequency.value = 2400;
-      leaves.Q.value = 0.7;
-      const leavesGain = context.createGain();
-      leavesGain.gain.value = 0.05;
-      const gust = context.createGain();
-      gust.gain.value = 0.7;
       const master = context.createGain();
       master.gain.value = 0;
-
-      source.connect(body).connect(gust);
-      source.connect(leaves).connect(leavesGain).connect(gust);
-      gust.connect(master).connect(context.destination);
-      source.start();
-
-      // rafales : toutes les 2 à 5 s, nouvelle intensité et nouvelle couleur du souffle
-      const breathe = () => {
-        if (!audio || audio.context.state === "closed") return;
-        const now = context.currentTime;
-        const duration = 2 + Math.random() * 3;
-        gust.gain.linearRampToValueAtTime(0.45 + Math.random() * 0.55, now + duration);
-        body.frequency.linearRampToValueAtTime(320 + Math.random() * 700, now + duration);
-        leavesGain.gain.linearRampToValueAtTime(0.02 + Math.random() * 0.08, now + duration);
-        audio.timer = setTimeout(breathe, duration * 1000);
-      };
-      audio = { context, master, timer: 0 };
-      breathe();
+      master.connect(context.destination);
+      const forest = window.forestAmbience(context, master);
+      forest.schedule(context.currentTime + 4);
+      // programmation glissante : rafales et oiseaux 4 s à l'avance
+      const timer = setInterval(() => forest.schedule(context.currentTime + 4), 1000);
+      audio = { context, master, timer };
     };
 
     const setSound = (on) => {
@@ -441,7 +408,7 @@
         if (!audio) build();
         audio.context.resume();
         audio.master.gain.cancelScheduledValues(audio.context.currentTime);
-        audio.master.gain.setTargetAtTime(0.32, audio.context.currentTime, 0.6);
+        audio.master.gain.setTargetAtTime(0.8, audio.context.currentTime, 0.8);
       } else if (audio) {
         audio.master.gain.cancelScheduledValues(audio.context.currentTime);
         audio.master.gain.setTargetAtTime(0, audio.context.currentTime, 0.25);

@@ -23,6 +23,7 @@ js/main.js        horloge, défilement lissé, clic sur une ligne du sommaire, l
 js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
 js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
+js/ambience.js    ambiance sonore de forêt (Web Audio)
 js/wind.js        vent dans les arbres (WebGL) sur la photo du héros
 assets/img        photos, variantes srcset identiques à celles servies par Figma (AVIF/WebP)
 assets/svg        pictogrammes, couleurs intégrées
@@ -95,7 +96,8 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   - sur la vue drone du chapitre 01, la carte de l'Oise zoome jusqu'à la cabane puis s'efface ;
   - clic sur une photo : plein écran avec légende, photo précédente / suivante de la même partie
     (flèches, clavier, balayage), Échap pour fermer ;
-  - ambiance sonore de vent (synthétisée, Web Audio), coupée par défaut, bouton dans le repère.
+  - ambiance sonore de forêt (`js/ambience.js`, synthétisée avec Web Audio, aucun fichier audio) :
+    feuillage dans le vent, rivière, oiseaux au loin ; coupée par défaut, icône son dans le repère.
   Avec « réduire les animations », citations et zoom de la carte sont désactivés ; le repère,
   le plein écran et le son restent. Positions et hauteurs de page inchangées (`tools/story_check.py`
   vérifie le comportement).
