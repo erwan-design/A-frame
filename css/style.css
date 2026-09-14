@@ -1255,6 +1255,7 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .hs__stack { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
 .hs__part { flex: none !important; max-width: none !important; min-width: 0 !important; }
 .hs__stack > .ctitle { padding-top: 0; }
+.hs__stack { overflow: visible; }
 .hs__part.fig, .hs__part.amenagement__fig { display: flex; flex-direction: column; }
 .hs__part.quote, .hs__part.resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
 .hs__item:where(.fig, .body, .table, .quote, .board, .versions__quote, .amenagement__text, .amenagement__figs, .amenagement__sketch, .resultat-quote, .resultat__video, .resultat__stats, .epilogue, .toiture__fig, .ctop, .ctitle) { width: 100% !important; max-width: 100% !important; min-width: 0 !important; flex: none !important; }

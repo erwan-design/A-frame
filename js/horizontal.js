@@ -20,41 +20,49 @@
   //   c : première colonne, n : nombre de colonnes, a : alignement vertical ("start", "center", "end")
   //   s : sélecteur (i : rang si plusieurs) — ou stack : éléments empilés dans la même zone, chacun
   //   avec sa largeur (n) et son décalage vers la droite (shift), en colonnes
-  //   h : hauteur du cadre photo, en part de la hauteur disponible
+  //   h : hauteur du cadre photo, en part de la hauteur disponible, ou "fill" (toute la hauteur,
+  //   légende comprise)
   const SPREADS = {
+    // texte en haut | vue drone sur toute la hauteur | vidéo calée en bas | citation calée en haut
     "chapitre-01": [
-      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".terrain__left-in > .body" }, { s: ".terrain__right > .badge" }] },
-      { c: 8, n: 6, a: "center", stack: [{ s: ".terrain__left-in > .fig", n: 5, h: 0.5 }, { s: ".quote", n: 5, shift: 1 }] },
-      { c: 15, n: 5, a: "start", s: ".terrain__right > .fig", h: 0.78 },
+      { c: 1, n: 5, a: "start", stack: [{ s: ".ctitle", n: 6 }, { s: ".terrain__left-in > .body" }, { s: ".terrain__right > .badge" }] },
+      { c: 7, n: 7, a: "start", s: ".terrain__left-in > .fig", h: "fill" },
+      { c: 15, n: 4, a: "end", s: ".terrain__right > .fig", h: 0.68 },
+      { c: 20, n: 4, a: "start", s: ".quote" },
     ],
+    // texte et tableau | terrassement sur toute la hauteur | implantation et plateforme en décalé
     "chapitre-02": [
-      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".fondations__left-in > .body" }, { s: ".fondations__left-in > .table" }] },
-      { c: 8, n: 5, a: "end", s: ".fondations__right > .fig", h: 0.8 },
-      { c: 14, n: 6, a: "start", stack: [{ s: ".plancher__left-in > .fig", n: 4, h: 0.42 }, { s: ".plancher__right > .fig", n: 5, shift: 1, h: 0.3 }] },
+      { c: 1, n: 5, a: "start", stack: [{ s: ".ctitle", n: 6 }, { s: ".fondations__left-in > .body" }, { s: ".fondations__left-in > .table" }] },
+      { c: 7, n: 5, a: "start", s: ".fondations__right > .fig", h: "fill" },
+      { c: 13, n: 6, a: "end", stack: [{ s: ".plancher__left-in > .fig", n: 4, h: 0.45 }, { s: ".plancher__right > .fig", n: 5, shift: 1, h: 0.33 }] },
     ],
+    // texte | croquis sur toute la hauteur | tableau, versions et citation | ossature et montage en décalé
     "chapitre-03": [
-      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".versions__list" }, { s: ".versions__quote" }] },
-      { c: 8, n: 11, a: "center", s: ".board" },
-      { c: 20, n: 6, a: "start", stack: [{ s: ".montage__left-in > .body" }, { s: ".montage__right > .table", n: 5 }] },
-      { c: 27, n: 6, a: "end", stack: [{ s: ".ossature__left-in > .fig", n: 6, h: 0.38 }, { s: ".ossature__right > .fig", n: 4, shift: 2, h: 0.34 }] },
+      { c: 1, n: 5, a: "start", stack: [{ s: ".ctitle", n: 6 }, { s: ".montage__left-in > .body" }] },
+      { c: 7, n: 8, a: "center", s: ".board" },
+      { c: 15, n: 4, a: "end", stack: [{ s: ".montage__right > .table" }, { s: ".versions__list" }, { s: ".versions__quote" }] },
+      { c: 20, n: 6, a: "start", stack: [{ s: ".ossature__left-in > .fig", n: 6, h: 0.47 }, { s: ".ossature__right > .fig", n: 4, shift: 2, h: 0.33 }] },
     ],
+    // texte | badge et suite du texte en colonne étroite | étanchéité sur toute la hauteur | vues en décalé
     "chapitre-04": [
-      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".isolation__col-in > .body", i: 0 }, { s: ".isolation__col-in > .body", i: 1 }] },
-      { c: 8, n: 2, a: "start", s: ".isolation__logo" },
-      { c: 10, n: 4, a: "start", s: ".toiture > .toiture__fig", i: 0, h: 0.7 },
-      { c: 14, n: 4, a: "center", s: ".toiture > .toiture__fig", i: 1, h: 0.7 },
-      { c: 18, n: 4, a: "end", s: ".toiture > .toiture__fig", i: 2, h: 0.7 },
+      { c: 1, n: 5, a: "start", stack: [{ s: ".ctitle", n: 6 }, { s: ".isolation__col-in > .body", i: 0 }] },
+      { c: 7, n: 3, a: "end", stack: [{ s: ".isolation__logo" }, { s: ".isolation__col-in > .body", i: 1 }] },
+      { c: 11, n: 5, a: "start", s: ".toiture > .toiture__fig", i: 0, h: "fill" },
+      { c: 17, n: 4, a: "end", stack: [{ s: ".toiture > .toiture__fig", i: 1, n: 3, h: 0.41 }, { s: ".toiture > .toiture__fig", i: 2, n: 3, shift: 1, h: 0.41 }] },
     ],
+    // texte | intérieur sur toute la hauteur | poêle calé en bas | croquis
     "chapitre-05": [
-      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".amenagement__text" }] },
-      { c: 8, n: 5, a: "center", stack: [{ s: ".amenagement__fig", i: 0, n: 4, h: 0.45 }, { s: ".amenagement__fig", i: 1, n: 4, shift: 1, h: 0.32 }] },
-      { c: 14, n: 5, a: "center", s: ".amenagement__sketch" },
+      { c: 1, n: 5, a: "start", stack: [{ s: ".ctitle", n: 6 }, { s: ".amenagement__text" }] },
+      { c: 7, n: 5, a: "start", s: ".amenagement__fig", i: 0, h: "fill" },
+      { c: 13, n: 4, a: "end", s: ".amenagement__fig", i: 1, h: 0.55 },
+      { c: 18, n: 5, a: "center", s: ".amenagement__sketch" },
     ],
+    // citation | chiffres calés en bas | vidéo sur toute la hauteur | épilogue calé en bas
     "chapitre-06": [
-      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".resultat-quote" }] },
-      { c: 8, n: 3, a: "center", stack: [{ s: ".resultat__stats--left" }, { s: ".resultat__stats--right" }] },
+      { c: 1, n: 5, a: "start", stack: [{ s: ".ctitle", n: 6 }, { s: ".resultat-quote" }] },
+      { c: 7, n: 3, a: "end", stack: [{ s: ".resultat__stats--left" }, { s: ".resultat__stats--right" }] },
       { c: 11, n: 5, a: "center", s: ".resultat__video" },
-      { c: 17, n: 6, a: "center", s: ".epilogue" },
+      { c: 17, n: 6, a: "end", s: ".epilogue" },
     ],
   };
 
@@ -95,25 +103,27 @@
     };
     const band = section.querySelector(":scope > .ctop");
     if (band) place(band, 1, 6, "1", "start");
-    (SPREADS[section.id] || []).forEach((entry) => {
+    // on repère tous les éléments du chapitre avant d'en déplacer un seul : les rangs (i) restent justes
+    const plan = (SPREADS[section.id] || []).map((entry) => ({
+      entry,
+      element: entry.stack ? null : take(section, entry),
+      parts: entry.stack ? entry.stack.map((part) => take(section, part)) : [],
+    }));
+    plan.forEach(({ entry, element, parts }) => {
       const { c, n, a = "start" } = entry;
       if (!entry.stack) {
-        const element = take(section, entry);
         if (element) place(element, c, n, "2", a);
         return;
       }
       const stack = document.createElement("div");
       stack.className = "hs__stack";
-      // on repère tous les éléments avant d'en déplacer un : les rangs (i) restent justes
-      const elements = entry.stack.map((part) => take(section, part));
       entry.stack.forEach((part, index) => {
-        const element = elements[index];
-        if (!element) return;
-        const width = part.n || n;
-        element.classList.add("hs__part");
-        element.style.width = columns(width);
-        if (part.shift) element.style.marginLeft = `calc(var(--u) * ${part.shift})`;
-        stack.append(element);
+        const item = parts[index];
+        if (!item) return;
+        item.classList.add("hs__part");
+        item.style.width = columns(part.n || n);
+        if (part.shift) item.style.marginLeft = `calc(var(--u) * ${part.shift})`;
+        stack.append(item);
       });
       if (stack.children.length) place(stack, c, n, "2", a);
     });
@@ -138,22 +148,28 @@
     // unité de colonne proportionnelle à la hauteur disponible : même composition sur tout écran
     const unit = Math.max(90, Math.min(150, (window.innerHeight - 160) / 7));
     track.style.setProperty("--u", `${unit.toFixed(1)}px`);
-    // titres : la plus grande taille (96 px au plus) qui tient sur la largeur de leur zone
-    panels.forEach((panel) => { panel.style.zoom = "1"; });
-    titles.forEach((title) => {
-      const width = title.closest(".hs__item").clientWidth;
-      let size = 96;
-      title.style.fontSize = `${size}px`;
-      while (title.scrollWidth > width && size > 48) {
-        size -= 2;
-        title.style.fontSize = `${size}px`;
-      }
-    });
+    // titres : une taille commune à tous les chapitres, la plus grande (96 px au plus) qui laisse
+    // tenir le plus long sur la largeur de sa zone
+    let size = 96;
+    const tooWide = () => titles.some((title) => title.scrollWidth > title.closest(".hs__part, .hs__item").clientWidth);
+    titles.forEach((title) => { title.style.fontSize = `${size}px`; });
+    while (tooWide() && size > 48) {
+      size -= 2;
+      titles.forEach((title) => { title.style.fontSize = `${size}px`; });
+    }
     // hauteur disponible sous le bandeau ; cadres photo à leur part de cette hauteur
     const chapter = track.querySelector(".chapter");
     const bandHeight = chapter.querySelector(":scope > .ctop")?.offsetHeight || 0;
     const area = chapter.clientHeight - 168 - bandHeight - 24;
-    figures.forEach(([media, share]) => { media.style.height = `${Math.round(area * share)}px`; });
+    figures.forEach(([media, share]) => {
+      if (share !== "fill") {
+        media.style.height = `${Math.round(area * share)}px`;
+        return;
+      }
+      const figure = media.closest("figure, .amenagement__fig") || media.parentElement;
+      const caption = figure.getBoundingClientRect().height - media.getBoundingClientRect().height;
+      media.style.height = `${Math.round(area - caption)}px`;
+    });
     // un élément ou une pile plus haut que la zone est réduit pour y tenir
     panels.forEach((panel) => {
       if (panel.style.gridRow === "1") return;
