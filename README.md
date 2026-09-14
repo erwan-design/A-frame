@@ -66,15 +66,16 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 ## Publication
 
-```bash
-python3 tools/dist.py
-```
+Le site est déployé par **Cloudflare Workers Builds** (Worker `a-frame`), relié au dépôt
+GitHub `erwan-design/A-frame` : **chaque push sur `main` redéploie le site** avec
+`npx wrangler deploy`, sans commande de build.
 
-Produit `dist/` (et `dist.zip`) : `index.html`, `css/`, `js/`, `robots.txt`, `sitemap.xml` et
-les seuls fichiers de `assets/` cités par la page, soit environ 46 Mo. C'est ce dossier qu'on met
-en ligne, à la racine de https://www.aframe.erwanguillou.me/ (adresse inscrite dans les
-métadonnées de partage, `robots.txt` et `sitemap.xml`). Relancer le script après chaque retouche
-de `index.html`, de la CSS ou du JS.
+- `wrangler.toml` publie le dépôt tel quel en fichiers statiques (`[assets] directory = "."`).
+- `.assetsignore` exclut ce qui n'est pas le site : `.git`, `tools/`, `spec/`, README, config.
+- Aucun fichier ne doit dépasser 25 Mo (limite Cloudflare) ; la plus grosse vidéo fait 12,6 Mo.
+
+`python3 tools/dist.py` reste utile pour un envoi manuel : il produit `dist/` et `dist.zip`
+avec seulement les fichiers cités par la page (~46 Mo).
 
 ## Polices
 
