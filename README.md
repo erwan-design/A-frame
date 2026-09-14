@@ -121,7 +121,7 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 ## Prototype « défilement horizontal » (branche `prototype-horizontal`)
 
-Sur les écrans d'au moins 1440 × 900 (`js/horizontal.js`, fin de `css/style.css`) :
+Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`, fin de `css/style.css`) :
 
 - héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
   la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
@@ -133,8 +133,9 @@ Sur les écrans d'au moins 1440 × 900 (`js/horizontal.js`, fin de `css/style.cs
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
 - le repère, les citations mot à mot et le zoom de la carte suivent l'axe horizontal ;
-- en dessous de 1440 × 900 : lecture verticale habituelle (les textes, à leur taille d'origine, ne
-  tiendraient pas dans une page plus petite).
+- sous 900 px de haut, la page rétrécit mais pas les textes : un bloc qui en chevaucherait un autre
+  est descendu juste en dessous, une image poussée sous le bas est réduite ; en dessous de
+  1280 × 780 : lecture verticale habituelle.
 
 Vérification : `python3 tools/horizontal_check.py 1440 900`.
 

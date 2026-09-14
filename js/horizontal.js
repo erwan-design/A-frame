@@ -3,15 +3,15 @@
 // mise à l'échelle de la hauteur de l'écran. La molette,
 // le trackpad (dans les deux sens) et les flèches ← → font avancer ; après le chapitre 06, la
 // page reprend verticalement (journal, pied de page).
-// Réservé aux écrans d'au moins 1440 × 900 : les textes y gardent exactement les tailles du reste du
-// site ; en dessous, la page serait trop petite pour eux sans chevauchement : lecture verticale.
+// Réservé aux écrans d'au moins 1280 × 780 (MacBook 13" compris) : les textes gardent partout les
+// tailles du reste du site ; sous 900 px de haut, les blocs sont resserrés pour ne pas se chevaucher.
 //
 // window.__hs : { open(élément) → vrai si l'élément appartient à un chapitre, state() }
 
 (() => {
   const root = document.documentElement;
   const sections = [...document.querySelectorAll("section.chapter")];
-  if (!sections.length || !matchMedia("(min-width: 1440px) and (min-height: 900px)").matches) return;
+  if (!sections.length || !matchMedia("(min-width: 1280px) and (min-height: 780px)").matches) return;
 
   // Mise en page de chaque chapitre, reprise du fichier Figma « Tests » (page Test 04) : une page de
   // 900 px de haut où chaque bloc a sa position ; la page est mise à l'échelle de la hauteur de
@@ -115,6 +115,7 @@
         box.append(element);
       }
       box.classList.add("hs__abs");
+      box.dataset.y = item.y;
       Object.assign(box.style, { left: `${item.x}px`, top: `${item.y}px` });
       if (item.w) box.style.width = `${item.w}px`;
       if (item.h) box.style.height = `${item.h}px`;
@@ -145,6 +146,52 @@
   let travel = 0; // distance horizontale à parcourir
   let wrapTop = 0;
 
+  // Écrans moins hauts que 900 px : la page rétrécit mais les textes gardent leur taille, un bloc de
+  // texte peut donc déborder sur celui du dessous. Chaque bloc qui en chevaucherait un autre (ou s'en
+  // approcherait à moins de GAP) est descendu juste en dessous. Sur 900 px et plus, rien ne bouge.
+  // Mesures en unités de la page (offsetTop / offsetHeight), indépendantes des animations.
+  const GAP = 16;
+  const BOTTOM = 880; // limite basse de la page (sur 900)
+  const settle = () => {
+    sections.forEach((section) => {
+      const items = [...section.querySelectorAll(":scope > .hs__abs")];
+      items.forEach((el) => {
+        if (el.dataset.y) el.style.top = `${el.dataset.y}px`;
+        el.style.scale = "";
+      });
+      const boxes = items
+        .map((el) => ({ el, left: el.offsetLeft, right: el.offsetLeft + el.offsetWidth, top: el.offsetTop, height: el.offsetHeight }))
+        .sort((a, b) => a.top - b.top);
+      const done = [];
+      boxes.forEach((box) => {
+        let top = box.top;
+        let moved = true;
+        while (moved) {
+          moved = false;
+          for (const other of done) {
+            const sideBySide = Math.min(box.right, other.right) - Math.max(box.left, other.left) > 2;
+            if (sideBySide && top < other.bottom + GAP && top + box.height > other.top && other.bottom + GAP > top) {
+              if (top < other.bottom + GAP && box.top >= other.top) {
+                top = other.bottom + GAP;
+                moved = true;
+              }
+            }
+          }
+        }
+        if (top !== box.top) box.el.style.top = `${top}px`;
+        // une image poussée sous le bas de la page est réduite juste assez pour y tenir
+        let height = box.height;
+        if (top + height > BOTTOM && !box.el.classList.contains("hs__slot")) {
+          const scale = Math.max(0.5, (BOTTOM - top) / height);
+          box.el.style.transformOrigin = "top left";
+          box.el.style.scale = scale.toFixed(3);
+          height *= scale;
+        }
+        done.push({ left: box.left, right: box.right, top, bottom: top + height });
+      });
+    });
+  };
+
   const layout = () => {
     // chaque page de 900 px est mise à l'échelle de la hauteur de l'écran
     const s = window.innerHeight / 900;
@@ -154,6 +201,7 @@
     const text = (1 / s).toFixed(4);
     track.style.setProperty("--tz", text);
     track.style.setProperty("--dz", text);
+    settle();
     travel = Math.max(0, track.scrollWidth - window.innerWidth);
     wrap.style.height = `${travel + window.innerHeight}px`;
     wrapTop = wrap.getBoundingClientRect().top + window.scrollY;
