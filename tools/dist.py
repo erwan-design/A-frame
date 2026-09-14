@@ -17,7 +17,7 @@ html = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
 css = open(os.path.join(ROOT, "css", "style.css"), encoding="utf-8").read()
 
 files = {"index.html", "css/style.css", "js/main.js", "js/vendor/LICENSE-lenis.txt", "robots.txt", "sitemap.xml"}
-for attr in re.findall(r'(?:src|href|content)="([^"]+)"', html):
+for attr in re.findall(r'(?:src|href|content|data-strokes)="([^"]+)"', html):
     attr = attr.replace("https://aframe.erwanguillou.me/", "")
     if attr.startswith("assets/"):
         files.add(attr)

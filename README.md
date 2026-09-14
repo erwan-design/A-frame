@@ -24,11 +24,13 @@ js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
 js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
 js/ambience.js    ambiance sonore de forêt (Web Audio)
+js/sketch.js      croquis de l'aménagement qui se dessine au survol
 js/wind.js        vent dans les arbres (WebGL) sur la photo du héros
 assets/img        photos, variantes srcset identiques à celles servies par Figma (AVIF/WebP)
 assets/svg        pictogrammes, couleurs intégrées
 assets/fonts      Chillon, Mortega, GT Kotoheim Mono, Poppins
 assets/video      les 3 vidéos du récit
+assets/data       traits du croquis (relevés sur l'image, voir js/sketch.js)
 tools/            extraction depuis le site publié et outils de comparaison
 ```
 
@@ -101,6 +103,15 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   Avec « réduire les animations », citations et zoom de la carte sont désactivés ; le repère,
   le plein écran et le son restent. Positions et hauteurs de page inchangées (`tools/story_check.py`
   vérifie le comportement).
+- **Croquis de l'aménagement** (chapitre 05, `js/sketch.js`) : il apparaît en filigrane et se
+  dessine trait par trait au survol (lignes de construction, structure, hachures), puis l'image
+  d'origine reprend sa place ; retour au filigrane 1,4 s après avoir quitté le croquis. Sur écran
+  tactile, il se dessine une fois en arrivant à l'écran. Les 629 traits de
+  `assets/data/sketch-interieur.json` ont été relevés sur l'image (squelette + transformée de Hough).
+- **Badge « Frame Oise »** (chapitre 04, fin de `js/motion.js`) : objet en relief (épaisseur,
+  reflet), qui flotte et se tourne vers le curseur ; il n'a plus d'apparition au défilement.
+  Position identique à la maquette.
+- **Photos agrandissables** : curseur main et icône « agrandir » au survol.
 - Tout le reste est désactivé si le système demande de réduire les animations ; sans JavaScript, le
   contenu reste visible (les vidéos ne se lancent alors pas).
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.

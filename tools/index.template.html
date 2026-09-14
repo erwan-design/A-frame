@@ -33,12 +33,13 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=4289a74f80">
+  <link rel="stylesheet" href="css/style.css?v=2d0f550470">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
   <script src="js/main.js?v=57ccd7883c" defer></script>
-  <script src="js/motion.js?v=d356759d48" defer></script>
+  <script src="js/motion.js?v=0b9f9cc78c" defer></script>
   <script src="js/ambience.js?v=0f744d4a2b" defer></script>
   <script src="js/story.js?v=542d8f3bbe" defer></script>
+  <script src="js/sketch.js?v=47df7e1856" defer></script>
   <script src="js/wind.js?v=c90c336ad8" defer></script>
 </head>
 <body>
@@ -347,7 +348,7 @@
       <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{96}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
     <div class="isolation">
-      <div class="isolation__logo"><div class="isolation__badge" data-reveal="media"><img decoding="async" loading="lazy" {{img:badge}} sizes="auto, 138px" alt=""></div></div>
+      <div class="isolation__logo"><div class="isolation__badge"><img decoding="async" loading="lazy" {{img:badge}} sizes="auto, 138px" alt=""></div></div>
       <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p data-reveal>{{97}}</p><p data-reveal>{{98}}</p></div></div></div>
       <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p data-reveal>{{99}}</p><p data-reveal>{{100}}</p></div></div></div>
     </div>
@@ -397,7 +398,7 @@
           </figure>
         </div>
       </div></div>
-      <div class="amenagement__sketch" data-reveal="media"><div><img decoding="async" loading="lazy" {{img:skinterieur}} sizes="auto, 100vw" alt=""></div></div>
+      <div class="amenagement__sketch" data-reveal="media" data-strokes="assets/data/sketch-interieur.json"><div><img decoding="async" loading="lazy" {{img:skinterieur}} sizes="auto, 100vw" alt=""></div></div>
     </div>
   </section>
 

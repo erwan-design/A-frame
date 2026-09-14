@@ -273,4 +273,87 @@
       setTimeout(() => card.classList.remove("is-tilting-out"), 500);
     });
   });
+
+  // ---------------------------------------------------------------------------
+  // Badge « Frame Oise » (chapitre 04) : un objet en relief. Il flotte doucement, et quand la
+  // souris passe dans la section, il se tourne vers elle ; un reflet glisse sur sa surface.
+  // ---------------------------------------------------------------------------
+  const badge = document.querySelector(".isolation__badge");
+  if (badge) {
+    const stage = document.createElement("div");
+    stage.className = "badge3d";
+    badge.before(stage);
+    // épaisseur : copies assombries empilées derrière la face avant
+    for (let depth = 7; depth >= 1; depth--) {
+      const edge = badge.cloneNode(true);
+      edge.classList.add("badge3d__edge");
+      edge.setAttribute("aria-hidden", "true");
+      edge.style.transform = `translateZ(${(-depth * 1.1).toFixed(1)}px)`;
+      stage.append(edge);
+    }
+    stage.append(badge);
+    const glare = document.createElement("span");
+    glare.className = "badge3d__glare";
+    glare.setAttribute("aria-hidden", "true");
+    badge.append(glare);
+    const photo = badge.querySelector("img");
+    const setMask = () => {
+      const url = `url("${photo.currentSrc || photo.src}")`;
+      glare.style.webkitMaskImage = url;
+      glare.style.maskImage = url;
+    };
+    if (photo.complete) setMask();
+    else photo.addEventListener("load", setMask, { once: true });
+
+    const zone = badge.closest(".isolation") || stage.parentElement;
+    const state = { rx: 0, ry: 0, lift: 0 };
+    let pointer = null;
+    let lifted = false;
+    let visible = false;
+    let running = false;
+    const startedAt = performance.now();
+
+    zone.addEventListener("pointermove", (event) => {
+      if (event.pointerType === "mouse" && finePointer.matches) pointer = [event.clientX, event.clientY];
+    });
+    zone.addEventListener("pointerleave", () => { pointer = null; });
+    stage.addEventListener("pointerenter", () => { lifted = true; });
+    stage.addEventListener("pointerleave", () => { lifted = false; });
+
+    const tick = (now) => {
+      if (!visible) {
+        running = false;
+        return;
+      }
+      const t = (now - startedAt) / 1000;
+      let targetX;
+      let targetY;
+      if (pointer) {
+        const box = stage.getBoundingClientRect();
+        const dx = Math.max(-1, Math.min(1, (pointer[0] - (box.left + box.width / 2)) / 360));
+        const dy = Math.max(-1, Math.min(1, (pointer[1] - (box.top + box.height / 2)) / 360));
+        targetY = dx * 28;
+        targetX = -dy * 20;
+      } else {
+        targetY = Math.sin(t * 0.7) * 16;
+        targetX = Math.sin(t * 0.53 + 1) * 7;
+      }
+      state.rx = lerp(state.rx, targetX, 0.07);
+      state.ry = lerp(state.ry, targetY, 0.07);
+      state.lift = lerp(state.lift, lifted ? 1 : 0, 0.1);
+      const float = Math.sin(t * 1.1) * 3 * (1 - state.lift);
+      stage.style.transform = `perspective(700px) translate3d(0, ${float.toFixed(2)}px, ${(state.lift * 18).toFixed(2)}px) rotateX(${state.rx.toFixed(2)}deg) rotateY(${state.ry.toFixed(2)}deg)`;
+      glare.style.setProperty("--glare-x", `${(50 + state.ry * 2.4).toFixed(1)}%`);
+      glare.style.setProperty("--glare-y", `${(40 - state.rx * 2.8).toFixed(1)}%`);
+      glare.style.opacity = (0.55 + state.lift * 0.35).toFixed(3);
+      requestAnimationFrame(tick);
+    };
+    new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      if (visible && !running) {
+        running = true;
+        requestAnimationFrame(tick);
+      }
+    }, { rootMargin: "100px 0px" }).observe(stage);
+  }
 })();
