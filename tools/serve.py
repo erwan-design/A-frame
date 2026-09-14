@@ -22,6 +22,9 @@ class DevHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         if self.path.startswith("/assets/"):
             self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+        else:
+            # pages, CSS et JS toujours revalidés : sinon la preview garde une ancienne version
+            self.send_header("Cache-Control", "no-cache")
         self.send_header("Accept-Ranges", "bytes")
         super().end_headers()
 

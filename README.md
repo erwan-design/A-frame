@@ -31,6 +31,10 @@ tools/            extraction depuis le site publié et outils de comparaison
 
 `index.html` est le fichier à éditer.
 
+Après toute modification de `css/style.css` ou `js/main.js`, lancer `python3 tools/version.py` :
+il met à jour le numéro de version (`?v=…`) dans `index.html`. Sans lui, un navigateur peut
+garder l'ancienne feuille de style en cache (c'est ce qui masquait le parallax).
+
 `tools/fill.py` a servi à la génération initiale : il reconstruit `index.html` depuis
 `tools/index.template.html` avec les textes extraits du site publié. **Le relancer écrase
 toute modification faite directement dans `index.html`.**
