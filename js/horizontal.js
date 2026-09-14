@@ -1,6 +1,6 @@
 // Prototype « défilement horizontal » : arrivé aux chapitres, l'écran se fige et la lecture part
-// vers la droite. Chaque chapitre devient une double page qui se déroule en largeur : textes,
-// photos et citations en quinconce sur une grille à deux étages, comme la version verticale. La molette,
+// vers la droite. Chaque chapitre devient une double page qui se déroule en largeur : titre et
+// texte en colonne, photos par deux avec un léger décalage, comme la version verticale. La molette,
 // le trackpad (dans les deux sens) et les flèches ← → font avancer ; après le chapitre 06, la
 // page reprend verticalement (journal, pied de page).
 // Réservé aux écrans d'au moins 1440 × 720 (mise en page ordinateur : aucun panneau réduit sous
@@ -14,70 +14,49 @@
   if (!sections.length || !matchMedia("(min-width: 1440px) and (min-height: 720px)").matches) return;
 
   // Mise en page de chaque chapitre : une double page qui se déroule en largeur, sur une grille de
-  // colonnes (unité --u) et deux étages. Comme dans la version verticale, les éléments sont en
-  // quinconce : calés en haut, en bas ou au centre, textes et photos alternés.
-  //   s : sélecteur (i : rang si plusieurs), c : première colonne, n : nombre de colonnes,
-  //   r : "band" (bandeau), "top" (étage haut), "bottom" (étage bas), "full" (les deux),
-  //   a : alignement vertical dans la zone ("start", "center", "end")
+  // colonnes (unité --u). Comme dans la version verticale : titre, texte et données forment une
+  // colonne continue ; les photos vont par deux, l'une sous l'autre avec un léger décalage, ou en
+  // cascade quand elles sont en portrait.
+  //   c : première colonne, n : nombre de colonnes, a : alignement vertical ("start", "center", "end")
+  //   s : sélecteur (i : rang si plusieurs) — ou stack : éléments empilés dans la même zone, chacun
+  //   avec sa largeur (n) et son décalage vers la droite (shift), en colonnes
+  //   h : hauteur du cadre photo, en part de la hauteur disponible
   const SPREADS = {
     "chapitre-01": [
-      { s: ".ctop", c: 1, n: 7, r: "band" },
-      { s: ".ctitle", c: 1, n: 7, r: "top", a: "start" },
-      { s: ".terrain__left-in > .body", c: 1, n: 6, r: "bottom", a: "start" },
-      { s: ".terrain__right > .badge", c: 1, n: 4, r: "bottom", a: "end" },
-      { s: ".terrain__left-in > .fig", c: 9, n: 6, r: "full", a: "end" },
-      { s: ".terrain__right > .fig", c: 16, n: 5, r: "full", a: "start" },
-      { s: ".quote", c: 22, n: 7, r: "full", a: "center" },
+      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".terrain__left-in > .body" }, { s: ".terrain__right > .badge" }] },
+      { c: 8, n: 6, a: "center", stack: [{ s: ".terrain__left-in > .fig", n: 5, h: 0.5 }, { s: ".quote", n: 5, shift: 1 }] },
+      { c: 15, n: 5, a: "start", s: ".terrain__right > .fig", h: 0.78 },
     ],
     "chapitre-02": [
-      { s: ".ctop", c: 1, n: 7, r: "band" },
-      { s: ".ctitle", c: 1, n: 7, r: "top", a: "start" },
-      { s: ".fondations__left-in > .body", c: 1, n: 6, r: "bottom", a: "start" },
-      { s: ".fondations__left-in > .table", c: 8, n: 5, r: "bottom", a: "end" },
-      { s: ".fondations__right > .fig", c: 14, n: 5, r: "full", a: "start" },
-      { s: ".plancher__left-in > .fig", c: 20, n: 5, r: "full", a: "end" },
-      { s: ".plancher__right > .fig", c: 26, n: 7, r: "full", a: "center" },
+      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".fondations__left-in > .body" }, { s: ".fondations__left-in > .table" }] },
+      { c: 8, n: 5, a: "end", s: ".fondations__right > .fig", h: 0.8 },
+      { c: 14, n: 6, a: "start", stack: [{ s: ".plancher__left-in > .fig", n: 4, h: 0.42 }, { s: ".plancher__right > .fig", n: 5, shift: 1, h: 0.3 }] },
     ],
     "chapitre-03": [
-      { s: ".ctop", c: 1, n: 7, r: "band" },
-      { s: ".ctitle", c: 1, n: 7, r: "top", a: "start" },
-      { s: ".versions__list", c: 1, n: 3, r: "bottom", a: "start" },
-      { s: ".versions__quote", c: 1, n: 7, r: "bottom", a: "end" },
-      { s: ".board", c: 9, n: 12, r: "full", a: "center" },
-      { s: ".montage__left-in > .body", c: 22, n: 6, r: "top", a: "start" },
-      { s: ".montage__right > .table", c: 22, n: 5, r: "bottom", a: "end" },
-      { s: ".montage__right > .plus", c: 27, n: 1, r: "bottom", a: "end" },
-      { s: ".ossature__left-in > .fig", c: 29, n: 7, r: "full", a: "end" },
-      { s: ".ossature__right > .fig", c: 37, n: 5, r: "full", a: "start" },
+      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".versions__list" }, { s: ".versions__quote" }] },
+      { c: 8, n: 11, a: "center", s: ".board" },
+      { c: 20, n: 6, a: "start", stack: [{ s: ".montage__left-in > .body" }, { s: ".montage__right > .table", n: 5 }] },
+      { c: 27, n: 6, a: "end", stack: [{ s: ".ossature__left-in > .fig", n: 6, h: 0.38 }, { s: ".ossature__right > .fig", n: 4, shift: 2, h: 0.34 }] },
     ],
     "chapitre-04": [
-      { s: ".ctop", c: 1, n: 7, r: "band" },
-      { s: ".ctitle", c: 1, n: 7, r: "top", a: "start" },
-      { s: ".isolation__col-in > .body", i: 0, c: 1, n: 6, r: "bottom", a: "start" },
-      { s: ".isolation__logo", c: 8, n: 3, r: "top", a: "start" },
-      { s: ".isolation__col-in > .body", i: 1, c: 8, n: 5, r: "bottom", a: "end" },
-      { s: ".toiture > .toiture__fig", i: 0, c: 14, n: 4, r: "full", a: "start" },
-      { s: ".toiture > .toiture__fig", i: 1, c: 19, n: 4, r: "full", a: "end" },
-      { s: ".toiture > .toiture__fig", i: 2, c: 24, n: 4, r: "full", a: "start" },
+      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".isolation__col-in > .body", i: 0 }, { s: ".isolation__col-in > .body", i: 1 }] },
+      { c: 8, n: 2, a: "start", s: ".isolation__logo" },
+      { c: 10, n: 4, a: "start", s: ".toiture > .toiture__fig", i: 0, h: 0.7 },
+      { c: 14, n: 4, a: "center", s: ".toiture > .toiture__fig", i: 1, h: 0.7 },
+      { c: 18, n: 4, a: "end", s: ".toiture > .toiture__fig", i: 2, h: 0.7 },
     ],
     "chapitre-05": [
-      { s: ".ctop", c: 1, n: 7, r: "band" },
-      { s: ".ctitle", c: 1, n: 7, r: "top", a: "start" },
-      { s: ".amenagement__text", c: 1, n: 6, r: "bottom", a: "start" },
-      { s: ".amenagement__figs", c: 9, n: 6, r: "full", a: "end" },
-      { s: ".amenagement__sketch", c: 16, n: 5, r: "full", a: "center" },
+      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".amenagement__text" }] },
+      { c: 8, n: 5, a: "center", stack: [{ s: ".amenagement__fig", i: 0, n: 4, h: 0.45 }, { s: ".amenagement__fig", i: 1, n: 4, shift: 1, h: 0.32 }] },
+      { c: 14, n: 5, a: "center", s: ".amenagement__sketch" },
     ],
     "chapitre-06": [
-      { s: ".ctop", c: 1, n: 7, r: "band" },
-      { s: ".ctitle", c: 1, n: 7, r: "top", a: "start" },
-      { s: ".resultat-quote", c: 1, n: 7, r: "bottom", a: "start" },
-      { s: ".resultat__stats--left", c: 9, n: 3, r: "full", a: "end" },
-      { s: ".resultat__video", c: 12, n: 5, r: "full", a: "center" },
-      { s: ".resultat__stats--right", c: 17, n: 3, r: "full", a: "start" },
-      { s: ".epilogue", c: 21, n: 7, r: "full", a: "center" },
+      { c: 1, n: 6, a: "start", stack: [{ s: ".ctitle" }, { s: ".resultat-quote" }] },
+      { c: 8, n: 3, a: "center", stack: [{ s: ".resultat__stats--left" }, { s: ".resultat__stats--right" }] },
+      { c: 11, n: 5, a: "center", s: ".resultat__video" },
+      { c: 17, n: 6, a: "center", s: ".epilogue" },
     ],
   };
-  const ROWS = { band: "1", top: "2", bottom: "3", full: "2 / 4" };
 
   // structure : .hs (hauteur = longueur du trajet) > .hs__stage (collant, plein écran) > .hs__track
   const wrap = document.createElement("div");
@@ -93,27 +72,56 @@
   const hasContent = (element) =>
     (element.textContent || "").trim() !== "" || element.querySelector("img, video, svg, canvas, picture");
 
+  const columns = (n) => `calc(var(--u) * ${n} - 24px)`;
+  const figures = []; // [cadre photo, part de la hauteur disponible]
+  const take = (section, { s, i = 0, h }) => {
+    const element = section.querySelectorAll(s)[i];
+    if (element && h) {
+      const media = element.querySelector(".fig__media");
+      if (media) figures.push([media, h]);
+    }
+    return element;
+  };
+
   sections.forEach((section) => {
     const original = [...section.children];
     const placed = [];
     let lastColumn = 1;
-    (SPREADS[section.id] || []).forEach(({ s, i = 0, c, n, r, a = "start" }) => {
-      const element = section.querySelectorAll(s)[i];
-      if (!element) return;
+    const place = (element, c, n, row, align) => {
       element.classList.add("hs__item");
-      Object.assign(element.style, { gridColumn: `${c} / span ${n}`, gridRow: ROWS[r], alignSelf: r === "band" ? "start" : a });
+      Object.assign(element.style, { gridColumn: `${c} / span ${n}`, gridRow: row, alignSelf: align });
       placed.push(element);
       lastColumn = Math.max(lastColumn, c + n);
+    };
+    const band = section.querySelector(":scope > .ctop");
+    if (band) place(band, 1, 6, "1", "start");
+    (SPREADS[section.id] || []).forEach((entry) => {
+      const { c, n, a = "start" } = entry;
+      if (!entry.stack) {
+        const element = take(section, entry);
+        if (element) place(element, c, n, "2", a);
+        return;
+      }
+      const stack = document.createElement("div");
+      stack.className = "hs__stack";
+      // on repère tous les éléments avant d'en déplacer un : les rangs (i) restent justes
+      const elements = entry.stack.map((part) => take(section, part));
+      entry.stack.forEach((part, index) => {
+        const element = elements[index];
+        if (!element) return;
+        const width = part.n || n;
+        element.classList.add("hs__part");
+        element.style.width = columns(width);
+        if (part.shift) element.style.marginLeft = `calc(var(--u) * ${part.shift})`;
+        stack.append(element);
+      });
+      if (stack.children.length) place(stack, c, n, "2", a);
     });
     // filet de sécurité : tout contenu non prévu garde sa place, à la suite du chapitre
     original.forEach((block) => {
       if (block.parentNode !== section || placed.includes(block) || !hasContent(block)) return;
       const leftovers = [...block.querySelectorAll("*")].some((el) => !placed.some((p) => p.contains(el) || el.contains(p)) && el.children.length === 0 && hasContent(el));
-      if (!leftovers) return;
-      block.classList.add("hs__item");
-      Object.assign(block.style, { gridColumn: `${lastColumn + 1} / span 12`, gridRow: ROWS.full, alignSelf: "center" });
-      placed.push(block);
-      lastColumn += 13;
+      if (leftovers) place(block, lastColumn + 1, 12, "2", "center");
     });
     section.append(...placed);
     original.forEach((block) => { if (!placed.includes(block) && block.parentNode === section) block.remove(); });
@@ -122,7 +130,7 @@
   root.classList.add("is-horizontal");
 
   const panels = [...track.querySelectorAll(".hs__item")];
-  const titles = [...track.querySelectorAll(".chapter > .ctitle h2")];
+  const titles = [...track.querySelectorAll(".chapter .ctitle h2")];
   let travel = 0; // distance horizontale à parcourir
   let wrapTop = 0;
 
@@ -141,15 +149,16 @@
         title.style.fontSize = `${size}px`;
       }
     });
-    // un élément plus haut que sa zone (un étage ou les deux) est réduit pour y tenir
-    const band = track.querySelector(".chapter > .ctop");
-    const area = track.querySelector(".chapter").clientHeight - 168 - (band ? band.offsetHeight + 24 : 0);
+    // hauteur disponible sous le bandeau ; cadres photo à leur part de cette hauteur
+    const chapter = track.querySelector(".chapter");
+    const bandHeight = chapter.querySelector(":scope > .ctop")?.offsetHeight || 0;
+    const area = chapter.clientHeight - 168 - bandHeight - 24;
+    figures.forEach(([media, share]) => { media.style.height = `${Math.round(area * share)}px`; });
+    // un élément ou une pile plus haut que la zone est réduit pour y tenir
     panels.forEach((panel) => {
-      const row = panel.style.gridRow;
-      if (row === "1") return;
-      const limit = row === "2 / 4" ? area : (area - 24) / 2;
+      if (panel.style.gridRow === "1") return;
       const height = panel.getBoundingClientRect().height;
-      panel.style.zoom = height > limit ? (limit / height).toFixed(4) : "1";
+      panel.style.zoom = height > area ? (area / height).toFixed(4) : "1";
     });
     travel = Math.max(0, track.scrollWidth - window.innerWidth);
     wrap.style.height = `${travel + window.innerHeight}px`;

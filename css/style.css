@@ -1239,7 +1239,7 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .hs__track { display: flex; align-items: center; width: max-content; height: 100%; will-change: transform; }
 .is-horizontal .hs__track > .chapter {
   display: grid;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-auto-columns: calc(var(--u, 100px) - 24px);
   column-gap: 24px;
   row-gap: 24px;
@@ -1252,12 +1252,20 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 }
 .is-horizontal .hs__track > .chapter:first-child { border-left: 0; }
 .hs__item { margin: 0 !important; min-width: 0; }
+.hs__stack { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
+.hs__part { flex: none !important; max-width: none !important; min-width: 0 !important; }
+.hs__stack > .ctitle { padding-top: 0; }
+.hs__part.fig, .hs__part.amenagement__fig { display: flex; flex-direction: column; }
+.hs__part.quote, .hs__part.resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
 .hs__item:where(.fig, .body, .table, .quote, .board, .versions__quote, .amenagement__text, .amenagement__figs, .amenagement__sketch, .resultat-quote, .resultat__video, .resultat__stats, .epilogue, .toiture__fig, .ctop, .ctitle) { width: 100% !important; max-width: 100% !important; min-width: 0 !important; flex: none !important; }
-.hs__item.quote p, .hs__item.resultat-quote blockquote, .hs__item.epilogue .epilogue__text { width: 100%; max-width: 100%; }
+.hs__item.quote p, .hs__item.resultat-quote blockquote, .hs__item.epilogue .epilogue__text, .hs__part.quote p, .hs__part.resultat-quote blockquote { width: 100%; max-width: 100%; }
+.hs__part.resultat-quote blockquote, .hs__part.resultat-quote p { text-align: left; }
 .hs__item.quote, .hs__item.resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
 .hs__item.resultat-quote blockquote, .hs__item.resultat-quote p { text-align: left; }
 .hs__item.isolation__logo { padding: 0; }
 .hs__item.badge, .hs__item.versions__list, .hs__item.plus { justify-self: start; }
-.is-horizontal .chapter > .ctitle { padding-top: 0; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
-.is-horizontal .chapter > .ctitle h2 { font-size: 96px; white-space: nowrap; text-align: left; }
+.hs__part.badge, .hs__part.versions__list { width: auto !important; }
+.hs__part.isolation__logo, .hs__item.isolation__logo { padding: 0; }
+.is-horizontal .chapter .ctitle { padding-top: 0; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
+.is-horizontal .chapter .ctitle h2 { font-size: 96px; white-space: nowrap; text-align: left; }
 

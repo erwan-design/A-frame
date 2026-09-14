@@ -126,11 +126,11 @@ Sur les écrans d'au moins 1440 × 720 (`js/horizontal.js`, fin de `css/style.cs
 - héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
   la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
 - chaque chapitre devient une double page qui se déroule en largeur (`SPREADS` dans
-  `js/horizontal.js`) : grille de colonnes (unité proportionnelle à la hauteur d'écran) et deux
-  étages ; bandeau et titre en haut à gauche, texte dessous, puis photos, citations et données en
-  quinconce (calées en haut, en bas ou au centre) comme dans la version verticale ; un élément trop
-  haut pour sa zone est réduit (`zoom`), un titre trop long pour sa zone aussi ; tout contenu non
-  prévu est ajouté en fin de chapitre ;
+  `js/horizontal.js`), sur une grille de colonnes proportionnelle à la hauteur d'écran : titre,
+  texte et données forment une colonne continue ; les photos vont par deux, l'une sous l'autre avec
+  un léger décalage, ou en cascade à hauteur égale quand elles sont en portrait ; la hauteur des
+  cadres photo est une part de la hauteur disponible ; un élément trop haut est réduit (`zoom`),
+  un titre trop long aussi ; tout contenu non prévu est ajouté en fin de chapitre ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
