@@ -7,7 +7,11 @@ function renderClock(el) {
   const local = new Date(utc + TIMEZONE_OFFSET * 3600000);
   const hours = String(local.getHours()).padStart(2, "0");
   const minutes = String(local.getMinutes()).padStart(2, "0");
-  el.textContent = `${hours}:${minutes} UTC${TIMEZONE_OFFSET >= 0 ? "+" : ""}${TIMEZONE_OFFSET}`;
+  const label = `${hours}:${minutes} UTC${TIMEZONE_OFFSET >= 0 ? "+" : ""}${TIMEZONE_OFFSET}`;
+  if (el.dataset.label === label) return;
+  el.dataset.label = label;
+  // deux-points dans un span : ils battent la seconde (voir css, .clock__colon)
+  el.innerHTML = `${hours}<span class="clock__colon">:</span>${label.slice(3)}`;
 }
 
 // « Scroll to » Figma : le runtime délègue au défilement fluide natif du navigateur.

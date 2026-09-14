@@ -12,7 +12,7 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FILES = ("css/style.css", "js/main.js")
+FILES = ("css/style.css", "js/main.js", "js/motion.js", "js/wind.js")
 TARGETS = ("index.html", "tools/index.template.html")
 
 

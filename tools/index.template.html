@@ -25,8 +25,18 @@
   <link rel="preload" href="assets/fonts/chillon-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/gt-kotoheim-mono-medium-vf.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/poppins-light-english.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=0d6cb0dd2e">
-  <script src="js/main.js?v=01551fd51e" defer></script>
+  <script>
+    // Animations : classe posée avant le premier rendu. Si le script principal ne démarre pas
+    // (erreur, blocage), tout le contenu redevient visible au bout de 3 s.
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("motion");
+      setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css?v=00ed86547f">
+  <script src="js/main.js?v=79bea95bc6" defer></script>
+  <script src="js/motion.js?v=d116554871" defer></script>
+  <script src="js/wind.js?v=c90c336ad8" defer></script>
 </head>
 <body>
 <div class="page">
@@ -37,7 +47,7 @@
       <div class="hero__fade"></div>
     </div>
 
-    <nav class="nav">
+    <nav class="nav" data-reveal="fade">
       <div class="nav__side nav__side--left">
         <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">{{1}}</p></div>
         <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">{{2}}</p></div>
@@ -53,13 +63,14 @@
 
     <div class="hero__body">
       <div class="hero__top">
-        <h1 class="hero__title">{{5}}</h1>
-        <div class="hero__place">
+        <h1 class="hero__title" data-reveal="title">{{5}}</h1>
+        <div class="hero__place" data-reveal>
           <div class="clock"><div class="clock__time" data-clock></div></div>
           <div class="map" aria-hidden="true">
             <span class="map__shadow"><span class="inset"><img decoding="async" src="assets/img/map-oise-shadow.avif" alt=""></span></span>
             <span class="map__label"><span class="inset"><img decoding="async" src="assets/img/map-oise-label.avif" alt=""></span></span>
             <span class="map__outline"><span class="inset"><img decoding="async" src="assets/svg/map-oise.svg" alt=""></span></span>
+            <span class="map__pulse" aria-hidden="true"></span>
             <span class="map__pin">
               <span class="map__pin-dot"><span class="inset"><img decoding="async" src="assets/svg/map-pin.svg" alt=""></span></span>
               <span class="inset map__pin-ring"><img decoding="async" src="assets/svg/map-pin-ring.svg" alt=""></span>
@@ -68,12 +79,12 @@
           <div class="hero__region"><p class="tracked">{{6}}</p></div>
         </div>
       </div>
-      <div class="hero__bottom">
-        <div class="hero__intro"><div class="hero__intro-in"><p>{{7}}</p></div></div>
+      <div class="hero__bottom" data-reveal="line">
+        <div class="hero__intro" data-reveal><div class="hero__intro-in"><p>{{7}}</p></div></div>
         <div class="facts">
-          <div class="fact"><p class="fact__value">{{8}}</p><p class="fact__label">{{9}}</p></div>
-          <div class="fact"><p class="fact__value">{{10}}</p><p class="fact__label">{{11}}</p></div>
-          <div class="fact"><p class="fact__value">{{12}}</p><p class="fact__label">{{13}}</p></div>
+          <div class="fact" data-reveal><p class="fact__value">{{8}}</p><p class="fact__label">{{9}}</p></div>
+          <div class="fact" data-reveal><p class="fact__value">{{10}}</p><p class="fact__label">{{11}}</p></div>
+          <div class="fact" data-reveal><p class="fact__value">{{12}}</p><p class="fact__label">{{13}}</p></div>
         </div>
       </div>
     </div>
@@ -81,20 +92,20 @@
 
   <section class="prologue" id="prologue">
     <div class="prologue__main">
-      <h2 class="prologue__label"><span>{{14}}</span></h2>
+      <h2 class="prologue__label" data-reveal><span>{{14}}</span></h2>
       <div class="prologue__text">
         <div class="prologue__text-in">
-          <p class="lead">{{15}}</p>
+          <p class="lead" data-reveal>{{15}}</p>
           <div class="body body--lg">
-            <p>{{16}}</p>
-            <p>{{17}}</p>
-            <p>{{18}}</p>
+            <p data-reveal>{{16}}</p>
+            <p data-reveal>{{17}}</p>
+            <p data-reveal>{{18}}</p>
           </div>
         </div>
       </div>
     </div>
     <div class="prologue__aside">
-      <div class="prologue__photo">
+      <div class="prologue__photo" data-reveal="media">
         <img decoding="async" loading="lazy" {{img:terrassement}} sizes="auto, 100vw" alt="">
         <img decoding="async" loading="lazy" {{img:portrait}} sizes="auto, 100vw" alt="">
       </div>
@@ -103,7 +114,7 @@
 
   <section class="chapters" id="chapitres">
     <div class="chapters__list">
-      <div class="row" role="button" tabindex="0" data-target="chapitre-01">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-01" data-preview="assets/img/drone-terrain-w1024.avif" data-reveal>
         <div class="row__main">
           <div class="row__title"><p class="row__num">{{19}}</p><p class="row__name">{{20}}</p></div>
           <div class="thumbs">
@@ -113,7 +124,7 @@
         </div>
         <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{21}}</p></div>
       </div>
-      <div class="row" role="button" tabindex="0" data-target="chapitre-02">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-02" data-preview="assets/img/implantation.avif" data-reveal>
         <div class="row__main">
           <div class="row__title"><p class="row__num">{{22}}</p><p class="row__name">{{23}}</p></div>
           <div class="thumbs">
@@ -124,7 +135,7 @@
         </div>
         <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{24}}</p></div>
       </div>
-      <div class="row" role="button" tabindex="0" data-target="chapitre-03">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-03" data-preview="assets/img/hero-ossature-w1024.avif" data-reveal>
         <div class="row__main">
           <div class="row__title"><p class="row__num">{{25}}</p><p class="row__name">{{26}}</p></div>
           <div class="thumbs">
@@ -134,7 +145,7 @@
         </div>
         <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{27}}</p></div>
       </div>
-      <div class="row" role="button" tabindex="0" data-target="chapitre-04">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-04" data-preview="assets/img/etancheite.avif" data-reveal>
         <div class="row__main">
           <div class="row__title"><p class="row__num">{{28}}</p><p class="row__name">{{29}}</p></div>
           <div class="thumbs">
@@ -145,7 +156,7 @@
         </div>
         <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{30}}</p></div>
       </div>
-      <div class="row" role="button" tabindex="0" data-target="chapitre-05">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-05" data-preview="assets/img/interieur.avif" data-reveal>
         <div class="row__main">
           <div class="row__title"><p class="row__num">{{31}}</p><p class="row__name">{{32}}</p></div>
           <div class="thumbs">
@@ -155,7 +166,7 @@
         </div>
         <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{33}}</p></div>
       </div>
-      <div class="row" role="button" tabindex="0" data-target="chapitre-06">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-06" data-preview="assets/img/journal-pizza.avif" data-reveal>
         <div class="row__main">
           <div class="row__title"><p class="row__num">{{34}}</p><p class="row__name">{{35}}</p></div>
           <div class="thumbs">
@@ -170,79 +181,79 @@
 
   <!-- Chapitre 01 -->
   <section class="chapter chapter--01" id="chapitre-01">
-    <div class="ctop">
-      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{37}}</p></div>
+    <div class="ctop" data-reveal="line">
+      <div class="ctop__label" data-reveal><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{37}}</p></div>
       <div class="ctop__date">
-        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-        <p class="tracked">{{38}}</p>
+        <span class="stripes" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked" data-reveal>{{38}}</p>
       </div>
     </div>
     <div class="ctitle">
-      <h2>{{39}}</h2>
-      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{40}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+      <h2 data-reveal="title">{{39}}</h2>
+      <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{40}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
     <div class="terrain">
       <div class="terrain__left"><div class="terrain__left-in">
-        <p class="body">{{41}}</p>
+        <p class="body" data-reveal>{{41}}</p>
         <figure class="fig">
-          <div class="fig__media" style="height:436px"><img decoding="async" loading="lazy" {{img:drone}} sizes="auto, 100vw" alt=""></div>
-          <figcaption class="cap"><p class="cap__label tracked">{{42}}</p><p class="cap__text">{{43}}</p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:436px"><img decoding="async" loading="lazy" {{img:drone}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap" data-reveal><p class="cap__label tracked">{{42}}</p><p class="cap__text">{{43}}</p></figcaption>
         </figure>
       </div></div>
       <div class="terrain__right">
-        <div class="badge">
+        <div class="badge" data-reveal>
           <span class="badge__icon"><img decoding="async" class="badge__ring-20" src="assets/svg/icon-target-20.svg" alt=""><img decoding="async" class="badge__ring-14" src="assets/svg/icon-target-14.svg" alt=""><img decoding="async" class="badge__ring-8" src="assets/svg/icon-target-8.svg" alt=""></span>
           <p class="badge__text tracked">{{44}}</p>
         </div>
         <figure class="fig">
-          <div class="fig__media" style="height:540px"><video src="assets/video/abattage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
-          <figcaption class="cap"><p class="cap__label tracked">{{45}}</p><p class="cap__text">{{46}}</p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:540px"><video src="assets/video/abattage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+          <figcaption class="cap" data-reveal><p class="cap__label tracked">{{45}}</p><p class="cap__text">{{46}}</p></figcaption>
         </figure>
       </div>
     </div>
-    <blockquote class="quote quote--terrain"><p>{{47}}</p></blockquote>
+    <blockquote class="quote quote--terrain"><p data-reveal="title">{{47}}</p></blockquote>
   </section>
 
   <!-- Chapitre 02 -->
   <section class="chapter" id="chapitre-02">
-    <div class="ctop">
-      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{48}}</p></div>
+    <div class="ctop" data-reveal="line">
+      <div class="ctop__label" data-reveal><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{48}}</p></div>
       <div class="ctop__date">
-        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-        <p class="tracked">{{49}}</p>
+        <span class="stripes" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked" data-reveal>{{49}}</p>
       </div>
     </div>
     <div class="ctitle">
-      <h2>{{50}}</h2>
-      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{51}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+      <h2 data-reveal="title">{{50}}</h2>
+      <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{51}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
     <div class="fondations">
       <div class="fondations__left"><div class="fondations__left-in">
-        <p class="body">{{52}}</p>
+        <p class="body" data-reveal>{{52}}</p>
         <dl class="table">
-          <div class="table__row"><dt>{{53}}</dt><dd>{{54}}</dd></div>
-          <div class="table__row"><dt>{{55}}</dt><dd>{{56}}</dd></div>
-          <div class="table__row"><dt>{{57}}</dt><dd>{{58}}</dd></div>
+          <div class="table__row" data-reveal><dt>{{53}}</dt><dd>{{54}}</dd></div>
+          <div class="table__row" data-reveal><dt>{{55}}</dt><dd>{{56}}</dd></div>
+          <div class="table__row" data-reveal><dt>{{57}}</dt><dd>{{58}}</dd></div>
         </dl>
       </div></div>
       <div class="fondations__right">
         <figure class="fig">
-          <div class="fig__media" style="height:540px"><img decoding="async" loading="lazy" {{img:terrassement}} sizes="auto, 100vw" alt=""></div>
-          <figcaption class="cap cap--stack"><p class="cap__label tracked">{{59}}</p><p class="cap__text">{{60}}</p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:540px"><img decoding="async" loading="lazy" {{img:terrassement}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap cap--stack" data-reveal><p class="cap__label tracked">{{59}}</p><p class="cap__text">{{60}}</p></figcaption>
         </figure>
       </div>
     </div>
     <div class="plancher">
       <div class="plancher__left"><div class="plancher__left-in">
         <figure class="fig">
-          <div class="fig__media" style="height:436px"><img decoding="async" loading="lazy" {{img:implantation}} sizes="auto, 100vw" alt=""></div>
-          <figcaption class="cap"><p class="cap__label tracked">{{61}}</p><p class="cap__text">{{62}}</p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:436px"><img decoding="async" loading="lazy" {{img:implantation}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap" data-reveal><p class="cap__label tracked">{{61}}</p><p class="cap__text">{{62}}</p></figcaption>
         </figure>
       </div></div>
       <div class="plancher__right">
         <figure class="fig">
-          <div class="fig__media" style="height:340px"><img decoding="async" loading="lazy" {{img:plateforme}} sizes="auto, 100vw" alt=""></div>
-          <figcaption class="cap"><p class="cap__label tracked">{{63}}</p><p class="cap__text">{{64}}</p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:340px"><img decoding="async" loading="lazy" {{img:plateforme}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap" data-reveal><p class="cap__label tracked">{{63}}</p><p class="cap__text">{{64}}</p></figcaption>
         </figure>
       </div>
     </div>
@@ -250,38 +261,38 @@
 
   <!-- Chapitre 03 -->
   <section class="chapter" id="chapitre-03">
-    <div class="ctop">
-      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{65}}</p></div>
+    <div class="ctop" data-reveal="line">
+      <div class="ctop__label" data-reveal><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{65}}</p></div>
       <div class="ctop__date">
-        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-        <p class="tracked">{{66}}</p>
+        <span class="stripes" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked" data-reveal>{{66}}</p>
       </div>
     </div>
     <div class="ctitle">
-      <h2>{{67}}</h2>
-      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{68}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+      <h2 data-reveal="title">{{67}}</h2>
+      <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{68}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
     <div class="versions">
-      <div class="versions__list"><div class="versions__list-in"><div class="versions__items"><p>{{69}}</p><p>{{70}}</p><p>{{71}}</p></div></div></div>
-      <blockquote class="versions__quote"><p>{{72}}</p></blockquote>
+      <div class="versions__list"><div class="versions__list-in"><div class="versions__items"><p data-reveal>{{69}}</p><p data-reveal>{{70}}</p><p data-reveal>{{71}}</p></div></div></div>
+      <blockquote class="versions__quote"><p data-reveal="title">{{72}}</p></blockquote>
     </div>
-    <div class="board">
+    <div class="board" data-reveal="media">
       <img decoding="async" class="board__paper" loading="lazy" {{img:paper}} sizes="auto, 100vw" alt="">
       <div class="board__inner">
-        <div class="sketch sketch--structure">
+        <div class="sketch sketch--structure" data-reveal>
           <div class="sketch__art"><img decoding="async" loading="lazy" {{img:skstructure}} sizes="auto, 300px" alt=""></div>
           <div class="sketch__note sketch__note--structure"><span class="sketch__cross"><img decoding="async" src="assets/svg/sketch-cross.svg" alt=""></span><p>{{73}}</p></div>
         </div>
-        <div class="sketch sketch--face">
+        <div class="sketch sketch--face" data-reveal>
           <div class="sketch__art"><img decoding="async" loading="lazy" {{img:skface}} sizes="auto, 390px" alt=""></div>
           <div class="sketch__note sketch__note--face"><p>{{74}}</p><span class="sketch__circle"><span class="inset"><img decoding="async" class="sketch__circle-lg" src="assets/svg/sketch-circle.svg" alt=""><img decoding="async" class="sketch__circle-sm" src="assets/svg/sketch-circle-small.svg" alt=""></span></span></div>
         </div>
-        <div class="sketch sketch--terrasse">
+        <div class="sketch sketch--terrasse" data-reveal>
           <div class="sketch__art"><img decoding="async" loading="lazy" {{img:skterrasse}} sizes="auto, 330px" alt=""></div>
           <div class="sketch__note sketch__note--terrasse"><p>{{75}}</p><span class="sketch__cross"><img decoding="async" src="assets/svg/sketch-cross.svg" alt=""></span></div>
           <div class="sketch__auvent"><p>{{76}}</p><img decoding="async" src="assets/svg/sketch-arrow.svg" alt=""></div>
         </div>
-        <div class="fold">
+        <div class="fold" data-reveal>
           <img decoding="async" class="fold__corner" src="assets/svg/sketch-fold.svg" alt="">
           <div class="fold__title"><div><p>{{77}}</p></div></div>
           <div class="fold__version"><div><p>{{78}}</p></div></div>
@@ -290,13 +301,13 @@
     </div>
     <div class="montage">
       <div class="montage__left"><div class="montage__left-in">
-        <div class="body"><p>{{79}}</p><p>{{80}}</p></div>
+        <div class="body"><p data-reveal>{{79}}</p><p data-reveal>{{80}}</p></div>
       </div></div>
       <div class="montage__right">
         <dl class="table">
-          <div class="table__row"><dt>{{81}}</dt><dd>{{82}}</dd></div>
-          <div class="table__row"><dt>{{83}}</dt><dd>{{84}}</dd></div>
-          <div class="table__row"><dt>{{85}}</dt><dd>{{86}}</dd></div>
+          <div class="table__row" data-reveal><dt>{{81}}</dt><dd>{{82}}</dd></div>
+          <div class="table__row" data-reveal><dt>{{83}}</dt><dd>{{84}}</dd></div>
+          <div class="table__row" data-reveal><dt>{{85}}</dt><dd>{{86}}</dd></div>
         </dl>
         <span class="plus"><img decoding="async" src="assets/svg/icon-plus.svg" alt=""></span>
       </div>
@@ -304,14 +315,14 @@
     <div class="ossature">
       <div class="ossature__left"><div class="ossature__left-in">
         <figure class="fig">
-          <div class="fig__media" style="height:436px"><img decoding="async" loading="lazy" {{img:hero}} sizes="auto, 100vw" alt=""></div>
-          <figcaption class="cap"><p class="cap__label tracked">{{87}}</p><p class="cap__text">{{88}}</p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:436px"><img decoding="async" loading="lazy" {{img:hero}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap" data-reveal><p class="cap__label tracked">{{87}}</p><p class="cap__text">{{88}}</p></figcaption>
         </figure>
       </div></div>
       <div class="ossature__right">
         <figure class="fig">
-          <div class="fig__media" style="height:340px"><video src="assets/video/montage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
-          <figcaption class="cap"><p class="cap__label tracked">{{89}}</p><p class="cap__text cap__text--spans"><span>{{90}}</span><span>{{91}}</span><span>{{92}}</span></p></figcaption>
+          <div class="fig__media" data-reveal="media" style="height:340px"><video src="assets/video/montage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+          <figcaption class="cap" data-reveal><p class="cap__label tracked">{{89}}</p><p class="cap__text cap__text--spans"><span>{{90}}</span><span>{{91}}</span><span>{{92}}</span></p></figcaption>
         </figure>
       </div>
     </div>
@@ -319,124 +330,124 @@
 
   <!-- Chapitre 04 -->
   <section class="chapter" id="chapitre-04">
-    <div class="ctop">
-      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{93}}</p></div>
+    <div class="ctop" data-reveal="line">
+      <div class="ctop__label" data-reveal><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{93}}</p></div>
       <div class="ctop__date">
-        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-        <p class="tracked">{{94}}</p>
+        <span class="stripes" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked" data-reveal>{{94}}</p>
       </div>
     </div>
     <div class="ctitle">
-      <h2>{{95}}</h2>
-      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{96}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+      <h2 data-reveal="title">{{95}}</h2>
+      <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{96}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
     <div class="isolation">
-      <div class="isolation__logo"><div class="isolation__badge"><img decoding="async" loading="lazy" {{img:badge}} sizes="auto, 138px" alt=""></div></div>
-      <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p>{{97}}</p><p>{{98}}</p></div></div></div>
-      <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p>{{99}}</p><p>{{100}}</p></div></div></div>
+      <div class="isolation__logo"><div class="isolation__badge" data-reveal="media"><img decoding="async" loading="lazy" {{img:badge}} sizes="auto, 138px" alt=""></div></div>
+      <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p data-reveal>{{97}}</p><p data-reveal>{{98}}</p></div></div></div>
+      <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p data-reveal>{{99}}</p><p data-reveal>{{100}}</p></div></div></div>
     </div>
     <div class="toiture">
       <figure class="toiture__fig toiture__fig--main">
-        <figcaption class="cap"><p class="cap__label tracked">{{101}}</p><p class="cap__text">{{102}}</p></figcaption>
-        <div class="fig__media" style="height:580px"><img decoding="async" loading="lazy" {{img:etancheite}} sizes="auto, 100vw" alt=""></div>
+        <figcaption class="cap" data-reveal><p class="cap__label tracked">{{101}}</p><p class="cap__text">{{102}}</p></figcaption>
+        <div class="fig__media" data-reveal="media" style="height:580px"><img decoding="async" loading="lazy" {{img:etancheite}} sizes="auto, 100vw" alt=""></div>
       </figure>
       <figure class="toiture__fig">
-        <figcaption class="cap cap--stack"><p class="cap__label tracked">{{103}}</p><p class="cap__text">{{104}}</p></figcaption>
-        <div class="fig__media" style="height:480px"><img decoding="async" loading="lazy" {{img:aerienne}} sizes="auto, 100vw" alt=""></div>
+        <figcaption class="cap cap--stack" data-reveal><p class="cap__label tracked">{{103}}</p><p class="cap__text">{{104}}</p></figcaption>
+        <div class="fig__media" data-reveal="media" style="height:480px"><img decoding="async" loading="lazy" {{img:aerienne}} sizes="auto, 100vw" alt=""></div>
       </figure>
       <figure class="toiture__fig">
-        <figcaption class="cap cap--stack"><p class="cap__label tracked">{{105}}</p><p class="cap__text">{{106}}</p></figcaption>
-        <div class="fig__media" style="height:480px"><img decoding="async" loading="lazy" {{img:facade}} sizes="auto, 100vw" alt=""></div>
+        <figcaption class="cap cap--stack" data-reveal><p class="cap__label tracked">{{105}}</p><p class="cap__text">{{106}}</p></figcaption>
+        <div class="fig__media" data-reveal="media" style="height:480px"><img decoding="async" loading="lazy" {{img:facade}} sizes="auto, 100vw" alt=""></div>
       </figure>
     </div>
   </section>
 
   <!-- Chapitre 05 -->
   <section class="chapter" id="chapitre-05">
-    <div class="ctop">
-      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{107}}</p></div>
+    <div class="ctop" data-reveal="line">
+      <div class="ctop__label" data-reveal><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{107}}</p></div>
       <div class="ctop__date">
-        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-        <p class="tracked">{{108}}</p>
+        <span class="stripes" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked" data-reveal>{{108}}</p>
       </div>
     </div>
     <div class="ctitle">
-      <h2>{{109}}</h2>
-      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{110}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+      <h2 data-reveal="title">{{109}}</h2>
+      <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{110}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
     <div class="amenagement">
       <div class="amenagement__left"><div class="amenagement__left-in">
         <div class="amenagement__text">
-          <p class="lead">{{111}}</p>
-          <div class="body"><p>{{112}}</p><p>{{113}}</p></div>
+          <p class="lead" data-reveal>{{111}}</p>
+          <div class="body"><p data-reveal>{{112}}</p><p data-reveal>{{113}}</p></div>
         </div>
         <div class="amenagement__figs">
           <figure class="amenagement__fig">
-            <div class="fig__media" style="height:360px"><img decoding="async" loading="lazy" {{img:interieur}} sizes="auto, 100vw" alt=""></div>
-            <figcaption class="cap cap--stack"><p class="cap__label tracked">{{114}}</p><p class="cap__text">{{115}}</p></figcaption>
+            <div class="fig__media" data-reveal="media" style="height:360px"><img decoding="async" loading="lazy" {{img:interieur}} sizes="auto, 100vw" alt=""></div>
+            <figcaption class="cap cap--stack" data-reveal><p class="cap__label tracked">{{114}}</p><p class="cap__text">{{115}}</p></figcaption>
           </figure>
           <figure class="amenagement__fig">
-            <div class="fig__media" style="height:280px"><img decoding="async" loading="lazy" {{img:poele}} sizes="auto, 100vw" alt=""></div>
-            <figcaption class="cap cap--stack"><p class="cap__label tracked">{{116}}</p><p class="cap__text">{{117}}</p></figcaption>
+            <div class="fig__media" data-reveal="media" style="height:280px"><img decoding="async" loading="lazy" {{img:poele}} sizes="auto, 100vw" alt=""></div>
+            <figcaption class="cap cap--stack" data-reveal><p class="cap__label tracked">{{116}}</p><p class="cap__text">{{117}}</p></figcaption>
           </figure>
         </div>
       </div></div>
-      <div class="amenagement__sketch"><div><img decoding="async" loading="lazy" {{img:skinterieur}} sizes="auto, 100vw" alt=""></div></div>
+      <div class="amenagement__sketch" data-reveal="media"><div><img decoding="async" loading="lazy" {{img:skinterieur}} sizes="auto, 100vw" alt=""></div></div>
     </div>
   </section>
 
   <!-- Chapitre 06 -->
   <section class="chapter chapter--06" id="chapitre-06">
-    <div class="ctop">
-      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{118}}</p></div>
+    <div class="ctop" data-reveal="line">
+      <div class="ctop__label" data-reveal><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{118}}</p></div>
       <div class="ctop__date">
-        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-        <p class="tracked">{{119}}</p>
+        <span class="stripes" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked" data-reveal>{{119}}</p>
       </div>
     </div>
     <div class="ctitle ctitle--center">
-      <h2>{{120}}</h2>
-      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{121}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+      <h2 data-reveal="title">{{120}}</h2>
+      <div class="counter" data-reveal><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{121}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
     </div>
-    <div class="resultat-quote"><blockquote><p>{{122}}</p></blockquote></div>
+    <div class="resultat-quote"><blockquote><p data-reveal="title">{{122}}</p></blockquote></div>
     <div class="resultat">
       <div class="resultat__stats resultat__stats--left"><div class="resultat__stats-in">
-        <div class="stat"><p class="stat__label">{{123}}</p><p class="stat__value">{{124}}</p></div>
-        <div class="stat"><p class="stat__label">{{125}}</p><p class="stat__value">{{126}}</p></div>
-        <div class="stat"><p class="stat__label">{{127}}</p><p class="stat__value">{{128}}</p></div>
+        <div class="stat" data-reveal><p class="stat__label">{{123}}</p><p class="stat__value">{{124}}</p></div>
+        <div class="stat" data-reveal><p class="stat__label">{{125}}</p><p class="stat__value">{{126}}</p></div>
+        <div class="stat" data-reveal><p class="stat__label">{{127}}</p><p class="stat__value">{{128}}</p></div>
       </div></div>
       <div class="resultat__video">
         <span class="vcorner vcorner--outer-bl"><span class="inset"><img decoding="async" src="assets/svg/video-corner-outer-a.svg" alt=""></span></span>
         <span class="vcorner vcorner--outer-tr"><span class="inset"><img decoding="async" src="assets/svg/video-corner-outer-b.svg" alt=""></span></span>
-        <div class="resultat__player"><video src="assets/video/resultat.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+        <div class="resultat__player" data-reveal="media"><video src="assets/video/resultat.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
         <span class="vcorner vcorner--inner-tr"><span class="inset"><img decoding="async" src="assets/svg/video-corner-inner-b.svg" alt=""></span></span>
         <span class="vcorner vcorner--inner-bl"><span class="inset"><img decoding="async" src="assets/svg/video-corner-inner-a.svg" alt=""></span></span>
       </div>
       <div class="resultat__stats resultat__stats--right"><div class="resultat__stats-in">
-        <div class="stat"><p class="stat__label">{{129}}</p><p class="stat__value">{{130}}</p></div>
-        <div class="stat"><p class="stat__label">{{131}}</p><p class="stat__value">{{132}}</p></div>
-        <div class="stat"><p class="stat__label">{{133}}</p><p class="stat__value">{{134}}</p></div>
+        <div class="stat" data-reveal><p class="stat__label">{{129}}</p><p class="stat__value">{{130}}</p></div>
+        <div class="stat" data-reveal><p class="stat__label">{{131}}</p><p class="stat__value">{{132}}</p></div>
+        <div class="stat" data-reveal><p class="stat__label">{{133}}</p><p class="stat__value">{{134}}</p></div>
       </div></div>
     </div>
     <div class="epilogue">
-      <div class="epilogue__text"><p>{{135}}</p><p>{{136}}</p><p>{{137}}</p></div>
+      <div class="epilogue__text"><p data-reveal>{{135}}</p><p data-reveal>{{136}}</p><p data-reveal>{{137}}</p></div>
     </div>
   </section>
 
   <article class="journal" id="journal">
-    <div class="journal__mark"><span class="journal__bookmark"><span class="inset"><img decoding="async" src="assets/svg/journal-bookmark.svg" alt=""></span></span></div>
+    <div class="journal__mark"><span class="journal__bookmark" data-reveal="drop"><span class="inset"><img decoding="async" src="assets/svg/journal-bookmark.svg" alt=""></span></span></div>
     <div class="journal__head">
       <div class="journal__titlebar">
-        <h2 class="journal__title">{{138}}</h2>
+        <h2 class="journal__title" data-reveal="title">{{138}}</h2>
         <div class="journal__today">
-          <span class="stripes stripes--dark" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-          <p class="tracked">{{139}}</p>
+          <span class="stripes stripes--dark" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+          <p class="tracked" data-reveal>{{139}}</p>
         </div>
       </div>
-      <div class="journal__intro"><div><p>{{140}}</p></div></div>
+      <div class="journal__intro" data-reveal="line"><div><p data-reveal>{{140}}</p></div></div>
     </div>
     <div class="journal__grid">
-      <div class="jcard jcard--next">
+      <div class="jcard jcard--next" data-reveal>
         <div class="jnext">
           <img decoding="async" class="jnext__spark jnext__spark--a" src="assets/svg/journal-sparkle.svg" alt="">
           <img decoding="async" class="jnext__spark jnext__spark--b" src="assets/svg/journal-sparkle.svg" alt="">
@@ -444,7 +455,7 @@
           <img decoding="async" class="jnext__swoosh" src="assets/svg/journal-swoosh.svg" alt="">
         </div>
       </div>
-      <article class="jcard">
+      <article class="jcard" data-reveal>
         <div class="jcard__media">
           <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
           <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
@@ -455,7 +466,7 @@
           <p class="jcard__text">{{146}}</p>
         </div>
       </article>
-      <article class="jcard">
+      <article class="jcard" data-reveal>
         <div class="jcard__media jcard__media--tonte">
           <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
           <img decoding="async" class="jcard__photo" loading="lazy" {{img:jtonte}} sizes="auto, 100vw" alt="">
@@ -467,7 +478,7 @@
           <p class="jcard__text">{{149}}</p>
         </div>
       </article>
-      <article class="jcard">
+      <article class="jcard" data-reveal>
         <div class="jcard__media">
           <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
           <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
@@ -478,7 +489,7 @@
           <p class="jcard__text">{{152}}</p>
         </div>
       </article>
-      <article class="jcard">
+      <article class="jcard" data-reveal>
         <div class="jcard__media">
           <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
           <img decoding="async" class="jcard__photo" loading="lazy" {{img:jallee}} sizes="auto, 100vw" alt="">
@@ -489,7 +500,7 @@
           <p class="jcard__text">{{155}}</p>
         </div>
       </article>
-      <article class="jcard">
+      <article class="jcard" data-reveal>
         <div class="jcard__media">
           <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
           <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
@@ -500,7 +511,7 @@
           <p class="jcard__text">{{158}}</p>
         </div>
       </article>
-      <article class="jcard">
+      <article class="jcard" data-reveal>
         <div class="jcard__media">
           <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
           <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
@@ -515,18 +526,18 @@
   </article>
 
   <footer class="footer">
-    <div class="footer__inner">
+    <div class="footer__inner" data-reveal="line">
       <div class="footer__about"><div class="footer__about-in">
         <div class="footer__brand">
-          <div class="footer__logo">
+          <div class="footer__logo" data-reveal>
             <span class="footer__mark"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-dark.svg" alt=""></span></span></span>
-            <span class="stripes stripes--dark" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+            <span class="stripes stripes--dark" aria-hidden="true" data-reveal="stripes"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
           </div>
-          <p class="footer__title">{{162}}</p>
+          <p class="footer__title" data-reveal="title">{{162}}</p>
         </div>
-        <p class="footer__text">{{163}}</p>
+        <p class="footer__text" data-reveal>{{163}}</p>
       </div></div>
-      <a class="footer__credit" href="https://erwanguillou.me" target="_blank" rel="noopener"><p>{{164}}</p></a>
+      <a class="footer__credit" data-reveal href="https://erwanguillou.me" target="_blank" rel="noopener"><p>{{164}}</p></a>
     </div>
   </footer>
 

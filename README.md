@@ -20,6 +20,8 @@ et le défilement saccade.
 index.html        page unique (textes, images, SVG colorés insérés en ligne)
 css/style.css     variables Figma, mise en page desktop ≥ 1440, tablette 800–1439, mobile < 800
 js/main.js        horloge « HH:MM UTC+2 », clic sur une ligne du sommaire → défilement fluide
+js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
+js/wind.js        vent dans les arbres (WebGL) sur la photo du héros
 assets/img        photos, variantes srcset identiques à celles servies par Figma (AVIF/WebP)
 assets/svg        pictogrammes, couleurs intégrées
 assets/fonts      Chillon, Mortega, GT Kotoheim Mono, Poppins
@@ -72,6 +74,14 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   (`animation-timeline`, calculé par le compositeur). Sans prise en charge (Firefox) ou avec
   « réduire les animations », la photo reste fixe comme sur l'original.
 - **Vidéos** : mises en pause quand elles sont hors écran, pour ne pas alourdir le défilement.
+- **Animations** (`js/motion.js`, fin de `css/style.css`) : apparitions au défilement (textes,
+  titres, photos, filets, rayures), photos qui glissent dans leur cadre, aperçu des chapitres
+  au curseur dans le sommaire, cartes du journal qui s'inclinent, pulsation du repère de la carte,
+  horloge qui bat la seconde. L'état final de chaque apparition est celui de la maquette.
+- **Vent dans les arbres** (`js/wind.js`) : la photo du héros est redessinée en WebGL et son
+  feuillage ondule ; la structure en A et le sol restent immobiles.
+- Tout est désactivé si le système demande de réduire les animations ; sans JavaScript, le
+  contenu reste visible.
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.
 
 ## Publication

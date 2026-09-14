@@ -21,6 +21,8 @@ for attr in re.findall(r'(?:src|href|content)="([^"]+)"', html):
     attr = attr.replace("https://aframe.erwanguillou.me/", "")
     if attr.startswith("assets/"):
         files.add(attr)
+for local in re.findall(r'(?:src|href)="((?:css|js)/[^"?]+)(?:\?[^"]*)?"', html):
+    files.add(local)
 for srcset in re.findall(r'srcset="([^"]+)"', html):
     for candidate in srcset.split(","):
         files.add(candidate.strip().split(" ")[0])
