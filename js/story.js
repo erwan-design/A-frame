@@ -71,8 +71,8 @@
       </button>
       <button class="story__toggle" type="button" aria-expanded="false" aria-controls="story-menu">
         <span class="story__num"><span class="story__current">01</span><span class="story__total">/${String(chapters.length).padStart(2, "0")}</span></span>
-        <span class="story__title"></span>
-        <span class="story__date"></span>
+        <span class="story__slot story__slot--title"><span class="story__title"></span>${chapters.map((chapter) => `<span class="story__ghost" aria-hidden="true">${chapter.title}</span>`).join("")}</span>
+        <span class="story__slot story__slot--date"><span class="story__date"></span>${chapters.map((chapter) => `<span class="story__ghost" aria-hidden="true">${chapter.date}</span>`).join("")}</span>
         <span class="story__chevron" aria-hidden="true"></span>
       </button>
       <button class="story__step story__step--next" type="button" aria-label="Chapitre suivant" title="Chapitre suivant">

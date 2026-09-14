@@ -1011,6 +1011,13 @@ html.lenis, html.lenis body { height: auto; }
 .story__total, .story__date, .story__menu-num, .story__menu-date { color: var(--light-40); }
 .story__title { display: inline-block; font-family: var(--display); font-size: 18px; line-height: 1; white-space: nowrap; }
 .story__current { display: inline-block; }
+/* largeur fixe : tous les titres et dates sont empilés, invisibles, dans la même case ; la case prend
+   la largeur du plus long, le repère ne change plus de taille d'un chapitre à l'autre */
+.story__slot { display: inline-grid; justify-items: start; }
+.story__slot > * { grid-area: 1 / 1; }
+.story__ghost { visibility: hidden; white-space: nowrap; }
+.story__slot--title .story__ghost { font-family: var(--display); font-size: 18px; line-height: 1; }
+.story__slot--date .story__ghost { font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: 12px; line-height: 1; letter-spacing: 0.48px; text-transform: uppercase; }
 .story__chevron { align-self: center; width: 7px; height: 7px; margin-left: 2px; border-left: 1px solid var(--light-70); border-top: 1px solid var(--light-70); rotate: 45deg; translate: 0 2px; transition: rotate 0.4s var(--expo), translate 0.4s var(--expo); }
 .story.is-open .story__chevron { rotate: 225deg; translate: 0 -2px; }
 .story.is-changing .story__title,
@@ -1160,6 +1167,9 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   .story__toggle { flex: 1; min-width: 0; gap: 12px; }
   .story__title { overflow: hidden; text-overflow: ellipsis; font-size: 16px; }
   .story__date { display: none; }
+  .story__ghost { display: none; }
+  .story__slot--date { display: none; }
+  .story__slot--title { min-width: 0; }
   .story__chevron { margin-left: auto; }
   .story__menu-date { display: none; }
   .lightbox__img { max-width: 100vw; max-height: 70vh; }
@@ -1228,27 +1238,26 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .hs__stage { position: sticky; top: 0; width: 100%; height: 100vh; overflow: clip; }
 .hs__track { display: flex; align-items: center; width: max-content; height: 100%; will-change: transform; }
 .is-horizontal .hs__track > .chapter {
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-auto-columns: calc(var(--u, 100px) - 24px);
+  column-gap: 24px;
+  row-gap: 24px;
+  align-items: start;
   width: max-content;
   max-width: none;
   height: 100%;
-  gap: 96px;
-  padding: 0 160px 0 var(--side);
+  padding: 64px 140px 104px var(--side); /* en bas : place du repère flottant */
   border-left: 1px solid var(--light-10);
 }
 .is-horizontal .hs__track > .chapter:first-child { border-left: 0; }
-.hs__col { flex: 0 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; }
-.hs__col > * { flex: 0 0 auto !important; margin: 0; }
-.hs__col > :where(.fig, .body, .table, .quote, .board, .versions__list, .versions__quote, .amenagement__text, .amenagement__figs, .amenagement__sketch, .resultat-quote, .resultat__video, .resultat__stats, .epilogue, .toiture__fig, .isolation__logo) { width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
-.hs__col > .quote p, .hs__col > .resultat-quote blockquote, .hs__col > .epilogue .epilogue__text { width: 100%; max-width: 100%; }
-.hs__col > .isolation__logo { padding: 0; justify-content: center; }
-/* ouverture : bandeau, titre, texte de présentation et données */
-.hs__col--intro { width: 660px; gap: 28px; }
-.hs__col--intro > .ctop, .hs__col--intro > .ctitle { width: 100%; }
-.hs__col--intro > .ctitle { padding-top: 12px; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
-.hs__col--intro .ctitle h2 { font-size: 96px; white-space: nowrap; text-align: left; }
-.hs__col--intro > .body, .hs__col--intro > .amenagement__text { width: 100% !important; }
-.hs__col--intro > .resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
-.hs__col--intro > .resultat-quote blockquote, .hs__col--intro > .resultat-quote p { text-align: left; }
+.hs__item { margin: 0 !important; min-width: 0; }
+.hs__item:where(.fig, .body, .table, .quote, .board, .versions__quote, .amenagement__text, .amenagement__figs, .amenagement__sketch, .resultat-quote, .resultat__video, .resultat__stats, .epilogue, .toiture__fig, .ctop, .ctitle) { width: 100% !important; max-width: 100% !important; min-width: 0 !important; flex: none !important; }
+.hs__item.quote p, .hs__item.resultat-quote blockquote, .hs__item.epilogue .epilogue__text { width: 100%; max-width: 100%; }
+.hs__item.quote, .hs__item.resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
+.hs__item.resultat-quote blockquote, .hs__item.resultat-quote p { text-align: left; }
+.hs__item.isolation__logo { padding: 0; }
+.hs__item.badge, .hs__item.versions__list, .hs__item.plus { justify-self: start; }
+.is-horizontal .chapter > .ctitle { padding-top: 0; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
+.is-horizontal .chapter > .ctitle h2 { font-size: 96px; white-space: nowrap; text-align: left; }
 

@@ -125,12 +125,15 @@ Sur les écrans d'au moins 1440 × 720 (`js/horizontal.js`, fin de `css/style.cs
 
 - héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
   la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
-- chaque chapitre est recomposé en colonnes (`COMPOSITION` dans `js/horizontal.js`) : l'ouverture
-  regroupe bandeau, titre (taille ajustée à la colonne), texte de présentation et données, puis
-  viennent photos, vidéos, croquis et citations à leur largeur ; une colonne trop haute pour
-  l'écran est réduite (propriété `zoom`) ; tout contenu non prévu est ajouté en fin de chapitre ;
+- chaque chapitre devient une double page qui se déroule en largeur (`SPREADS` dans
+  `js/horizontal.js`) : grille de colonnes (unité proportionnelle à la hauteur d'écran) et deux
+  étages ; bandeau et titre en haut à gauche, texte dessous, puis photos, citations et données en
+  quinconce (calées en haut, en bas ou au centre) comme dans la version verticale ; un élément trop
+  haut pour sa zone est réduit (`zoom`), un titre trop long pour sa zone aussi ; tout contenu non
+  prévu est ajouté en fin de chapitre ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
+- le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
 - le repère, les citations mot à mot et le zoom de la carte suivent l'axe horizontal ;
 - en dessous de 1440 × 720, la mise en page tablette empile les colonnes (panneaux réduits
   jusqu'à 36 %) : lecture verticale habituelle.
