@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.aframe.erwanguillou.me/sitemap.xml
+Sitemap: https://aframe.erwanguillou.me/sitemap.xml

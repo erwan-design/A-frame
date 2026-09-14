@@ -18,7 +18,7 @@ css = open(os.path.join(ROOT, "css", "style.css"), encoding="utf-8").read()
 
 files = {"index.html", "css/style.css", "js/main.js", "robots.txt", "sitemap.xml"}
 for attr in re.findall(r'(?:src|href|content)="([^"]+)"', html):
-    attr = attr.replace("https://www.aframe.erwanguillou.me/", "")
+    attr = attr.replace("https://aframe.erwanguillou.me/", "")
     if attr.startswith("assets/"):
         files.add(attr)
 for srcset in re.findall(r'srcset="([^"]+)"', html):
