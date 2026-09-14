@@ -22,6 +22,7 @@ css/style.css     variables Figma, mise en page desktop ≥ 1440, tablette 800�
 js/main.js        horloge, défilement lissé, clic sur une ligne du sommaire, lecture des vidéos
 js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
+js/horizontal.js  prototype « défilement horizontal » des chapitres (branche prototype-horizontal)
 js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
 js/ambience.js    ambiance sonore de forêt (Web Audio)
 js/sketch.js      croquis de l'aménagement qui se dessine au survol
@@ -117,6 +118,21 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - Tout le reste est désactivé si le système demande de réduire les animations ; sans JavaScript, le
   contenu reste visible (les vidéos ne se lancent alors pas).
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.
+
+## Prototype « défilement horizontal » (branche `prototype-horizontal`)
+
+Sur les écrans d'au moins 1440 × 720 (`js/horizontal.js`, fin de `css/style.css`) :
+
+- héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
+  la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
+- chaque chapitre devient une suite de panneaux côte à côte : ouverture (numéro, date, titre),
+  puis chaque bloc du chapitre, réduit (propriété `zoom`) s'il dépasse la hauteur de l'écran ;
+- molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire et menu du repère ;
+- le repère, les citations mot à mot et le zoom de la carte suivent l'axe horizontal ;
+- en dessous de 1440 × 720, la mise en page tablette empile les colonnes (panneaux réduits
+  jusqu'à 36 %) : lecture verticale habituelle.
+
+Vérification : `python3 tools/horizontal_check.py 1440 900`.
 
 ## Publication
 

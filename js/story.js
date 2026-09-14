@@ -14,6 +14,7 @@
 
   // Défilement vers un élément : Lenis s'il est actif, sinon défilement fluide natif.
   const goTo = (target) => {
+    if (window.__hs && window.__hs.open(target)) return; // prototype « défilement horizontal »
     if (window.__lenis) window.__lenis.scrollTo(target, { duration: 1.2, easing: (t) => 1 - Math.pow(1 - t, 4) });
     else target.scrollIntoView({ behavior: motion ? "smooth" : "auto" });
   };
@@ -140,6 +141,15 @@
 
     tasks.push((viewport) => {
       const line = viewport * 0.4;
+      // prototype « défilement horizontal » : chapitre et progression lus sur l'axe horizontal
+      if (window.__hs) {
+        const state = window.__hs.state();
+        story.classList.toggle("is-visible", state.active);
+        if (!state.active && !menu.hidden) setMenu(false);
+        show(state.index);
+        fill.style.transform = `scaleX(${state.progress.toFixed(4)})`;
+        return;
+      }
       const first = chapters[0].section.getBoundingClientRect();
       const last = chapters[chapters.length - 1].section.getBoundingClientRect();
       const inStory = first.top < line && last.bottom > line;
@@ -183,7 +193,10 @@
         if (box.bottom < -viewport || box.top > viewport * 2) return;
         // commence quand la citation entre par le bas, finit quand son bas atteint 60 % de l'écran
         // (sur mobile la citation est haute : les derniers mots s'éclairent quand on les lit)
-        const progress = clamp((viewport * 0.9 - box.top) / (viewport * 0.3 + box.height));
+        const width = window.innerWidth;
+        const progress = root.classList.contains("is-horizontal")
+          ? clamp((width * 0.9 - box.left) / (width * 0.4 + box.width * 0.6))
+          : clamp((viewport * 0.9 - box.top) / (viewport * 0.3 + box.height));
         const lit = progress * words.length;
         if (Math.abs(lit - last) < 0.01) return;
         last = lit;
@@ -241,8 +254,10 @@
       const box = droneFigure.getBoundingClientRect();
       if (box.bottom < 0 || box.top > viewport) return;
       placeMap(box);
-      // 0 quand la photo entre par le bas, 1 quand son haut atteint 30 % de l'écran
-      const progress = clamp((viewport - box.top) / (viewport * 0.7));
+      // 0 quand la photo entre par le bas (ou par la droite), 1 quand elle a parcouru 70 % de l'écran
+      const progress = root.classList.contains("is-horizontal")
+        ? clamp((window.innerWidth - box.left) / (window.innerWidth * 0.7))
+        : clamp((viewport - box.top) / (viewport * 0.7));
       const zoom = 1 + Math.pow(smooth(0.1, 0.85, progress), 2.2) * 22;
       map.style.transform = `scale(${zoom.toFixed(3)})`;
       markers.forEach((marker) => (marker.style.transform = `scale(${(1 / zoom).toFixed(4)})`));

@@ -1213,3 +1213,24 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   75% { width: 20px; height: 20px; opacity: 1; }
   100% { width: 26px; height: 26px; opacity: 0; }
 }
+
+/* ==========================================================================
+   Prototype « défilement horizontal » (js/horizontal.js)
+   ========================================================================== */
+.hs { position: relative; width: 100%; }
+.hs__stage { position: sticky; top: 0; width: 100%; height: 100vh; overflow: clip; }
+.hs__track { display: flex; align-items: center; width: max-content; height: 100%; will-change: transform; }
+.is-horizontal .hs__track > .chapter {
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  max-width: none;
+  height: 100%;
+  gap: 160px;
+  padding: 0 200px 0 var(--side);
+  border-left: 1px solid var(--light-10);
+}
+.is-horizontal .hs__track > .chapter:first-child { border-left: 0; }
+.is-horizontal .chapter > .hs__panel { flex: 0 0 auto; width: min(1240px, 100vw - 200px); }
+.is-horizontal .chapter > .hs__opener { width: min(900px, 100vw - 200px); }
+.is-horizontal .hs__opener .ctitle h2 { font-size: 120px; white-space: normal; }

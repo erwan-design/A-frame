@@ -23,12 +23,14 @@ let lenis = null;
 function startSmoothScroll() {
   const pointer = matchMedia("(hover: hover) and (pointer: fine)");
   if (!window.Lenis || !document.documentElement.classList.contains("motion") || !pointer.matches) return;
-  lenis = new window.Lenis({ autoRaf: true, lerp: 0.1, smoothWheel: true, syncTouch: false });
+  lenis = new window.Lenis({ autoRaf: true, lerp: 0.1, smoothWheel: true, syncTouch: false, gestureOrientation: document.documentElement.classList.contains("is-horizontal") ? "both" : "vertical" });
   window.__lenis = lenis;
 }
 
 // « Scroll to » Figma : défilement fluide jusqu'à la section (Lenis s'il est actif).
 function scrollToSection(target) {
+  // prototype « défilement horizontal » : un chapitre s'ouvre à sa place dans la bande (js/horizontal.js)
+  if (window.__hs && window.__hs.open(target)) return;
   if (lenis) {
     lenis.scrollTo(target, { duration: 1.2, easing: (t) => 1 - Math.pow(1 - t, 4) });
     return;

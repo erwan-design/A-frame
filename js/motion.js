@@ -123,7 +123,7 @@
     clipped.forEach((el) => {
       const box = el.getBoundingClientRect();
       if (box.width === 0 && box.height === 0) return; // masqué à cette largeur
-      if (box.top < limit && box.bottom > 0) {
+      if (box.top < limit && box.bottom > 0 && box.left < window.innerWidth * 0.94 && box.right > 0) {
         clipped.delete(el);
         enqueue(el);
       }
