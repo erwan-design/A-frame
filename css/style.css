@@ -1237,36 +1237,32 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .hs { position: relative; width: 100%; }
 .hs__stage { position: sticky; top: 0; width: 100%; height: 100vh; overflow: clip; }
 .hs__track { display: flex; align-items: center; width: max-content; height: 100%; will-change: transform; }
+/* chaque chapitre est une page de 900 px de haut (positions du fichier Figma), mise à l'échelle
+   de la hauteur de l'écran par --s */
 .is-horizontal .hs__track > .chapter {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-auto-columns: calc(var(--u, 100px) - 24px);
-  column-gap: 24px;
-  row-gap: 24px;
-  align-items: start;
-  width: max-content;
+  position: relative;
+  display: block;
+  flex: none;
   max-width: none;
-  height: 100%;
-  padding: 64px 140px 104px var(--side); /* en bas : place du repère flottant */
-  border-left: 1px solid var(--light-10);
+  height: 900px;
+  padding: 0;
+  zoom: var(--s, 1);
+  box-shadow: inset 1px 0 0 var(--light-10); /* filet entre chapitres, sans décaler les blocs */
 }
-.is-horizontal .hs__track > .chapter:first-child { border-left: 0; }
-.hs__item { margin: 0 !important; min-width: 0; }
-.hs__stack { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
-.hs__part { flex: none !important; max-width: none !important; min-width: 0 !important; }
-.hs__stack > .ctitle { padding-top: 0; }
-.hs__stack { overflow: visible; }
-.hs__part.fig, .hs__part.amenagement__fig { display: flex; flex-direction: column; }
-.hs__part.quote, .hs__part.resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
-.hs__item:where(.fig, .body, .table, .quote, .board, .versions__quote, .amenagement__text, .amenagement__figs, .amenagement__sketch, .resultat-quote, .resultat__video, .resultat__stats, .epilogue, .toiture__fig, .ctop, .ctitle) { width: 100% !important; max-width: 100% !important; min-width: 0 !important; flex: none !important; }
-.hs__item.quote p, .hs__item.resultat-quote blockquote, .hs__item.epilogue .epilogue__text, .hs__part.quote p, .hs__part.resultat-quote blockquote { width: 100%; max-width: 100%; }
-.hs__part.resultat-quote blockquote, .hs__part.resultat-quote p { text-align: left; }
-.hs__item.quote, .hs__item.resultat-quote { padding: 0; justify-content: flex-start; align-items: flex-start; }
-.hs__item.resultat-quote blockquote, .hs__item.resultat-quote p { text-align: left; }
-.hs__item.isolation__logo { padding: 0; }
-.hs__item.badge, .hs__item.versions__list, .hs__item.plus { justify-self: start; }
-.hs__part.badge, .hs__part.versions__list { width: auto !important; }
-.hs__part.isolation__logo, .hs__item.isolation__logo { padding: 0; }
-.is-horizontal .chapter .ctitle { padding-top: 0; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
-.is-horizontal .chapter .ctitle h2 { font-size: 96px; white-space: nowrap; text-align: left; }
-
+.is-horizontal .hs__track > .chapter:first-child { box-shadow: none; }
+.hs__abs { position: absolute !important; margin: 0 !important; flex: none !important; max-width: none !important; min-width: 0 !important; }
+.hs__abs.quote, .hs__abs.resultat-quote, .hs__abs.epilogue { display: block; padding: 0; }
+.hs__abs.quote p, .hs__abs.resultat-quote blockquote, .hs__abs.resultat-quote p, .hs__abs.epilogue .epilogue__text { display: block; width: 100%; max-width: none; text-align: left; }
+.hs__abs .resultat__stats-in { padding: 0 !important; }
+.hs__abs.isolation__logo { padding: 0; }
+.hs__abs.amenagement__sketch { height: auto; }
+.hs__abs.resultat__video { gap: 0; }
+/* versions sur une ligne */
+.hs__abs.versions__list .versions__list-in { padding: 0; }
+.hs__abs .versions__items { flex-direction: row; gap: 40px; }
+/* croquis de la structure : cadré comme dans Figma (planche de 1058 px agrandie pour couvrir 610 × 780) */
+.hs__abs.board { overflow: clip; }
+.hs__abs.board .board__inner { position: absolute; left: 50%; top: 0; width: 1058px; translate: -50% 0; scale: 0.9286; transform-origin: top center; }
+.is-horizontal .chapter .ctitle { padding-top: 0; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
+.is-horizontal .chapter .ctitle h2 { font-size: 76px; white-space: nowrap; text-align: left; }
+.is-horizontal .chapter .ctitle--inline { flex-wrap: nowrap; } /* compteur à côté du titre, comme dans Figma */

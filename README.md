@@ -125,12 +125,9 @@ Sur les écrans d'au moins 1440 × 720 (`js/horizontal.js`, fin de `css/style.cs
 
 - héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
   la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
-- chaque chapitre devient une double page qui se déroule en largeur (`SPREADS` dans
-  `js/horizontal.js`), sur une grille de colonnes proportionnelle à la hauteur d'écran :
-  une colonne de lecture (titre, description, données), une photo forte sur toute la hauteur,
-  puis les autres éléments calés alternativement en haut et en bas (photos par deux avec décalage,
-  citations en respiration) ; titres à taille commune ; un élément trop haut est réduit (`zoom`) ;
-  tout contenu non prévu est ajouté en fin de chapitre ;
+- chaque chapitre est une page de 900 px de haut composée dans Figma (fichier « Tests », page
+  Test 04) : positions et tailles reprises dans `PAGES` (`js/horizontal.js`), la page entière étant
+  mise à l'échelle de la hauteur de l'écran (`zoom`) ; tout contenu non prévu est ajouté à droite ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;

@@ -229,7 +229,7 @@
   // Du département au terrain : sur la vue drone du chapitre 01, la carte de l'Oise zoome
   // sur son repère puis s'efface pour laisser place à la photo.
   // ---------------------------------------------------------------------------
-  const droneFigure = document.querySelector("#chapitre-01 figure.fig .fig__media");
+  const droneFigure = [...document.querySelectorAll("#chapitre-01 figure.fig .fig__media")].find((media) => media.querySelector("img"));
   const heroMap = document.querySelector(".hero .map");
   if (motion && droneFigure && heroMap) {
     const overlay = document.createElement("div");
