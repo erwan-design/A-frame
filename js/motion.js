@@ -123,7 +123,7 @@
     clipped.forEach((el) => {
       const box = el.getBoundingClientRect();
       if (box.width === 0 && box.height === 0) return; // masqué à cette largeur
-      if (box.top < limit && box.bottom > 0) {
+      if (box.top < limit && box.bottom > 0 && box.left < window.innerWidth * 0.94 && box.right > 0) {
         clipped.delete(el);
         enqueue(el);
       }
@@ -154,7 +154,8 @@
         enqueue(entry.target);
       });
     },
-    { rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
+    // en défilement horizontal, les éléments entrent par la droite : marge à droite, pas en bas
+    { rootMargin: root.classList.contains("is-horizontal") ? "0px -6% 0px 0px" : "0px 0px -6% 0px", threshold: 0.06 }
   );
   waiting.filter((el) => !clipped.has(el)).forEach((el) => observer.observe(el));
 

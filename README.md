@@ -22,6 +22,7 @@ css/style.css     variables Figma, mise en page desktop ≥ 1440, tablette 800�
 js/main.js        horloge, défilement lissé, clic sur une ligne du sommaire, lecture des vidéos
 js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
+js/horizontal.js  prototype « défilement horizontal » des chapitres (branche prototype-horizontal)
 js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
 js/ambience.js    ambiance sonore de forêt (Web Audio)
 js/sketch.js      croquis de l'aménagement qui se dessine au survol
@@ -117,6 +118,33 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - Tout le reste est désactivé si le système demande de réduire les animations ; sans JavaScript, le
   contenu reste visible (les vidéos ne se lancent alors pas).
 - Images décodées en asynchrone (`decoding="async"`), sans effet sur le rendu.
+
+## Prototype « défilement horizontal » (branche `prototype-horizontal`)
+
+Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`, fin de `css/style.css`) :
+
+- héros, prologue et sommaire se lisent verticalement ; arrivé aux chapitres, l'écran se fige et
+  la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
+- chaque chapitre est une page de 900 px de haut composée dans Figma (fichier « Tests », page
+  Test 04) : positions et tailles reprises dans `PAGES` (`js/horizontal.js`), la page entière étant
+  mise à l'échelle de la hauteur de l'écran (`zoom`) ; les textes gardent les tailles de la version
+  verticale et du reste du site (zoom inverse) ; tout contenu non prévu est ajouté à droite ;
+- molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
+  flèches ‹ › du repère (chapitre précédent / suivant) ;
+- le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
+- le repère, les citations mot à mot et le zoom de la carte suivent l'axe horizontal ;
+- sous 900 px de haut, la page rétrécit mais pas les textes : un bloc qui en chevaucherait un autre
+  est descendu juste en dessous, une image poussée sous le bas est réduite ; en dessous de
+  1280 × 780 : lecture verticale habituelle.
+
+Vérification : `python3 tools/horizontal_check.py 1440 900`.
+
+## Tailles de texte (harmonisées)
+
+Même rôle, même taille, sur tout le site : citations 30 px (Chillon), textes de chapitre 16 px
+(Poppins Light, épilogue compris), textes d'introduction 18 px (héros, prologue, journal), labels
+en capitales 14 px (GT Kotoheim Mono, badge « 1,45 ha » et versions compris). Écarts avec la
+maquette Figma d'origine : citation du résultat 28 → 30, épilogue 18 → 16, badge et versions 16 → 14.
 
 ## Publication
 

@@ -14,6 +14,7 @@
 
   // Défilement vers un élément : Lenis s'il est actif, sinon défilement fluide natif.
   const goTo = (target) => {
+    if (window.__hs && window.__hs.open(target)) return; // prototype « défilement horizontal »
     if (window.__lenis) window.__lenis.scrollTo(target, { duration: 1.2, easing: (t) => 1 - Math.pow(1 - t, 4) });
     else target.scrollIntoView({ behavior: motion ? "smooth" : "auto" });
   };
@@ -65,11 +66,17 @@
     story.setAttribute("aria-label", "Chapitres du récit");
     story.innerHTML = `
       <div class="story__bar" aria-hidden="true"><span class="story__fill"></span></div>
+      <button class="story__step story__step--prev" type="button" aria-label="Chapitre précédent" title="Chapitre précédent">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 8h-9M7 4.5 3.5 8 7 11.5" /></svg>
+      </button>
       <button class="story__toggle" type="button" aria-expanded="false" aria-controls="story-menu">
         <span class="story__num"><span class="story__current">01</span><span class="story__total">/${String(chapters.length).padStart(2, "0")}</span></span>
-        <span class="story__title"></span>
-        <span class="story__date"></span>
+        <span class="story__slot story__slot--title"><span class="story__title"></span>${chapters.map((chapter) => `<span class="story__ghost" aria-hidden="true">${chapter.title}</span>`).join("")}</span>
+        <span class="story__slot story__slot--date"><span class="story__date"></span>${chapters.map((chapter) => `<span class="story__ghost" aria-hidden="true">${chapter.date}</span>`).join("")}</span>
         <span class="story__chevron" aria-hidden="true"></span>
+      </button>
+      <button class="story__step story__step--next" type="button" aria-label="Chapitre suivant" title="Chapitre suivant">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8h9M9 4.5 12.5 8 9 11.5" /></svg>
       </button>
       <button class="story__sound" type="button" aria-pressed="false" aria-label="Activer l'ambiance sonore" title="Ambiance sonore">
         <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
@@ -122,6 +129,16 @@
       if (!menu.hidden && !story.contains(event.target)) setMenu(false);
     });
 
+    // flèches : chapitre précédent / suivant
+    const prevButton = story.querySelector(".story__step--prev");
+    const nextButton = story.querySelector(".story__step--next");
+    const step = (delta) => {
+      const target = chapters[Math.max(0, Math.min(chapters.length - 1, active + delta))];
+      if (target && target !== chapters[active]) goTo(target.section);
+    };
+    prevButton.addEventListener("click", () => step(-1));
+    nextButton.addEventListener("click", () => step(1));
+
     let active = -1;
     const show = (index) => {
       if (index === active) return;
@@ -131,6 +148,8 @@
       title.textContent = chapter.title;
       date.textContent = chapter.date;
       menuButtons.forEach((button, i) => button.toggleAttribute("aria-current", i === index));
+      prevButton.disabled = index === 0;
+      nextButton.disabled = index === chapters.length - 1;
       if (motion) {
         story.classList.remove("is-changing");
         void story.offsetWidth; // relance l'animation de changement de titre
@@ -140,6 +159,15 @@
 
     tasks.push((viewport) => {
       const line = viewport * 0.4;
+      // prototype « défilement horizontal » : chapitre et progression lus sur l'axe horizontal
+      if (window.__hs) {
+        const state = window.__hs.state();
+        story.classList.toggle("is-visible", state.active);
+        if (!state.active && !menu.hidden) setMenu(false);
+        show(state.index);
+        fill.style.transform = `scaleX(${state.progress.toFixed(4)})`;
+        return;
+      }
       const first = chapters[0].section.getBoundingClientRect();
       const last = chapters[chapters.length - 1].section.getBoundingClientRect();
       const inStory = first.top < line && last.bottom > line;
@@ -183,7 +211,10 @@
         if (box.bottom < -viewport || box.top > viewport * 2) return;
         // commence quand la citation entre par le bas, finit quand son bas atteint 60 % de l'écran
         // (sur mobile la citation est haute : les derniers mots s'éclairent quand on les lit)
-        const progress = clamp((viewport * 0.9 - box.top) / (viewport * 0.3 + box.height));
+        const width = window.innerWidth;
+        const progress = root.classList.contains("is-horizontal")
+          ? clamp((width - box.left) / (box.width + width * 0.12)) // éclairée en entier quand elle est lisible en entier
+          : clamp((viewport * 0.9 - box.top) / (viewport * 0.3 + box.height));
         const lit = progress * words.length;
         if (Math.abs(lit - last) < 0.01) return;
         last = lit;
@@ -198,7 +229,7 @@
   // Du département au terrain : sur la vue drone du chapitre 01, la carte de l'Oise zoome
   // sur son repère puis s'efface pour laisser place à la photo.
   // ---------------------------------------------------------------------------
-  const droneFigure = document.querySelector("#chapitre-01 .terrain__left .fig__media");
+  const droneFigure = [...document.querySelectorAll("#chapitre-01 figure.fig .fig__media")].find((media) => media.querySelector("img"));
   const heroMap = document.querySelector(".hero .map");
   if (motion && droneFigure && heroMap) {
     const overlay = document.createElement("div");
@@ -241,8 +272,10 @@
       const box = droneFigure.getBoundingClientRect();
       if (box.bottom < 0 || box.top > viewport) return;
       placeMap(box);
-      // 0 quand la photo entre par le bas, 1 quand son haut atteint 30 % de l'écran
-      const progress = clamp((viewport - box.top) / (viewport * 0.7));
+      // 0 quand la photo entre par le bas (ou par la droite), 1 quand elle a parcouru 70 % de l'écran
+      const progress = root.classList.contains("is-horizontal")
+        ? clamp((window.innerWidth - box.left) / (box.width * 1.1)) // la photo est dégagée dès qu'elle est entièrement à l'écran
+        : clamp((viewport - box.top) / (viewport * 0.7));
       const zoom = 1 + Math.pow(smooth(0.1, 0.85, progress), 2.2) * 22;
       map.style.transform = `scale(${zoom.toFixed(3)})`;
       markers.forEach((marker) => (marker.style.transform = `scale(${(1 / zoom).toFixed(4)})`));
