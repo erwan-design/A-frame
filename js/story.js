@@ -213,7 +213,7 @@
         // (sur mobile la citation est haute : les derniers mots s'éclairent quand on les lit)
         const width = window.innerWidth;
         const progress = root.classList.contains("is-horizontal")
-          ? clamp((width * 0.9 - box.left) / (width * 0.4 + box.width * 0.6))
+          ? clamp((width - box.left) / (box.width + width * 0.12)) // éclairée en entier quand elle est lisible en entier
           : clamp((viewport * 0.9 - box.top) / (viewport * 0.3 + box.height));
         const lit = progress * words.length;
         if (Math.abs(lit - last) < 0.01) return;
@@ -274,7 +274,7 @@
       placeMap(box);
       // 0 quand la photo entre par le bas (ou par la droite), 1 quand elle a parcouru 70 % de l'écran
       const progress = root.classList.contains("is-horizontal")
-        ? clamp((window.innerWidth - box.left) / (window.innerWidth * 0.7))
+        ? clamp((window.innerWidth - box.left) / (box.width * 1.1)) // la photo est dégagée dès qu'elle est entièrement à l'écran
         : clamp((viewport - box.top) / (viewport * 0.7));
       const zoom = 1 + Math.pow(smooth(0.1, 0.85, progress), 2.2) * 22;
       map.style.transform = `scale(${zoom.toFixed(3)})`;

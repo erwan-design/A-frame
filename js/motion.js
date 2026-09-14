@@ -154,7 +154,8 @@
         enqueue(entry.target);
       });
     },
-    { rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
+    // en défilement horizontal, les éléments entrent par la droite : marge à droite, pas en bas
+    { rootMargin: root.classList.contains("is-horizontal") ? "0px -6% 0px 0px" : "0px 0px -6% 0px", threshold: 0.06 }
   );
   waiting.filter((el) => !clipped.has(el)).forEach((el) => observer.observe(el));
 

@@ -127,7 +127,9 @@ Sur les écrans d'au moins 1440 × 720 (`js/horizontal.js`, fin de `css/style.cs
   la lecture part vers la droite ; après le chapitre 06, la page reprend verticalement ;
 - chaque chapitre est une page de 900 px de haut composée dans Figma (fichier « Tests », page
   Test 04) : positions et tailles reprises dans `PAGES` (`js/horizontal.js`), la page entière étant
-  mise à l'échelle de la hauteur de l'écran (`zoom`) ; tout contenu non prévu est ajouté à droite ;
+  mise à l'échelle de la hauteur de l'écran (`zoom`) ; les textes courants et légendes gardent
+  leur taille Figma (jamais agrandis), titres et citations grandissent de moitié moins que les
+  photos ; tout contenu non prévu est ajouté à droite ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;

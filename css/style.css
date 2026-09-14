@@ -1266,3 +1266,13 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .is-horizontal .chapter .ctitle { padding-top: 0; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: baseline; gap: 16px 32px; }
 .is-horizontal .chapter .ctitle h2 { font-size: 76px; white-space: nowrap; text-align: left; }
 .is-horizontal .chapter .ctitle--inline { flex-wrap: nowrap; } /* compteur à côté du titre, comme dans Figma */
+/* tailles de texte : zoom inverse sur les textes (--tz) et les titres / citations (--dz), l'emplacement
+   (.hs__slot) gardant la position et la largeur de la mise en page */
+.hs__slot > .hs__text, .hs__slot > .hs__display { position: relative !important; left: auto !important; top: auto !important; margin: 0 !important; max-width: none !important; min-width: 0 !important; flex: none !important; }
+.hs__slot > .hs__text { zoom: var(--tz, 1); width: 100% !important; } /* les pourcentages ne sont pas zoomés : 100 % = largeur de l'emplacement */
+.hs__slot > .hs__display { zoom: var(--dz, 1); width: 100% !important; }
+.hs__slot > .quote, .hs__slot > .resultat-quote, .hs__slot > .epilogue { display: block; padding: 0; }
+.hs__slot > .quote p, .hs__slot > .resultat-quote blockquote, .hs__slot > .resultat-quote p, .hs__slot > .epilogue .epilogue__text { display: block; width: 100%; max-width: none; text-align: left; }
+.hs__slot > .resultat__stats .resultat__stats-in { padding: 0 !important; }
+.hs__slot > .versions__list .versions__list-in { padding: 0; }
+.hs__abs figcaption { zoom: var(--tz, 1); }

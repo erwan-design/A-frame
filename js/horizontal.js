@@ -88,6 +88,10 @@
   wrap.append(stage);
   sections[0].before(wrap);
 
+  // textes courants (taille fixe) et textes d'affichage (titres, citations : grandissent un peu)
+  const TEXT = ".ctop, .body, .amenagement__text, .table, .badge, .versions__list, .resultat__stats, .epilogue";
+  const DISPLAY = ".ctitle, .quote, .versions__quote, .resultat-quote";
+
   const hasContent = (element) =>
     (element.textContent || "").trim() !== "" || element.querySelector("img, video, svg, canvas, picture");
 
@@ -100,11 +104,21 @@
     const placed = [];
     plan.forEach(({ item, element }) => {
       if (!element) return;
-      element.classList.add("hs__abs");
-      Object.assign(element.style, { left: `${item.x}px`, top: `${item.y}px` });
       if (item.c) element.classList.add(item.c);
-      if (item.w) element.style.width = `${item.w}px`;
-      if (item.h) element.style.height = `${item.h}px`;
+      // blocs de texte : un emplacement suit la mise en page, le texte garde sa taille (voir layout)
+      const kind = element.matches(TEXT) ? "hs__text" : element.matches(DISPLAY) ? "hs__display" : null;
+      let box = element;
+      if (kind) {
+        box = document.createElement("div");
+        box.className = "hs__slot";
+        element.classList.add(kind);
+        box.append(element);
+      }
+      box.classList.add("hs__abs");
+      Object.assign(box.style, { left: `${item.x}px`, top: `${item.y}px` });
+      if (item.w) box.style.width = `${item.w}px`;
+      if (item.h) box.style.height = `${item.h}px`;
+      element = box;
       if (item.m) {
         const media = element.querySelector(".fig__media");
         if (media) media.style.height = `${item.m}px`;
@@ -133,7 +147,12 @@
 
   const layout = () => {
     // chaque page de 900 px est mise à l'échelle de la hauteur de l'écran
-    track.style.setProperty("--s", (window.innerHeight / 900).toFixed(4));
+    const s = window.innerHeight / 900;
+    track.style.setProperty("--s", s.toFixed(4));
+    // les photos suivent la hauteur de l'écran ; les textes courants et légendes gardent leur taille
+    // Figma (jamais agrandis), titres et citations grandissent de moitié moins que les photos
+    track.style.setProperty("--tz", (Math.min(s, 1) / s).toFixed(4));
+    track.style.setProperty("--dz", (Math.min(s, 1 + (s - 1) * 0.5) / s).toFixed(4));
     travel = Math.max(0, track.scrollWidth - window.innerWidth);
     wrap.style.height = `${travel + window.innerHeight}px`;
     wrapTop = wrap.getBoundingClientRect().top + window.scrollY;
