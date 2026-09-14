@@ -1,0 +1,10 @@
+# Captures de comparaison (plusieurs centaines de Mo, régénérables avec tools/compare.py)
+refs/
+spec/compare.json
+tools/__pycache__/
+.DS_Store
+dist/
+dist.zip
+
+# Ancien dossier créé par GitHub Desktop (remplacé par ce dépôt)
+A frame/

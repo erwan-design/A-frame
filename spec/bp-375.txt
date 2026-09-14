@@ -1,0 +1,951 @@
+<div> data-page-overflowx='hidden' data-breakpoint-id='node-314_6117' data-breakpoint='true' data-width='375' data-height='24936' || position: relative; display: flex; flex-direction: column; align-items: center; min-width: var(--content-min-width); width: 100%; --content-min-width: 100%; --content-min-height: var(--100dvh); align-content: stretch; overflow: clip; background-color: #141d1f;
+  <header>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; width: 100%; align-content: stretch;
+    <div> aria-hidden='true' || position: absolute; inset: 0px; pointer-events: none;
+      <img> alt='' src='/_assets/v11/9520f44c9af1326bb65450dbe7442d17cc97fa08.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; opacity: 0.7;
+      <div>  || position: absolute; inset: 0px; pointer-events: none; background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 375 1332' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><linearGradient id='grad' gradientUnits='userSpaceOnUse' x1='-10' x2='10' y1='0' y2='0' gradientTransform='matrix(1.1481e-15 66.6 -18.75 4.0781e-15 187.5 666)'><stop stop-color='rgba(20,29,31,0)' offset='0'/><stop stop-color='rgba(20,29,31,1)' offset='1'/></linearGradient></defs></svg>");
+    <nav>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+      <div>  || display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; height: 100%; max-width: inherit;
+        <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 24px 106px; position: relative; padding: 32px 60px 24px; align-content: center;
+          <div>  || position: relative; flex-shrink: 0; display: flex; justify-content: center; align-items: center; gap: 6px; align-content: stretch;
+            <div> data-isimage='true' || width: 27px; height: 19px; position: relative; flex-shrink: 0; display: block;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.29%; right: 0.26%; bottom: 0.19%;
+                <img> src='/_assets/v11/65f8a0a9b8517d80045c58a6e5e0a85664c63207.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0px; text-align: center; line-height: 1.2; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+              "Frame"
+    <nav>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+      <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 60px; position: relative; padding: 40px 12px 60px; align-content: stretch;
+        <div>  || position: relative; flex-shrink: 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 54px 100px; width: 100%; align-content: center;
+          <h1 .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 1px; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 56px; letter-spacing: 0px; line-height: 1; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chronique d'une cabane en bord d’étang"
+          <div>  || max-width: 255px; width: 255px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 16px; align-content: stretch;
+            <div .tailwind>  || width: 175px; height: 28px; position: relative; flex-shrink: 0; display: block;
+            <div>  || width: 278px; height: 218px; position: relative; flex-shrink: 0; display: block;
+              <div> data-isimage='true' || position: absolute; display: block; left: 17.62%; right: 11.09%; top: 56.19%; bottom: 0px;
+                <div>  || position: absolute; top: 0; left: -0.21%; right: -0.25%; bottom: -0.52%;
+                  <img> src='/_assets/v11/cad1f49b97ff3f811d616577806f80a4392c36d4.png' alt='' width='199.087' height='96.061' || display: block; max-width: none; width: 100%; height: 100%;
+              <div> data-isimage='true' || position: absolute; display: block; left: 27.16%; right: 25%; top: 0px; bottom: 88.52%;
+                <div>  || position: absolute; top: -2%; left: -0.22%; right: -0.24%; bottom: -1.54%;
+                  <img> src='/_assets/v11/a6ff727d3f44e886861df3e055ecf81b40c30e18.png' alt='' width='133.611' height='25.912' || display: block; max-width: none; width: 100%; height: 100%;
+              <div> data-isimage='true' || position: absolute; display: block; left: 0px; right: 0px; top: 0.13%; bottom: 7.21%;
+                <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                  <img> src='/_assets/v11/2940ac5e9928e584d7c33fbdf2192c459afc26c6.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+              <div>  || height: 24px; left: 48.92%; right: 42.45%; bottom: 83px; position: absolute; display: block; overflow: clip;
+                <div> data-isimage='true' || width: 10px; left: 7px; top: 7px; bottom: 6px; position: absolute; display: block;
+                  <div>  || position: absolute; top: 0; left: 6.7%; right: 6.7%; bottom: 25%;
+                    <img> src='/_assets/v11/5302e06f1faf19d2cea523d14d7451d2df2e5bea.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                  <img> src='/_assets/v11/cde961e5a45c2dfa83dc9f255958562210f0fecc.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <div>  || position: relative; flex-shrink: 0; display: flex; justify-content: center; align-items: center; padding: 6px 16px; align-content: stretch;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; text-align: center; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0.56px;
+                "oise, france"
+        <div>  || position: relative; flex-shrink: 0; padding-top: 40px; padding-bottom: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 40px;
+          <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.2); border-top-width: 1px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: -0.5px; left: 0px; right: 0px; bottom: 0px; pointer-events: none;
+          <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: 1.6; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+              "Récit de la construction d'une cabane de type A-frame. Un projet de 14 mois, mené sur mon temps libre et mes week-ends, pour me faire un pied-à-terre où organiser des barbecues, et passer du temps au bord de l'eau."
+          <div>  || max-width: 255px; position: relative; flex-shrink: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 24px; align-content: center;
+            <div>  || width: 120px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; align-content: stretch;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 30px; letter-spacing: 0px; line-height: 1; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "2024"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "année"
+            <div>  || width: 120px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; align-content: stretch;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 30px; letter-spacing: 0px; line-height: 1; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "1 an"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "Durée"
+            <div>  || width: 120px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; align-content: stretch;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 30px; letter-spacing: 0px; line-height: 1; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                ">2500€"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "budget"
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; position: relative; padding: 60px 12px; align-content: flex-start; row-gap: 100px;
+      <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 40px; align-content: stretch;
+        <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: rgba(251,255,254,0.1); -webkit-text-fill-color: rgba(251,255,254,0.1); --letter-spacing: 0px;
+          "Prologue"
+        <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 24px; letter-spacing: 0px; line-height: 1.4; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Moi c'est Erwan. J'ai toujours aimé bricoler et passer du temps dehors, alors quand mon frère m'a parlé de son étang, un terrain qui ne servait à rien, avec juste de l'eau et des arbres, l'idée d'y construire quelque chose s'est imposée assez vite."
+          <div .textContents>  || position: relative; flex-shrink: 0; display: block; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: 0; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+            <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+              "L'idée de la cabane est venue d'Instagram, en tombant sur ces constructions en forme de A. La forme sortait du lot, et son auvent ouvrant laissait imaginer un espace qui change avec les saisons : de quoi me faire un pied-à-terre au bord de l'eau, pour y dormir, ranger des outils ou faire des barbecues."
+            <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+              "Personne n'était trop chaud pour m'aider, alors je m'y suis mis seul. Avant de commencer, beaucoup de préparation : trouver le bon emplacement aux abords de l'étang, pour la vue et l'ensoleillement, dessiner les plans, anticiper les dimensions et les matériaux à prévoir."
+            <p>  || display: block; line-height: 1.6;
+              "Pour raconter tout ça, j'ai découpé la construction en six chapitres, du terrain nu au résultat final. Et à la fin, un journal de bord que je continue d'alimenter : les dernières nouvelles du lieu, au fil des saisons."
+      <div>  || min-width: 160px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+        <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; width: 100%; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div> aria-hidden='true' || position: absolute; inset: 0px; pointer-events: none;
+              <img> loading='lazy' alt='' src='/_assets/v11/fc0b5bbafc2cb84bca4f2daafa059e1334f95106.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover;
+              <img> loading='lazy' alt='' src='/_assets/v11/117d769beef02843e49ff5ccc62573a2831bee37.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover;
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 60px 12px; align-content: stretch;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 16px; padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 24px;
+        <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: -0.5px; pointer-events: none;
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 4px; align-content: stretch;
+          <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.45%; right: 0.42%; bottom: 0.31%;
+                <img> loading='lazy' src='/_assets/v11/ccc30af42a228308c14c63f3f069b13740d62c93.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chapitre 01"
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+          <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+              <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+          <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+            "février 2024"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 32px 60px; width: 100%; align-content: baseline;
+        <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "Le terrain"
+        <div>  || width: 82px; height: 26px; position: relative; flex-shrink: 0; display: block;
+          <img> loading='lazy' alt='' src='/_assets/v11/c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <p .adjustLetterSpacing textContents>  || display: block; position: absolute; transform: translateX(-50%); font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0.72px; left: calc(50% - 1px); top: calc(50% - 9px); font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0.72px; text-align: center; line-height: 1; white-space: nowrap;
+            "01/06"
+          <div> data-isimage='true' || width: 10px; height: 10px; right: 0px; top: 0px; position: absolute; display: block;
+            <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+              <img> loading='lazy' src='/_assets/v11/8ac702e0762f12a9391c0da66b8333b0fabc5e17.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <div>  || width: 10px; height: 10px; left: 0px; bottom: 0px; position: absolute; display: flex; align-items: center; justify-content: center;
+            <div>  || flex: 0 0 auto; transform: matrix(-1, 0, 0, -1, 0, 0);
+              <div> data-isimage='true' || position: relative; display: block; width: 10px; height: 10px;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+                  <img> loading='lazy' src='/_assets/v11/874a1bade03b165a1933dca9afee67a9e9a2134a.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 80px;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; padding-top: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 64px; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; align-content: stretch;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.6; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+              "Le terrain fait un hectare et demi, bordé par une petite rivière qui alimente l'étang en forme de fer à cheval. Des arbres un peu partout, des peupliers, des chênes, et une terre gorgée d'eau qui sèche péniblement après de forte pluie. C'est un endroit reculé, à l'écart des villages, à 25 minutes de chez moi ; on y accède en s'enfonçant dans la forêt par un chemin étroit et marécageux. Mon frère le possède depuis 2019. C'est un endroit où l'on se sent au calme, où le silence règne, paisible, pas de route, pas de voisins, juste l'eau, les arbres et le bruit de la rivière et du vent."
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 436px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/85efa8d62e60c527fed3b0cfa611188b3302af60.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "drone"
+              <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 200px; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Le terrain et l'étang en fer à cheval"
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; gap: 64px; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div>  || display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; height: 100%;
+              <div>  || display: flex; justify-content: center; align-items: center; gap: 12px; position: relative; padding: 6px 16px; align-content: stretch; width: 100%; height: 100%;
+                <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                  <div> data-isimage='true' || position: absolute; display: block; inset: 2px;
+                    <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                      <img> loading='lazy' src='/_assets/v11/be89d5a0945c3202b7c47fea13b737bcfd49407f.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <div> data-isimage='true' || width: 14px; left: 5px; top: 5px; bottom: 5px; position: absolute; display: block;
+                    <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                      <img> loading='lazy' src='/_assets/v11/22f479e10136e2cf56b9b3961c2f732530d2d049.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <div> data-isimage='true' || position: absolute; display: block; inset: 8px;
+                    <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                      <img> loading='lazy' src='/_assets/v11/55415e3446a4364627994cfa3c0cf51b9b0792da.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 1px; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0.64px; line-height: 1; font-variation-settings: "wdth" 100; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0.64px;
+                  "1,45 ha de superficie"
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 540px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "vidéo"
+              <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 200px; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Abattage d’un arbre qui menacait"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 80px; display: flex; flex-direction: column; align-items: flex-start; width: 100%; align-content: stretch;
+        <p .textContents>  || display: block; position: relative; flex-shrink: 0; max-width: 900px; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 30px; letter-spacing: 0px; line-height: 1.4; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "“Avant même de poser une planche, je passais du temps à regarder le terrain. À chercher où placer la cabane, comment l'orienter pour cadrer les bons levers et couchers de soleil.”"
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 60px 12px; align-content: stretch;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 16px; padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 24px;
+        <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: -0.5px; pointer-events: none;
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 4px; align-content: stretch;
+          <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.45%; right: 0.42%; bottom: 0.31%;
+                <img> loading='lazy' src='/_assets/v11/ccc30af42a228308c14c63f3f069b13740d62c93.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chapitre 02"
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+          <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+              <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+          <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+            "mars 2024"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 32px 60px; width: 100%; align-content: baseline;
+        <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "Les fondations"
+        <div>  || width: 82px; height: 26px; position: relative; flex-shrink: 0; display: block;
+          <img> loading='lazy' alt='' src='/_assets/v11/c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <p .adjustLetterSpacing textContents>  || display: block; position: absolute; transform: translateX(-50%); font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0.72px; left: calc(50% - 1px); top: calc(50% - 9px); font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0.72px; text-align: center; line-height: 1; white-space: nowrap;
+            "02/06"
+          <div> data-isimage='true' || width: 10px; height: 10px; right: 0px; top: 0px; position: absolute; display: block;
+            <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+              <img> loading='lazy' src='/_assets/v11/8ac702e0762f12a9391c0da66b8333b0fabc5e17.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <div>  || width: 10px; height: 10px; left: 0px; bottom: 0px; position: absolute; display: flex; align-items: center; justify-content: center;
+            <div>  || flex: 0 0 auto; transform: matrix(-1, 0, 0, -1, 0, 0);
+              <div> data-isimage='true' || position: relative; display: block; width: 10px; height: 10px;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+                  <img> loading='lazy' src='/_assets/v11/874a1bade03b165a1933dca9afee67a9e9a2134a.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 24px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 80px;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; padding-top: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 64px; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; align-content: stretch;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.6; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+              "Avant de poser quoi que ce soit, il a fallu préparer le sol. J'ai terrassé le fond de forme à la pelle pour obtenir une surface plane, de quoi implanter les plots qui serviraient de points d'ancrage à la plateforme. Des parpaings disposés à intervalles réguliers, puis des bastaings posés dessus, espacés de 57 centimètres, pour former la base du plancher. Au final, une plateforme de 4 mètres sur 4, bien à plat, prête à recevoir la cabane."
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+              <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+              <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+                <div>  || display: flex; justify-content: space-between; align-items: baseline; position: relative; padding: 20px 16px; align-content: stretch; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                    "dimenssions"
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "4x4 m"
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+              <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+              <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+                <div>  || display: flex; justify-content: space-between; align-items: baseline; position: relative; padding: 20px 16px; align-content: stretch; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                    "entraxe bastaings"
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "57cm"
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+              <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+                <div>  || display: flex; justify-content: space-between; align-items: baseline; position: relative; padding: 20px 16px; align-content: stretch; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                    "plots d’ancrage"
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "6"
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 540px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/fc0b5bbafc2cb84bca4f2daafa059e1334f95106.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; align-content: stretch;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "TERRASSEMENT"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Mise à plat du fond de forme à la pelle"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 40px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 80px;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; padding-top: 40px; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 436px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/bc679a55b1314290915114bc8c956fbd3fc3dce7.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "IMPLANTATION"
+              <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 200px; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "La base du plancher prend forme, quatre mètres sur quatre"
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 340px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/e3511b95c6a938e3bde379f7f5d9e4f0155ce8ad.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "PLATEFORME"
+              <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 200px; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Les bastaings posés sur les plots, face à l'étang."
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 60px 12px; align-content: stretch;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 16px; padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 24px;
+        <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: -0.5px; pointer-events: none;
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 4px; align-content: stretch;
+          <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.45%; right: 0.42%; bottom: 0.31%;
+                <img> loading='lazy' src='/_assets/v11/ccc30af42a228308c14c63f3f069b13740d62c93.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chapitre 03"
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+          <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+              <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+          <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+            "avril 2024"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 32px 60px; width: 100%; align-content: baseline;
+        <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "La structure"
+        <div>  || width: 82px; height: 26px; position: relative; flex-shrink: 0; display: block;
+          <img> loading='lazy' alt='' src='/_assets/v11/c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <p .adjustLetterSpacing textContents>  || display: block; position: absolute; transform: translateX(-50%); font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0.72px; left: calc(50% - 1px); top: calc(50% - 9px); font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0.72px; text-align: center; line-height: 1; white-space: nowrap;
+            "03/06"
+          <div> data-isimage='true' || width: 10px; height: 10px; right: 0px; top: 0px; position: absolute; display: block;
+            <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+              <img> loading='lazy' src='/_assets/v11/8ac702e0762f12a9391c0da66b8333b0fabc5e17.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <div>  || width: 10px; height: 10px; left: 0px; bottom: 0px; position: absolute; display: flex; align-items: center; justify-content: center;
+            <div>  || flex: 0 0 auto; transform: matrix(-1, 0, 0, -1, 0, 0);
+              <div> data-isimage='true' || position: relative; display: block; width: 10px; height: 10px;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+                  <img> loading='lazy' src='/_assets/v11/874a1bade03b165a1933dca9afee67a9e9a2134a.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 80px; padding-bottom: 60px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 60px;
+        <div>  || min-width: 120px; max-width: 260px; position: relative; flex: 1 0 0;
+          <div>  || min-width: inherit; max-width: inherit; width: 100%; height: 100%; padding-right: 40px; display: flex; flex-direction: column; align-items: flex-start; position: relative; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; opacity: 0.5; font-variation-settings: "wdth" 100; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: normal; white-space: nowrap;
+                "*V1. 23/11"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; opacity: 0.5; font-variation-settings: "wdth" 100; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: normal; white-space: nowrap;
+                "*V2. 02/01"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; opacity: 0.5; font-variation-settings: "wdth" 100; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: normal; white-space: nowrap;
+                "*V3. 15/02"
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 30px; letter-spacing: 0px; line-height: 1.4; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "“Première leçon de chantier en solo : ce qui tient le soir ne tient pas forcément le lendemain matin.”"
+      <div>  || position: relative; flex-shrink: 0; width: 100%;
+        <img> loading='lazy' alt='' src='/_assets/v11/034cf3e9522b43e6c0f7894078877fc7eacec784.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; opacity: 0.04; inset: 0px; pointer-events: none;
+        <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+          <div>  || display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 40px 128px; position: relative; padding: 40px 30px; align-content: flex-start; width: 100%; height: 100%;
+            <div>  || max-width: 195px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+              <div>  || width: 195px; height: 195px; position: relative; flex-shrink: 0; display: block; mix-blend-mode: screen;
+                <img> loading='lazy' alt='' src='/_assets/v11/50793ae20668bf02adb628cef443f63fe92bd061.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+              <div> style='transform:translateX(-50%)' || transform: translateX(-50%); align-content: stretch; position: absolute; display: flex; align-items: center; gap: 10px; left: calc(50% + 0.5px); top: 0px;
+                <div> data-isimage='true' || width: 14px; height: 14px; position: relative; flex-shrink: 0; display: block;
+                  <img> loading='lazy' src='/_assets/v11/b6bb81fb19052c28d2dc0f75a7ccfe3d89d3bd1f.svg' alt='' || display: block; position: absolute; max-width: none; width: 100%; height: 100%; inset: 0px;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                  "Structure en A Frame"
+            <div>  || max-width: 195px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; align-content: stretch;
+              <div>  || width: 195px; height: 195px; position: relative; flex-shrink: 0; display: block; mix-blend-mode: screen;
+                <img> loading='lazy' alt='' src='/_assets/v11/53eaa156f716cf605f2e23d518632b972f08d1a4.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+              <div>  || position: absolute; display: flex; justify-content: flex-end; align-items: flex-end; gap: 10px; right: 30px; bottom: 0px; align-content: stretch;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                  "Vue de face"
+                <div> data-isimage='true' style='transform:translateX(-50%) translateY(-50%)' || width: 68px; height: 19.245px; left: calc(50% + 1px); top: calc(50% - 5.38px); transform: translateX(-50%) translateY(-50%); position: absolute; display: block;
+                  <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -1.67%; left: -0.47%; right: -0.47%; bottom: -1.67%;
+                    <img> loading='lazy' src='/_assets/v11/990695f503635d5f5e9491ed544fc942908465b4.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <div>  || max-width: 195px; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+              <div>  || width: 195px; height: 195px; position: relative; flex-shrink: 0; display: block; mix-blend-mode: screen;
+                <img> loading='lazy' alt='' src='/_assets/v11/3f9fc22a694bf25b7345d7a61bd1fbdeea7b79db.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+              <div>  || position: absolute; display: flex; align-items: center; gap: 10px; left: 70px; bottom: 0px; align-content: stretch;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                  "Terrasse"
+                <div> data-isimage='true' || width: 14px; height: 14px; position: relative; flex-shrink: 0; display: block;
+                  <img> loading='lazy' src='/_assets/v11/b6bb81fb19052c28d2dc0f75a7ccfe3d89d3bd1f.svg' alt='' || display: block; position: absolute; max-width: none; width: 100%; height: 100%; inset: 0px;
+              <div>  || width: 74px; height: 77px; right: 40px; top: 9.92px; position: absolute; display: block;
+                <p .textContents>  || display: block; position: absolute; left: 0px; top: 0px; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                  "Auvent"
+                <div> data-isimage='true' || width: 25.5px; height: 61.136px; left: 42.75px; top: 16px; position: absolute; display: block;
+                  <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                    <img> loading='lazy' src='/_assets/v11/4c8d2bc4bb0b1a2d03ab57c23ec74052ea162099.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <div>  || width: 134px; height: 134px; right: 0px; bottom: 0.08px; position: absolute; display: block;
+              <div> data-isimage='true' || position: absolute; display: block; left: 14px; right: 0px; top: 14px; bottom: 0px;
+                <div> style='--fill-0:rgba(199, 195, 183, 1)' || position: absolute; inset: 0;
+                  <img> loading='lazy' src='/_assets/v11/9865a624e9b72b718ff2d0a9304defc0da9d10bf.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+              <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: 44px; right: 5.15px; top: 42px; bottom: 7.15px;
+                <div>  || flex: 0 0 auto; transform: matrix(0.7071067811865476, -0.7071067811865476, 0.7071067811865472, 0.7071067811865477, 0, 0); width: 104px; height: 16px;
+                  <p .textContents>  || display: block; position: relative; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; text-align: center; line-height: 1; white-space: nowrap; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px;
+                    "Ébauche A Frame"
+              <div>  || width: 48.79px; height: 48.79px; right: 11.21px; top: 7px; position: absolute; display: flex; align-items: center; justify-content: center;
+                <div>  || flex: 0 0 auto; transform: matrix(0.70710676908493, -0.70710676908493, 0.70710676908493, 0.70710676908493, 0, 0);
+                  <p .textContents>  || display: block; position: relative; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 10px; letter-spacing: 0px; text-align: right; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "*V3 - 2024"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 80px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 60px;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; align-content: stretch;
+            <div .textContents>  || position: relative; flex-shrink: 0; display: block; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 0; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+              <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+                "Une fois le plancher posé, place au cœur du projet : la structure en A. Tout repose sur une série de fermes triangulaires, montées au sol puis relevées une à une, et maintenues entre elles par des planches clouées en travers, le temps de tout solidariser. Sur le papier, c'est simple. Seul, beaucoup moins : il faut relever chaque A, le caler d'aplomb et le fixer avant qu'il ne bascule, sans personne pour tenir l'autre bout."
+              <p>  || display: block; line-height: 1.6;
+                "J'avais monté les premières fermes un soir, en repartant plutôt content de moi. Le lendemain matin, en revenant, tout était par terre. Les contreventements temporaires n'avaient pas tenu la nuit. Retour à la case départ, tout refaire, en plus solide cette fois. C'est là que j'ai vraiment compris ce que voulait dire construire seul. Petit à petit, le squelette a fini par tenir, et pour la première fois, on devinait la silhouette de l'A-frame."
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; gap: 64px; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+              <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+              <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+                <div>  || display: flex; justify-content: space-between; align-items: baseline; position: relative; padding: 20px 16px; align-content: stretch; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                    "HAUTEUR total"
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "3,3 m"
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+              <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+              <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+                <div>  || display: flex; justify-content: space-between; align-items: baseline; position: relative; padding: 20px 16px; align-content: stretch; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                    "Auvent"
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "2x2 m"
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+              <div>  || display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%;
+                <div>  || display: flex; justify-content: space-between; align-items: baseline; position: relative; padding: 20px 16px; align-content: stretch; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                    "Terrasse"
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                    "1,2x4 m"
+          <div>  || width: 24px; height: 24px; left: -12px; top: -11.78px; position: absolute; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateX(-50%) translateY(-50%)' || width: 16px; height: 16px; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); position: absolute; display: block;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; inset: 0;
+                <img> loading='lazy' src='/_assets/v11/f81f68133dc4556fe22a06e16665aa6ab3fa19da.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 80px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 80px;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 436px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/9520f44c9af1326bb65450dbe7442d17cc97fa08.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "OSSATURE"
+              <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 200px; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Les fermes en A relevées et reliées, vues de face"
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || height: 340px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "MONTAGE"
+              <p .textContents>  || min-width: 200px; position: relative; flex: 1 0 0; display: block; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 0; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                <span>  || line-height: 1.2;
+                  "Mise en place"
+                <span>  || line-height: 1.2;
+                  "de la porte"
+                <span>  || line-height: 1.2;
+                  "et des renforts"
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 60px 12px; align-content: stretch;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 16px; padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 24px;
+        <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: -0.5px; pointer-events: none;
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 4px; align-content: stretch;
+          <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.45%; right: 0.42%; bottom: 0.31%;
+                <img> loading='lazy' src='/_assets/v11/ccc30af42a228308c14c63f3f069b13740d62c93.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chapitre 04"
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+          <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+              <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+          <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+            "juin - juillet 2024"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 32px 60px; width: 100%; align-content: baseline;
+        <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "L’isolation"
+        <div>  || width: 82px; height: 26px; position: relative; flex-shrink: 0; display: block;
+          <img> loading='lazy' alt='' src='/_assets/v11/c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <p .adjustLetterSpacing textContents>  || display: block; position: absolute; transform: translateX(-50%); font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0.72px; left: calc(50% - 1px); top: calc(50% - 9px); font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0.72px; text-align: center; line-height: 1; white-space: nowrap;
+            "04/06"
+          <div> data-isimage='true' || width: 10px; height: 10px; right: 0px; top: 0px; position: absolute; display: block;
+            <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+              <img> loading='lazy' src='/_assets/v11/8ac702e0762f12a9391c0da66b8333b0fabc5e17.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <div>  || width: 10px; height: 10px; left: 0px; bottom: 0px; position: absolute; display: flex; align-items: center; justify-content: center;
+            <div>  || flex: 0 0 auto; transform: matrix(-1, 0, 0, -1, 0, 0);
+              <div> data-isimage='true' || position: relative; display: block; width: 10px; height: 10px;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+                  <img> loading='lazy' src='/_assets/v11/874a1bade03b165a1933dca9afee67a9e9a2134a.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 24px;
+        <div>  || position: relative; flex-shrink: 0; padding-top: 40px; padding-right: 60px; display: flex; align-items: center; align-content: stretch;
+          <div>  || width: 138px; height: 153px; position: relative; flex-shrink: 0; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; display: block; filter: drop-shadow(8px 8px 0px #101819); overflow: clip;
+            <div>  || width: 138px; height: 153px; left: 0px; top: 0px; position: absolute; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/4b1c3cbc0f1b3e8684d80dbc159fd7c49bb0433d.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0;
+          <div>  || min-width: inherit; width: 100%; height: 100%; padding-right: 40px; display: flex; flex-direction: column; align-items: flex-start; position: relative; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; align-content: stretch;
+              <div .textContents>  || position: relative; flex-shrink: 0; display: block; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 0; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+                <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+                  "Plus que de l'isolation au sens strict, cette étape, c'était surtout mettre la cabane hors d'eau. D'abord les panneaux d'OSB pour fermer la structure, puis une membrane de sous-toiture imperméable, et enfin les tôles par-dessus."
+                <p>  || display: block; line-height: 1.6;
+                  "Les tôles, ça a été toute une histoire. Pour faire simple et ne rien racheter, j'ai réutilisé de vieilles tôles que j'avais en stock. Elles étaient rouges, je les ai repeint plus tard pour que l'ensemble se fonde mieux dans le décor (on y revient au chapitre suivant)."
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0;
+          <div>  || min-width: inherit; width: 100%; height: 100%; padding-right: 40px; display: flex; flex-direction: column; align-items: flex-start; position: relative; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; align-content: stretch;
+              <div .textContents>  || position: relative; flex-shrink: 0; display: block; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 0; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+                <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+                  "Le plus important, c'était de bien les poser : un ensemble étanche, des découpes propres, surtout autour de la fenêtre, de la porte et de l'auvent, où ça se complique vite."
+                <p>  || display: block; line-height: 1.6;
+                  "Je ne vais pas faire semblant que tout était parfait. Il y a eu quelques loupés, notamment sur les tôles latérales : des découpes ratées qui m'ont laissé des panneaux dans le mauvais sens. Le genre d'erreur qu'on ne fait qu'une fois."
+      <div>  || position: relative; flex-shrink: 0; padding-top: 80px; display: flex; align-items: flex-end; flex-wrap: wrap; gap: 54px 48px; width: 100%; align-content: flex-end;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 32px; width: 100%; align-content: baseline;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "étanchéité"
+              <p .textContents>  || display: block; position: relative; flex: 1 0 0; min-width: 200px; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Membrane et premières tôles posées sur la structure."
+            <div>  || height: 580px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/cadda3d6abc303fe81801c36c65f43abb6ddff29.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; align-content: stretch;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "VUE AÉRIENNE"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "La toiture en cours, vue d'en haut."
+            <div>  || height: 480px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/381bd713fe513538e39f1f7731a9206ee63a4a71.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; align-content: stretch;
+              <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                "FAÇADE"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "Les tôles rouges en place, avant peinture."
+            <div>  || height: 480px; width: 100%; position: relative; flex-shrink: 0; display: block;
+              <img> loading='lazy' alt='' src='/_assets/v11/58e06b7e841df875fb0d3b00c26fb1980b7b8637.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 60px 12px; align-content: stretch;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 16px; padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 24px;
+        <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: -0.5px; pointer-events: none;
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 4px; align-content: stretch;
+          <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.45%; right: 0.42%; bottom: 0.31%;
+                <img> loading='lazy' src='/_assets/v11/ccc30af42a228308c14c63f3f069b13740d62c93.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chapitre 05"
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+          <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+              <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+          <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+            "janvier 2025"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 32px 60px; width: 100%; align-content: baseline;
+        <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "L’aménagement"
+        <div>  || width: 82px; height: 26px; position: relative; flex-shrink: 0; display: block;
+          <img> loading='lazy' alt='' src='/_assets/v11/c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <p .adjustLetterSpacing textContents>  || display: block; position: absolute; transform: translateX(-50%); font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0.72px; left: calc(50% - 1px); top: calc(50% - 9px); font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0.72px; text-align: center; line-height: 1; white-space: nowrap;
+            "05/06"
+          <div> data-isimage='true' || width: 10px; height: 10px; right: 0px; top: 0px; position: absolute; display: block;
+            <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+              <img> loading='lazy' src='/_assets/v11/8ac702e0762f12a9391c0da66b8333b0fabc5e17.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <div>  || width: 10px; height: 10px; left: 0px; bottom: 0px; position: absolute; display: flex; align-items: center; justify-content: center;
+            <div>  || flex: 0 0 auto; transform: matrix(-1, 0, 0, -1, 0, 0);
+              <div> data-isimage='true' || position: relative; display: block; width: 10px; height: 10px;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+                  <img> loading='lazy' src='/_assets/v11/874a1bade03b165a1933dca9afee67a9e9a2134a.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 80px;
+        <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 64px; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; width: 100%; align-content: stretch;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 24px; letter-spacing: 0px; line-height: 1.4; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+              "Au départ, j'imaginais quelque chose de très tiny house : un grand lit, un coin cosy, un espace pensé surtout pour s'y poser."
+            <div .textContents>  || position: relative; flex-shrink: 0; display: block; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 0; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+              <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+                "En avançant, j'ai préféré partir sur un aménagement hybride, un endroit où dormir et passer du temps, mais aussi où manger et bricoler. Sur le terrain, il y a toujours des travaux à prévoir, et avoir un espace sec où poser ses outils et travailler, ça change tout."
+              <p>  || display: block; line-height: 1.6;
+                "L'intérieur a commencé simple : une table, quelques chaises. Puis je l'ai construit petit à petit. Un meuble qui fait à la fois table et établi. Une banquette rétractable qui se transforme en lit pour la nuit. Et un poêle, que j'ai restauré et installé pour passer l'hiver au chaud. Rien de définitif, tout pensé pour évoluer avec les besoins."
+          <div>  || min-width: 195px; width: 100%; position: relative; flex-shrink: 0; display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 40px; align-content: flex-start;
+            <div>  || min-width: 195px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; align-content: stretch;
+              <div>  || height: 360px; width: 100%; position: relative; flex-shrink: 0; display: block;
+                <img> loading='lazy' alt='' src='/_assets/v11/7496f8d1e59556f927061c2b4ca9701a89a4b027.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+              <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; align-content: stretch;
+                <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                  "INTÉRIEUR"
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                  "Le coin séjour, poêle et fenêtre de toit ouverte sur l'étang."
+            <div>  || min-width: 195px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; align-content: stretch;
+              <div>  || height: 280px; width: 100%; position: relative; flex-shrink: 0; display: block;
+                <img> loading='lazy' alt='' src='/_assets/v11/723901c6b37b53fe7b533042354a10f0987795f1.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+              <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; align-content: stretch;
+                <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+                  "LE POÊLE"
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.2; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                  "Le poêle restauré, installé près de l'entrée."
+        <div>  || min-width: 255px; height: 433px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; align-content: stretch;
+          <div>  || position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; min-height: 1px; width: 100%; opacity: 0.5; align-content: stretch;
+            <div>  || position: relative; flex: 1 0 0; display: block; min-height: 1px; width: 100%;
+              <img> loading='lazy' alt='' src='/_assets/v11/794d4cf25ae96affd91f5fcb663a19ac7e41962d.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+  <section>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+    <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 60px 12px 100px; align-content: stretch;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 16px; padding-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; align-content: center; row-gap: 24px;
+        <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: -0.5px; pointer-events: none;
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 4px; align-content: stretch;
+          <div>  || width: 24px; height: 24px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+              <div> style='--fill-0:rgba(251, 255, 254, 1)' || position: absolute; top: 0; left: 0.45%; right: 0.42%; bottom: 0.31%;
+                <img> loading='lazy' src='/_assets/v11/ccc30af42a228308c14c63f3f069b13740d62c93.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 16px; letter-spacing: 0px; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "Chapitre 06"
+        <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+          <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+            <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+              <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+                  <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(251,255,254,0.1);
+          <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0.56px;
+            "avril 2025"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 48px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; width: 100%; align-content: stretch;
+        <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 42px; letter-spacing: 0px; text-align: center; line-height: 1; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+          "Le résultat"
+        <div>  || width: 82px; height: 26px; position: relative; flex-shrink: 0; display: block;
+          <img> loading='lazy' alt='' src='/_assets/v11/c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <p .adjustLetterSpacing textContents>  || display: block; position: absolute; transform: translateX(-50%); font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0.72px; left: calc(50% - 1px); top: calc(50% - 9px); font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 18px; letter-spacing: 0.72px; text-align: center; line-height: 1; white-space: nowrap;
+            "06/06"
+          <div> data-isimage='true' || width: 10px; height: 10px; right: 0px; top: 0px; position: absolute; display: block;
+            <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+              <img> loading='lazy' src='/_assets/v11/8ac702e0762f12a9391c0da66b8333b0fabc5e17.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+          <div>  || width: 10px; height: 10px; left: 0px; bottom: 0px; position: absolute; display: flex; align-items: center; justify-content: center;
+            <div>  || flex: 0 0 auto; transform: matrix(-1, 0, 0, -1, 0, 0);
+              <div> data-isimage='true' || position: relative; display: block; width: 10px; height: 10px;
+                <div> style='--stroke-0:rgba(251, 255, 254, 1)' || position: absolute; top: -5%; left: 0; right: -5%; bottom: 0;
+                  <img> loading='lazy' src='/_assets/v11/874a1bade03b165a1933dca9afee67a9e9a2134a.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+      <div>  || position: relative; flex-shrink: 0; padding-top: 60px; display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 120px;
+        <div>  || max-width: 720px; min-width: 1px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: stretch;
+          <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 28px; letter-spacing: 0px; text-align: center; line-height: 1.4; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+            "“Le jour où j'ai pu m'asseoir sur la terrasse et regarder l'étang, je me suis dit que ça valait tous les week-ends passés dessus.”"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 60px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0px 136px; width: 100%; align-content: center;
+        <div>  || min-width: 220px; position: relative; flex: 1 0 0; padding-bottom: 40px; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+            <div>  || display: flex; flex-direction: column; align-items: flex-start; gap: 8px; position: relative; padding: 16px; align-content: stretch; width: 100%; height: 100%;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                "HAUTEUR SOUS FAÎTE"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "3,3 m"
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+            <div>  || display: flex; flex-direction: column; align-items: flex-start; gap: 8px; position: relative; padding: 16px; align-content: stretch; width: 100%; height: 100%;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                "surface au sol"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "16 m2"
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div>  || display: flex; flex-direction: column; align-items: flex-start; gap: 8px; position: relative; padding: 16px; align-content: stretch; width: 100%; height: 100%;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                "durée"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "~14 mois"
+        <div>  || min-width: 255px; height: 425px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: center; gap: 64px; align-content: stretch;
+          <div>  || position: relative; flex: 1 0 0; display: block; min-height: 1px; width: 100%;
+        <div>  || min-width: 220px; position: relative; flex: 1 0 0; padding-top: 40px; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+            <div>  || display: flex; flex-direction: column; align-items: flex-start; gap: 8px; position: relative; padding: 16px; align-content: stretch; width: 100%; height: 100%;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                "Budget"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                ">2500€"
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div> aria-hidden='true' || border-style: solid; border-color: rgba(251,255,254,0.1); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+            <div>  || display: flex; flex-direction: column; align-items: flex-start; gap: 8px; position: relative; padding: 16px; align-content: stretch; width: 100%; height: 100%;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                "main d’oeuvre"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "1"
+          <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #101819;
+            <div>  || display: flex; flex-direction: column; align-items: flex-start; gap: 8px; position: relative; padding: 16px; align-content: stretch; width: 100%; height: 100%;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(251,255,254,0.4); -webkit-text-fill-color: rgba(251,255,254,0.4); --letter-spacing: 0px;
+                "année de construction"
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: normal; white-space: nowrap; color: #fbfffe; -webkit-text-fill-color: #fbfffe; --letter-spacing: 0px;
+                "2024"
+      <div>  || position: relative; flex-shrink: 0; padding-top: 60px; display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; width: 100%; align-content: flex-start; row-gap: 120px;
+        <div>  || max-width: 720px; min-width: 1px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: stretch;
+          <div .textContents>  || position: relative; flex-shrink: 0; display: block; width: 100%; font-family: "Poppins:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: 0; color: rgba(251,255,254,0.7); -webkit-text-fill-color: rgba(251,255,254,0.7); --letter-spacing: 0px;
+            <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+              "Après des mois de week-ends, la cabane est là. Toit repeint pour se fondre dans le décor, terrasse face à l'étang, intérieur sec et chaleureux. Vue de loin, on dirait qu'elle a toujours été là. Elle n'est pas parfaite, mais elle tient debout, elle est étanche, et elle fait tout ce que j'attendais d'elle."
+            <p>  || display: block; margin-bottom: 0px; line-height: 1.6;
+              "Il y a des choses que je referais autrement, des fermes plus solides, du bois plutôt que de la tôle, un auvent mieux pensé. Mais construire seul, c'est apprendre en faisant : on rate, on recommence, et on finit avec quelque chose qui est entièrement à soi."
+            <p>  || display: block; line-height: 1.6;
+              "À chaque fois que j'y retourne, j'aime m'y poser. Et ce projet m'a donné envie d'aller plus loin : repartir sur la même idée, à partir d'un conteneur cette fois, et pourquoi pas le proposer à la location."
+  <article>  || position: relative; flex-shrink: 0; border-top-left-radius: 20px; border-top-right-radius: 20px; display: flex; flex-direction: column; align-items: center; width: 100%; align-content: stretch; background-color: #c7c3b7;
+    <div>  || position: relative; flex-shrink: 0; width: 100%;
+      <div>  || display: flex; flex-direction: row; justify-content: flex-end; width: 100%; height: 100%;
+        <div>  || padding-left: 12px; padding-right: 12px; display: flex; justify-content: flex-end; align-items: flex-start; position: relative; align-content: stretch; width: 100%; height: 100%;
+          <div> data-isimage='true' || width: 80px; height: 95px; position: relative; flex-shrink: 0; display: block;
+            <div> style='--fill-0:rgba(169, 165, 153, 1)' || position: absolute; top: 0; left: 0; right: -7.5%; bottom: -4.21%;
+              <img> loading='lazy' src='/_assets/v11/82d24dee9fd160bc7d5ee3d5a5a323b0e09f740f.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+    <div>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+      <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; position: relative; padding: 40px 12px 80px; align-content: stretch;
+        <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 40px; width: 100%; align-content: stretch;
+          <h2 .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 56px; letter-spacing: 0px; line-height: 1; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px;
+            "Journal de bord"
+          <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+            <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+              <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+                <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                  <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                    <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+            <p .adjustLetterSpacing textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0.56px; line-height: 1; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0.56px;
+              "aujourd’hui"
+        <div>  || position: relative; flex-shrink: 0; padding-top: 48px; padding-bottom: 64px; display: flex; flex-direction: column; align-items: flex-start; width: 100%; align-content: stretch;
+          <div> aria-hidden='true' || border-style: solid; border-color: rgba(22,17,14,0.2); border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+          <div>  || max-width: 420px; width: 100%; position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 18px; letter-spacing: 0px; line-height: 1.6; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px;
+              "La cabane, c'était l'étape 1. Maintenant c'est le terrain qui occupe le temps : il y a toujours quelque chose à faire, à entretenir, à remettre en état. Et quand tout est fait, c'est simplement un endroit où il fait bon être. Je note ici ce qui s'y passe, au fil des saisons."
+    <div>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+      <div>  || max-width: inherit; width: 100%; height: 100%; padding-bottom: 80px; padding-left: 12px; padding-right: 12px; display: grid; grid-auto-flow: row; position: relative; grid-template-columns: repeat(1,minmax(0,1fr)); grid-template-rows: repeat(7,fit-content(100%)); column-gap: 32px; row-gap: 32px;
+        <div>  || min-width: 260px; height: 540px; position: relative; flex-shrink: 0; justify-self: stretch; display: flex; flex-direction: column; align-items: flex-start; align-content: stretch;
+          <div>  || position: relative; flex: 1 0 0; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 1px; width: 100%; align-content: stretch; background-color: #a9a599;
+            <div> data-isimage='true' || width: 15.657px; height: 13.57px; left: -8px; top: -5.78px; position: absolute; display: block;
+              <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                <img> loading='lazy' src='/_assets/v11/865879d8b1c8fe2be351e2a928b64de1a6b2f44e.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <div> data-isimage='true' || width: 15.657px; height: 13.57px; right: -7.66px; bottom: -6.79px; position: absolute; display: block;
+              <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                <img> loading='lazy' src='/_assets/v11/865879d8b1c8fe2be351e2a928b64de1a6b2f44e.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <div>  || width: 127.026px; height: 119.725px; position: relative; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+              <div>  || flex: 0 0 auto; transform: matrix(0.984807789325714, -0.173648178577423, 0.173648178577423, 0.984807789325714, 0, 0);
+                <div .textContents>  || position: relative; display: block; font-family: "Mortega:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 34px; letter-spacing: 0px; text-align: center; line-height: 0; white-space: nowrap; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px;
+                  <p>  || display: block; margin-bottom: 0px; line-height: 1;
+                    "Prochaine"
+                  <p>  || display: block; margin-bottom: 0px; line-height: 1;
+                    "aventure"
+                  <p>  || display: block; line-height: 1;
+                    "à venir"
+            <div> data-isimage='true' || width: 93.4px; height: 28.4px; position: relative; flex-shrink: 0; display: block;
+              <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                <img> loading='lazy' src='/_assets/v11/7ff2c4ac331f1014744e4ee3d806a6d10f2eefd8.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+        <div>  || min-width: 260px; position: relative; flex-shrink: 0; justify-self: stretch; align-self: flex-start; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div> data-isimage='true' || height: 99px; left: 8px; right: 8px; top: -7px; position: absolute; display: block;
+              <div>  || position: absolute; top: -2.02%; left: -0.6%; right: -0.6%; bottom: -2.02%;
+                <img> loading='lazy' src='/_assets/v11/808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <img> loading='lazy' alt='' src='/_assets/v11/c07d6e84175214389898567b6bff1d1a1280cf05.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <img> loading='lazy' alt='' src='/_assets/v11/2a4e21569701ce537eb03cbe61a69efb4a1091c6.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #bdb9ad;
+              <div>  || display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 4px 6px; align-content: stretch; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                  "septembre 2026"
+                <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 6px; align-content: stretch;
+                  <div>  || width: 16px; height: 16px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                    <div> data-isimage='true' || width: 14px; height: 14px; left: 1px; top: 1px; position: absolute; display: block;
+                      <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                        <img> loading='lazy' src='/_assets/v11/cb8d3ea964a6907e67e9e85f755617a8b8459a2d.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                    "été"
+            <p .textContents>  || display: -webkit-box; position: relative; flex-shrink: 0; height: 44px; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.4; text-overflow: ellipsis; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+              "Dégagement et évacuation d’arbres tombés sur le terrain et dans le cours d’eau"
+        <div>  || min-width: 260px; position: relative; flex-shrink: 0; justify-self: stretch; align-self: flex-start; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block; background-color: #d9d9d9;
+            <div> data-isimage='true' || height: 99px; left: 8px; right: 8px; top: -7px; position: absolute; display: block;
+              <div>  || position: absolute; top: -2.02%; left: -0.6%; right: -0.6%; bottom: -2.02%;
+                <img> loading='lazy' src='/_assets/v11/808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <img> loading='lazy' alt='' src='/_assets/v11/2621b795fbebf247014a4988e110ceb2c21fcec8.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || height: 60px; left: 0px; right: 0px; bottom: 0px; position: absolute; display: block; background-color: #fbfffe;
+            <div>  || height: 60px; left: 0px; right: 0px; top: 0px; position: absolute; display: block; background-color: #fbfffe;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #bdb9ad;
+              <div>  || display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 4px 6px; align-content: stretch; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                  "août 2026"
+                <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 6px; align-content: stretch;
+                  <div>  || width: 16px; height: 16px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                    <div> data-isimage='true' || width: 14px; height: 14px; left: 1px; top: 1px; position: absolute; display: block;
+                      <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                        <img> loading='lazy' src='/_assets/v11/cb8d3ea964a6907e67e9e85f755617a8b8459a2d.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                    "été"
+            <p .textContents>  || display: -webkit-box; position: relative; flex-shrink: 0; height: 44px; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.4; text-overflow: ellipsis; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+              "Entretien du terrain, environ 1h30 pour tondre les contours de l’étang."
+        <div>  || min-width: 260px; position: relative; flex-shrink: 0; justify-self: stretch; align-self: flex-start; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div> data-isimage='true' || height: 99px; left: 8px; right: 8px; top: -7px; position: absolute; display: block;
+              <div>  || position: absolute; top: -2.02%; left: -0.6%; right: -0.6%; bottom: -2.02%;
+                <img> loading='lazy' src='/_assets/v11/808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <img> loading='lazy' alt='' src='/_assets/v11/c07d6e84175214389898567b6bff1d1a1280cf05.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <img> loading='lazy' alt='' src='/_assets/v11/e7ab2f621c70465e739b2244551462f991456c76.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #bdb9ad;
+              <div>  || display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 4px 6px; align-content: stretch; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                  "février 2026"
+                <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 6px; align-content: stretch;
+                  <div>  || width: 16px; height: 16px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                    <div> data-isimage='true' || width: 13.772px; height: 13.772px; left: 1px; top: 1.23px; position: absolute; display: block;
+                      <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                        <img> loading='lazy' src='/_assets/v11/ab8d233cd379c55c6a358390abdeae361cc6fa84.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                    "hiver"
+            <p .textContents>  || display: -webkit-box; position: relative; flex-shrink: 0; height: 44px; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.4; text-overflow: ellipsis; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+              "Une chouette aperçue en pleine nuit capturé par la caméra."
+        <div>  || min-width: 260px; position: relative; flex-shrink: 0; justify-self: stretch; align-self: flex-start; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div> data-isimage='true' || height: 99px; left: 8px; right: 8px; top: -7px; position: absolute; display: block;
+              <div>  || position: absolute; top: -2.02%; left: -0.6%; right: -0.6%; bottom: -2.02%;
+                <img> loading='lazy' src='/_assets/v11/808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <img> loading='lazy' alt='' src='/_assets/v11/7ee45715d898839af417da9847949aa73a469916.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <div>  || position: absolute; border-style: solid; border-color: #fbfffe; border-top-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-right-width: 10px; display: block; inset: 0px;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #bdb9ad;
+              <div>  || display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 4px 6px; align-content: stretch; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                  "août 2025"
+                <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 6px; align-content: stretch;
+                  <div>  || width: 16px; height: 16px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                    <div> data-isimage='true' || width: 14px; height: 14px; left: 1px; top: 1px; position: absolute; display: block;
+                      <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                        <img> loading='lazy' src='/_assets/v11/cb8d3ea964a6907e67e9e85f755617a8b8459a2d.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                    "été"
+            <p .textContents>  || display: -webkit-box; position: relative; flex-shrink: 0; height: 44px; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.4; text-overflow: ellipsis; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+              "Petit travaux d'aménagement autour de la cabane pour une allée."
+        <div>  || min-width: 260px; position: relative; flex-shrink: 0; justify-self: stretch; align-self: flex-start; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div> data-isimage='true' || height: 99px; left: 8px; right: 8px; top: -7px; position: absolute; display: block;
+              <div>  || position: absolute; top: -2.02%; left: -0.6%; right: -0.6%; bottom: -2.02%;
+                <img> loading='lazy' src='/_assets/v11/808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <img> loading='lazy' alt='' src='/_assets/v11/c07d6e84175214389898567b6bff1d1a1280cf05.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <img> loading='lazy' alt='' src='/_assets/v11/430a1258a7ab8d21c149a9f349d4fcd7c9b23574.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #bdb9ad;
+              <div>  || display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 4px 6px; align-content: stretch; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                  "juillet 2025"
+                <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 6px; align-content: stretch;
+                  <div>  || width: 16px; height: 16px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                    <div> data-isimage='true' || width: 14px; height: 14px; left: 1px; top: 1px; position: absolute; display: block;
+                      <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                        <img> loading='lazy' src='/_assets/v11/cb8d3ea964a6907e67e9e85f755617a8b8459a2d.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                    "été"
+            <p .textContents>  || display: -webkit-box; position: relative; flex-shrink: 0; height: 44px; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.4; text-overflow: ellipsis; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+              "Pizza improvisée sur la terrasse à midi, profiter du soleil et du calme."
+        <div>  || min-width: 260px; position: relative; flex-shrink: 0; justify-self: stretch; align-self: flex-start; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+          <div>  || height: 440px; width: 100%; position: relative; flex-shrink: 0; display: block;
+            <div> data-isimage='true' || height: 99px; left: 8px; right: 8px; top: -7px; position: absolute; display: block;
+              <div>  || position: absolute; top: -2.02%; left: -0.6%; right: -0.6%; bottom: -2.02%;
+                <img> loading='lazy' src='/_assets/v11/808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+            <img> loading='lazy' alt='' src='/_assets/v11/c07d6e84175214389898567b6bff1d1a1280cf05.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+            <img> loading='lazy' alt='' src='/_assets/v11/e328f6614debeab7c0a2794dfcfaa3d08d7529f7.png' || max-width: none; width: 100%; height: 100%; position: absolute; object-fit: cover; inset: 0px; pointer-events: none;
+          <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; width: 100%; background-color: #bdb9ad;
+              <div>  || display: flex; justify-content: space-between; align-items: flex-start; position: relative; padding: 4px 6px; align-content: stretch; width: 100%; height: 100%;
+                <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                  "mars 2025"
+                <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 6px; align-content: stretch;
+                  <div>  || width: 16px; height: 16px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                    <div> data-isimage='true' || width: 14px; height: 10.98px; left: 1px; top: 2px; position: absolute; display: block;
+                      <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; inset: 0;
+                        <img> loading='lazy' src='/_assets/v11/e478ad1555954f3aaa606be3f0e114a3b668e353.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                  <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "GT Kotoheim Mono Medium VF:Medium",sans-serif; word-break: break-word; font-style: normal; text-transform: uppercase; font-size: 14px; letter-spacing: 0px; line-height: normal; white-space: nowrap; font-variation-settings: "wdth" 100; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                    "printemps"
+            <p .textContents>  || display: -webkit-box; position: relative; flex-shrink: 0; height: 44px; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.4; text-overflow: ellipsis; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+              "Installation et premier test du poële, résultat la cabane se transforme en sauna."
+  <footer>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; width: 100%; align-content: stretch; background-color: #c7c3b7;
+    <div>  || max-width: 1440px; width: 100%; position: relative; flex-shrink: 0;
+      <div> aria-hidden='true' || border-style: solid; border-color: rgba(22,17,14,0.2); border-top-width: 1px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; position: absolute; inset: 0px; pointer-events: none;
+      <div>  || display: flex; flex-direction: row; align-items: flex-end; width: 100%; height: 100%; max-width: inherit;
+        <div>  || max-width: inherit; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; position: relative; padding: 60px 12px; align-content: flex-end; row-gap: 48px;
+          <div>  || min-width: 255px; position: relative; flex: 1 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; align-content: stretch;
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; width: 100%; align-content: stretch;
+              <div>  || position: relative; flex-shrink: 0; display: flex; align-items: center; gap: 12px; align-content: stretch;
+                <div>  || width: 40px; height: 40px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                  <div> data-isimage='true' style='transform:translateY(-50%)' || transform: translateY(-50%); aspect-ratio: 33.2490234375/23; position: absolute; display: block; left: 3px; right: 4px; top: 50%;
+                    <div> style='--fill-0:rgba(22, 17, 14, 1)' || position: absolute; top: 0; left: 0.24%; right: 0.22%; bottom: 0.16%;
+                      <img> loading='lazy' src='/_assets/v11/4a13dbb8d4c943a90d2c869ec2458f1b1a74f1a9.svg' alt='' || display: block; max-width: none; width: 100%; height: 100%;
+                <div>  || width: 64px; height: 8px; position: relative; flex-shrink: 0; display: block; overflow: clip;
+                  <div>  || position: absolute; display: flex; align-items: center; justify-content: center; left: -4.49px; right: -4.49px; top: -29.7px; bottom: -30.7px;
+                    <div>  || flex: 0 0 auto; transform: matrix(0.8660253998985324, 0.500000006730587, -0.5000000067305869, 0.8660253998985323, 0, 0); width: 58px; height: 45.495px;
+                      <div>  || position: relative; display: flex; align-items: center; gap: 2px; width: 100%; height: 100%; align-content: stretch;
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+                        <div>  || width: 2px; height: 100%; position: relative; flex-shrink: 0; display: block; background-color: rgba(22,17,14,0.2);
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: min-content; min-width: 100%; font-family: "Chillon:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 32px; letter-spacing: 0px; line-height: 1.1; color: #16110e; -webkit-text-fill-color: #16110e; --letter-spacing: 0px;
+                "La Frame, bientôt 2 ans d’existence et d’aventures."
+            <div>  || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-start; width: 100%; align-content: stretch;
+              <p .textContents>  || display: block; position: relative; flex-shrink: 0; width: 100%; font-family: "Poppins:Light",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; line-height: 1.6; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+                "La cabane est finie, mais le chantier non. Il reste pas mal d'aménagements autour de l'étang pour en faire un endroit où on a vraiment envie de traîner, et d'y passer du temps. La suite se construit petit à petit, repasse de temps en temps pour voir où ça en est."
+          <a> href='https://erwanguillou.me' target='_blank' || position: relative; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; cursor: pointer; align-content: stretch;
+            <p .textContents>  || display: block; position: relative; flex-shrink: 0; font-family: "Poppins:Regular",sans-serif; word-break: break-word; font-style: normal; font-size: 16px; letter-spacing: 0px; text-align: left; line-height: 1.6; white-space: nowrap; color: rgba(22,17,14,0.7); -webkit-text-fill-color: rgba(22,17,14,0.7); --letter-spacing: 0px;
+              "©2026 — Construit et écrit par Erwan Guillou"

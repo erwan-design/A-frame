@@ -1,0 +1,798 @@
+div [0,0,375,24864.6] flex:column a=center ; minw:100% ; bg:rgb(20, 29, 31) ; ov:clip
+  header [0,0,375,1330.4] flex:column a=center
+    div [0,0,375,1330.4] pos:absolute
+      img [0,0,375,1330.4] pos:absolute ; op:0.7 ; ov:clip ; src:9520f44c9af1326bb65450dbe7442d17cc97fa08.png ; fit:cover 50% 50%
+      div [0,0,375,1330.4] pos:absolute ; bgimg:url("data:image/svg+xml;utf8,<svg viewBox='0 0 375 1332' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='10
+    nav [0,0,375,77.6] maxw:1440px
+      div [0,0,375,77.6] flex:row j=center a=center ; maxw:1440px
+        div [0,0,375,77.6] flex:row j=center a=center wrap gap=24px/106px ; pad:32px 60px 24px 60px ; maxw:1440px
+          div [139.6,32,95.8,21.6] flex:row j=center a=center gap=6px/6px
+            div [139.6,33.3,27,19] 
+              div [139.7,33.3,26.9,19] pos:absolute
+                svg [139.7,33.3,26.8,19] role:presentation
+            p [172.6,32,62.8,21.6] font:CHIL 18px w400 lh 21.6px ls normal uppercase ta center nowrap LIGHT  "Frame"
+    nav [0,77.6,375,1252.8] maxw:1440px
+      div [0,77.6,375,1252.8] flex:column a=flex-start gap=60px/60px ; pad:40px 12px 60px 12px ; maxw:1440px
+        div [12,117.6,351,584] flex:row j=center a=center wrap gap=54px/100px
+          h1 [12,117.6,351,224] grow:1 0px ; minw:1px ; font:CHIL 56px w400 lh 56px ls normal ta left LIGHT  "Chronique d'une cabane en bord d’étang"
+          div [60,395.6,255,306] flex:column a=center gap=16px/16px ; maxw:255px
+            div [100,395.6,175,28] flex:column j=center a=center gap=16px/16px ; pad:8px 8px 8px 8px
+              div [133.7,400.6,107.6,18] font:ui-monospace 15px w400 lh normal ls 0.75px ta left rgb(255, 255, 255)  "08:29 UTC+2"
+            div [48.5,439.6,278,218] 
+              div [97.5,562.1,198.2,95.5] pos:absolute
+                div [97.1,562.1,199.1,96] pos:absolute
+                  img [97.1,562.1,199.1,96] ov:clip ; src:cad1f49b97ff3f811d616577806f80a4392c36d4.png ; fit:fill 50% 50%
+              div [124,439.6,133,25] pos:absolute
+                div [123.7,439.1,133.6,25.9] pos:absolute
+                  img [123.7,439.1,133.6,25.9] ov:clip ; src:a6ff727d3f44e886861df3e055ecf81b40c30e18.png ; fit:fill 50% 50%
+              div [48.5,439.9,278,202] pos:absolute
+                div [48.5,439.9,278,202] pos:absolute
+                  svg [48.5,439.9,278,202] role:presentation
+              div [184.5,550.6,24,24] pos:absolute ; ov:clip
+                div [191.5,557.6,10,11] pos:absolute
+                  div [192.1,557.6,8.7,8.3] pos:absolute
+                    img [192.1,557.6,8.7,8.3] ov:clip ; src:5302e06f1faf19d2cea523d14d7451d2df2e5bea.svg ; fit:fill 50% 50%
+                div [184.5,550.6,24,24] pos:absolute
+                  svg [184.5,550.6,24,24] role:presentation
+            div [115.5,673.6,144,28] flex:row j=center a=center ; pad:6px 16px 6px 16px
+              p [131.5,679.6,112,16] font:KOTO 14px w400 lh normal ls 0.56px uppercase ta center nowrap LIGHT  "oise, france"
+        div [12,761.6,351,508.8] flex:row j=space-between a=center wrap gap=40px/normal ; pad:40px 0px 40px 0px
+          div [12,761.1,351,509.3] pos:absolute ; bT:1px solid light(0.2)
+          div [12,801.6,351,172.8] flex:column a=center ; grow:1 0px ; minw:255px
+            p [12,801.6,351,172.8] font:POPL 18px w400 lh 28.8px ls normal ta left LIGHT  "Récit de la construction d'une cabane de type A-frame. Un projet de 14 mois, mené sur mon temps libre et mes week-ends, pour me faire un pied-à-terre où organiser des barbecues, et passer du temps au bord de l'eau."
+          div [12,1014.4,255,216] flex:row a=center wrap gap=24px/24px ; maxw:255px
+            div [12,1014.4,120,56] flex:column a=flex-start gap=12px/12px
+              p [12,1014.4,120,30] font:CHIL 30px w400 lh 30px ls normal uppercase ta left LIGHT  "2024"
+              p [12,1056.4,120,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left light(0.4)  "année"
+            div [12,1094.4,120,56] flex:column a=flex-start gap=12px/12px
+              p [12,1094.4,120,30] font:CHIL 30px w400 lh 30px ls normal uppercase ta left LIGHT  "1 an"
+              p [12,1136.4,120,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left light(0.4)  "Durée"
+            div [12,1174.4,120,56] flex:column a=flex-start gap=12px/12px
+              p [12,1174.4,120,30] font:CHIL 30px w400 lh 30px ls normal uppercase ta left LIGHT  ">2500€"
+              p [12,1216.4,120,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left light(0.4)  "budget"
+  section [0,1330.4,375,1730.7] maxw:1440px
+    div [0,1330.4,375,1730.7] flex:row j=space-between a=flex-start wrap gap=100px/normal ; pad:60px 12px 60px 12px ; maxw:1440px
+      div [12,1390.4,351,1070.7] flex:column a=flex-start gap=40px/40px ; grow:1 0px ; minw:255px
+        p [12,1390.4,186.5,42] font:CHIL 42px w400 lh 42px ls normal ta left nowrap light(0.1)  "Prologue"
+        div [12,1472.4,351,988.7] flex:column a=flex-start gap=24px/24px
+          p [12,1472.4,351,302.3] font:CHIL 24px w400 lh 33.6px ls normal ta left LIGHT  "Moi c'est Erwan. J'ai toujours aimé bricoler et passer du temps dehors, alors quand mon frère m'a parlé de son étang, un terrain qui ne servait à rien, avec juste de l'eau et des arbres, l'idée d'y construire quelque chose s'est imposée assez vite."
+          div [12,1798.7,351,662.3] 
+            p [12,1798.7,351,259.2] font:POPL 18px w400 lh 28.8px ls normal ta left light(0.7)  "L'idée de la cabane est venue d'Instagram, en tombant sur ces constructions en forme de A. La forme sortait du lot, et son auvent ouvrant laissait imaginer un espace qui change avec les saisons : de quoi me faire un pied-à-terre au bord de l'eau, pour y dormir, ranger des outils ou faire des barbecues."
+            p [12,2057.9,351,230.4] font:POPL 18px w400 lh 28.8px ls normal ta left light(0.7)  "Personne n'était trop chaud pour m'aider, alors je m'y suis mis seul. Avant de commencer, beaucoup de préparation : trouver le bon emplacement aux abords de l'étang, pour la vue et l'ensoleillement, dessiner les plans, anticiper les dimensions et les matériaux à prévoir."
+            p [12,2288.3,351,172.8] font:POPL 18px w400 lh 28.8px ls normal ta left light(0.7)  "Pour raconter tout ça, j'ai découpé la construction en six chapitres, du terrain nu au résultat final. Et à la fin, un journal de bord que je continue d'alimenter : les dernières nouvelles du lieu, au fil des saisons."
+      div [12,2561,351,440] flex:column a=center ; grow:1 0px ; minw:160px
+        div [12,2561,351,440] flex:column a=flex-start
+          div [12,2561,351,440] pos:absolute
+            img [12,2561,351,440] pos:absolute ; ov:clip ; src:fc0b5bbafc2cb84bca4f2daafa059e1334f95106.png ; fit:cover 50% 50%
+            img [12,2561,351,440] pos:absolute ; ov:clip ; src:117d769beef02843e49ff5ccc62573a2831bee37.png ; fit:cover 50% 50%
+  section [0,3061,375,2471.9] maxw:1440px
+    div [0,3061,375,2471.9] flex:column a=flex-start ; pad:60px 12px 60px 12px ; maxw:1440px
+      div [12,3121,351,56] flex:row j=space-between a=center wrap gap=24px/normal ; pad:16px 0px 16px 0px
+        div [12,3121,351,56.5] pos:absolute ; bB:1px solid light(0.1)
+        div [12,3137,130,24] flex:row a=center gap=4px/4px
+          div [12,3137,24,24] ov:clip
+            div [15,3143.2,17,11.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -5.875)
+              div [15.1,3143.2,16.9,11.7] pos:absolute
+                svg [15.1,3143.2,16.8,12] role:presentation
+          p [40,3141,102,16] font:CHIL 16px w400 lh 16px ls normal uppercase ta left nowrap LIGHT  "Chapitre 01"
+        div [175,3142,188,14] flex:row a=center gap=12px/12px
+          div [175,3145,64,8] ov:clip
+            div [170.5,3115.4,73,68.4] pos:absolute ; flex:row j=center a=center
+              div [170.5,3115.4,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                div [170.5,3115.4,73,68.4] flex:row a=center gap=2px/2px
+                  div [170.5,3115.4,24.5,40.4] bg:light(0.1)
+                  div [174,3117.4,24.5,40.4] bg:light(0.1)
+                  div [177.4,3119.4,24.5,40.4] bg:light(0.1)
+                  div [180.9,3121.4,24.5,40.4] bg:light(0.1)
+                  div [184.4,3123.4,24.5,40.4] bg:light(0.1)
+                  div [187.8,3125.4,24.5,40.4] bg:light(0.1)
+                  div [191.3,3127.4,24.5,40.4] bg:light(0.1)
+                  div [194.7,3129.4,24.5,40.4] bg:light(0.1)
+                  div [198.2,3131.4,24.5,40.4] bg:light(0.1)
+                  div [201.7,3133.4,24.5,40.4] bg:light(0.1)
+                  div [205.1,3135.4,24.5,40.4] bg:light(0.1)
+                  div [208.6,3137.4,24.5,40.4] bg:light(0.1)
+                  div [212.1,3139.4,24.5,40.4] bg:light(0.1)
+                  div [215.5,3141.4,24.5,40.4] bg:light(0.1)
+                  div [219,3143.4,24.5,40.4] bg:light(0.1)
+          p [251,3142,112,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "février 2024"
+      div [12,3177,351,90] flex:row a=baseline wrap gap=32px/60px ; pad:48px 0px 0px 0px
+        h2 [12,3225,199.2,42] font:CHIL 42px w400 lh 42px ls normal ta left nowrap LIGHT  "Le terrain"
+        div [271.2,3235,82,26] 
+          img [271.2,3235,82,26] pos:absolute ; ov:clip ; src:c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png ; fit:cover 50% 50%
+          p [281.4,3239,59.6,18] pos:absolute ; tf:matrix(1, 0, 0, 1, -29.7969, 0) ; font:KOTO 18px w400 lh 18px ls 0.72px uppercase ta center nowrap light(0.7)  "01/06"
+          div [343.2,3235,10,10] pos:absolute
+            div [343.2,3234.5,10.5,10.5] pos:absolute
+              svg [343.2,3234.5,10.5,10.5] role:presentation
+          div [271.2,3251,10,10] pos:absolute ; flex:row j=center a=center
+            div [271.2,3251,10,10] tf:matrix(-1, 0, 0, -1, 0, 0)
+              div [271.2,3251,10,10] 
+                div [270.7,3251,10.5,10.5] pos:absolute
+                  svg [270.7,3251,10.5,10.5] role:presentation
+      div [12,3267,351,1747.9] flex:row j=space-between a=center wrap gap=80px/normal ; pad:24px 0px 0px 0px
+        div [12,3291,351,960.7] flex:column a=flex-start gap=64px/64px ; pad:40px 0px 0px 0px ; grow:1 0px ; minw:255px
+          div [12,3331,351,358.3] flex:column j=center a=center
+            p [12,3331,351,358.3] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Le terrain fait un hectare et demi, bordé par une petite rivière qui alimente l'étang en forme de fer à cheval. Des arbres un peu partout, des peupliers, des chênes, et une terre gorgée d'eau qui sèche péniblement après de forte pluie. C'est un endroit reculé, à l'écart des villages, à 25 minutes de chez moi ; on y accède en s'enfonçant dans la forêt par un chemin étroit et marécageux. Mon frère le possède depuis 2019. C'est un endroit où l'on se sent au calme, où le silence règne, paisible, pas de route, pas de voisins, juste l'eau, les arbres et le bruit de la rivière et du vent."
+          div [12,3753.4,351,498.4] flex:column a=flex-start gap=24px/24px
+            img [12,3753.4,351,436] pos:absolute ; ov:clip ; src:85efa8d62e60c527fed3b0cfa611188b3302af60.png ; fit:cover 50% 50%
+            div [12,4213.4,351,38.4] flex:row a=baseline wrap gap=8px/32px
+              p [12,4217.4,46.4,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "drone"
+              p [90.4,4213.4,272.6,38.4] grow:1 0px ; minw:200px ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Le terrain et l'étang en fer à cheval"
+        div [12,4331.7,351,683.2] flex:column a=center gap=64px/64px ; grow:1 0px ; minw:255px
+          div [12,4331.7,351,36] bg:rgb(16, 24, 25)
+            div [12,4331.7,351,36] flex:row j=center a=center
+              div [12,4331.7,351,36] flex:row j=center a=center gap=12px/12px ; pad:6px 16px 6px 16px
+                div [28,4337.7,24,24] ov:clip
+                  div [30,4339.7,20,20] pos:absolute
+                    div [30,4339.7,20,20] pos:absolute
+                      svg [30,4339.7,20,20] role:presentation
+                  div [33,4342.7,14,14] pos:absolute
+                    div [33,4342.7,14,14] pos:absolute
+                      svg [33,4342.7,14,14] role:presentation
+                  div [36,4345.7,8,8] pos:absolute
+                    div [36,4345.7,8,8] pos:absolute
+                      svg [36,4345.7,8,8] role:presentation
+                p [64,4341.7,283,16] grow:1 0px ; minw:1px ; font:KOTO 16px w400 lh 16px ls 0.64px uppercase ta left LIGHT  "1,45 ha de superficie"
+          div [12,4431.7,351,583.2] flex:column a=flex-start gap=24px/24px
+            video [12,4431.7,351,540] pos:absolute ; ov:clip ; video:eb1e5449ed97c6cec5e55726986a78f3515fb2b2 poster= autoplay,loop,muted ; fit:cover
+              source [0,0,0,0] gcol: row  ; pad:    ; grow:  ; minw: ; maxw: ; m:    ; bg: ; bgimg: ; bT:   ; bR:   ; bB:   ; bL:   ; radius: ; shadow: ; op: ; tf: ; bdf: ; filter: ; blend: ; ov: ; z:
+            div [12,4995.7,351,19.2] flex:row a=baseline wrap gap=8px/32px
+              p [12,4999.7,46.4,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "vidéo"
+              p [90.4,4995.7,272.6,19.2] grow:1 0px ; minw:200px ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Abattage d’un arbre qui menacait"
+      div [12,5014.9,351,458] flex:column a=flex-start ; pad:80px 0px 0px 0px
+        p [12,5094.9,351,378] maxw:900px ; font:CHIL 30px w400 lh 42px ls normal ta left LIGHT  "“Avant même de poser une planche, je passais du temps à regarder le terrain. À chercher où placer la cabane, comment l'orienter pour cadrer les bons levers et couchers de soleil.”"
+  section [0,5532.9,375,2687.7] maxw:1440px
+    div [0,5532.9,375,2687.7] flex:column a=flex-start ; pad:60px 12px 60px 12px ; maxw:1440px
+      div [12,5592.9,351,56] flex:row j=space-between a=center wrap gap=24px/normal ; pad:16px 0px 16px 0px
+        div [12,5592.9,351,56.5] pos:absolute ; bB:1px solid light(0.1)
+        div [12,5608.9,133.1,24] flex:row a=center gap=4px/4px
+          div [12,5608.9,24,24] ov:clip
+            div [15,5615,17,11.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -5.875)
+              div [15.1,5615,16.9,11.7] pos:absolute
+                svg [15.1,5615,16.8,12] role:presentation
+          p [40,5612.9,105.1,16] font:CHIL 16px w400 lh 16px ls normal uppercase ta left nowrap LIGHT  "Chapitre 02"
+        div [200.2,5613.9,162.8,14] flex:row a=center gap=12px/12px
+          div [200.2,5616.9,64,8] ov:clip
+            div [195.7,5587.2,73,68.4] pos:absolute ; flex:row j=center a=center
+              div [195.7,5587.2,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                div [195.7,5587.2,73,68.4] flex:row a=center gap=2px/2px
+                  div [195.7,5587.2,24.5,40.4] bg:light(0.1)
+                  div [199.1,5589.2,24.5,40.4] bg:light(0.1)
+                  div [202.6,5591.2,24.5,40.4] bg:light(0.1)
+                  div [206.1,5593.2,24.5,40.4] bg:light(0.1)
+                  div [209.5,5595.2,24.5,40.4] bg:light(0.1)
+                  div [213,5597.2,24.5,40.4] bg:light(0.1)
+                  div [216.5,5599.2,24.5,40.4] bg:light(0.1)
+                  div [219.9,5601.2,24.5,40.4] bg:light(0.1)
+                  div [223.4,5603.2,24.5,40.4] bg:light(0.1)
+                  div [226.9,5605.2,24.5,40.4] bg:light(0.1)
+                  div [230.3,5607.2,24.5,40.4] bg:light(0.1)
+                  div [233.8,5609.2,24.5,40.4] bg:light(0.1)
+                  div [237.3,5611.2,24.5,40.4] bg:light(0.1)
+                  div [240.7,5613.2,24.5,40.4] bg:light(0.1)
+                  div [244.2,5615.2,24.5,40.4] bg:light(0.1)
+          p [276.2,5613.9,86.8,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "mars 2024"
+      div [12,5648.9,351,148] flex:row a=baseline wrap gap=32px/60px ; pad:48px 0px 0px 0px
+        h2 [12,5696.9,303.8,42] font:CHIL 42px w400 lh 42px ls normal ta left nowrap LIGHT  "Les fondations"
+        div [12,5770.9,82,26] 
+          img [12,5770.9,82,26] pos:absolute ; ov:clip ; src:c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png ; fit:cover 50% 50%
+          p [22.2,5774.9,59.6,18] pos:absolute ; tf:matrix(1, 0, 0, 1, -29.7969, 0) ; font:KOTO 18px w400 lh 18px ls 0.72px uppercase ta center nowrap light(0.7)  "02/06"
+          div [84,5770.9,10,10] pos:absolute
+            div [84,5770.4,10.5,10.5] pos:absolute
+              svg [84,5770.4,10.5,10.5] role:presentation
+          div [12,5786.9,10,10] pos:absolute ; flex:row j=center a=center
+            div [12,5786.9,10,10] tf:matrix(-1, 0, 0, -1, 0, 0)
+              div [12,5786.9,10,10] 
+                div [11.5,5786.9,10.5,10.5] pos:absolute
+                  svg [11.5,5786.9,10.5,10.5] role:presentation
+      div [12,5796.9,351,1283.7] flex:row j=space-between a=flex-start wrap gap=80px/normal ; pad:24px 0px 0px 0px
+        div [12,5820.9,351,574.5] flex:column a=flex-start gap=64px/64px ; pad:40px 0px 0px 0px ; grow:1 0px ; minw:255px
+          div [12,5860.9,351,281.5] flex:column j=center a=center
+            p [12,5860.9,351,281.5] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Avant de poser quoi que ce soit, il a fallu préparer le sol. J'ai terrassé le fond de forme à la pelle pour obtenir une surface plane, de quoi implanter les plots qui serviraient de points d'ancrage à la plateforme. Des parpaings disposés à intervalles réguliers, puis des bastaings posés dessus, espacés de 57 centimètres, pour former la base du plancher. Au final, une plateforme de 4 mètres sur 4, bien à plat, prête à recevoir la cabane."
+          div [12,6206.5,351,189] flex:column a=flex-start
+            div [12,6206.5,351,63] bg:rgb(16, 24, 25)
+              div [12,6206.5,351,63] pos:absolute ; bB:1px solid light(0.1)
+              div [12,6206.5,351,63] flex:row j=center a=normal
+                div [12,6206.5,351,63] flex:row j=space-between a=baseline ; pad:20px 16px 20px 16px
+                  p [28,6232.5,100,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "dimenssions"
+                  p [289.9,6226.5,57.1,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "4x4 m"
+            div [12,6269.5,351,63] bg:rgb(16, 24, 25)
+              div [12,6269.5,351,63] pos:absolute ; bB:1px solid light(0.1)
+              div [12,6269.5,351,63] flex:row j=center a=normal
+                div [12,6269.5,351,63] flex:row j=space-between a=baseline ; pad:20px 16px 20px 16px
+                  p [28,6295.5,150,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "entraxe bastaings"
+                  p [297.3,6289.5,49.7,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "57cm"
+            div [12,6332.5,351,63] bg:rgb(16, 24, 25)
+              div [12,6332.5,351,63] flex:row j=center a=normal
+                div [12,6332.5,351,63] flex:row j=space-between a=baseline ; pad:20px 16px 20px 16px
+                  p [28,6358.5,132.3,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "plots d’ancrage"
+                  p [334.6,6352.5,12.4,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "6"
+        div [12,6475.5,351,605.2] flex:column a=center ; grow:1 0px ; minw:255px
+          div [12,6475.5,351,605.2] flex:column a=flex-start gap=24px/24px
+            img [12,6475.5,351,540] pos:absolute ; ov:clip ; src:fc0b5bbafc2cb84bca4f2daafa059e1334f95106.png ; fit:cover 50% 50%
+            div [12,7039.5,351,41.2] flex:column j=center a=flex-start gap=8px/8px
+              p [12,7039.5,115,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "TERRASSEMENT"
+              p [12,7061.5,351,19.2] minw:100% ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Mise à plat du fond de forme à la pelle"
+      div [12,7080.6,351,1079.9] flex:row j=space-between a=flex-start wrap gap=80px/normal ; pad:40px 0px 0px 0px
+        div [12,7120.6,351,557.6] flex:column a=flex-start ; pad:40px 0px 0px 0px ; grow:1 0px ; minw:255px
+          div [12,7160.6,351,517.6] flex:column a=flex-start gap=24px/24px
+            img [12,7160.6,351,436] pos:absolute ; ov:clip ; src:bc679a55b1314290915114bc8c956fbd3fc3dce7.png ; fit:cover 50% 50%
+            div [12,7620.6,351,57.6] flex:row a=baseline wrap gap=8px/32px
+              p [12,7624.6,115,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "IMPLANTATION"
+              p [159,7620.6,204,57.6] grow:1 0px ; minw:200px ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "La base du plancher prend forme, quatre mètres sur quatre"
+        div [12,7758.2,351,402.4] flex:column a=center ; grow:1 0px ; minw:255px
+          div [12,7758.2,351,402.4] flex:column a=flex-start gap=24px/24px
+            img [12,7758.2,351,340] pos:absolute ; ov:clip ; src:e3511b95c6a938e3bde379f7f5d9e4f0155ce8ad.png ; fit:cover 50% 50%
+            div [12,8122.2,351,38.4] flex:row a=baseline wrap gap=8px/32px
+              p [12,8126.2,96.2,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "PLATEFORME"
+              p [140.2,8122.2,222.8,38.4] grow:1 0px ; minw:200px ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Les bastaings posés sur les plots, face à l'étang."
+  section [0,8220.6,375,3492.2] maxw:1440px
+    div [0,8220.6,375,3492.2] flex:column a=flex-start ; pad:60px 12px 60px 12px ; maxw:1440px
+      div [12,8280.6,351,56] flex:row j=space-between a=center wrap gap=24px/normal ; pad:16px 0px 16px 0px
+        div [12,8280.6,351,56.5] pos:absolute ; bB:1px solid light(0.1)
+        div [12,8296.6,132.9,24] flex:row a=center gap=4px/4px
+          div [12,8296.6,24,24] ov:clip
+            div [15,8302.7,17,11.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -5.875)
+              div [15.1,8302.7,16.9,11.7] pos:absolute
+                svg [15.1,8302.7,16.8,12] role:presentation
+          p [40,8300.6,104.9,16] font:CHIL 16px w400 lh 16px ls normal uppercase ta left nowrap LIGHT  "Chapitre 03"
+        div [193.7,8301.6,169.3,14] flex:row a=center gap=12px/12px
+          div [193.7,8304.6,64,8] ov:clip
+            div [189.3,8274.9,73,68.4] pos:absolute ; flex:row j=center a=center
+              div [189.2,8274.9,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                div [189.2,8274.9,73,68.4] flex:row a=center gap=2px/2px
+                  div [189.2,8274.9,24.5,40.4] bg:light(0.1)
+                  div [192.7,8276.9,24.5,40.4] bg:light(0.1)
+                  div [196.2,8278.9,24.5,40.4] bg:light(0.1)
+                  div [199.6,8280.9,24.5,40.4] bg:light(0.1)
+                  div [203.1,8282.9,24.5,40.4] bg:light(0.1)
+                  div [206.6,8284.9,24.5,40.4] bg:light(0.1)
+                  div [210,8286.9,24.5,40.4] bg:light(0.1)
+                  div [213.5,8288.9,24.5,40.4] bg:light(0.1)
+                  div [217,8290.9,24.5,40.4] bg:light(0.1)
+                  div [220.4,8292.9,24.5,40.4] bg:light(0.1)
+                  div [223.9,8294.9,24.5,40.4] bg:light(0.1)
+                  div [227.4,8296.9,24.5,40.4] bg:light(0.1)
+                  div [230.8,8298.9,24.5,40.4] bg:light(0.1)
+                  div [234.3,8300.9,24.5,40.4] bg:light(0.1)
+                  div [237.7,8302.9,24.5,40.4] bg:light(0.1)
+          p [269.7,8301.6,93.3,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "avril 2024"
+      div [12,8336.6,351,148] flex:row a=baseline wrap gap=32px/60px ; pad:48px 0px 0px 0px
+        h2 [12,8384.6,251.6,42] font:CHIL 42px w400 lh 42px ls normal ta left nowrap LIGHT  "La structure"
+        div [12,8458.6,82,26] 
+          img [12,8458.6,82,26] pos:absolute ; ov:clip ; src:c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png ; fit:cover 50% 50%
+          p [22.2,8462.6,59.6,18] pos:absolute ; tf:matrix(1, 0, 0, 1, -29.7969, 0) ; font:KOTO 18px w400 lh 18px ls 0.72px uppercase ta center nowrap light(0.7)  "03/06"
+          div [84,8458.6,10,10] pos:absolute
+            div [84,8458.1,10.5,10.5] pos:absolute
+              svg [84,8458.1,10.5,10.5] role:presentation
+          div [12,8474.6,10,10] pos:absolute ; flex:row j=center a=center
+            div [12,8474.6,10,10] tf:matrix(-1, 0, 0, -1, 0, 0)
+              div [12,8474.6,10,10] 
+                div [11.5,8474.6,10.5,10.5] pos:absolute
+                  svg [11.5,8474.6,10.5,10.5] role:presentation
+      div [12,8484.6,351,496] flex:row j=space-between a=flex-start wrap gap=60px/normal ; pad:80px 0px 60px 0px
+        div [12,8564.6,260,86] grow:1 0px ; minw:120px ; maxw:260px
+          div [12,8564.6,260,86] flex:column a=flex-start ; pad:0px 40px 0px 0px ; minw:120px ; maxw:260px
+            div [12,8564.6,100.8,86] flex:column a=flex-start gap=16px/16px
+              p [12,8564.6,100.8,18] op:0.5 ; font:KOTO 16px w400 lh normal ls normal uppercase ta left nowrap LIGHT  "*V1. 23/11"
+              p [12,8598.6,100.8,18] op:0.5 ; font:KOTO 16px w400 lh normal ls normal uppercase ta left nowrap LIGHT  "*V2. 02/01"
+              p [12,8632.6,100.8,18] op:0.5 ; font:KOTO 16px w400 lh normal ls normal uppercase ta left nowrap LIGHT  "*V3. 15/02"
+        div [12,8710.6,351,210] flex:column a=center ; grow:1 0px ; minw:255px
+          p [12,8710.6,351,210] font:CHIL 30px w400 lh 42px ls normal ta left LIGHT  "“Première leçon de chantier en solo : ce qui tient le soir ne tient pas forcément le lendemain matin.”"
+      div [12,8980.6,351,745] 
+        img [12,8980.6,351,745] pos:absolute ; op:0.04 ; ov:clip ; src:034cf3e9522b43e6c0f7894078877fc7eacec784.png ; fit:cover 50% 50%
+        div [12,8980.6,351,745] flex:row j=center a=normal
+          div [12,8980.6,351,745] flex:row j=center a=flex-start wrap gap=40px/128px ; pad:40px 30px 40px 30px
+            div [90,9020.6,195,195] flex:column a=center ; maxw:195px
+              div [90,9020.6,195,195] blend:screen
+                img [90,9020.6,195,195] pos:absolute ; ov:clip ; src:50793ae20668bf02adb628cef443f63fe92bd061.png ; fit:cover 50% 50%
+              div [112.2,9020.6,151.5,16] pos:absolute ; flex:row a=center gap=10px/10px ; tf:matrix(1, 0, 0, 1, -75.7656, 0)
+                img [112.2,9021.6,14,14] pos:absolute ; ov:clip ; src:b6bb81fb19052c28d2dc0f75a7ccfe3d89d3bd1f.svg ; fit:fill 50% 50%
+                p [136.2,9020.6,127.5,16] font:MORT 16px w400 lh 16px ls normal ta left nowrap LIGHT  "Structure en A Frame"
+            div [90,9255.6,195,195] flex:column j=flex-end a=flex-end ; maxw:195px
+              div [90,9255.6,195,195] blend:screen
+                img [90,9255.6,195,195] pos:absolute ; ov:clip ; src:53eaa156f716cf605f2e23d518632b972f08d1a4.png ; fit:cover 50% 50%
+              div [187.8,9434.6,67.2,16] pos:absolute ; flex:row j=flex-end a=flex-end gap=10px/10px
+                p [187.8,9434.6,67.2,16] font:MORT 16px w400 lh 16px ls normal ta left nowrap LIGHT  "Vue de face"
+                div [188.4,9427.6,68,19.2] pos:absolute ; tf:matrix(1, 0, 0, 1, -34, -9.61719)
+                  div [188.1,9427.3,68.6,19.9] pos:absolute
+                    svg [188.1,9427.3,68.6,19.9] role:presentation
+            div [90,9490.6,195,195] flex:column a=center ; maxw:195px
+              div [90,9490.6,195,195] blend:screen
+                img [90,9490.6,195,195] pos:absolute ; ov:clip ; src:3f9fc22a694bf25b7345d7a61bd1fbdeea7b79db.png ; fit:cover 50% 50%
+              div [160,9669.6,67.9,16] pos:absolute ; flex:row a=center gap=10px/10px
+                p [160,9669.6,43.9,16] font:MORT 16px w400 lh 16px ls normal ta left nowrap LIGHT  "Terrasse"
+                img [213.9,9670.6,14,14] pos:absolute ; ov:clip ; src:b6bb81fb19052c28d2dc0f75a7ccfe3d89d3bd1f.svg ; fit:fill 50% 50%
+              div [171,9500.5,74,77] pos:absolute
+                p [171,9500.5,36.1,16] pos:absolute ; font:MORT 16px w400 lh 16px ls normal ta left nowrap LIGHT  "Auvent"
+                div [213.8,9516.5,25.5,61.1] pos:absolute
+                  div [213.8,9516.5,25.5,61.1] pos:absolute
+                    svg [213.8,9516.5,25.5,61.1] role:presentation
+            div [229,9591.5,134,134] pos:absolute
+              div [243,9605.5,120,120] pos:absolute
+                div [243,9605.5,120,120] pos:absolute
+                  svg [243,9605.5,120,120] role:presentation
+              div [273,9633.5,84.9,84.9] pos:absolute ; flex:row j=center a=center
+                div [273,9633.5,84.9,84.9] tf:matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)
+                  p [273,9633.5,84.9,84.9] font:MORT 16px w400 lh 16px ls normal ta center nowrap rgb(22, 17, 14)  "Ébauche A Frame"
+              div [303.5,9598.5,48.3,48.3] pos:absolute ; flex:row j=center a=center
+                div [303.5,9598.5,48.3,48.3] tf:matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)
+                  p [303.5,9598.5,48.3,48.3] font:MORT 10px w400 lh 10px ls normal ta right nowrap LIGHT  "*V3 - 2024"
+      div [12,9725.6,351,866.5] flex:row j=space-between a=flex-start wrap gap=60px/normal ; pad:80px 0px 0px 0px
+        div [12,9805.6,351,537.5] flex:column a=flex-start ; grow:1 0px ; minw:255px
+          div [12,9805.6,351,537.5] flex:column j=center a=center
+            div [12,9805.6,351,537.5] 
+              p [12,9805.6,351,281.5] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Une fois le plancher posé, place au cœur du projet : la structure en A. Tout repose sur une série de fermes triangulaires, montées au sol puis relevées une à une, et maintenues entre elles par des planches clouées en travers, le temps de tout solidariser. Sur le papier, c'est simple. Seul, beaucoup moins : il faut relever chaque A, le caler d'aplomb et le fixer avant qu'il ne bascule, sans personne pour tenir l'autre bout."
+              p [12,10087.1,351,255.9] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "J'avais monté les premières fermes un soir, en repartant plutôt content de moi. Le lendemain matin, en revenant, tout était par terre. Les contreventements temporaires n'avaient pas tenu la nuit. Retour à la case départ, tout refaire, en plus solide cette fois. C'est là que j'ai vraiment compris ce que voulait dire construire seul. Petit à petit, le squelette a fini par tenir, et pour la première fois, on devinait la silhouette de l'A-frame."
+        div [12,10403,351,189] flex:column a=center gap=64px/64px ; grow:1 0px ; minw:255px
+          div [12,10403,351,189] flex:column a=flex-start
+            div [12,10403,351,63] bg:rgb(16, 24, 25)
+              div [12,10403,351,63] pos:absolute ; bB:1px solid light(0.1)
+              div [12,10403,351,63] flex:row j=center a=normal
+                div [12,10403,351,63] flex:row j=space-between a=baseline ; pad:20px 16px 20px 16px
+                  p [28,10429,114.7,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "HAUTEUR total"
+                  p [299.3,10423,47.7,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "3,3 m"
+            div [12,10466,351,63] bg:rgb(16, 24, 25)
+              div [12,10466,351,63] pos:absolute ; bB:1px solid light(0.1)
+              div [12,10466,351,63] flex:row j=center a=normal
+                div [12,10466,351,63] flex:row j=space-between a=baseline ; pad:20px 16px 20px 16px
+                  p [28,10492,52.9,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "Auvent"
+                  p [292.1,10486,54.9,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "2x2 m"
+            div [12,10529,351,63] bg:rgb(16, 24, 25)
+              div [12,10529,351,63] flex:row j=center a=normal
+                div [12,10529,351,63] flex:row j=space-between a=baseline ; pad:20px 16px 20px 16px
+                  p [28,10555,70.6,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "Terrasse"
+                  p [278.9,10549,68.1,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "1,2x4 m"
+          div [0,10391.3,24,24] pos:absolute ; ov:clip
+            div [4,10395.3,16,16] pos:absolute ; tf:matrix(1, 0, 0, 1, -8, -8)
+              div [4,10395.3,16,16] pos:absolute
+                svg [4,10395.3,16,16] role:presentation
+      div [12,10592,351,1060.8] flex:row j=space-between a=flex-start wrap gap=80px/normal ; pad:80px 0px 0px 0px
+        div [12,10672,351,498.4] flex:column a=flex-start ; grow:1 0px ; minw:255px
+          div [12,10672,351,498.4] flex:column a=flex-start gap=24px/24px
+            img [12,10672,351,436] pos:absolute ; ov:clip ; src:9520f44c9af1326bb65450dbe7442d17cc97fa08.png ; fit:cover 50% 50%
+            div [12,11132,351,38.4] flex:row a=baseline wrap gap=8px/32px
+              p [12,11136,74.5,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "OSSATURE"
+              p [118.5,11132,244.5,38.4] grow:1 0px ; minw:200px ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Les fermes en A relevées et reliées, vues de face"
+        div [12,11250.4,351,402.4] flex:column a=center ; grow:1 0px ; minw:255px
+          div [12,11250.4,351,402.4] flex:column a=flex-start gap=24px/24px
+            video [12,11250.4,351,340] pos:absolute ; ov:clip ; video:f3854cf057526337619cb99237d0a1aa4e60d30f poster= autoplay,loop,muted ; fit:cover
+              source [0,0,0,0] gcol: row  ; pad:    ; grow:  ; minw: ; maxw: ; m:    ; bg: ; bgimg: ; bT:   ; bR:   ; bB:   ; bL:   ; radius: ; shadow: ; op: ; tf: ; bdf: ; filter: ; blend: ; ov: ; z:
+            div [12,11614.4,351,38.4] flex:row a=baseline wrap gap=8px/32px
+              p [12,11618.4,68.1,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "MONTAGE"
+              p [112.1,11614.4,250.9,38.4] grow:1 0px ; minw:200px
+                span [112.1,11612.4,113.5,23] font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Mise en place"
+                span [225.6,11612.4,86.5,23] font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "de la porte"
+                span [112.1,11612.4,220.1,42.2] font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "et des renforts"
+  section [0,11712.8,375,3153.6] maxw:1440px
+    div [0,11712.8,375,3153.6] flex:column a=flex-start ; pad:60px 12px 60px 12px ; maxw:1440px
+      div [12,11772.8,351,94] flex:row j=space-between a=center wrap gap=24px/normal ; pad:16px 0px 16px 0px
+        div [12,11772.8,351,94.5] pos:absolute ; bB:1px solid light(0.1)
+        div [12,11788.8,134.6,24] flex:row a=center gap=4px/4px
+          div [12,11788.8,24,24] ov:clip
+            div [15,11794.9,17,11.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -5.875)
+              div [15.1,11794.9,16.9,11.7] pos:absolute
+                svg [15.1,11794.9,16.8,12] role:presentation
+          p [40,11792.8,106.6,16] font:CHIL 16px w400 lh 16px ls normal uppercase ta left nowrap LIGHT  "Chapitre 04"
+        div [12,11836.8,253.7,14] flex:row a=center gap=12px/12px
+          div [12,11839.8,64,8] ov:clip
+            div [7.5,11810.1,73,68.4] pos:absolute ; flex:row j=center a=center
+              div [7.5,11810.1,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                div [7.5,11810.1,73,68.4] flex:row a=center gap=2px/2px
+                  div [7.5,11810.1,24.5,40.4] bg:light(0.1)
+                  div [11,11812.1,24.5,40.4] bg:light(0.1)
+                  div [14.4,11814.1,24.5,40.4] bg:light(0.1)
+                  div [17.9,11816.1,24.5,40.4] bg:light(0.1)
+                  div [21.4,11818.1,24.5,40.4] bg:light(0.1)
+                  div [24.8,11820.1,24.5,40.4] bg:light(0.1)
+                  div [28.3,11822.1,24.5,40.4] bg:light(0.1)
+                  div [31.8,11824.1,24.5,40.4] bg:light(0.1)
+                  div [35.2,11826.1,24.5,40.4] bg:light(0.1)
+                  div [38.7,11828.1,24.5,40.4] bg:light(0.1)
+                  div [42.2,11830.1,24.5,40.4] bg:light(0.1)
+                  div [45.6,11832.1,24.5,40.4] bg:light(0.1)
+                  div [49.1,11834.1,24.5,40.4] bg:light(0.1)
+                  div [52.5,11836.1,24.5,40.4] bg:light(0.1)
+                  div [56,11838.1,24.5,40.4] bg:light(0.1)
+          p [88,11836.8,177.7,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "juin - juillet 2024"
+      div [12,11866.8,351,90] flex:row a=baseline wrap gap=32px/60px ; pad:48px 0px 0px 0px
+        h2 [12,11914.8,206.8,42] font:CHIL 42px w400 lh 42px ls normal ta left nowrap LIGHT  "L’isolation"
+        div [278.8,11924.8,82,26] 
+          img [278.8,11924.8,82,26] pos:absolute ; ov:clip ; src:c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png ; fit:cover 50% 50%
+          p [289,11928.8,59.6,18] pos:absolute ; tf:matrix(1, 0, 0, 1, -29.7969, 0) ; font:KOTO 18px w400 lh 18px ls 0.72px uppercase ta center nowrap light(0.7)  "04/06"
+          div [350.8,11924.8,10,10] pos:absolute
+            div [350.8,11924.3,10.5,10.5] pos:absolute
+              svg [350.8,11924.3,10.5,10.5] role:presentation
+          div [278.8,11940.8,10,10] pos:absolute ; flex:row j=center a=center
+            div [278.8,11940.8,10,10] tf:matrix(-1, 0, 0, -1, 0, 0)
+              div [278.8,11940.8,10,10] 
+                div [278.3,11940.8,10.5,10.5] pos:absolute
+                  svg [278.3,11940.8,10.5,10.5] role:presentation
+      div [12,11956.8,351,928.8] flex:row j=space-between a=flex-start wrap gap=24px/normal ; pad:48px 0px 0px 0px
+        div [12,12004.8,198,193] flex:row a=center ; pad:40px 60px 0px 0px
+          div [12,12044.8,138,153] radius:0px 0px 100px 100px ; filter:drop-shadow(rgb(16, 24, 25) 8px 8px 0px) ; ov:clip
+            div [12,12044.8,138,153] pos:absolute
+              img [12,12044.8,138,153] pos:absolute ; ov:clip ; src:4b1c3cbc0f1b3e8684d80dbc159fd7c49bb0433d.png ; fit:cover 50% 50%
+        div [12,12221.8,351,358.3] grow:1 0px ; minw:255px
+          div [12,12221.8,351,358.3] flex:column a=flex-start ; pad:0px 40px 0px 0px ; minw:255px
+            div [12,12221.8,311,358.3] flex:column j=center a=center
+              div [12,12221.8,311,358.3] 
+                p [12,12221.8,311,179.2] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Plus que de l'isolation au sens strict, cette étape, c'était surtout mettre la cabane hors d'eau. D'abord les panneaux d'OSB pour fermer la structure, puis une membrane de sous-toiture imperméable, et enfin les tôles par-dessus."
+                p [12,12401,311,179.2] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Les tôles, ça a été toute une histoire. Pour faire simple et ne rien racheter, j'ai réutilisé de vieilles tôles que j'avais en stock. Elles étaient rouges, je les ai repeint plus tard pour que l'ensemble se fonde mieux dans le décor (on y revient au chapitre suivant)."
+        div [12,12604.1,351,281.5] grow:1 0px ; minw:255px
+          div [12,12604.1,351,281.5] flex:column a=flex-start ; pad:0px 40px 0px 0px ; minw:255px
+            div [12,12604.1,311,281.5] flex:column j=center a=center
+              div [12,12604.1,311,281.5] 
+                p [12,12604.1,311,128] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Le plus important, c'était de bien les poser : un ensemble étanche, des découpes propres, surtout autour de la fenêtre, de la porte et de l'auvent, où ça se complique vite."
+                p [12,12732.1,311,153.6] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "Je ne vais pas faire semblant que tout était parfait. Il y a eu quelques loupés, notamment sur les tôles latérales : des découpes ratées qui m'ont laissé des panneaux dans le mauvais sens. Le genre d'erreur qu'on ne fait qu'une fois."
+      div [12,12885.6,351,1920.8] flex:row a=flex-end wrap gap=54px/48px ; pad:80px 0px 0px 0px
+        div [12,12965.6,351,642.4] flex:column a=flex-start ; grow:1 0px ; minw:255px
+          div [12,12965.6,351,642.4] flex:column a=flex-start gap=24px/24px
+            div [12,12965.6,351,38.4] flex:row a=baseline wrap gap=8px/32px
+              p [12,12969.6,93.3,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "étanchéité"
+              p [137.3,12965.6,225.7,38.4] grow:1 0px ; minw:200px ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Membrane et premières tôles posées sur la structure."
+            img [12,13028,351,580] pos:absolute ; ov:clip ; src:cadda3d6abc303fe81801c36c65f43abb6ddff29.png ; fit:cover 50% 50%
+        div [12,13662,351,545.2] flex:column a=center ; grow:1 0px ; minw:255px
+          div [12,13662,351,545.2] flex:column a=flex-start gap=24px/24px
+            div [12,13662,351,41.2] flex:column j=center a=flex-start gap=8px/8px
+              p [12,13662,112,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "VUE AÉRIENNE"
+              p [12,13684,351,19.2] minw:100% ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "La toiture en cours, vue d'en haut."
+            img [12,13727.2,351,480] pos:absolute ; ov:clip ; src:381bd713fe513538e39f1f7731a9206ee63a4a71.png ; fit:cover 50% 50%
+        div [12,14261.2,351,545.2] flex:column a=center ; grow:1 0px ; minw:255px
+          div [12,14261.2,351,545.2] flex:column a=flex-start gap=24px/24px
+            div [12,14261.2,351,41.2] flex:column j=center a=flex-start gap=8px/8px
+              p [12,14261.2,55.7,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "FAÇADE"
+              p [12,14283.2,351,19.2] minw:100% ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Les tôles rouges en place, avant peinture."
+            img [12,14326.4,351,480] pos:absolute ; ov:clip ; src:58e06b7e841df875fb0d3b00c26fb1980b7b8637.png ; fit:cover 50% 50%
+  section [0,14866.4,375,2346.4] maxw:1440px
+    div [0,14866.4,375,2346.4] flex:column a=flex-start ; pad:60px 12px 60px 12px ; maxw:1440px
+      div [12,14926.4,351,56] flex:row j=space-between a=center wrap gap=24px/normal ; pad:16px 0px 16px 0px
+        div [12,14926.4,351,56.5] pos:absolute ; bB:1px solid light(0.1)
+        div [12,14942.4,133,24] flex:row a=center gap=4px/4px
+          div [12,14942.4,24,24] ov:clip
+            div [15,14948.5,17,11.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -5.875)
+              div [15.1,14948.5,16.9,11.7] pos:absolute
+                svg [15.1,14948.5,16.8,12] role:presentation
+          p [40,14946.4,105,16] font:CHIL 16px w400 lh 16px ls normal uppercase ta left nowrap LIGHT  "Chapitre 05"
+        div [175,14947.4,188,14] flex:row a=center gap=12px/12px
+          div [175,14950.4,64,8] ov:clip
+            div [170.5,14920.7,73,68.4] pos:absolute ; flex:row j=center a=center
+              div [170.5,14920.7,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                div [170.5,14920.7,73,68.4] flex:row a=center gap=2px/2px
+                  div [170.5,14920.7,24.5,40.4] bg:light(0.1)
+                  div [174,14922.7,24.5,40.4] bg:light(0.1)
+                  div [177.4,14924.7,24.5,40.4] bg:light(0.1)
+                  div [180.9,14926.7,24.5,40.4] bg:light(0.1)
+                  div [184.4,14928.7,24.5,40.4] bg:light(0.1)
+                  div [187.8,14930.7,24.5,40.4] bg:light(0.1)
+                  div [191.3,14932.7,24.5,40.4] bg:light(0.1)
+                  div [194.7,14934.7,24.5,40.4] bg:light(0.1)
+                  div [198.2,14936.7,24.5,40.4] bg:light(0.1)
+                  div [201.7,14938.7,24.5,40.4] bg:light(0.1)
+                  div [205.1,14940.7,24.5,40.4] bg:light(0.1)
+                  div [208.6,14942.7,24.5,40.4] bg:light(0.1)
+                  div [212.1,14944.7,24.5,40.4] bg:light(0.1)
+                  div [215.5,14946.7,24.5,40.4] bg:light(0.1)
+                  div [219,14948.7,24.5,40.4] bg:light(0.1)
+          p [251,14947.4,112,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "janvier 2025"
+      div [12,14982.4,351,148] flex:row a=baseline wrap gap=32px/60px ; pad:48px 0px 0px 0px
+        h2 [12,15030.4,333.5,42] font:CHIL 42px w400 lh 42px ls normal ta left nowrap LIGHT  "L’aménagement"
+        div [12,15104.4,82,26] 
+          img [12,15104.4,82,26] pos:absolute ; ov:clip ; src:c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png ; fit:cover 50% 50%
+          p [22.2,15108.4,59.6,18] pos:absolute ; tf:matrix(1, 0, 0, 1, -29.7969, 0) ; font:KOTO 18px w400 lh 18px ls 0.72px uppercase ta center nowrap light(0.7)  "05/06"
+          div [84,15104.4,10,10] pos:absolute
+            div [84,15103.9,10.5,10.5] pos:absolute
+              svg [84,15103.9,10.5,10.5] role:presentation
+          div [12,15120.4,10,10] pos:absolute ; flex:row j=center a=center
+            div [12,15120.4,10,10] tf:matrix(-1, 0, 0, -1, 0, 0)
+              div [12,15120.4,10,10] 
+                div [11.5,15120.4,10.5,10.5] pos:absolute
+                  svg [11.5,15120.4,10.5,10.5] role:presentation
+      div [12,15130.4,351,2022.4] flex:row j=space-between a=flex-start wrap gap=80px/normal ; pad:48px 0px 0px 0px
+        div [12,15178.4,351,1461.4] flex:column a=flex-start gap=64px/64px ; grow:1 0px ; minw:255px
+          div [12,15178.4,351,567.9] flex:column j=center a=center gap=16px/16px
+            p [12,15178.4,351,168] font:CHIL 24px w400 lh 33.6px ls normal ta left LIGHT  "Au départ, j'imaginais quelque chose de très tiny house : un grand lit, un coin cosy, un espace pensé surtout pour s'y poser."
+            div [12,15362.4,351,383.9] 
+              p [12,15362.4,351,179.2] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "En avançant, j'ai préféré partir sur un aménagement hybride, un endroit où dormir et passer du temps, mais aussi où manger et bricoler. Sur le terrain, il y a toujours des travaux à prévoir, et avoir un espace sec où poser ses outils et travailler, ça change tout."
+              p [12,15541.5,351,204.8] font:POPL 16px w400 lh 25.6px ls normal ta left light(0.7)  "L'intérieur a commencé simple : une table, quelques chaises. Puis je l'ai construit petit à petit. Un meuble qui fait à la fois table et établi. Une banquette rétractable qui se transforme en lit pour la nuit. Et un poêle, que j'ai restauré et installé pour passer l'hiver au chaud. Rien de définitif, tout pensé pour évoluer avec les besoins."
+          div [12,15810.3,351,829.6] flex:row j=center a=flex-start wrap gap=40px/40px ; minw:195px
+            div [12,15810.3,351,444.4] flex:column a=flex-start gap=24px/24px ; grow:1 0px ; minw:195px
+              img [12,15810.3,351,360] pos:absolute ; ov:clip ; src:7496f8d1e59556f927061c2b4ca9701a89a4b027.png ; fit:cover 50% 50%
+              div [12,16194.3,351,60.4] flex:column j=center a=flex-start gap=8px/8px
+                p [12,16194.3,83.9,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "INTÉRIEUR"
+                p [12,16216.3,351,38.4] minw:100% ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Le coin séjour, poêle et fenêtre de toit ouverte sur l'étang."
+            div [12,16294.6,351,345.2] flex:column a=flex-start gap=24px/24px ; grow:1 0px ; minw:195px
+              img [12,16294.6,351,280] pos:absolute ; ov:clip ; src:723901c6b37b53fe7b533042354a10f0987795f1.png ; fit:cover 50% 50%
+              div [12,16598.6,351,41.2] flex:column j=center a=flex-start gap=8px/8px
+                p [12,16598.6,74.5,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "LE POÊLE"
+                p [12,16620.6,351,19.2] minw:100% ; font:POPL 16px w400 lh 19.2px ls normal ta left LIGHT  "Le poêle restauré, installé près de l'entrée."
+        div [12,16719.8,351,433] flex:column a=center ; grow:1 0px ; minw:255px
+          div [12,16719.8,351,433] flex:column a=flex-start ; grow:1 0px ; op:0.5
+            div [12,16719.8,351,433] grow:1 0px
+              img [12,16719.8,351,433] pos:absolute ; ov:clip ; src:794d4cf25ae96affd91f5fcb663a19ac7e41962d.png ; fit:cover 50% 50%
+  section [0,17212.8,375,2354.9] maxw:1440px
+    div [0,17212.8,375,2354.9] flex:column a=flex-start ; pad:60px 12px 100px 12px ; maxw:1440px
+      div [12,17272.8,351,56] flex:row j=space-between a=center wrap gap=24px/normal ; pad:16px 0px 16px 0px
+        div [12,17272.8,351,56.5] pos:absolute ; bB:1px solid light(0.1)
+        div [12,17288.8,134.2,24] flex:row a=center gap=4px/4px
+          div [12,17288.8,24,24] ov:clip
+            div [15,17295,17,11.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -5.875)
+              div [15.1,17295,16.9,11.7] pos:absolute
+                svg [15.1,17295,16.8,12] role:presentation
+          p [40,17292.8,106.2,16] font:CHIL 16px w400 lh 16px ls normal uppercase ta left nowrap LIGHT  "Chapitre 06"
+        div [193.7,17293.8,169.3,14] flex:row a=center gap=12px/12px
+          div [193.7,17296.8,64,8] ov:clip
+            div [189.3,17267.1,73,68.4] pos:absolute ; flex:row j=center a=center
+              div [189.2,17267.1,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                div [189.2,17267.1,73,68.4] flex:row a=center gap=2px/2px
+                  div [189.2,17267.1,24.5,40.4] bg:light(0.1)
+                  div [192.7,17269.1,24.5,40.4] bg:light(0.1)
+                  div [196.2,17271.1,24.5,40.4] bg:light(0.1)
+                  div [199.6,17273.1,24.5,40.4] bg:light(0.1)
+                  div [203.1,17275.1,24.5,40.4] bg:light(0.1)
+                  div [206.6,17277.1,24.5,40.4] bg:light(0.1)
+                  div [210,17279.1,24.5,40.4] bg:light(0.1)
+                  div [213.5,17281.1,24.5,40.4] bg:light(0.1)
+                  div [217,17283.1,24.5,40.4] bg:light(0.1)
+                  div [220.4,17285.1,24.5,40.4] bg:light(0.1)
+                  div [223.9,17287.1,24.5,40.4] bg:light(0.1)
+                  div [227.4,17289.1,24.5,40.4] bg:light(0.1)
+                  div [230.8,17291.1,24.5,40.4] bg:light(0.1)
+                  div [234.3,17293.1,24.5,40.4] bg:light(0.1)
+                  div [237.7,17295.1,24.5,40.4] bg:light(0.1)
+          p [269.7,17293.8,93.3,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap light(0.4)  "avril 2025"
+      div [12,17328.8,351,140] flex:column j=center a=center gap=24px/24px ; pad:48px 0px 0px 0px
+        h2 [76.8,17376.8,221.4,42] font:CHIL 42px w400 lh 42px ls normal ta center nowrap LIGHT  "Le résultat"
+        div [146.5,17442.8,82,26] 
+          img [146.5,17442.8,82,26] pos:absolute ; ov:clip ; src:c6e69f3fb42b7b4044472402fa4afa4e860de0bb.png ; fit:cover 50% 50%
+          p [156.7,17446.8,59.6,18] pos:absolute ; tf:matrix(1, 0, 0, 1, -29.7969, 0) ; font:KOTO 18px w400 lh 18px ls 0.72px uppercase ta center nowrap light(0.7)  "06/06"
+          div [218.5,17442.8,10,10] pos:absolute
+            div [218.5,17442.3,10.5,10.5] pos:absolute
+              svg [218.5,17442.3,10.5,10.5] role:presentation
+          div [146.5,17458.8,10,10] pos:absolute ; flex:row j=center a=center
+            div [146.5,17458.8,10,10] tf:matrix(-1, 0, 0, -1, 0, 0)
+              div [146.5,17458.8,10,10] 
+                div [146,17458.8,10.5,10.5] pos:absolute
+                  svg [146,17458.8,10.5,10.5] role:presentation
+      div [12,17468.8,351,295.1] flex:row j=center a=flex-start wrap gap=120px/normal ; pad:60px 0px 0px 0px
+        div [12,17528.8,351,235.1] flex:column j=center a=center ; grow:1 0px ; minw:1px ; maxw:720px
+          p [12,17528.8,351,235.1] font:CHIL 28px w400 lh 39.2px ls normal ta center LIGHT  "“Le jour où j'ai pu m'asseoir sur la terrasse et regarder l'étang, je me suis dit que ça valait tous les week-ends passés dessus.”"
+      div [12,17764,351,1039] flex:row j=center a=center wrap gap=0px/136px ; pad:60px 0px 0px 0px
+        div [12,17824,351,277] flex:column a=flex-start ; pad:0px 0px 40px 0px ; grow:1 0px ; minw:220px
+          div [12,17824,351,79] bg:rgb(16, 24, 25)
+            div [12,17824,351,79] pos:absolute ; bB:1px solid light(0.1)
+            div [12,17824,351,79] flex:column a=flex-start gap=8px/8px ; pad:16px 16px 16px 16px
+              p [28,17840,158.8,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "HAUTEUR SOUS FAÎTE"
+              p [28,17864,47.7,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "3,3 m"
+          div [12,17903,351,79] bg:rgb(16, 24, 25)
+            div [12,17903,351,79] pos:absolute ; bB:1px solid light(0.1)
+            div [12,17903,351,79] flex:column a=flex-start gap=8px/8px ; pad:16px 16px 16px 16px
+              p [28,17919,123.5,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "surface au sol"
+              p [28,17943,52.9,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "16 m2"
+          div [12,17982,351,79] bg:rgb(16, 24, 25)
+            div [12,17982,351,79] flex:column a=flex-start gap=8px/8px ; pad:16px 16px 16px 16px
+              p [28,17998,44.1,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "durée"
+              p [28,18022,78.4,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "~14 mois"
+        div [12,18101,351,425] flex:column a=center gap=64px/64px ; grow:1 0px ; minw:255px
+          div [12,18101,351,425] grow:1 0px
+            video [12,18101,351,425] pos:absolute ; ov:clip ; video:231d85a2592aba9ed5f13438cdadc3ef3d2d15de poster= autoplay,loop,muted ; fit:cover
+              source [0,0,0,0] gcol: row  ; pad:    ; grow:  ; minw: ; maxw: ; m:    ; bg: ; bgimg: ; bT:   ; bR:   ; bB:   ; bL:   ; radius: ; shadow: ; op: ; tf: ; bdf: ; filter: ; blend: ; ov: ; z:
+        div [12,18526,351,277] flex:column a=flex-start ; pad:40px 0px 0px 0px ; grow:1 0px ; minw:220px
+          div [12,18566,351,79] bg:rgb(16, 24, 25)
+            div [12,18566,351,79] pos:absolute ; bB:1px solid light(0.1)
+            div [12,18566,351,79] flex:column a=flex-start gap=8px/8px ; pad:16px 16px 16px 16px
+              p [28,18582,52.9,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "Budget"
+              p [28,18606,70.9,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  ">2500€"
+          div [12,18645,351,79] bg:rgb(16, 24, 25)
+            div [12,18645,351,79] pos:absolute ; bB:1px solid light(0.1)
+            div [12,18645,351,79] flex:column a=flex-start gap=8px/8px ; pad:16px 16px 16px 16px
+              p [28,18661,117.6,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "main d’oeuvre"
+              p [28,18685,7.6,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "1"
+          div [12,18724,351,79] bg:rgb(16, 24, 25)
+            div [12,18724,351,79] flex:column a=flex-start gap=8px/8px ; pad:16px 16px 16px 16px
+              p [28,18740,185.2,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap light(0.4)  "année de construction"
+              p [28,18764,45.8,23] font:CHIL 18px w400 lh normal ls normal ta left nowrap LIGHT  "2024"
+      div [12,18803,351,664.7] flex:row j=center a=flex-start wrap gap=120px/normal ; pad:60px 0px 0px 0px
+        div [12,18863,351,604.7] flex:column j=center a=center ; grow:1 0px ; minw:1px ; maxw:720px
+          div [12,18863,351,604.7] 
+            p [12,18863,351,230.4] font:POPR 18px w400 lh 28.8px ls normal ta left light(0.7)  "Après des mois de week-ends, la cabane est là. Toit repeint pour se fondre dans le décor, terrasse face à l'étang, intérieur sec et chaleureux. Vue de loin, on dirait qu'elle a toujours été là. Elle n'est pas parfaite, mais elle tient debout, elle est étanche, et elle fait tout ce que j'attendais d'elle."
+            p [12,19093.3,351,201.6] font:POPR 18px w400 lh 28.8px ls normal ta left light(0.7)  "Il y a des choses que je referais autrement, des fermes plus solides, du bois plutôt que de la tôle, un auvent mieux pensé. Mais construire seul, c'est apprendre en faisant : on rate, on recommence, et on finit avec quelque chose qui est entièrement à soi."
+            p [12,19294.9,351,172.8] font:POPR 18px w400 lh 28.8px ls normal ta left light(0.7)  "À chaque fois que j'y retourne, j'aime m'y poser. Et ce projet m'a donné envie d'aller plus loin : repartir sur la même idée, à partir d'un conteneur cette fois, et pourquoi pas le proposer à la location."
+  article [0,19567.7,375,4746.6] flex:column a=center ; bg:rgb(199, 195, 183) ; radius:20px 20px 0px 0px
+    div [0,19567.7,375,95] flex:row j=flex-end a=normal
+      div [0,19567.7,375,95] flex:row j=flex-end a=flex-start ; pad:0px 12px 0px 12px
+        div [283,19567.7,80,95] 
+          div [283,19567.7,86,99] pos:absolute
+            svg [283,19567.7,86,99] role:presentation
+    div [0,19662.7,375,599.6] maxw:1440px
+      div [0,19662.7,375,599.6] flex:column a=flex-start ; pad:40px 12px 80px 12px ; maxw:1440px
+        div [12,19702.7,351,166] flex:column a=flex-start gap=40px/40px
+          h2 [12,19702.7,351,112] minw:100% ; font:CHIL 56px w400 lh 56px ls normal ta left rgb(22, 17, 14)  "Journal de bord"
+          div [12,19854.7,178.6,14] flex:row a=center gap=12px/12px
+            div [12,19857.7,64,8] ov:clip
+              div [7.5,19828,73,68.4] pos:absolute ; flex:row j=center a=center
+                div [7.5,19828,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                  div [7.5,19828,73,68.4] flex:row a=center gap=2px/2px
+                    div [7.5,19828,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [11,19830,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [14.4,19832,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [17.9,19834,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [21.4,19836,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [24.8,19838,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [28.3,19840,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [31.8,19842,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [35.2,19844,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [38.7,19846,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [42.2,19848,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [45.6,19850,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [49.1,19852,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [52.5,19854,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                    div [56,19856,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+            p [88,19854.7,102.6,14] font:KOTO 14px w400 lh 14px ls 0.56px uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "aujourd’hui"
+        div [12,19868.7,351,313.6] flex:column a=flex-start ; pad:48px 0px 64px 0px
+          div [12,19868.7,351,313.6] pos:absolute ; bB:1px solid rgba(22, 17, 14, 0.2)
+          div [12,19916.7,351,201.6] flex:column a=flex-start ; maxw:420px
+            p [12,19916.7,351,201.6] font:POPL 18px w400 lh 28.8px ls normal ta left rgb(22, 17, 14)  "La cabane, c'était l'étape 1. Maintenant c'est le terrain qui occupe le temps : il y a toujours quelque chose à faire, à entretenir, à remettre en état. Et quand tout est fait, c'est simplement un endroit où il fait bon être. Je note ici ce qui s'y passe, au fil des saisons."
+    div [0,20262.3,375,4052] maxw:1440px
+      div [0,20262.3,375,4052] grid:351px | 540px 540px 540px 540px 540px 540px 540px gap=32px/32px ; pad:0px 12px 80px 12px ; maxw:1440px
+        div [12,20262.3,351,540] flex:column a=flex-start ; minw:260px
+          div [12,20262.3,351,540] flex:column j=center a=center ; grow:1 0px ; bg:rgb(169, 165, 153)
+            div [4,20256.5,15.7,13.6] pos:absolute
+              div [4,20256.5,15.7,13.6] pos:absolute
+                svg [4,20256.5,15.7,13.6] role:presentation
+            div [355,20795.5,15.7,13.6] pos:absolute
+              div [355,20795.5,15.7,13.6] pos:absolute
+                svg [355,20795.5,15.7,13.6] role:presentation
+            div [124,20458.2,127,119.7] flex:row j=center a=center
+              div [124,20458.2,127,119.7] tf:matrix(0.984808, -0.173648, 0.173648, 0.984808, 0, 0)
+                div [124,20458.2,127,119.7] 
+                  p [124,20458.2,115.2,52.8] font:MORT 34px w400 lh 34px ls normal ta center nowrap rgb(22, 17, 14)  "Prochaine"
+                  p [129.9,20491.7,115.2,52.8] font:MORT 34px w400 lh 34px ls normal ta center nowrap rgb(22, 17, 14)  "aventure"
+                  p [135.8,20525.2,115.2,52.8] font:MORT 34px w400 lh 34px ls normal ta center nowrap rgb(22, 17, 14)  "à venir"
+            div [140.8,20577.9,93.4,28.4] pos:absolute
+              svg [140.8,20577.9,93.4,28.4] role:presentation
+        div [12,20834.3,351,540] flex:column a=flex-start gap=16px/16px ; minw:260px
+          div [12,20834.3,351,440] 
+            div [20,20827.3,335,99] pos:absolute
+              div [18,20825.3,339,103] pos:absolute
+                img [18,20825.3,339,103] ov:clip ; src:808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg ; fit:fill 50% 50%
+            img [12,20834.3,351,440] pos:absolute ; ov:clip ; src:c07d6e84175214389898567b6bff1d1a1280cf05.png ; fit:cover 50% 50%
+            img [12,20834.3,351,440] pos:absolute ; ov:clip ; src:2a4e21569701ce537eb03cbe61a69efb4a1091c6.png ; fit:cover 50% 50%
+          div [12,21290.3,351,84] flex:column j=center a=flex-start gap=16px/16px
+            div [12,21290.3,351,24] bg:rgb(189, 185, 173)
+              div [12,21290.3,351,24] flex:row j=space-between a=flex-start ; pad:4px 6px 4px 6px
+                p [18,21294.3,126.4,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "septembre 2026"
+                div [308.5,21294.3,48.5,16] flex:row a=center gap=6px/6px
+                  div [308.5,21294.3,16,16] ov:clip
+                    div [309.5,21295.3,14,14] pos:absolute
+                      div [309.5,21295.3,14,14] pos:absolute
+                        svg [309.5,21295.3,14,14] role:presentation
+                  p [330.5,21294.3,26.5,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "été"
+            p [12,21330.3,351,44] ov:hidden ; font:POPL 16px w400 lh 22.4px ls normal ta left rgb(22, 17, 14)  "Dégagement et évacuation d’arbres tombés sur le terrain et dans le cours d’eau"
+        div [12,21406.3,351,540] flex:column a=flex-start gap=16px/16px ; minw:260px
+          div [12,21406.3,351,440] bg:rgb(217, 217, 217)
+            div [20,21399.3,335,99] pos:absolute
+              div [18,21397.3,339,103] pos:absolute
+                img [18,21397.3,339,103] ov:clip ; src:808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg ; fit:fill 50% 50%
+            img [12,21406.3,351,440] pos:absolute ; ov:clip ; src:2621b795fbebf247014a4988e110ceb2c21fcec8.png ; fit:cover 50% 50%
+            div [12,21786.3,351,60] pos:absolute ; bg:LIGHT
+            div [12,21406.3,351,60] pos:absolute ; bg:LIGHT
+          div [12,21862.3,351,84] flex:column j=center a=flex-start gap=16px/16px
+            div [12,21862.3,351,24] bg:rgb(189, 185, 173)
+              div [12,21862.3,351,24] flex:row j=space-between a=flex-start ; pad:4px 6px 4px 6px
+                p [18,21866.3,79.4,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "août 2026"
+                div [308.5,21866.3,48.5,16] flex:row a=center gap=6px/6px
+                  div [308.5,21866.3,16,16] ov:clip
+                    div [309.5,21867.3,14,14] pos:absolute
+                      div [309.5,21867.3,14,14] pos:absolute
+                        svg [309.5,21867.3,14,14] role:presentation
+                  p [330.5,21866.3,26.5,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "été"
+            p [12,21902.3,351,44] ov:hidden ; font:POPL 16px w400 lh 22.4px ls normal ta left rgb(22, 17, 14)  "Entretien du terrain, environ 1h30 pour tondre les contours de l’étang."
+        div [12,21978.3,351,540] flex:column a=flex-start gap=16px/16px ; minw:260px
+          div [12,21978.3,351,440] 
+            div [20,21971.3,335,99] pos:absolute
+              div [18,21969.3,339,103] pos:absolute
+                img [18,21969.3,339,103] ov:clip ; src:808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg ; fit:fill 50% 50%
+            img [12,21978.3,351,440] pos:absolute ; ov:clip ; src:c07d6e84175214389898567b6bff1d1a1280cf05.png ; fit:cover 50% 50%
+            img [12,21978.3,351,440] pos:absolute ; ov:clip ; src:e7ab2f621c70465e739b2244551462f991456c76.png ; fit:cover 50% 50%
+          div [12,22434.3,351,84] flex:column j=center a=flex-start gap=16px/16px
+            div [12,22434.3,351,24] bg:rgb(189, 185, 173)
+              div [12,22434.3,351,24] flex:row j=space-between a=flex-start ; pad:4px 6px 4px 6px
+                p [18,22438.3,105.8,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "février 2026"
+                div [290.9,22438.3,66.1,16] flex:row a=center gap=6px/6px
+                  div [290.9,22438.3,16,16] ov:clip
+                    div [291.9,22439.5,13.8,13.8] pos:absolute
+                      div [291.9,22439.5,13.8,13.8] pos:absolute
+                        svg [291.9,22439.5,13.8,13.8] role:presentation
+                  p [312.9,22438.3,44.1,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "hiver"
+            p [12,22474.3,351,44] ov:hidden ; font:POPL 16px w400 lh 22.4px ls normal ta left rgb(22, 17, 14)  "Une chouette aperçue en pleine nuit capturé par la caméra."
+        div [12,22550.3,351,540] flex:column a=flex-start gap=16px/16px ; minw:260px
+          div [12,22550.3,351,440] 
+            div [20,22543.3,335,99] pos:absolute
+              div [18,22541.3,339,103] pos:absolute
+                img [18,22541.3,339,103] ov:clip ; src:808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg ; fit:fill 50% 50%
+            img [12,22550.3,351,440] pos:absolute ; ov:clip ; src:7ee45715d898839af417da9847949aa73a469916.png ; fit:cover 50% 50%
+            div [12,22550.3,351,440] pos:absolute ; bT:10px solid LIGHT ; bR:10px solid LIGHT ; bB:10px solid LIGHT ; bL:10px solid LIGHT
+          div [12,23006.3,351,84] flex:column j=center a=flex-start gap=16px/16px
+            div [12,23006.3,351,24] bg:rgb(189, 185, 173)
+              div [12,23006.3,351,24] flex:row j=space-between a=flex-start ; pad:4px 6px 4px 6px
+                p [18,23010.3,79.4,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "août 2025"
+                div [308.5,23010.3,48.5,16] flex:row a=center gap=6px/6px
+                  div [308.5,23010.3,16,16] ov:clip
+                    div [309.5,23011.3,14,14] pos:absolute
+                      div [309.5,23011.3,14,14] pos:absolute
+                        svg [309.5,23011.3,14,14] role:presentation
+                  p [330.5,23010.3,26.5,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "été"
+            p [12,23046.3,351,44] ov:hidden ; font:POPL 16px w400 lh 22.4px ls normal ta left rgb(22, 17, 14)  "Petit travaux d'aménagement autour de la cabane pour une allée."
+        div [12,23122.3,351,540] flex:column a=flex-start gap=16px/16px ; minw:260px
+          div [12,23122.3,351,440] 
+            div [20,23115.3,335,99] pos:absolute
+              div [18,23113.3,339,103] pos:absolute
+                img [18,23113.3,339,103] ov:clip ; src:808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg ; fit:fill 50% 50%
+            img [12,23122.3,351,440] pos:absolute ; ov:clip ; src:c07d6e84175214389898567b6bff1d1a1280cf05.png ; fit:cover 50% 50%
+            img [12,23122.3,351,440] pos:absolute ; ov:clip ; src:430a1258a7ab8d21c149a9f349d4fcd7c9b23574.png ; fit:cover 50% 50%
+          div [12,23578.3,351,84] flex:column j=center a=flex-start gap=16px/16px
+            div [12,23578.3,351,24] bg:rgb(189, 185, 173)
+              div [12,23578.3,351,24] flex:row j=space-between a=flex-start ; pad:4px 6px 4px 6px
+                p [18,23582.3,105.8,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "juillet 2025"
+                div [308.5,23582.3,48.5,16] flex:row a=center gap=6px/6px
+                  div [308.5,23582.3,16,16] ov:clip
+                    div [309.5,23583.3,14,14] pos:absolute
+                      div [309.5,23583.3,14,14] pos:absolute
+                        svg [309.5,23583.3,14,14] role:presentation
+                  p [330.5,23582.3,26.5,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "été"
+            p [12,23618.3,351,44] ov:hidden ; font:POPL 16px w400 lh 22.4px ls normal ta left rgb(22, 17, 14)  "Pizza improvisée sur la terrasse à midi, profiter du soleil et du calme."
+        div [12,23694.3,351,540] flex:column a=flex-start gap=16px/16px ; minw:260px
+          div [12,23694.3,351,440] 
+            div [20,23687.3,335,99] pos:absolute
+              div [18,23685.3,339,103] pos:absolute
+                img [18,23685.3,339,103] ov:clip ; src:808592c0209c9bc82943456cf5ea17e4ad3e8f67.svg ; fit:fill 50% 50%
+            img [12,23694.3,351,440] pos:absolute ; ov:clip ; src:c07d6e84175214389898567b6bff1d1a1280cf05.png ; fit:cover 50% 50%
+            img [12,23694.3,351,440] pos:absolute ; ov:clip ; src:e328f6614debeab7c0a2794dfcfaa3d08d7529f7.png ; fit:cover 50% 50%
+          div [12,24150.3,351,84] flex:column j=center a=flex-start gap=16px/16px
+            div [12,24150.3,351,24] bg:rgb(189, 185, 173)
+              div [12,24150.3,351,24] flex:row j=space-between a=flex-start ; pad:4px 6px 4px 6px
+                p [18,24154.3,82.3,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "mars 2025"
+                div [252.7,24154.3,104.3,16] flex:row a=center gap=6px/6px
+                  div [252.7,24154.3,16,16] ov:clip
+                    div [253.7,24156.3,14,11] pos:absolute
+                      div [253.7,24156.3,14,11] pos:absolute
+                        svg [253.7,24156.3,14,11] role:presentation
+                  p [274.7,24154.3,82.3,16] font:KOTO 14px w400 lh normal ls normal uppercase ta left nowrap rgba(22, 17, 14, 0.7)  "printemps"
+            p [12,24190.3,351,44] ov:hidden ; font:POPL 16px w400 lh 22.4px ls normal ta left rgb(22, 17, 14)  "Installation et premier test du poële, résultat la cabane se transforme en sauna."
+  footer [0,24314.3,375,550.3] flex:column a=center ; bg:rgb(199, 195, 183)
+    div [0,24314.3,375,550.3] maxw:1440px
+      div [0,24314.3,375,550.3] pos:absolute ; bT:1px solid rgba(22, 17, 14, 0.2)
+      div [0,24314.3,375,550.3] flex:row a=flex-end ; maxw:1440px
+        div [0,24314.3,375,550.3] flex:row j=space-between a=flex-end wrap gap=48px/normal ; pad:60px 12px 60px 12px ; maxw:1440px
+          div [12,24374.3,351,356.7] flex:column a=flex-start gap=16px/16px ; grow:1 0px ; minw:255px
+            div [12,24374.3,351,161.6] flex:column a=flex-start gap=16px/16px
+              div [12,24374.3,116,40] flex:row a=center gap=12px/12px
+                div [12,24374.3,40,40] ov:clip
+                  div [15,24382.9,33,22.8] pos:absolute ; tf:matrix(1, 0, 0, 1, 0, -11.4062)
+                    div [15.1,24382.9,32.9,22.8] pos:absolute
+                      svg [15.1,24382.9,32.8,22.8] role:presentation
+                div [64,24390.3,64,8] ov:clip
+                  div [59.5,24360.6,73,68.4] pos:absolute ; flex:row j=center a=center
+                    div [59.5,24360.6,73,68.4] tf:matrix(0.866079, 0.499907, -0.500093, 0.865972, 0, 0)
+                      div [59.5,24360.6,73,68.4] flex:row a=center gap=2px/2px
+                        div [59.5,24360.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [63,24362.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [66.4,24364.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [69.9,24366.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [73.4,24368.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [76.8,24370.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [80.3,24372.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [83.8,24374.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [87.2,24376.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [90.7,24378.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [94.2,24380.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [97.6,24382.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [101.1,24384.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [104.5,24386.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+                        div [108,24388.6,24.5,40.4] bg:rgba(22, 17, 14, 0.2)
+              p [12,24430.3,351,105.6] minw:100% ; font:CHIL 32px w400 lh 35.2px ls normal ta left rgb(22, 17, 14)  "La Frame, bientôt 2 ans d’existence et d’aventures."
+            div [12,24551.8,351,179.2] flex:column a=flex-start
+              p [12,24551.8,351,179.2] font:POPL 16px w400 lh 25.6px ls normal ta left rgba(22, 17, 14, 0.7)  "La cabane est finie, mais le chantier non. Il reste pas mal d'aménagements autour de l'étang pour en faire un endroit où on a vraiment envie de traîner, et d'y passer du temps. La suite se construit petit à petit, repasse de temps en temps pour voir où ça en est."
+          a [12,24779,350.4,25.6] flex:column a=center ; href:https://erwanguillou.me
+            p [12,24779,350.4,25.6] font:POPR 16px w400 lh 25.6px ls normal ta left nowrap rgba(22, 17, 14, 0.7)  "©2026 — Construit et écrit par Erwan Guillou"

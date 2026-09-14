@@ -1,0 +1,425 @@
+=== OFF
+div [160,1905.2,1120,863.6] flex:column j=normal a=flex-start gap=normal/normal ; bg:rgb(22, 33, 34)
+  div [160,1905.2,1120,143.9] role:button
+    div [160,1905.2,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,1905.2,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,1937.2,370,63.9] 
+        div [224,1937.2,370,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,1937.2,370,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,1957.9,248.7,43.2] 
+            div [224,1957.9,248.7,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,1957.9,248.7,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,1979.5,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "01."
+              p [302,1957.9,170.7,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "Le terrain"
+          div [512.7,1937.2,81.3,62.7] 
+            div [512.7,1937.2,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [512.7,1937.2,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [512.7,1940.5,52,56] m:0px -30px 0px 0px
+                img [512.7,1940.5,52,56] pos:absolute ; ov:clip ; src:b9417139cb7571bcf340482c7d3450f7c3e64043.png ; fit:cover 50% 50%
+                div [512.7,1940.5,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [534.7,1937.2,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [534.7,1937.2,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [534.7,1937.2,59.3,62.7] 
+                    img [534.7,1937.2,59.3,62.7] pos:absolute ; ov:clip ; src:85efa8d62e60c527fed3b0cfa611188b3302af60.png ; fit:cover 50% 50%
+                    div [534.7,1937.2,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1070,1972.5,146,24] 
+        div [1070,1972.5,146,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1070,1972.5,146,24] flex:row j=normal a=center gap=10px/10px
+          div [1070,1972.5,24,24] 
+            div [1070,1972.5,24,24] ov:clip
+              div [1074,1975.5,16,17] pos:absolute
+                div [1074,1975.5,16,17] pos:absolute
+                  svg [1074,1975.5,16,17] role:presentation
+                    path [1074,1975.5,16,17] 
+            div [1070,1972.5,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1104,1977.5,112,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "février 2024"
+  div [160,2049.1,1120,143.9] role:button
+    div [160,2049.1,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2049.1,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2081.1,485.4,63.9] 
+        div [224,2081.1,485.4,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2081.1,485.4,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2101.9,338.4,43.2] 
+            div [224,2101.9,338.4,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2101.9,338.4,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2123.5,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "02."
+              p [302,2101.9,260.4,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "Les fondations"
+          div [602.4,2081.1,107,62.7] 
+            div [602.4,2081.1,107,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [602.4,2081.1,107,62.7] flex:row j=normal a=center gap=normal/normal
+              div [602.4,2084.5,52,56] m:0px -30px 0px 0px
+                img [602.4,2084.5,52,56] pos:absolute ; ov:clip ; src:e3511b95c6a938e3bde379f7f5d9e4f0155ce8ad.png ; fit:cover 50% 50%
+                div [602.4,2084.5,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [624.4,2081.1,59.3,62.7] flex:row j=center a=center gap=normal/normal ; m:0px -30px 0px 0px
+                div [624.4,2081.1,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [624.4,2081.1,59.3,62.7] 
+                    img [624.4,2081.1,59.3,62.7] pos:absolute ; ov:clip ; src:bc679a55b1314290915114bc8c956fbd3fc3dce7.png ; fit:cover 50% 50%
+                    div [624.4,2081.1,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [653.6,2082.7,55.8,59.5] flex:row j=center a=center gap=normal/normal
+                div [653.6,2082.7,55.8,59.5] tf:matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, 0)
+                  div [653.6,2082.7,55.8,59.5] 
+                    img [653.6,2082.7,55.8,59.5] pos:absolute ; ov:clip ; src:fc0b5bbafc2cb84bca4f2daafa059e1334f95106.png ; fit:cover 50% 50%
+                    div [653.6,2082.7,55.8,59.5] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1095.2,2116.5,120.8,24] 
+        div [1095.2,2116.5,120.8,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1095.2,2116.5,120.8,24] flex:row j=normal a=center gap=10px/10px
+          div [1095.2,2116.5,24,24] 
+            div [1095.2,2116.5,24,24] ov:clip
+              div [1099.2,2119.5,16,17] pos:absolute
+                div [1099.2,2119.5,16,17] pos:absolute
+                  svg [1099.2,2119.5,16,17] role:presentation
+                    path [1099.2,2119.5,16,17] 
+            div [1095.2,2116.5,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1129.2,2121.5,86.8,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "MARS 2024"
+  div [160,2193.1,1120,143.9] role:button
+    div [160,2193.1,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2193.1,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2225.1,414.9,63.9] 
+        div [224,2225.1,414.9,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2225.1,414.9,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2245.8,293.6,43.2] 
+            div [224,2245.8,293.6,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2245.8,293.6,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2267.4,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "03."
+              p [302,2245.8,215.6,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "La structure"
+          div [557.6,2225.1,81.3,62.7] 
+            div [557.6,2225.1,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [557.6,2225.1,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [557.6,2228.4,52,56] m:0px -30px 0px 0px
+                div [557.6,2228.4,52,56] pos:absolute ; ov:hidden
+                  img [557.6,2222.3,52,80.6] pos:absolute ; ov:clip ; src:368271b9bd61a3bcd4a847133fa1e94e05dec08b.png ; fit:fill 50% 50%
+                div [557.6,2228.4,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [579.6,2225.1,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [579.6,2225.1,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [579.6,2225.1,59.3,62.7] 
+                    img [579.6,2225.1,59.3,62.7] pos:absolute ; ov:clip ; src:9520f44c9af1326bb65450dbe7442d17cc97fa08.png ; fit:cover 50% 50%
+                    div [579.6,2225.1,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1088.7,2260.4,127.3,24] 
+        div [1088.7,2260.4,127.3,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1088.7,2260.4,127.3,24] flex:row j=normal a=center gap=10px/10px
+          div [1088.7,2260.4,24,24] 
+            div [1088.7,2260.4,24,24] ov:clip
+              div [1092.7,2263.4,16,17] pos:absolute
+                div [1092.7,2263.4,16,17] pos:absolute
+                  svg [1092.7,2263.4,16,17] role:presentation
+                    path [1092.7,2263.4,16,17] 
+            div [1088.7,2260.4,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1122.7,2265.4,93.3,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "Avril 2024"
+  div [160,2337,1120,143.9] role:button
+    div [160,2337,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2337,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2369,402.3,63.9] 
+        div [224,2369,402.3,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2369,402.3,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2389.8,255.2,43.2] 
+            div [224,2389.8,255.2,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2389.8,255.2,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2411.3,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "04."
+              p [302,2389.8,177.2,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "L’isolation"
+          div [519.2,2369,107,62.7] 
+            div [519.2,2369,107,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [519.2,2369,107,62.7] flex:row j=normal a=center gap=normal/normal
+              div [519.2,2372.3,52,56] m:0px -30px 0px 0px
+                div [519.2,2372.3,52,56] pos:absolute ; ov:hidden
+                  img [519.2,2359.2,52,69.1] pos:absolute ; ov:clip ; src:381bd713fe513538e39f1f7731a9206ee63a4a71.png ; fit:fill 50% 50%
+                div [519.2,2372.3,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [541.2,2369,59.3,62.7] flex:row j=center a=center gap=normal/normal ; m:0px -30px 0px 0px
+                div [541.2,2369,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [541.2,2369,59.3,62.7] 
+                    img [541.2,2369,59.3,62.7] pos:absolute ; ov:clip ; src:cadda3d6abc303fe81801c36c65f43abb6ddff29.png ; fit:cover 50% 50%
+                    div [541.2,2369,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [570.5,2370.6,55.8,59.5] flex:row j=center a=center gap=normal/normal
+                div [570.5,2370.6,55.8,59.5] tf:matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, 0)
+                  div [570.5,2370.6,55.8,59.5] 
+                    img [570.5,2370.6,55.8,59.5] pos:absolute ; ov:clip ; src:58e06b7e841df875fb0d3b00c26fb1980b7b8637.png ; fit:cover 50% 50%
+                    div [570.5,2370.6,55.8,59.5] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1004.3,2404.3,211.7,24] 
+        div [1004.3,2404.3,211.7,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1004.3,2404.3,211.7,24] flex:row j=normal a=center gap=10px/10px
+          div [1004.3,2404.3,24,24] 
+            div [1004.3,2404.3,24,24] ov:clip
+              div [1008.3,2407.3,16,17] pos:absolute
+                div [1008.3,2407.3,16,17] pos:absolute
+                  svg [1008.3,2407.3,16,17] role:presentation
+                    path [1008.3,2407.3,16,17] 
+            div [1004.3,2404.3,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1038.3,2409.3,177.7,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "juin - juillet 2024"
+  div [160,2480.9,1120,143.9] role:button
+    div [160,2480.9,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2480.9,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2512.9,485.1,63.9] 
+        div [224,2512.9,485.1,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2512.9,485.1,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2533.7,363.8,43.2] 
+            div [224,2533.7,363.8,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2533.7,363.8,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2555.3,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "05."
+              p [302,2533.7,285.8,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "L’aménagement"
+          div [627.8,2512.9,81.3,62.7] 
+            div [627.8,2512.9,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [627.8,2512.9,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [627.8,2516.3,52,56] m:0px -30px 0px 0px
+                img [627.8,2516.3,52,56] pos:absolute ; ov:clip ; src:723901c6b37b53fe7b533042354a10f0987795f1.png ; fit:cover 50% 50%
+                div [627.8,2516.3,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [649.8,2512.9,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [649.8,2512.9,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [649.8,2512.9,59.3,62.7] 
+                    img [649.8,2512.9,59.3,62.7] pos:absolute ; ov:clip ; src:7496f8d1e59556f927061c2b4ca9701a89a4b027.png ; fit:cover 50% 50%
+                    div [649.8,2512.9,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1070,2548.3,146,24] 
+        div [1070,2548.3,146,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1070,2548.3,146,24] flex:row j=normal a=center gap=10px/10px
+          div [1070,2548.3,24,24] 
+            div [1070,2548.3,24,24] ov:clip
+              div [1074,2551.3,16,17] pos:absolute
+                div [1074,2551.3,16,17] pos:absolute
+                  svg [1074,2551.3,16,17] role:presentation
+                    path [1074,2551.3,16,17] 
+            div [1070,2548.3,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1104,2553.3,112,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "janvier 2025"
+  div [160,2624.9,1120,143.9] role:button
+    div [160,2624.9,1120,143.9] pos:absolute ; bB:1px solid rgba(0, 0, 0, 0)
+    div [160,2624.9,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2656.9,389,63.9] 
+        div [224,2656.9,389,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2656.9,389,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2677.6,267.8,43.2] 
+            div [224,2677.6,267.8,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2677.6,267.8,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2699.2,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "06."
+              p [302,2677.6,189.8,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "Le résultat"
+          div [531.8,2656.9,81.3,62.7] 
+            div [531.8,2656.9,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [531.8,2656.9,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [531.8,2660.2,52,56] m:0px -30px 0px 0px
+                img [531.8,2660.2,52,56] pos:absolute ; ov:clip ; src:c32bc4d86f658474be5151c3fb49779cbf19e9e9.png ; fit:cover 50% 50%
+                div [531.8,2660.2,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [553.8,2656.9,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [553.8,2656.9,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [553.8,2656.9,59.3,62.7] 
+                    img [553.8,2656.9,59.3,62.7] pos:absolute ; ov:clip ; src:430a1258a7ab8d21c149a9f349d4fcd7c9b23574.png ; fit:cover 50% 50%
+                    div [553.8,2656.9,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1088.7,2692.2,127.3,24] 
+        div [1088.7,2692.2,127.3,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1088.7,2692.2,127.3,24] flex:row j=normal a=center gap=10px/10px
+          div [1088.7,2692.2,24,24] 
+            div [1088.7,2692.2,24,24] ov:clip
+              div [1092.7,2695.2,16,17] pos:absolute
+                div [1092.7,2695.2,16,17] pos:absolute
+                  svg [1092.7,2695.2,16,17] role:presentation
+                    path [1092.7,2695.2,16,17] 
+            div [1088.7,2692.2,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1122.7,2697.2,93.3,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "Avril 2025"
+=== ON
+div [160,1905.2,1120,863.6] flex:column j=normal a=flex-start gap=normal/normal ; bg:rgb(22, 33, 34)
+  div [160,1905.2,1120,143.9] role:button
+    div [160,1905.2,1120,143.9] pos:absolute ; bg:rgba(251, 255, 254, 0.01)
+    div [160,1905.2,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,1905.2,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,1937.2,370,63.9] 
+        div [224,1937.2,370,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,1937.2,370,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,1957.9,248.7,43.2] 
+            div [224,1957.9,248.7,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,1957.9,248.7,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,1979.5,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "01."
+              p [302,1957.9,170.7,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "Le terrain"
+          div [512.7,1937.2,81.3,62.7] 
+            div [512.7,1937.2,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [512.7,1937.2,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [512.7,1940.5,52,56] m:0px -30px 0px 0px
+                img [512.7,1940.5,52,56] pos:absolute ; ov:clip ; src:b9417139cb7571bcf340482c7d3450f7c3e64043.png ; fit:cover 50% 50%
+                div [512.7,1940.5,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [534.7,1937.2,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [534.7,1937.2,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [534.7,1937.2,59.3,62.7] 
+                    img [534.7,1937.2,59.3,62.7] pos:absolute ; ov:clip ; src:85efa8d62e60c527fed3b0cfa611188b3302af60.png ; fit:cover 50% 50%
+                    div [534.7,1937.2,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1070,1972.5,146,24] 
+        div [1070,1972.5,146,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1070,1972.5,146,24] flex:row j=normal a=center gap=10px/10px
+          div [1070,1972.5,24,24] 
+            div [1070,1972.5,24,24] ov:clip
+              div [1074,1975.5,16,17] pos:absolute
+                div [1074,1975.5,16,17] pos:absolute
+                  svg [1074,1975.5,16,17] role:presentation
+                    path [1074,1975.5,16,17] 
+            div [1070,1972.5,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1104,1977.5,112,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "février 2024"
+  div [160,2049.1,1120,143.9] role:button
+    div [160,2049.1,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2049.1,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2081.1,485.4,63.9] 
+        div [224,2081.1,485.4,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2081.1,485.4,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2101.9,338.4,43.2] 
+            div [224,2101.9,338.4,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2101.9,338.4,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2123.5,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "02."
+              p [302,2101.9,260.4,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "Les fondations"
+          div [602.4,2081.1,107,62.7] 
+            div [602.4,2081.1,107,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [602.4,2081.1,107,62.7] flex:row j=normal a=center gap=normal/normal
+              div [602.4,2084.5,52,56] m:0px -30px 0px 0px
+                img [602.4,2084.5,52,56] pos:absolute ; ov:clip ; src:e3511b95c6a938e3bde379f7f5d9e4f0155ce8ad.png ; fit:cover 50% 50%
+                div [602.4,2084.5,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [624.4,2081.1,59.3,62.7] flex:row j=center a=center gap=normal/normal ; m:0px -30px 0px 0px
+                div [624.4,2081.1,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [624.4,2081.1,59.3,62.7] 
+                    img [624.4,2081.1,59.3,62.7] pos:absolute ; ov:clip ; src:bc679a55b1314290915114bc8c956fbd3fc3dce7.png ; fit:cover 50% 50%
+                    div [624.4,2081.1,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [653.6,2082.7,55.8,59.5] flex:row j=center a=center gap=normal/normal
+                div [653.6,2082.7,55.8,59.5] tf:matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, 0)
+                  div [653.6,2082.7,55.8,59.5] 
+                    img [653.6,2082.7,55.8,59.5] pos:absolute ; ov:clip ; src:fc0b5bbafc2cb84bca4f2daafa059e1334f95106.png ; fit:cover 50% 50%
+                    div [653.6,2082.7,55.8,59.5] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1095.2,2116.5,120.8,24] 
+        div [1095.2,2116.5,120.8,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1095.2,2116.5,120.8,24] flex:row j=normal a=center gap=10px/10px
+          div [1095.2,2116.5,24,24] 
+            div [1095.2,2116.5,24,24] ov:clip
+              div [1099.2,2119.5,16,17] pos:absolute
+                div [1099.2,2119.5,16,17] pos:absolute
+                  svg [1099.2,2119.5,16,17] role:presentation
+                    path [1099.2,2119.5,16,17] 
+            div [1095.2,2116.5,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1129.2,2121.5,86.8,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "MARS 2024"
+  div [160,2193.1,1120,143.9] role:button
+    div [160,2193.1,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2193.1,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2225.1,414.9,63.9] 
+        div [224,2225.1,414.9,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2225.1,414.9,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2245.8,293.6,43.2] 
+            div [224,2245.8,293.6,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2245.8,293.6,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2267.4,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "03."
+              p [302,2245.8,215.6,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "La structure"
+          div [557.6,2225.1,81.3,62.7] 
+            div [557.6,2225.1,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [557.6,2225.1,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [557.6,2228.4,52,56] m:0px -30px 0px 0px
+                div [557.6,2228.4,52,56] pos:absolute ; ov:hidden
+                  img [557.6,2222.3,52,80.6] pos:absolute ; ov:clip ; src:368271b9bd61a3bcd4a847133fa1e94e05dec08b.png ; fit:fill 50% 50%
+                div [557.6,2228.4,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [579.6,2225.1,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [579.6,2225.1,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [579.6,2225.1,59.3,62.7] 
+                    img [579.6,2225.1,59.3,62.7] pos:absolute ; ov:clip ; src:9520f44c9af1326bb65450dbe7442d17cc97fa08.png ; fit:cover 50% 50%
+                    div [579.6,2225.1,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1088.7,2260.4,127.3,24] 
+        div [1088.7,2260.4,127.3,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1088.7,2260.4,127.3,24] flex:row j=normal a=center gap=10px/10px
+          div [1088.7,2260.4,24,24] 
+            div [1088.7,2260.4,24,24] ov:clip
+              div [1092.7,2263.4,16,17] pos:absolute
+                div [1092.7,2263.4,16,17] pos:absolute
+                  svg [1092.7,2263.4,16,17] role:presentation
+                    path [1092.7,2263.4,16,17] 
+            div [1088.7,2260.4,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1122.7,2265.4,93.3,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "Avril 2024"
+  div [160,2337,1120,143.9] role:button
+    div [160,2337,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2337,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2369,402.3,63.9] 
+        div [224,2369,402.3,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2369,402.3,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2389.8,255.2,43.2] 
+            div [224,2389.8,255.2,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2389.8,255.2,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2411.3,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "04."
+              p [302,2389.8,177.2,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "L’isolation"
+          div [519.2,2369,107,62.7] 
+            div [519.2,2369,107,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [519.2,2369,107,62.7] flex:row j=normal a=center gap=normal/normal
+              div [519.2,2372.3,52,56] m:0px -30px 0px 0px
+                div [519.2,2372.3,52,56] pos:absolute ; ov:hidden
+                  img [519.2,2359.2,52,69.1] pos:absolute ; ov:clip ; src:381bd713fe513538e39f1f7731a9206ee63a4a71.png ; fit:fill 50% 50%
+                div [519.2,2372.3,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [541.2,2369,59.3,62.7] flex:row j=center a=center gap=normal/normal ; m:0px -30px 0px 0px
+                div [541.2,2369,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [541.2,2369,59.3,62.7] 
+                    img [541.2,2369,59.3,62.7] pos:absolute ; ov:clip ; src:cadda3d6abc303fe81801c36c65f43abb6ddff29.png ; fit:cover 50% 50%
+                    div [541.2,2369,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [570.5,2370.6,55.8,59.5] flex:row j=center a=center gap=normal/normal
+                div [570.5,2370.6,55.8,59.5] tf:matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, 0)
+                  div [570.5,2370.6,55.8,59.5] 
+                    img [570.5,2370.6,55.8,59.5] pos:absolute ; ov:clip ; src:58e06b7e841df875fb0d3b00c26fb1980b7b8637.png ; fit:cover 50% 50%
+                    div [570.5,2370.6,55.8,59.5] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1004.3,2404.3,211.7,24] 
+        div [1004.3,2404.3,211.7,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1004.3,2404.3,211.7,24] flex:row j=normal a=center gap=10px/10px
+          div [1004.3,2404.3,24,24] 
+            div [1004.3,2404.3,24,24] ov:clip
+              div [1008.3,2407.3,16,17] pos:absolute
+                div [1008.3,2407.3,16,17] pos:absolute
+                  svg [1008.3,2407.3,16,17] role:presentation
+                    path [1008.3,2407.3,16,17] 
+            div [1004.3,2404.3,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1038.3,2409.3,177.7,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "juin - juillet 2024"
+  div [160,2480.9,1120,143.9] role:button
+    div [160,2480.9,1120,143.9] pos:absolute ; bB:1px solid rgba(251, 255, 254, 0.1)
+    div [160,2480.9,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2512.9,485.1,63.9] 
+        div [224,2512.9,485.1,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2512.9,485.1,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2533.7,363.8,43.2] 
+            div [224,2533.7,363.8,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2533.7,363.8,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2555.3,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "05."
+              p [302,2533.7,285.8,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "L’aménagement"
+          div [627.8,2512.9,81.3,62.7] 
+            div [627.8,2512.9,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [627.8,2512.9,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [627.8,2516.3,52,56] m:0px -30px 0px 0px
+                img [627.8,2516.3,52,56] pos:absolute ; ov:clip ; src:723901c6b37b53fe7b533042354a10f0987795f1.png ; fit:cover 50% 50%
+                div [627.8,2516.3,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [649.8,2512.9,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [649.8,2512.9,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [649.8,2512.9,59.3,62.7] 
+                    img [649.8,2512.9,59.3,62.7] pos:absolute ; ov:clip ; src:7496f8d1e59556f927061c2b4ca9701a89a4b027.png ; fit:cover 50% 50%
+                    div [649.8,2512.9,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1070,2548.3,146,24] 
+        div [1070,2548.3,146,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1070,2548.3,146,24] flex:row j=normal a=center gap=10px/10px
+          div [1070,2548.3,24,24] 
+            div [1070,2548.3,24,24] ov:clip
+              div [1074,2551.3,16,17] pos:absolute
+                div [1074,2551.3,16,17] pos:absolute
+                  svg [1074,2551.3,16,17] role:presentation
+                    path [1074,2551.3,16,17] 
+            div [1070,2548.3,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1104,2553.3,112,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "janvier 2025"
+  div [160,2624.9,1120,143.9] role:button
+    div [160,2624.9,1120,143.9] pos:absolute ; bB:1px solid rgba(0, 0, 0, 0)
+    div [160,2624.9,1120,143.9] flex:row j=space-between a=baseline wrap gap=24px/normal ; pad:32px 64px 48px 64px
+      div [224,2656.9,389,63.9] 
+        div [224,2656.9,389,63.9] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [224,2656.9,389,63.9] flex:row j=normal a=baseline wrap gap=40px/40px
+          div [224,2677.6,267.8,43.2] 
+            div [224,2677.6,267.8,43.2] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [224,2677.6,267.8,43.2] flex:row j=normal a=flex-end gap=40px/40px
+              p [224,2699.2,38,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal ta left rgb(251, 255, 254)  "06."
+              p [302,2677.6,189.8,43.2] font:Chillon:Regular 36px w400 lh 43.2px ls normal ta left nowrap rgb(251, 255, 254)  "Le résultat"
+          div [531.8,2656.9,81.3,62.7] 
+            div [531.8,2656.9,81.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+            div [531.8,2656.9,81.3,62.7] flex:row j=normal a=center gap=normal/normal
+              div [531.8,2660.2,52,56] m:0px -30px 0px 0px
+                img [531.8,2660.2,52,56] pos:absolute ; ov:clip ; src:c32bc4d86f658474be5151c3fb49779cbf19e9e9.png ; fit:cover 50% 50%
+                div [531.8,2660.2,52,56] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+              div [553.8,2656.9,59.3,62.7] flex:row j=center a=center gap=normal/normal
+                div [553.8,2656.9,59.3,62.7] tf:matrix(0.990268, 0.139173, -0.139173, 0.990268, 0, 0)
+                  div [553.8,2656.9,59.3,62.7] 
+                    img [553.8,2656.9,59.3,62.7] pos:absolute ; ov:clip ; src:430a1258a7ab8d21c149a9f349d4fcd7c9b23574.png ; fit:cover 50% 50%
+                    div [553.8,2656.9,59.3,62.7] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+      div [1088.7,2692.2,127.3,24] 
+        div [1088.7,2692.2,127.3,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+        div [1088.7,2692.2,127.3,24] flex:row j=normal a=center gap=10px/10px
+          div [1088.7,2692.2,24,24] 
+            div [1088.7,2692.2,24,24] ov:clip
+              div [1092.7,2695.2,16,17] pos:absolute
+                div [1092.7,2695.2,16,17] pos:absolute
+                  svg [1092.7,2695.2,16,17] role:presentation
+                    path [1092.7,2695.2,16,17] 
+            div [1088.7,2692.2,24,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          p [1122.7,2697.2,93.3,14] font:GT Kotoheim Mono Medium VF:Medium 14px w400 lh 14px ls 0.56px uppercase ta right nowrap rgba(251, 255, 254, 0.4) "wdth" 100  "Avril 2025"

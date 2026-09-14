@@ -1,0 +1,54 @@
+=== OFF
+nav [0,0,1440,80] maxw:1440px
+  div [0,0,1440,80] flex:row j=normal a=center gap=normal/normal ; maxw:1440px
+    div [0,0,1440,80] flex:row j=space-between a=center wrap gap=24px/normal ; pad:32px 100px 24px 100px ; maxw:1440px
+      div [100,32,183.8,24] flex:row j=normal a=flex-start gap=8px/8px
+        div [100,32,83.9,24] role:button
+          div [100,32,83.9,24] pos:absolute ; bg:rgba(251, 255, 254, 0.1) ; bdf:blur(2px)
+          div [100,32,83.9,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          div [100,32,83.9,24] flex:row j=center a=center gap=normal/normal ; pad:6px 10px 6px 10px
+            p [110,38,63.9,12] font:GT Kotoheim Mono Medium VF:Medium 12px w400 lh 12px ls 0.48px uppercase ta center nowrap rgb(251, 255, 254) "wdth" 100  "prologue"
+        div [191.9,32,91.9,24] role:button
+          div [191.9,32,91.9,24] pos:absolute ; bg:rgba(251, 255, 254, 0.1) ; bdf:blur(2px)
+          div [191.9,32,91.9,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          div [191.9,32,91.9,24] flex:row j=center a=center gap=normal/normal ; pad:6px 10px 6px 10px
+            p [201.9,38,71.9,12] font:GT Kotoheim Mono Medium VF:Medium 12px w400 lh 12px ls 0.48px uppercase ta center nowrap rgb(251, 255, 254) "wdth" 100  "Chapitres"
+      div [672,33.2,95.8,21.6] flex:row j=normal a=center gap=6px/6px
+        div [672,34.5,27,19] 
+          div [672,34.5,26.9,19] pos:absolute
+            svg [672,34.5,26.8,19] role:presentation
+              path [672,34.5,26.8,19] 
+        p [705,33.2,62.8,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal uppercase ta center nowrap rgb(251, 255, 254)  "Frame"
+      div [1156,32,184,24] flex:column j=normal a=flex-end gap=normal/normal
+        div [1232,32,108,24] role:button
+          div [1232,32,108,24] pos:absolute ; bg:rgba(251, 255, 254, 0.1) ; bdf:blur(2px)
+          div [1232,32,108,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          div [1232,32,108,24] flex:row j=center a=center gap=normal/normal ; pad:6px 10px 6px 10px
+            p [1242,38,88,12] font:GT Kotoheim Mono Medium VF:Medium 12px w400 lh 12px ls 0.48px uppercase ta center nowrap rgb(251, 255, 254) "wdth" 100  "aujourd’hui"
+=== ON
+nav [0,0,1440,80] maxw:1440px
+  div [0,0,1440,80] flex:row j=normal a=center gap=normal/normal ; maxw:1440px
+    div [0,0,1440,80] flex:row j=space-between a=center wrap gap=24px/normal ; pad:32px 100px 24px 100px ; maxw:1440px
+      div [100,32,183.8,24] flex:row j=normal a=flex-start gap=8px/8px
+        div [100,32,83.9,24] role:button
+          div [100,32,83.9,24] pos:absolute ; bg:rgba(251, 255, 254, 0.1) ; bdf:blur(2px)
+          div [100,32,83.9,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          div [100,32,83.9,24] flex:row j=center a=center gap=normal/normal ; pad:6px 10px 6px 10px
+            p [110,38,63.9,12] font:GT Kotoheim Mono Medium VF:Medium 12px w400 lh 12px ls 0.48px uppercase ta center nowrap rgb(251, 255, 254) "wdth" 100  "prologue"
+        div [191.9,32,91.9,24] role:button
+          div [191.9,32,91.9,24] pos:absolute ; bg:rgba(251, 255, 254, 0.1) ; bdf:blur(2px)
+          div [191.9,32,91.9,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          div [191.9,32,91.9,24] flex:row j=center a=center gap=normal/normal ; pad:6px 10px 6px 10px
+            p [201.9,38,71.9,12] font:GT Kotoheim Mono Medium VF:Medium 12px w400 lh 12px ls 0.48px uppercase ta center nowrap rgb(251, 255, 254) "wdth" 100  "Chapitres"
+      div [672,33.2,95.8,21.6] flex:row j=normal a=center gap=6px/6px
+        div [672,34.5,27,19] 
+          div [672,34.5,26.9,19] pos:absolute
+            svg [672,34.5,26.8,19] role:presentation
+              path [672,34.5,26.8,19] 
+        p [705,33.2,62.8,21.6] font:Chillon:Regular 18px w400 lh 21.6px ls normal uppercase ta center nowrap rgb(251, 255, 254)  "Frame"
+      div [1156,32,184,24] flex:column j=normal a=flex-end gap=normal/normal
+        div [1232,32,108,24] role:button
+          div [1232,32,108,24] pos:absolute ; bg:rgb(251, 255, 254)
+          div [1232,32,108,24] pos:absolute ; bT:1px solid rgba(0, 0, 0, 0) ; bR:1px solid rgba(0, 0, 0, 0) ; bB:1px solid rgba(0, 0, 0, 0) ; bL:1px solid rgba(0, 0, 0, 0)
+          div [1232,32,108,24] flex:row j=center a=center gap=normal/normal ; pad:6px 10px 6px 10px
+            p [1242,38,88,12] font:GT Kotoheim Mono Medium VF:Medium 12px w400 lh 12px ls 0.48px uppercase ta center nowrap rgb(22, 17, 14) "wdth" 100  "aujourd’hui"

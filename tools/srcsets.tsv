@@ -1,0 +1,39 @@
+hero	src=assets/img/hero-ossature.webp	srcset=assets/img/hero-ossature.webp 2400w, assets/img/hero-ossature-w512.avif 512w, assets/img/hero-ossature-w1024.avif 1024w, assets/img/hero-ossature-w1536.avif 1536w, assets/img/hero-ossature-w2048.avif 2048w
+hero52	src=assets/img/hero-ossature.webp	srcset=assets/img/hero-ossature.webp 2400w, assets/img/hero-ossature-w64.avif 64w, assets/img/hero-ossature-w128.avif 128w
+terrassement	src=assets/img/terrassement.avif	srcset=assets/img/terrassement.avif 768w, assets/img/terrassement-h512.avif 384w, assets/img/terrassement-h1024.avif 768w
+terrassement52	src=assets/img/terrassement.avif	srcset=assets/img/terrassement.avif 768w, assets/img/terrassement-h64.avif 48w, assets/img/terrassement-h128.avif 96w
+portrait	src=assets/img/prologue-portrait.avif	srcset=assets/img/prologue-portrait.avif 477w, assets/img/prologue-portrait-h512.avif 340w
+counter	src=assets/img/counter-frame.avif	srcset=assets/img/counter-frame.avif 260w, assets/img/counter-frame-w128.avif 128w
+drone	src=assets/img/drone-terrain.webp	srcset=assets/img/drone-terrain.webp 4000w, assets/img/drone-terrain-w512.avif 512w, assets/img/drone-terrain-w1024.avif 1024w, assets/img/drone-terrain-w1536.avif 1536w, assets/img/drone-terrain-w2048.webp 2048w, assets/img/drone-terrain-w2560.webp 2560w, assets/img/drone-terrain-w3072.webp 3072w, assets/img/drone-terrain-w3584.webp 3584w
+drone52	src=assets/img/drone-terrain.webp	srcset=assets/img/drone-terrain.webp 4000w, assets/img/drone-terrain-w64.avif 64w, assets/img/drone-terrain-w128.avif 128w
+implantation	src=assets/img/implantation.avif	srcset=assets/img/implantation.avif 768w, assets/img/implantation-h512.avif 384w, assets/img/implantation-h1024.avif 768w
+implantation52	src=assets/img/implantation.avif	srcset=assets/img/implantation.avif 768w, assets/img/implantation-h64.avif 48w, assets/img/implantation-h128.avif 96w
+plateforme	src=assets/img/plateforme.avif	srcset=assets/img/plateforme.avif 768w, assets/img/plateforme-h512.avif 384w, assets/img/plateforme-h1024.avif 768w
+plateforme52	src=assets/img/plateforme.avif	srcset=assets/img/plateforme.avif 768w, assets/img/plateforme-h64.avif 48w, assets/img/plateforme-h128.avif 96w
+paper	src=assets/img/sketch-paper.webp	srcset=assets/img/sketch-paper.webp 4096w, assets/img/sketch-paper-w512.avif 512w, assets/img/sketch-paper-w1024.avif 1024w, assets/img/sketch-paper-w1536.avif 1536w, assets/img/sketch-paper-w2048.webp 2048w, assets/img/sketch-paper-w2560.webp 2560w, assets/img/sketch-paper-w3072.webp 3072w, assets/img/sketch-paper-w3584.webp 3584w, assets/img/sketch-paper-w4096.webp 4096w
+skstructure	src=assets/img/sketch-structure.avif	srcset=assets/img/sketch-structure.avif 944w, assets/img/sketch-structure-h256.avif 218w, assets/img/sketch-structure-h512.avif 436w
+skface	src=assets/img/sketch-face.avif	srcset=assets/img/sketch-face.avif 896w, assets/img/sketch-face-h256.avif 192w, assets/img/sketch-face-h512.avif 384w, assets/img/sketch-face-h1024.avif 768w
+skterrasse	src=assets/img/sketch-terrasse.avif	srcset=assets/img/sketch-terrasse.avif 896w, assets/img/sketch-terrasse-h256.avif 192w, assets/img/sketch-terrasse-h512.avif 384w
+badge	src=assets/img/badge-frame-oise.avif	srcset=assets/img/badge-frame-oise.avif 400w, assets/img/badge-frame-oise-h256.avif 231w
+etancheite	src=assets/img/etancheite.avif	srcset=assets/img/etancheite.avif 768w, assets/img/etancheite-h512.avif 384w, assets/img/etancheite-h1024.avif 768w
+etancheite52	src=assets/img/etancheite.avif	srcset=assets/img/etancheite.avif 768w, assets/img/etancheite-h64.avif 48w, assets/img/etancheite-h128.avif 96w
+aerienne	src=assets/img/vue-aerienne.avif	srcset=assets/img/vue-aerienne.avif 665w, assets/img/vue-aerienne-h512.avif 289w, assets/img/vue-aerienne-h1024.avif 577w
+aerienne52	src=assets/img/vue-aerienne.avif	srcset=assets/img/vue-aerienne.avif 665w, assets/img/vue-aerienne-h158.avif 89w
+facade	src=assets/img/facade.avif	srcset=assets/img/facade.avif 768w, assets/img/facade-h512.avif 384w, assets/img/facade-h1024.avif 768w
+facade52	src=assets/img/facade.avif	srcset=assets/img/facade.avif 768w, assets/img/facade-h64.avif 48w, assets/img/facade-h128.avif 96w
+interieur	src=assets/img/interieur.avif	srcset=assets/img/interieur.avif 768w, assets/img/interieur-h512.avif 384w, assets/img/interieur-h1024.avif 768w
+interieur52	src=assets/img/interieur.avif	srcset=assets/img/interieur.avif 768w, assets/img/interieur-h64.avif 48w, assets/img/interieur-h128.avif 96w
+poele	src=assets/img/poele.avif	srcset=assets/img/poele.avif 665w, assets/img/poele-h512.avif 289w, assets/img/poele-h1024.avif 577w
+poele52	src=assets/img/poele.avif	srcset=assets/img/poele.avif 665w, assets/img/poele-h64.avif 37w, assets/img/poele-h128.avif 73w
+skinterieur	src=assets/img/sketch-interieur.avif	srcset=assets/img/sketch-interieur.avif 896w, assets/img/sketch-interieur-h512.avif 384w, assets/img/sketch-interieur-h1024.avif 768w
+jpaper	src=assets/img/journal-paper.webp	srcset=assets/img/journal-paper.webp 1440w, assets/img/journal-paper-h512.avif 302w, assets/img/journal-paper-h1024.avif 604w, assets/img/journal-paper-h1536.avif 905w, assets/img/journal-paper-h2048.avif 1207w
+jarbres	src=assets/img/journal-arbres.avif	srcset=assets/img/journal-arbres.avif 638w, assets/img/journal-arbres-h512.avif 369w
+jtonte	src=assets/img/journal-tonte.avif	srcset=assets/img/journal-tonte.avif 768w, assets/img/journal-tonte-h512.avif 384w, assets/img/journal-tonte-h1024.avif 768w
+jchouette	src=assets/img/journal-chouette.avif	srcset=assets/img/journal-chouette.avif 1184w, assets/img/journal-chouette-w512.avif 512w, assets/img/journal-chouette-w1024.avif 1024w
+jallee	src=assets/img/journal-allee.avif	srcset=assets/img/journal-allee.avif 768w, assets/img/journal-allee-h512.avif 384w, assets/img/journal-allee-h1024.avif 768w
+jpizza	src=assets/img/journal-pizza.avif	srcset=assets/img/journal-pizza.avif 768w, assets/img/journal-pizza-h512.avif 384w, assets/img/journal-pizza-h1024.avif 768w
+jpizza52	src=assets/img/journal-pizza.avif	srcset=assets/img/journal-pizza.avif 768w, assets/img/journal-pizza-h64.avif 48w, assets/img/journal-pizza-h128.avif 96w
+jpoele	src=assets/img/journal-poele.avif	srcset=assets/img/journal-poele.avif 768w, assets/img/journal-poele-h512.avif 384w, assets/img/journal-poele-h1024.avif 768w
+tterrain52	src=assets/img/thumb-terrain.avif	srcset=assets/img/thumb-terrain.avif 659w, assets/img/thumb-terrain-h64.avif 37w, assets/img/thumb-terrain-h128.avif 73w
+tstructure52	src=assets/img/thumb-structure.avif	srcset=assets/img/thumb-structure.avif 660w, assets/img/thumb-structure-h185.avif 131w
+tresultat52	src=assets/img/thumb-resultat.avif	srcset=assets/img/thumb-resultat.avif 643w, assets/img/thumb-resultat-h64.avif 53w, assets/img/thumb-resultat-h128.avif 105w

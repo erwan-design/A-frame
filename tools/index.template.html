@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Frame - Chronique d'une cabane en bord d’étang</title>
+  <meta name="description" content="Récit d'un an pour construire une tiny house A frame au bord d’un étang. Bâti seul, en silence, pendant mes temps libres et mes week-ends.">
+  <link rel="canonical" href="https://www.aframe.erwanguillou.me/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aframe.erwanguillou.me/">
+  <meta property="og:title" content="Frame - Chronique d'une cabane en bord d’étang">
+  <meta property="og:description" content="Récit d'un an pour construire une tiny house A frame au bord d’un étang. Bâti seul, en silence, pendant mes temps libres et mes week-ends.">
+  <meta property="og:image" content="https://www.aframe.erwanguillou.me/assets/img/og-image.png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="315">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.aframe.erwanguillou.me/">
+  <meta name="twitter:title" content="Frame - Chronique d'une cabane en bord d’étang">
+  <meta name="twitter:description" content="Récit d'un an pour construire une tiny house A frame au bord d’un étang. Bâti seul, en silence, pendant mes temps libres et mes week-ends.">
+  <meta name="twitter:image" content="https://www.aframe.erwanguillou.me/assets/img/og-image.png">
+  <meta name="twitter:image:alt" content="Frame - Chronique d'une cabane en bord d’étang">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preload" href="assets/fonts/chillon-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/gt-kotoheim-mono-medium-vf.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-light-english.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img decoding="async" class="hero__photo" {{img:hero}} sizes="100vw" alt="">
+      <div class="hero__fade"></div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__side nav__side--left">
+        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">{{1}}</p></div>
+        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">{{2}}</p></div>
+      </div>
+      <div class="nav__logo">
+        <span class="nav__mark"><span class="inset"><img decoding="async" src="assets/svg/logo-frame.svg" alt=""></span></span>
+        <p class="nav__name">{{3}}</p>
+      </div>
+      <div class="nav__side nav__side--right">
+        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">{{4}}</p></div>
+      </div>
+    </nav>
+
+    <div class="hero__body">
+      <div class="hero__top">
+        <h1 class="hero__title">{{5}}</h1>
+        <div class="hero__place">
+          <div class="clock"><div class="clock__time" data-clock></div></div>
+          <div class="map" aria-hidden="true">
+            <span class="map__shadow"><span class="inset"><img decoding="async" src="assets/img/map-oise-shadow.avif" alt=""></span></span>
+            <span class="map__label"><span class="inset"><img decoding="async" src="assets/img/map-oise-label.avif" alt=""></span></span>
+            <span class="map__outline"><span class="inset"><img decoding="async" src="assets/svg/map-oise.svg" alt=""></span></span>
+            <span class="map__pin">
+              <span class="map__pin-dot"><span class="inset"><img decoding="async" src="assets/svg/map-pin.svg" alt=""></span></span>
+              <span class="inset map__pin-ring"><img decoding="async" src="assets/svg/map-pin-ring.svg" alt=""></span>
+            </span>
+          </div>
+          <div class="hero__region"><p class="tracked">{{6}}</p></div>
+        </div>
+      </div>
+      <div class="hero__bottom">
+        <div class="hero__intro"><div class="hero__intro-in"><p>{{7}}</p></div></div>
+        <div class="facts">
+          <div class="fact"><p class="fact__value">{{8}}</p><p class="fact__label">{{9}}</p></div>
+          <div class="fact"><p class="fact__value">{{10}}</p><p class="fact__label">{{11}}</p></div>
+          <div class="fact"><p class="fact__value">{{12}}</p><p class="fact__label">{{13}}</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="prologue" id="prologue">
+    <div class="prologue__main">
+      <h2 class="prologue__label"><span>{{14}}</span></h2>
+      <div class="prologue__text">
+        <div class="prologue__text-in">
+          <p class="lead">{{15}}</p>
+          <div class="body body--lg">
+            <p>{{16}}</p>
+            <p>{{17}}</p>
+            <p>{{18}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prologue__aside">
+      <div class="prologue__photo">
+        <img decoding="async" loading="lazy" {{img:terrassement}} sizes="auto, 100vw" alt="">
+        <img decoding="async" loading="lazy" {{img:portrait}} sizes="auto, 100vw" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="chapters" id="chapitres">
+    <div class="chapters__list">
+      <div class="row" role="button" tabindex="0" data-target="chapitre-01">
+        <div class="row__main">
+          <div class="row__title"><p class="row__num">{{19}}</p><p class="row__name">{{20}}</p></div>
+          <div class="thumbs">
+            <span class="thumb"><img decoding="async" loading="lazy" {{img:tterrain52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--r8"><img decoding="async" loading="lazy" {{img:drone52}} sizes="auto, 52px" alt=""></span>
+          </div>
+        </div>
+        <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{21}}</p></div>
+      </div>
+      <div class="row" role="button" tabindex="0" data-target="chapitre-02">
+        <div class="row__main">
+          <div class="row__title"><p class="row__num">{{22}}</p><p class="row__name">{{23}}</p></div>
+          <div class="thumbs">
+            <span class="thumb"><img decoding="async" loading="lazy" {{img:plateforme52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--r8"><img decoding="async" loading="lazy" {{img:implantation52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--l4"><img decoding="async" loading="lazy" {{img:terrassement52}} sizes="auto, 52px" alt=""></span>
+          </div>
+        </div>
+        <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{24}}</p></div>
+      </div>
+      <div class="row" role="button" tabindex="0" data-target="chapitre-03">
+        <div class="row__main">
+          <div class="row__title"><p class="row__num">{{25}}</p><p class="row__name">{{26}}</p></div>
+          <div class="thumbs">
+            <span class="thumb thumb--crop"><img decoding="async" class="crop-structure" loading="lazy" {{img:tstructure52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--r8"><img decoding="async" loading="lazy" {{img:hero52}} sizes="auto, 52px" alt=""></span>
+          </div>
+        </div>
+        <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{27}}</p></div>
+      </div>
+      <div class="row" role="button" tabindex="0" data-target="chapitre-04">
+        <div class="row__main">
+          <div class="row__title"><p class="row__num">{{28}}</p><p class="row__name">{{29}}</p></div>
+          <div class="thumbs">
+            <span class="thumb thumb--crop"><img decoding="async" class="crop-aerienne" loading="lazy" {{img:aerienne52}} sizes="auto, 52.009777476678px" alt=""></span>
+            <span class="thumb thumb--r8"><img decoding="async" loading="lazy" {{img:etancheite52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--l4"><img decoding="async" loading="lazy" {{img:facade52}} sizes="auto, 52px" alt=""></span>
+          </div>
+        </div>
+        <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{30}}</p></div>
+      </div>
+      <div class="row" role="button" tabindex="0" data-target="chapitre-05">
+        <div class="row__main">
+          <div class="row__title"><p class="row__num">{{31}}</p><p class="row__name">{{32}}</p></div>
+          <div class="thumbs">
+            <span class="thumb"><img decoding="async" loading="lazy" {{img:poele52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--r8"><img decoding="async" loading="lazy" {{img:interieur52}} sizes="auto, 52px" alt=""></span>
+          </div>
+        </div>
+        <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{33}}</p></div>
+      </div>
+      <div class="row" role="button" tabindex="0" data-target="chapitre-06">
+        <div class="row__main">
+          <div class="row__title"><p class="row__num">{{34}}</p><p class="row__name">{{35}}</p></div>
+          <div class="thumbs">
+            <span class="thumb"><img decoding="async" loading="lazy" {{img:tresultat52}} sizes="auto, 52px" alt=""></span>
+            <span class="thumb thumb--r8"><img decoding="async" loading="lazy" {{img:jpizza52}} sizes="auto, 52px" alt=""></span>
+          </div>
+        </div>
+        <div class="row__date"><span class="row__icon"><img decoding="async" src="assets/svg/icon-calendar.svg" alt=""></span><p class="tracked">{{36}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapitre 01 -->
+  <section class="chapter chapter--01" id="chapitre-01">
+    <div class="ctop">
+      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{37}}</p></div>
+      <div class="ctop__date">
+        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked">{{38}}</p>
+      </div>
+    </div>
+    <div class="ctitle">
+      <h2>{{39}}</h2>
+      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{40}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+    </div>
+    <div class="terrain">
+      <div class="terrain__left"><div class="terrain__left-in">
+        <p class="body">{{41}}</p>
+        <figure class="fig">
+          <div class="fig__media" style="height:436px"><img decoding="async" loading="lazy" {{img:drone}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap"><p class="cap__label tracked">{{42}}</p><p class="cap__text">{{43}}</p></figcaption>
+        </figure>
+      </div></div>
+      <div class="terrain__right">
+        <div class="badge">
+          <span class="badge__icon"><img decoding="async" class="badge__ring-20" src="assets/svg/icon-target-20.svg" alt=""><img decoding="async" class="badge__ring-14" src="assets/svg/icon-target-14.svg" alt=""><img decoding="async" class="badge__ring-8" src="assets/svg/icon-target-8.svg" alt=""></span>
+          <p class="badge__text tracked">{{44}}</p>
+        </div>
+        <figure class="fig">
+          <div class="fig__media" style="height:540px"><video src="assets/video/abattage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+          <figcaption class="cap"><p class="cap__label tracked">{{45}}</p><p class="cap__text">{{46}}</p></figcaption>
+        </figure>
+      </div>
+    </div>
+    <blockquote class="quote quote--terrain"><p>{{47}}</p></blockquote>
+  </section>
+
+  <!-- Chapitre 02 -->
+  <section class="chapter" id="chapitre-02">
+    <div class="ctop">
+      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{48}}</p></div>
+      <div class="ctop__date">
+        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked">{{49}}</p>
+      </div>
+    </div>
+    <div class="ctitle">
+      <h2>{{50}}</h2>
+      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{51}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+    </div>
+    <div class="fondations">
+      <div class="fondations__left"><div class="fondations__left-in">
+        <p class="body">{{52}}</p>
+        <dl class="table">
+          <div class="table__row"><dt>{{53}}</dt><dd>{{54}}</dd></div>
+          <div class="table__row"><dt>{{55}}</dt><dd>{{56}}</dd></div>
+          <div class="table__row"><dt>{{57}}</dt><dd>{{58}}</dd></div>
+        </dl>
+      </div></div>
+      <div class="fondations__right">
+        <figure class="fig">
+          <div class="fig__media" style="height:540px"><img decoding="async" loading="lazy" {{img:terrassement}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap cap--stack"><p class="cap__label tracked">{{59}}</p><p class="cap__text">{{60}}</p></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="plancher">
+      <div class="plancher__left"><div class="plancher__left-in">
+        <figure class="fig">
+          <div class="fig__media" style="height:436px"><img decoding="async" loading="lazy" {{img:implantation}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap"><p class="cap__label tracked">{{61}}</p><p class="cap__text">{{62}}</p></figcaption>
+        </figure>
+      </div></div>
+      <div class="plancher__right">
+        <figure class="fig">
+          <div class="fig__media" style="height:340px"><img decoding="async" loading="lazy" {{img:plateforme}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap"><p class="cap__label tracked">{{63}}</p><p class="cap__text">{{64}}</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapitre 03 -->
+  <section class="chapter" id="chapitre-03">
+    <div class="ctop">
+      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{65}}</p></div>
+      <div class="ctop__date">
+        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked">{{66}}</p>
+      </div>
+    </div>
+    <div class="ctitle">
+      <h2>{{67}}</h2>
+      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{68}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+    </div>
+    <div class="versions">
+      <div class="versions__list"><div class="versions__list-in"><div class="versions__items"><p>{{69}}</p><p>{{70}}</p><p>{{71}}</p></div></div></div>
+      <blockquote class="versions__quote"><p>{{72}}</p></blockquote>
+    </div>
+    <div class="board">
+      <img decoding="async" class="board__paper" loading="lazy" {{img:paper}} sizes="auto, 100vw" alt="">
+      <div class="board__inner">
+        <div class="sketch sketch--structure">
+          <div class="sketch__art"><img decoding="async" loading="lazy" {{img:skstructure}} sizes="auto, 300px" alt=""></div>
+          <div class="sketch__note sketch__note--structure"><span class="sketch__cross"><img decoding="async" src="assets/svg/sketch-cross.svg" alt=""></span><p>{{73}}</p></div>
+        </div>
+        <div class="sketch sketch--face">
+          <div class="sketch__art"><img decoding="async" loading="lazy" {{img:skface}} sizes="auto, 390px" alt=""></div>
+          <div class="sketch__note sketch__note--face"><p>{{74}}</p><span class="sketch__circle"><span class="inset"><img decoding="async" class="sketch__circle-lg" src="assets/svg/sketch-circle.svg" alt=""><img decoding="async" class="sketch__circle-sm" src="assets/svg/sketch-circle-small.svg" alt=""></span></span></div>
+        </div>
+        <div class="sketch sketch--terrasse">
+          <div class="sketch__art"><img decoding="async" loading="lazy" {{img:skterrasse}} sizes="auto, 330px" alt=""></div>
+          <div class="sketch__note sketch__note--terrasse"><p>{{75}}</p><span class="sketch__cross"><img decoding="async" src="assets/svg/sketch-cross.svg" alt=""></span></div>
+          <div class="sketch__auvent"><p>{{76}}</p><img decoding="async" src="assets/svg/sketch-arrow.svg" alt=""></div>
+        </div>
+        <div class="fold">
+          <img decoding="async" class="fold__corner" src="assets/svg/sketch-fold.svg" alt="">
+          <div class="fold__title"><div><p>{{77}}</p></div></div>
+          <div class="fold__version"><div><p>{{78}}</p></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="montage">
+      <div class="montage__left"><div class="montage__left-in">
+        <div class="body"><p>{{79}}</p><p>{{80}}</p></div>
+      </div></div>
+      <div class="montage__right">
+        <dl class="table">
+          <div class="table__row"><dt>{{81}}</dt><dd>{{82}}</dd></div>
+          <div class="table__row"><dt>{{83}}</dt><dd>{{84}}</dd></div>
+          <div class="table__row"><dt>{{85}}</dt><dd>{{86}}</dd></div>
+        </dl>
+        <span class="plus"><img decoding="async" src="assets/svg/icon-plus.svg" alt=""></span>
+      </div>
+    </div>
+    <div class="ossature">
+      <div class="ossature__left"><div class="ossature__left-in">
+        <figure class="fig">
+          <div class="fig__media" style="height:436px"><img decoding="async" loading="lazy" {{img:hero}} sizes="auto, 100vw" alt=""></div>
+          <figcaption class="cap"><p class="cap__label tracked">{{87}}</p><p class="cap__text">{{88}}</p></figcaption>
+        </figure>
+      </div></div>
+      <div class="ossature__right">
+        <figure class="fig">
+          <div class="fig__media" style="height:340px"><video src="assets/video/montage.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+          <figcaption class="cap"><p class="cap__label tracked">{{89}}</p><p class="cap__text cap__text--spans"><span>{{90}}</span><span>{{91}}</span><span>{{92}}</span></p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapitre 04 -->
+  <section class="chapter" id="chapitre-04">
+    <div class="ctop">
+      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{93}}</p></div>
+      <div class="ctop__date">
+        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked">{{94}}</p>
+      </div>
+    </div>
+    <div class="ctitle">
+      <h2>{{95}}</h2>
+      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{96}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+    </div>
+    <div class="isolation">
+      <div class="isolation__logo"><div class="isolation__badge"><img decoding="async" loading="lazy" {{img:badge}} sizes="auto, 138px" alt=""></div></div>
+      <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p>{{97}}</p><p>{{98}}</p></div></div></div>
+      <div class="isolation__col"><div class="isolation__col-in"><div class="body"><p>{{99}}</p><p>{{100}}</p></div></div></div>
+    </div>
+    <div class="toiture">
+      <figure class="toiture__fig toiture__fig--main">
+        <figcaption class="cap"><p class="cap__label tracked">{{101}}</p><p class="cap__text">{{102}}</p></figcaption>
+        <div class="fig__media" style="height:580px"><img decoding="async" loading="lazy" {{img:etancheite}} sizes="auto, 100vw" alt=""></div>
+      </figure>
+      <figure class="toiture__fig">
+        <figcaption class="cap cap--stack"><p class="cap__label tracked">{{103}}</p><p class="cap__text">{{104}}</p></figcaption>
+        <div class="fig__media" style="height:480px"><img decoding="async" loading="lazy" {{img:aerienne}} sizes="auto, 100vw" alt=""></div>
+      </figure>
+      <figure class="toiture__fig">
+        <figcaption class="cap cap--stack"><p class="cap__label tracked">{{105}}</p><p class="cap__text">{{106}}</p></figcaption>
+        <div class="fig__media" style="height:480px"><img decoding="async" loading="lazy" {{img:facade}} sizes="auto, 100vw" alt=""></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Chapitre 05 -->
+  <section class="chapter" id="chapitre-05">
+    <div class="ctop">
+      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{107}}</p></div>
+      <div class="ctop__date">
+        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked">{{108}}</p>
+      </div>
+    </div>
+    <div class="ctitle">
+      <h2>{{109}}</h2>
+      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{110}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+    </div>
+    <div class="amenagement">
+      <div class="amenagement__left"><div class="amenagement__left-in">
+        <div class="amenagement__text">
+          <p class="lead">{{111}}</p>
+          <div class="body"><p>{{112}}</p><p>{{113}}</p></div>
+        </div>
+        <div class="amenagement__figs">
+          <figure class="amenagement__fig">
+            <div class="fig__media" style="height:360px"><img decoding="async" loading="lazy" {{img:interieur}} sizes="auto, 100vw" alt=""></div>
+            <figcaption class="cap cap--stack"><p class="cap__label tracked">{{114}}</p><p class="cap__text">{{115}}</p></figcaption>
+          </figure>
+          <figure class="amenagement__fig">
+            <div class="fig__media" style="height:280px"><img decoding="async" loading="lazy" {{img:poele}} sizes="auto, 100vw" alt=""></div>
+            <figcaption class="cap cap--stack"><p class="cap__label tracked">{{116}}</p><p class="cap__text">{{117}}</p></figcaption>
+          </figure>
+        </div>
+      </div></div>
+      <div class="amenagement__sketch"><div><img decoding="async" loading="lazy" {{img:skinterieur}} sizes="auto, 100vw" alt=""></div></div>
+    </div>
+  </section>
+
+  <!-- Chapitre 06 -->
+  <section class="chapter chapter--06" id="chapitre-06">
+    <div class="ctop">
+      <div class="ctop__label"><span class="ctop__icon"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-small.svg" alt=""></span></span></span><p>{{118}}</p></div>
+      <div class="ctop__date">
+        <span class="stripes" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+        <p class="tracked">{{119}}</p>
+      </div>
+    </div>
+    <div class="ctitle ctitle--center">
+      <h2>{{120}}</h2>
+      <div class="counter"><img decoding="async" class="counter__bg" loading="lazy" {{img:counter}} sizes="auto, 82px" alt=""><p class="counter__num tracked">{{121}}</p><span class="counter__corner counter__corner--tr"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-a.svg" alt=""></span></span><span class="counter__corner counter__corner--bl"><span class="inset"><img decoding="async" src="assets/svg/counter-corner-b.svg" alt=""></span></span></div>
+    </div>
+    <div class="resultat-quote"><blockquote><p>{{122}}</p></blockquote></div>
+    <div class="resultat">
+      <div class="resultat__stats resultat__stats--left"><div class="resultat__stats-in">
+        <div class="stat"><p class="stat__label">{{123}}</p><p class="stat__value">{{124}}</p></div>
+        <div class="stat"><p class="stat__label">{{125}}</p><p class="stat__value">{{126}}</p></div>
+        <div class="stat"><p class="stat__label">{{127}}</p><p class="stat__value">{{128}}</p></div>
+      </div></div>
+      <div class="resultat__video">
+        <span class="vcorner vcorner--outer-bl"><span class="inset"><img decoding="async" src="assets/svg/video-corner-outer-a.svg" alt=""></span></span>
+        <span class="vcorner vcorner--outer-tr"><span class="inset"><img decoding="async" src="assets/svg/video-corner-outer-b.svg" alt=""></span></span>
+        <div class="resultat__player"><video src="assets/video/resultat.mp4" autoplay loop muted playsinline controlslist="nodownload"></video></div>
+        <span class="vcorner vcorner--inner-tr"><span class="inset"><img decoding="async" src="assets/svg/video-corner-inner-b.svg" alt=""></span></span>
+        <span class="vcorner vcorner--inner-bl"><span class="inset"><img decoding="async" src="assets/svg/video-corner-inner-a.svg" alt=""></span></span>
+      </div>
+      <div class="resultat__stats resultat__stats--right"><div class="resultat__stats-in">
+        <div class="stat"><p class="stat__label">{{129}}</p><p class="stat__value">{{130}}</p></div>
+        <div class="stat"><p class="stat__label">{{131}}</p><p class="stat__value">{{132}}</p></div>
+        <div class="stat"><p class="stat__label">{{133}}</p><p class="stat__value">{{134}}</p></div>
+      </div></div>
+    </div>
+    <div class="epilogue">
+      <div class="epilogue__text"><p>{{135}}</p><p>{{136}}</p><p>{{137}}</p></div>
+    </div>
+  </section>
+
+  <article class="journal" id="journal">
+    <div class="journal__mark"><span class="journal__bookmark"><span class="inset"><img decoding="async" src="assets/svg/journal-bookmark.svg" alt=""></span></span></div>
+    <div class="journal__head">
+      <div class="journal__titlebar">
+        <h2 class="journal__title">{{138}}</h2>
+        <div class="journal__today">
+          <span class="stripes stripes--dark" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+          <p class="tracked">{{139}}</p>
+        </div>
+      </div>
+      <div class="journal__intro"><div><p>{{140}}</p></div></div>
+    </div>
+    <div class="journal__grid">
+      <div class="jcard jcard--next">
+        <div class="jnext">
+          <img decoding="async" class="jnext__spark jnext__spark--a" src="assets/svg/journal-sparkle.svg" alt="">
+          <img decoding="async" class="jnext__spark jnext__spark--b" src="assets/svg/journal-sparkle.svg" alt="">
+          <div class="jnext__words"><div><p>{{141}}</p><p>{{142}}</p><p>{{143}}</p></div></div>
+          <img decoding="async" class="jnext__swoosh" src="assets/svg/journal-swoosh.svg" alt="">
+        </div>
+      </div>
+      <article class="jcard">
+        <div class="jcard__media">
+          <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jarbres}} sizes="auto, 100vw" alt="">
+        </div>
+        <div class="jcard__meta">
+          <div class="jtag"><p>{{144}}</p><div class="jtag__season"><span class="jtag__icon jtag__icon--ete"><img decoding="async" src="assets/svg/season-ete.svg" alt=""></span><p>{{145}}</p></div></div>
+          <p class="jcard__text">{{146}}</p>
+        </div>
+      </article>
+      <article class="jcard">
+        <div class="jcard__media jcard__media--tonte">
+          <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jtonte}} sizes="auto, 100vw" alt="">
+          <span class="jcard__bar jcard__bar--bottom"></span>
+          <span class="jcard__bar jcard__bar--top"></span>
+        </div>
+        <div class="jcard__meta">
+          <div class="jtag"><p>{{147}}</p><div class="jtag__season"><span class="jtag__icon jtag__icon--ete"><img decoding="async" src="assets/svg/season-ete.svg" alt=""></span><p>{{148}}</p></div></div>
+          <p class="jcard__text">{{149}}</p>
+        </div>
+      </article>
+      <article class="jcard">
+        <div class="jcard__media">
+          <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jchouette}} sizes="auto, 100vw" alt="">
+        </div>
+        <div class="jcard__meta">
+          <div class="jtag"><p>{{150}}</p><div class="jtag__season"><span class="jtag__icon jtag__icon--hiver"><img decoding="async" src="assets/svg/season-hiver.svg" alt=""></span><p>{{151}}</p></div></div>
+          <p class="jcard__text">{{152}}</p>
+        </div>
+      </article>
+      <article class="jcard">
+        <div class="jcard__media">
+          <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jallee}} sizes="auto, 100vw" alt="">
+          <span class="jcard__frame"></span>
+        </div>
+        <div class="jcard__meta">
+          <div class="jtag"><p>{{153}}</p><div class="jtag__season"><span class="jtag__icon jtag__icon--ete"><img decoding="async" src="assets/svg/season-ete.svg" alt=""></span><p>{{154}}</p></div></div>
+          <p class="jcard__text">{{155}}</p>
+        </div>
+      </article>
+      <article class="jcard">
+        <div class="jcard__media">
+          <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpizza}} sizes="auto, 100vw" alt="">
+        </div>
+        <div class="jcard__meta">
+          <div class="jtag"><p>{{156}}</p><div class="jtag__season"><span class="jtag__icon jtag__icon--ete"><img decoding="async" src="assets/svg/season-ete.svg" alt=""></span><p>{{157}}</p></div></div>
+          <p class="jcard__text">{{158}}</p>
+        </div>
+      </article>
+      <article class="jcard">
+        <div class="jcard__media">
+          <span class="jcard__tape"><span class="inset"><picture><source media="(width < 800px)" srcset="assets/svg/journal-tape-339.svg"><source media="(width < 1440px)" srcset="assets/svg/journal-tape-312.svg"><img decoding="async" src="assets/svg/journal-tape-380.svg" alt=""></picture></span></span>
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpaper}} sizes="auto, 100vw" alt="">
+          <img decoding="async" class="jcard__photo" loading="lazy" {{img:jpoele}} sizes="auto, 100vw" alt="">
+        </div>
+        <div class="jcard__meta">
+          <div class="jtag"><p>{{159}}</p><div class="jtag__season"><span class="jtag__icon jtag__icon--printemps"><img decoding="async" src="assets/svg/season-printemps.svg" alt=""></span><p>{{160}}</p></div></div>
+          <p class="jcard__text">{{161}}</p>
+        </div>
+      </article>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__about"><div class="footer__about-in">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__mark"><span class="glyph"><span class="inset"><img decoding="async" src="assets/svg/logo-frame-dark.svg" alt=""></span></span></span>
+            <span class="stripes stripes--dark" aria-hidden="true"><span class="stripes__track"><span class="stripes__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+          </div>
+          <p class="footer__title">{{162}}</p>
+        </div>
+        <p class="footer__text">{{163}}</p>
+      </div></div>
+      <a class="footer__credit" href="https://erwanguillou.me" target="_blank" rel="noopener"><p>{{164}}</p></a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
