@@ -26,6 +26,17 @@
   <link rel="preload" href="assets/fonts/gt-kotoheim-mono-medium-vf.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/poppins-light-english.woff2" as="font" type="font/woff2" crossorigin>
   <script>
+    // Tailles de texte fluides : un facteur commun (--t) multiplie toutes les tailles du site.
+    // 1 jusqu'à 1440 × 900 (portables, mobiles), puis grandit de moitié moins vite que l'écran, 1,25 au plus.
+    (function () {
+      var root = document.documentElement;
+      function type() {
+        var ratio = Math.min(innerHeight / 900, innerWidth / 1440);
+        root.style.setProperty("--t", Math.max(1, Math.min(1.25, 1 + (ratio - 1) * 0.5)).toFixed(4));
+      }
+      type();
+      addEventListener("resize", type);
+    })();
     // Animations : classe posée avant le premier rendu. Si le script principal ne démarre pas
     // (erreur, blocage), tout le contenu redevient visible au bout de 3 s.
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -33,9 +44,9 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=50c40d84e2">
+  <link rel="stylesheet" href="css/style.css?v=81a6e9410e">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
-  <script src="js/horizontal.js?v=66ac504c14" defer></script>
+  <script src="js/horizontal.js?v=85239c819c" defer></script>
   <script src="js/main.js?v=dfd51bc754" defer></script>
   <script src="js/motion.js?v=a7151efe61" defer></script>
   <script src="js/ambience.js?v=4ec5d6f1e8" defer></script>

@@ -128,7 +128,8 @@ Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`
 - chaque chapitre est une page de 900 px de haut composée dans Figma (fichier « Tests », page
   Test 04) : positions et tailles reprises dans `PAGES` (`js/horizontal.js`), la page entière étant
   mise à l'échelle de la hauteur de l'écran (`zoom`) ; les textes gardent les tailles de la version
-  verticale et du reste du site (zoom inverse) ; tout contenu non prévu est ajouté à droite ;
+  verticale et du reste du site (zoom inverse) ; la page grandit au plus de 1,25× : au-delà, elle
+  reste centrée verticalement ; tout contenu non prévu est ajouté à droite ;
 - molette et trackpad dans les deux sens, flèches ← → (un écran), sommaire, menu du repère et
   flèches ‹ › du repère (chapitre précédent / suivant) ;
 - le repère garde la même largeur d'un chapitre à l'autre (titres et dates empilés, invisibles) ;
@@ -139,9 +140,13 @@ Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`
 
 Vérification : `python3 tools/horizontal_check.py 1440 900`.
 
-## Tailles de texte (harmonisées)
+## Tailles de texte (harmonisées et fluides)
 
-Un type de texte = une taille, sur tout le site :
+Un type de texte = une taille, sur tout le site. Les tailles ci-dessous sont celles d'un écran de
+1440 × 900 ou moins ; au-delà, un facteur commun `--t` (calculé dans le `<head>`) les multiplie
+toutes : il grandit de moitié moins vite que l'écran et plafonne à 1,25 (≈ 1,1 en 1920 × 1080,
+1,24 en 3440 × 1340). Les largeurs maximales des sections (1440 px) et les marges latérales
+suivent le même facteur, pour que les textes gardent la même mise en ligne.
 
 | Type | Police | Taille / interligne |
 |---|---|---|
