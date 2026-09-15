@@ -44,7 +44,7 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=742286bf04">
+  <link rel="stylesheet" href="css/style.css?v=c10ee309eb">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
   <script src="js/horizontal.js?v=85239c819c" defer></script>
   <script src="js/main.js?v=dfd51bc754" defer></script>
@@ -77,7 +77,10 @@
 
     <div class="hero__media">
       <div class="hero__bg" aria-hidden="true">
-        <img decoding="async" class="hero__photo" {{img:herocover}} sizes="(width < 1100px) 100vw, calc(100vw - 780px)" alt="">
+        <picture>
+          <source type="image/avif" srcset="assets/img/hero-cabane-w800.avif 800w, assets/img/hero-cabane-w1200.avif 1200w, assets/img/hero-cabane-w1800.avif 1800w, assets/img/hero-cabane-w2400.avif 2400w, assets/img/hero-cabane-w3024.avif 3024w" sizes="(width < 1100px) max(100vw, 45svh), max(100vw - 780px, 75svh)">
+          <img decoding="async" fetchpriority="high" class="hero__photo" src="assets/img/hero-cabane.jpg" width="3024" height="4032" alt="">
+        </picture>
         <div class="hero__fade"></div>
       </div>
       <nav class="nav" data-reveal="fade">

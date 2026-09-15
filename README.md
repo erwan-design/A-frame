@@ -149,8 +149,9 @@ Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`
 
 Vérification : `python3 tools/horizontal_check.py 1440 900`.
 
-Photo de l'en-tête : `assets/img/hero-structure.webp` (capture 732 × 1298 fournie par Erwan le 15/09/2026, à
-remplacer par l'original en haute définition) ; la photo « Ossature » reste utilisée au chapitre 03.
+Photo de l'en-tête : `assets/img/hero-cabane-w*.avif` (IMG_3462.HEIC, 3024 × 4032, profil Display P3 conservé),
+encodée en AVIF qualité 90 en 4:4:4 (sans sous-échantillonnage des couleurs) en 5 tailles, et
+`hero-cabane.jpg` (1800 × 2400, qualité 92) en secours ; la photo « Ossature » reste au chapitre 03.
 
 ## Tailles de texte (harmonisées et fluides)
 
