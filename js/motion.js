@@ -250,30 +250,58 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Journal : les cartes s'inclinent vers le curseur (5° au plus).
+  // Écriture à la main : les textes manuscrits (et leurs traits) s'écrivent de gauche à droite,
+  // l'un après l'autre, derrière un masque au bord adouci. Durée selon la longueur du texte.
+  //  - carte « Prochaine aventure à venir » du journal : au survol ;
+  //  - annotations de la planche du chapitre 03 : à l'arrivée à l'écran, puis au survol.
+  // Sur écran tactile : une fois, à l'arrivée à l'écran.
   // ---------------------------------------------------------------------------
-  document.querySelectorAll(".journal__grid .jcard").forEach((card) => {
-    let frame = 0;
-    card.addEventListener("pointermove", (event) => {
-      if (!finePointer.matches) return;
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const box = card.getBoundingClientRect();
-        const px = (event.clientX - box.left) / box.width - 0.5;
-        const py = (event.clientY - box.top) / box.height - 0.5;
-        card.classList.add("is-tilting");
-        card.classList.remove("is-tilting-out");
-        card.style.transform = `rotateX(${(-py * 5).toFixed(2)}deg) rotateY(${(px * 5).toFixed(2)}deg)`;
+  const handwriting = (group, selectors, { onView, onHover, start = 0.1 }) => {
+    const items = selectors.flatMap((selector) => [...group.querySelectorAll(selector)]).filter((el) => el.getClientRects().length);
+    if (!items.length) return;
+    let delay = start;
+    items.forEach((el) => {
+      const length = (el.textContent || "").trim().length;
+      const duration = length ? Math.min(0.85, Math.max(0.3, length * 0.055)) : 0.4; // traits : 0,4 s
+      el.classList.add("hw");
+      el.style.setProperty("--hw-delay", `${delay.toFixed(2)}s`);
+      el.style.setProperty("--hw-duration", `${duration.toFixed(2)}s`);
+      delay += duration * 0.85;
+    });
+    const last = items[items.length - 1];
+    last.addEventListener("animationend", () => group.classList.remove("is-writing"));
+    const write = () => {
+      group.classList.remove("hw-pending", "is-writing");
+      void group.offsetWidth; // relance l'animation
+      group.classList.add("is-writing");
+    };
+    if (onView || !finePointer.matches) {
+      group.classList.add("hw-pending"); // caché jusqu'à la première écriture
+      const observer = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        write();
+      }, { threshold: 0.45 });
+      observer.observe(group);
+    }
+    if (onHover && finePointer.matches) {
+      group.addEventListener("pointerenter", (event) => {
+        if (event.pointerType === "mouse" && !group.classList.contains("is-writing") && !group.classList.contains("hw-pending")) write();
       });
-    });
-    card.addEventListener("pointerleave", () => {
-      cancelAnimationFrame(frame);
-      card.classList.remove("is-tilting");
-      card.classList.add("is-tilting-out");
-      card.style.transform = "";
-      setTimeout(() => card.classList.remove("is-tilting-out"), 500);
-    });
-  });
+    }
+  };
+  const nextCard = document.querySelector(".jnext");
+  if (nextCard) handwriting(nextCard, [".jnext__words p", ".jnext__swoosh"], { onHover: true });
+  const board = document.querySelector(".board");
+  if (board) {
+    handwriting(board, [
+      ".sketch--structure .sketch__cross", ".sketch--structure .sketch__note p",
+      ".sketch--face .sketch__note p", ".sketch--face .sketch__circle",
+      ".sketch__auvent p", ".sketch__auvent svg, .sketch__auvent img",
+      ".sketch--terrasse .sketch__note p", ".sketch--terrasse .sketch__cross",
+      ".fold__title p", ".fold__version p",
+    ], { onView: true, onHover: true, start: 0.5 });
+  }
 
   // ---------------------------------------------------------------------------
   // Badge « Frame Oise » (chapitre 04) : un objet en relief. Il flotte doucement, et quand la
@@ -362,4 +390,80 @@
   document.querySelectorAll(".badge__icon").forEach((icon) => {
     new IntersectionObserver(([entry]) => icon.classList.toggle("is-live", entry.isIntersecting)).observe(icon);
   });
+
+  // ---------------------------------------------------------------------------
+  // Carte de l'Oise (héros) : en relief, comme le blason du chapitre 04. Épaisseur (copies du
+  // contour empilées derrière), repère qui flotte au-dessus, ombre en retrait, reflet découpé à la
+  // forme du département. Elle flotte au repos et s'oriente vers la souris sur le héros.
+  // Les couches ajoutées restent hors de .map : le clone de la carte (zoom du chapitre 01) reste propre.
+  // ---------------------------------------------------------------------------
+  const heroMap = document.querySelector(".hero .map");
+  const outlineSvg = heroMap && heroMap.querySelector(".map__outline svg");
+  if (heroMap && outlineSvg) {
+    const stage = document.createElement("div");
+    stage.className = "map3d";
+    heroMap.before(stage);
+    for (let depth = 7; depth >= 1; depth--) {
+      const edge = document.createElement("span");
+      edge.className = "map3d__edge";
+      edge.setAttribute("aria-hidden", "true");
+      edge.append(outlineSvg.cloneNode(true));
+      edge.style.transform = `translateZ(${(-depth * 1.5).toFixed(1)}px)`;
+      stage.append(edge);
+    }
+    stage.append(heroMap);
+    const glare = document.createElement("span");
+    glare.className = "map3d__glare";
+    glare.setAttribute("aria-hidden", "true");
+    const shape = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='${outlineSvg.getAttribute("viewBox")}' preserveAspectRatio='none'><path d='${outlineSvg.querySelector("path").getAttribute("d")}'/></svg>`;
+    const maskUrl = `url("data:image/svg+xml,${encodeURIComponent(shape)}")`;
+    glare.style.webkitMaskImage = maskUrl;
+    glare.style.maskImage = maskUrl;
+    stage.append(glare);
+
+    const heroZone = stage.closest(".hero") || stage.parentElement;
+    const mapState = { rx: 0, ry: 0 };
+    let mapPointer = null;
+    let mapVisible = false;
+    let mapRunning = false;
+    const mapStart = performance.now();
+    heroZone.addEventListener("pointermove", (event) => {
+      if (event.pointerType === "mouse" && finePointer.matches) mapPointer = [event.clientX, event.clientY];
+    });
+    heroZone.addEventListener("pointerleave", () => { mapPointer = null; });
+
+    const mapTick = (now) => {
+      if (!mapVisible) {
+        mapRunning = false;
+        return;
+      }
+      const t = (now - mapStart) / 1000;
+      let targetX;
+      let targetY;
+      if (mapPointer) {
+        const box = stage.getBoundingClientRect();
+        const dx = Math.max(-1, Math.min(1, (mapPointer[0] - (box.left + box.width / 2)) / 600));
+        const dy = Math.max(-1, Math.min(1, (mapPointer[1] - (box.top + box.height / 2)) / 500));
+        targetY = dx * 24;
+        targetX = -dy * 18 + 8; // légèrement couchée, comme posée sur une table
+      } else {
+        targetY = Math.sin(t * 0.5) * 12;
+        targetX = 10 + Math.sin(t * 0.37 + 1) * 5;
+      }
+      mapState.rx += (targetX - mapState.rx) * 0.06;
+      mapState.ry += (targetY - mapState.ry) * 0.06;
+      const float = Math.sin(t * 0.9) * 4;
+      stage.style.transform = `perspective(900px) translate3d(0, ${float.toFixed(2)}px, 0) rotateX(${mapState.rx.toFixed(2)}deg) rotateY(${mapState.ry.toFixed(2)}deg)`;
+      glare.style.setProperty("--glare-x", `${(50 + mapState.ry * 2.2).toFixed(1)}%`);
+      glare.style.setProperty("--glare-y", `${(40 - (mapState.rx - 8) * 2.6).toFixed(1)}%`);
+      requestAnimationFrame(mapTick);
+    };
+    new IntersectionObserver(([entry]) => {
+      mapVisible = entry.isIntersecting;
+      if (mapVisible && !mapRunning) {
+        mapRunning = true;
+        requestAnimationFrame(mapTick);
+      }
+    }).observe(stage);
+  }
 })();
