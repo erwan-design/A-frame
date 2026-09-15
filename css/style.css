@@ -155,7 +155,7 @@ a { color: inherit; text-decoration: none; }
 @property --hover { syntax: "<number>"; inherits: true; initial-value: 0; }
 
 /* marges corrigées optiquement : les capitales sont hautes dans leur ligne, on met plus en haut qu'en bas */
-.btn { --hover: 0; position: relative; display: flex; justify-content: center; align-items: center; padding: 8.5px 14px 7px 13.5px; cursor: pointer; flex-shrink: 0; transition: --hover 0.3s var(--ease) 10ms; }
+.btn { --hover: 0; position: relative; display: flex; justify-content: center; align-items: center; padding: 8px 14px 7.5px 13.5px; cursor: pointer; flex-shrink: 0; transition: --hover 0.3s var(--ease) 10ms; }
 .btn:hover { --hover: 1; }
 .btn::before {
   content: "";
