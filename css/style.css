@@ -1072,7 +1072,7 @@ html.lenis, html.lenis body { height: auto; }
 .fig__media[role="button"]:focus-visible::after, .prologue__photo[role="button"]:focus-visible::after, .jcard__media[role="button"]:focus-visible::after { inset: 16px; opacity: 1; }
 .is-zoomable { transition: transform 1.4s var(--expo); }
 .is-pointed { cursor: none !important; }
-.is-pointed > .is-zoomable { transform: scale(1.035); }
+.is-pointed:not(.jcard__media) > .is-zoomable { transform: scale(1.035); } /* pas de zoom sur les photos du journal (cadres, bandes blanches) */
 .photo-tag { position: fixed; left: 0; top: 0; z-index: 40; width: 0; height: 0; pointer-events: none; will-change: transform; }
 .photo-tag__label {
   position: absolute;
