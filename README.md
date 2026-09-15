@@ -66,11 +66,13 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 ## Comportements repris tels quels de l'original
 
-- Les boutons « Prologue », « Chapitres » et « Aujourd'hui » ont un survol mais pas d'action au clic.
 - L'horloge affiche l'heure UTC+2 en décalage fixe (pas d'heure d'hiver), et sa couleur suit le
   thème clair/sombre du système, comme sur Figma.
 
 ## Écarts volontaires avec l'original
+
+- **Navigation** : « Prologue », « Chapitres » et « Aujourd'hui » mènent au prologue, au sommaire et
+  au journal (sans action sur le site Figma).
 
 - **En-tête en diptyque** (variante B du fichier Figma « Tests », page Test 04) : le récit à gauche
   sur le vert du site (surtitre, titre, introduction, chiffres en cases, bouton « Commencer le
@@ -78,7 +80,8 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   en bas à droite (horloge, carte, région, en colonne) ; la carte n'est en relief qu'au survol ;
   espacements verticaux proportionnels à la hauteur de l'écran ;
   sur grand écran le panneau de texte reste à 740 px (× facteur de texte) et la photo prend la
-  place ; sous 1100 px, la photo passe en bandeau au-dessus du récit.
+  place ; sous 1100 px, le récit vient d'abord et la photo en bandeau dessous ; sous 800 px, la carte
+  laisse place à une ligne « heure · région ».
 
 - **Parallax sur la photo du héros** : pendant que l'en-tête sort de l'écran, elle descend moins vite
   que la page et s'approche (zoom jusqu'à 1,22×)

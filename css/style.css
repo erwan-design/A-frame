@@ -154,7 +154,7 @@ a { color: inherit; text-decoration: none; }
 @property --hover { syntax: "<number>"; inherits: true; initial-value: 0; }
 
 /* marges corrigées optiquement : les capitales sont hautes dans leur ligne, on met plus en haut qu'en bas */
-.btn { --hover: 0; position: relative; display: flex; justify-content: center; align-items: center; padding: calc(8.5px * var(--t, 1)) calc(14px * var(--t, 1)) calc(7.5px * var(--t, 1)) calc(13.5px * var(--t, 1)); cursor: pointer; flex-shrink: 0; transition: --hover 0.3s var(--ease) 10ms; }
+.btn { --hover: 0; position: relative; display: flex; text-decoration: none; justify-content: center; align-items: center; padding: calc(8.5px * var(--t, 1)) calc(14px * var(--t, 1)) calc(7.5px * var(--t, 1)) calc(13.5px * var(--t, 1)); cursor: pointer; flex-shrink: 0; transition: --hover 0.3s var(--ease) 10ms; }
 .btn:hover { --hover: 1; }
 /* la ligne de texte est rognée à la hauteur des capitales : marges haut et bas vraiment égales,
    quelle que soit la taille du texte (navigateurs qui ne le gèrent pas : marges asymétriques ci-dessus) */
@@ -186,7 +186,8 @@ a { color: inherit; text-decoration: none; }
 
 /* Lieu, en bas à gauche de la photo : carte de l'Oise réduite, horloge, région */
 /* colonne centrée en bas à droite, alignée sur la navigation : horloge, carte, région */
-.hero__place { position: absolute; right: var(--side); bottom: 56px; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+/* en haut à gauche de la photo, sur le ciel, en face de la navigation */
+.hero__place { position: absolute; left: calc(64px * var(--t, 1)); top: calc(104px * var(--t, 1)); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .hero__map { zoom: 1; }
 .hero__where { display: contents; }
 .hero__where .clock { order: -1; width: auto; height: auto; padding: 0; color: var(--light-70); }
@@ -720,7 +721,7 @@ a { color: inherit; text-decoration: none; }
 
   .prologue { padding: 60px 12px; }
   .prologue__main { min-width: 255px; max-width: none; }
-  .prologue__label span { font-size: calc(42px * var(--t, 1)); }
+  .prologue__label span { font-size: calc(42px * var(--t, 1)); color: var(--light); }
   .prologue__text-in { padding-right: 0; }
 
   .chapters { display: none; }
@@ -1283,26 +1284,24 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 }
 @keyframes hw-write { from { --w: -12%; } to { --w: 112%; } }
 
-/* En-tête empilé : la photo en bandeau (logo, navigation et lieu posés dessus), le récit dessous */
+/* En-tête empilé : le récit d'abord, la photo en bandeau dessous (navigation et lieu posés dessus) */
 @media (width < 1100px) {
   .hero { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; min-height: 0; }
-  .hero__media { grid-row: 1; height: max(60svh, 480px); box-shadow: none; }
-  .hero__panel { grid-row: 2; position: static; padding: 80px var(--side) 96px; }
-  .hero__logo { position: absolute; top: 34px; left: var(--side); z-index: 3; }
-  .hero__place { bottom: 32px; }
+  .hero__panel { grid-row: 1; padding: 36px var(--side) 72px; }
+  .hero__media { grid-row: 2; height: max(64svh, 480px); box-shadow: none; }
+  .hero__start { margin-top: 8px; }
   .hero__map { zoom: 0.8; }
 }
 @media (width < 800px) {
-  .hero__media { height: max(62svh, 380px); }
-  .hero__panel { padding: 48px var(--side) 72px; gap: 0; }
-  .hero__title { margin-bottom: 28px; }
+  .hero__media { height: max(70svh, 420px); }
+  .hero__panel { padding: 28px var(--side) 56px; gap: 44px; }
+  .hero__title { margin-bottom: 28px; font-size: calc(56px * var(--t, 1)); }
   .hero__intro { margin-bottom: 40px; }
-  .hero__panel { gap: 36px; }
-  .hero__title { font-size: calc(56px * var(--t, 1)); }
   .nav { display: none; }
-  .hero__logo { left: 50%; translate: -50% 0; }
-  .hero__place { bottom: 20px; gap: 10px; }
-  .hero__map { zoom: 0.62; }
+  /* sur petit écran, pas de carte : une ligne « heure · région » en bas de la photo */
+  .hero__place { left: var(--side); right: auto; top: auto; bottom: 20px; flex-direction: row; align-items: baseline; gap: 12px; }
+  .hero__map { display: none; }
+  .hero__where .clock { order: 0; }
   .fact { padding: 16px 12px; }
   .fact__value { font-size: calc(24px * var(--t, 1)); }
 }

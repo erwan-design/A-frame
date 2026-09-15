@@ -63,6 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     videos.forEach((video) => observer.observe(video));
   }
 
+  // navigation de l'en-tête (Prologue, Chapitres, Aujourd'hui) : défilement fluide jusqu'à la section
+  document.querySelectorAll('.nav a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+      event.preventDefault();
+      scrollToSection(target);
+    });
+  });
+
   document.querySelectorAll(".row[data-target]").forEach((row) => {
     const go = () => {
       const target = document.getElementById(row.dataset.target);
