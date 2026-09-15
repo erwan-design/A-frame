@@ -154,7 +154,8 @@ a { color: inherit; text-decoration: none; }
    interpolées en lumière linéaire (une transition CSS classique interpolerait en sRGB). */
 @property --hover { syntax: "<number>"; inherits: true; initial-value: 0; }
 
-.btn { --hover: 0; position: relative; display: flex; justify-content: center; align-items: center; padding: 6px 10px; cursor: pointer; flex-shrink: 0; transition: --hover 0.3s var(--ease) 10ms; }
+/* marges corrigées optiquement : les capitales sont hautes dans leur ligne, on met plus en haut qu'en bas */
+.btn { --hover: 0; position: relative; display: flex; justify-content: center; align-items: center; padding: 8.5px 14px 7px 13.5px; cursor: pointer; flex-shrink: 0; transition: --hover 0.3s var(--ease) 10ms; }
 .btn:hover { --hover: 1; }
 .btn::before {
   content: "";
@@ -169,9 +170,9 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   font-family: var(--mono);
   font-variation-settings: "wdth" 100;
-  font-size: calc(12px * var(--t, 1));
+  font-size: calc(13px * var(--t, 1));
   line-height: 1;
-  letter-spacing: calc(0.48px * var(--t, 1));
+  letter-spacing: calc(0.52px * var(--t, 1));
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
