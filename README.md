@@ -74,7 +74,8 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 - **En-tête en diptyque** (variante B du fichier Figma « Tests », page Test 04) : le récit à gauche
   sur le vert du site (surtitre, titre, introduction, chiffres en cases, bouton « Commencer le
-  récit »), la photo à droite avec la navigation en haut et le lieu (carte, horloge, région) en bas ;
+  récit » en ligne accrochée sous les chiffres), la photo à droite avec la navigation en haut et le
+  lieu en bas à droite (horloge, carte, région, en colonne) ; la carte n'est en relief qu'au survol ;
   sur grand écran le panneau de texte reste à 740 px (× facteur de texte) et la photo prend la
   place ; sous 1100 px, la photo passe en bandeau au-dessus du récit.
 
@@ -116,7 +117,7 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - **Écriture à la main** (`js/motion.js`) : la carte « Prochaine aventure à venir » du journal se
   réécrit au survol ; les annotations manuscrites de la planche du chapitre 03 s'écrivent à
   l'arrivée à l'écran, puis au survol.
-- **Carte de l'Oise en relief** (héros) : épaisseur, reflet, flottement, orientation vers la souris.
+- **Carte de l'Oise en relief** (héros) : à plat au repos ; au survol, elle se soulève, s'oriente vers la souris et reçoit un reflet.
 - **Photos agrandissables** : au survol, les coins du compteur (« 01/06 ») se resserrent sur la
   photo, qui s'approche doucement ; une étiquette « Agrandir » remplace le curseur et le suit.
 - **Cercles du badge « 1,45 ha »** (chapitre 01) : une onde se propage en continu depuis le centre ;

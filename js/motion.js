@@ -394,7 +394,7 @@
   // ---------------------------------------------------------------------------
   // Carte de l'Oise (héros) : en relief, comme le blason du chapitre 04. Épaisseur (copies du
   // contour empilées derrière), repère qui flotte au-dessus, ombre en retrait, reflet découpé à la
-  // forme du département. Elle flotte au repos et s'oriente vers la souris sur le héros.
+  // forme du département. À plat au repos, elle s'oriente vers la souris au survol du bloc lieu.
   // Les couches ajoutées restent hors de .map : le clone de la carte (zoom du chapitre 01) reste propre.
   // ---------------------------------------------------------------------------
   const heroMap = document.querySelector(".hero .map");
@@ -421,49 +421,56 @@
     glare.style.maskImage = maskUrl;
     stage.append(glare);
 
-    const heroZone = stage.closest(".hero") || stage.parentElement;
-    const mapState = { rx: 0, ry: 0 };
+    // à plat au repos ; au survol du bloc lieu, la carte se tourne vers la souris et se soulève
+    const hoverZone = stage.closest(".hero__place") || stage;
+    const mapState = { rx: 0, ry: 0, lift: 0 };
     let mapPointer = null;
     let mapVisible = false;
     let mapRunning = false;
-    const mapStart = performance.now();
-    heroZone.addEventListener("pointermove", (event) => {
-      if (event.pointerType === "mouse" && finePointer.matches) mapPointer = [event.clientX, event.clientY];
+    const mapRun = () => {
+      if (mapRunning || !mapVisible) return;
+      mapRunning = true;
+      requestAnimationFrame(mapTick);
+    };
+    hoverZone.addEventListener("pointermove", (event) => {
+      if (event.pointerType !== "mouse" || !finePointer.matches) return;
+      mapPointer = [event.clientX, event.clientY];
+      mapRun();
     });
-    heroZone.addEventListener("pointerleave", () => { mapPointer = null; });
+    hoverZone.addEventListener("pointerleave", () => {
+      mapPointer = null;
+      mapRun();
+    });
 
-    const mapTick = (now) => {
-      if (!mapVisible) {
+    const mapTick = () => {
+      let targetX = 0;
+      let targetY = 0;
+      if (mapPointer) {
+        const box = stage.getBoundingClientRect();
+        const dx = Math.max(-1, Math.min(1, (mapPointer[0] - (box.left + box.width / 2)) / (box.width / 2)));
+        const dy = Math.max(-1, Math.min(1, (mapPointer[1] - (box.top + box.height / 2)) / (box.height / 2)));
+        targetY = dx * 22;
+        targetX = -dy * 18;
+      }
+      mapState.rx += (targetX - mapState.rx) * 0.1;
+      mapState.ry += (targetY - mapState.ry) * 0.1;
+      mapState.lift += ((mapPointer ? 1 : 0) - mapState.lift) * 0.1;
+      const settled = !mapPointer && Math.abs(mapState.rx) < 0.02 && Math.abs(mapState.ry) < 0.02 && mapState.lift < 0.005;
+      if (settled) {
+        stage.style.transform = "";
+        glare.style.opacity = "0";
         mapRunning = false;
         return;
       }
-      const t = (now - mapStart) / 1000;
-      let targetX;
-      let targetY;
-      if (mapPointer) {
-        const box = stage.getBoundingClientRect();
-        const dx = Math.max(-1, Math.min(1, (mapPointer[0] - (box.left + box.width / 2)) / 600));
-        const dy = Math.max(-1, Math.min(1, (mapPointer[1] - (box.top + box.height / 2)) / 500));
-        targetY = dx * 24;
-        targetX = -dy * 18 + 8; // légèrement couchée, comme posée sur une table
-      } else {
-        targetY = Math.sin(t * 0.5) * 12;
-        targetX = 10 + Math.sin(t * 0.37 + 1) * 5;
-      }
-      mapState.rx += (targetX - mapState.rx) * 0.06;
-      mapState.ry += (targetY - mapState.ry) * 0.06;
-      const float = Math.sin(t * 0.9) * 4;
-      stage.style.transform = `perspective(900px) translate3d(0, ${float.toFixed(2)}px, 0) rotateX(${mapState.rx.toFixed(2)}deg) rotateY(${mapState.ry.toFixed(2)}deg)`;
+      stage.style.transform = `perspective(900px) translate3d(0, ${(-mapState.lift * 6).toFixed(2)}px, ${(mapState.lift * 20).toFixed(2)}px) rotateX(${mapState.rx.toFixed(2)}deg) rotateY(${mapState.ry.toFixed(2)}deg)`;
+      glare.style.opacity = mapState.lift.toFixed(3);
       glare.style.setProperty("--glare-x", `${(50 + mapState.ry * 2.2).toFixed(1)}%`);
-      glare.style.setProperty("--glare-y", `${(40 - (mapState.rx - 8) * 2.6).toFixed(1)}%`);
+      glare.style.setProperty("--glare-y", `${(40 - mapState.rx * 2.6).toFixed(1)}%`);
       requestAnimationFrame(mapTick);
     };
     new IntersectionObserver(([entry]) => {
       mapVisible = entry.isIntersecting;
-      if (mapVisible && !mapRunning) {
-        mapRunning = true;
-        requestAnimationFrame(mapTick);
-      }
+      if (mapVisible && mapPointer) mapRun();
     }).observe(stage);
   }
 })();
