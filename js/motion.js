@@ -392,12 +392,12 @@
   });
 
   // ---------------------------------------------------------------------------
-  // Carte de l'Oise (héros) : en relief, comme le blason du chapitre 04. Épaisseur (copies du
+  // Carte de l'Oise (chapitre 01) : en relief, comme le blason du chapitre 04. Épaisseur (copies du
   // contour empilées derrière), repère qui flotte au-dessus, ombre en retrait, reflet découpé à la
   // forme du département. À plat au repos, elle s'oriente vers la souris au survol du bloc lieu.
   // Les couches ajoutées restent hors de .map : le clone de la carte (zoom du chapitre 01) reste propre.
   // ---------------------------------------------------------------------------
-  const heroMap = document.querySelector(".hero .map");
+  const heroMap = document.querySelector(".place .map");
   const outlineSvg = heroMap && heroMap.querySelector(".map__outline svg");
   if (heroMap && outlineSvg) {
     const stage = document.createElement("div");
@@ -422,7 +422,7 @@
     stage.append(glare);
 
     // à plat au repos ; au survol du bloc lieu, la carte se tourne vers la souris et se soulève
-    const hoverZone = stage.closest(".hero__place") || stage;
+    const hoverZone = stage.closest(".place") || stage;
     const mapState = { rx: 0, ry: 0, lift: 0 };
     let mapPointer = null;
     let mapVisible = false;

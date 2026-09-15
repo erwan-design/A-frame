@@ -187,10 +187,10 @@ a { color: inherit; text-decoration: none; }
 /* Lieu, en bas à gauche de la photo : carte de l'Oise réduite, horloge, région */
 /* colonne centrée en bas à droite, alignée sur la navigation : horloge, carte, région */
 /* en haut à gauche de la photo, sur le ciel, en face de la navigation */
-.hero__place { position: absolute; left: calc(64px * var(--t, 1)); top: calc(104px * var(--t, 1)); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px; }
-.hero__map { zoom: 1; }
-.hero__where { display: contents; }
-.hero__where .clock { order: -1; width: auto; height: auto; padding: 0; color: var(--light-70); }
+/* Lieu (chapitre 01) : horloge, carte de l'Oise, région, en colonne */
+.place { position: relative; align-self: flex-start; width: 278px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.place__where { display: contents; }
+.place__where .clock { order: -1; width: auto; height: auto; padding: 0; color: var(--light-70); }
 
 .clock { width: calc(175px * var(--t, 1)); height: calc(28px * var(--t, 1)); flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 8px; }
 .clock__time { font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); letter-spacing: calc(0.56px * var(--t, 1)); font-variant-numeric: tabular-nums; }
@@ -1290,7 +1290,6 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   .hero__panel { grid-row: 1; padding: 36px var(--side) 72px; }
   .hero__media { grid-row: 2; height: max(64svh, 480px); box-shadow: none; }
   .hero__start { margin-top: 8px; }
-  .hero__map { zoom: 0.8; }
 }
 @media (width < 800px) {
   .hero__media { height: max(70svh, 420px); }
@@ -1300,10 +1299,6 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   .hero__start { display: none; }
   .hero__intro { margin-bottom: 40px; }
   .nav { display: none; }
-  /* sur petit écran, pas de carte : une ligne « heure · région » en bas de la photo */
-  .hero__place { left: var(--side); right: auto; top: auto; bottom: 20px; flex-direction: row; align-items: baseline; gap: 12px; }
-  .hero__map { display: none; }
-  .hero__where .clock { order: 0; }
   .fact { padding: 16px 12px; }
   .fact__value { font-size: calc(24px * var(--t, 1)); }
 }

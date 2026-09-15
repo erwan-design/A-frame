@@ -80,8 +80,7 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   en bas à droite (horloge, carte, région, en colonne) ; la carte n'est en relief qu'au survol ;
   espacements verticaux proportionnels à la hauteur de l'écran ;
   sur grand écran le panneau de texte reste à 740 px (× facteur de texte) et la photo prend la
-  place ; sous 1100 px, le récit vient d'abord et la photo en bandeau dessous ; sous 800 px, la carte
-  laisse place à une ligne « heure · région ».
+  place ; sous 1100 px, le récit vient d'abord et la photo en bandeau dessous ; 
 
 - **Parallax sur la photo du héros** : pendant que l'en-tête sort de l'écran, elle descend moins vite
   que la page et s'approche (zoom jusqu'à 1,22×)
@@ -122,7 +121,8 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - **Écriture à la main** (`js/motion.js`) : la carte « Prochaine aventure à venir » du journal et les
   annotations manuscrites de la planche du chapitre 03 sont vides au départ, s'écrivent à l'arrivée à
   l'écran, puis se réécrivent au survol.
-- **Carte de l'Oise en relief** (héros) : à plat au repos ; au survol, elle se soulève, s'oriente vers la souris et reçoit un reflet.
+- **Carte de l'Oise en relief** (chapitre 01, à la place du badge « 1,45 ha de superficie », dont
+  l'information passe dans la description) : à plat au repos ; au survol, elle se soulève, s'oriente vers la souris et reçoit un reflet.
 - **Photos agrandissables** : au survol, les coins du compteur (« 01/06 ») se resserrent sur la
   photo, qui s'approche doucement ; une étiquette « Agrandir » remplace le curseur et le suit.
 - **Cercles du badge « 1,45 ha »** (chapitre 01) : une onde se propage en continu depuis le centre ;

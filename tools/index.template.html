@@ -44,13 +44,13 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=ca5bfe3424">
+  <link rel="stylesheet" href="css/style.css?v=60c066e525">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
-  <script src="js/horizontal.js?v=85239c819c" defer></script>
+  <script src="js/horizontal.js?v=0d514df172" defer></script>
   <script src="js/main.js?v=6e39d6e966" defer></script>
-  <script src="js/motion.js?v=6109d737fa" defer></script>
+  <script src="js/motion.js?v=de1b1b9061" defer></script>
   <script src="js/ambience.js?v=4ec5d6f1e8" defer></script>
-  <script src="js/story.js?v=1ab10ff078" defer></script>
+  <script src="js/story.js?v=be8802cc43" defer></script>
   <script src="js/sketch.js?v=78b2a98f02" defer></script>
 </head>
 <body>
@@ -88,24 +88,6 @@
         <a class="btn" href="#chapitres"><p class="btn__label tracked">{{2}}</p></a>
         <a class="btn" href="#journal"><p class="btn__label tracked">{{4}}</p></a>
       </nav>
-      <div class="hero__place" data-reveal>
-        <div class="hero__map">
-          <div class="map" aria-hidden="true">
-            <span class="map__shadow"><span class="inset"><img decoding="async" src="assets/img/map-oise-shadow.avif" alt=""></span></span>
-            <span class="map__label"><span class="inset"><img decoding="async" src="assets/img/map-oise-label.avif" alt=""></span></span>
-            <span class="map__outline"><span class="inset"><img decoding="async" src="assets/svg/map-oise.svg" alt=""></span></span>
-            <span class="map__pulse" aria-hidden="true"></span>
-            <span class="map__pin">
-              <span class="map__pin-dot"><span class="inset"><img decoding="async" src="assets/svg/map-pin.svg" alt=""></span></span>
-              <span class="inset map__pin-ring"><img decoding="async" src="assets/svg/map-pin-ring.svg" alt=""></span>
-            </span>
-          </div>
-        </div>
-        <div class="hero__where">
-          <div class="clock"><div class="clock__time" data-clock></div></div>
-          <div class="hero__region"><p class="tracked">{{6}}</p></div>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -220,9 +202,23 @@
         </figure>
       </div></div>
       <div class="terrain__right">
-        <div class="badge" data-reveal>
-          <span class="badge__icon"><img decoding="async" class="badge__ring-20" src="assets/svg/icon-target-20.svg" alt=""><img decoding="async" class="badge__ring-14" src="assets/svg/icon-target-14.svg" alt=""><img decoding="async" class="badge__ring-8" src="assets/svg/icon-target-8.svg" alt=""><span class="badge__ripple" aria-hidden="true"><i></i><i></i><i></i><i></i></span></span>
-          <p class="badge__text tracked">{{44}}</p>
+        <div class="place" data-reveal>
+          <div class="place__map">
+            <div class="map" aria-hidden="true">
+              <span class="map__shadow"><span class="inset"><img decoding="async" src="assets/img/map-oise-shadow.avif" alt=""></span></span>
+              <span class="map__label"><span class="inset"><img decoding="async" src="assets/img/map-oise-label.avif" alt=""></span></span>
+              <span class="map__outline"><span class="inset"><img decoding="async" src="assets/svg/map-oise.svg" alt=""></span></span>
+              <span class="map__pulse" aria-hidden="true"></span>
+              <span class="map__pin">
+                <span class="map__pin-dot"><span class="inset"><img decoding="async" src="assets/svg/map-pin.svg" alt=""></span></span>
+                <span class="inset map__pin-ring"><img decoding="async" src="assets/svg/map-pin-ring.svg" alt=""></span>
+              </span>
+            </div>
+          </div>
+          <div class="place__where">
+            <div class="clock"><div class="clock__time" data-clock></div></div>
+            <div class="hero__region"><p class="tracked">{{6}}</p></div>
+          </div>
         </div>
         <figure class="fig">
           <div class="fig__media" data-reveal="media" style="height:540px"><video src="assets/video/abattage.mp4" loop muted playsinline preload="none" data-autoplay controlslist="nodownload"></video></div>

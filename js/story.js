@@ -229,7 +229,7 @@
   // sur son repère puis s'efface pour laisser place à la photo.
   // ---------------------------------------------------------------------------
   const droneFigure = [...document.querySelectorAll("#chapitre-01 figure.fig .fig__media")].find((media) => media.querySelector("img"));
-  const heroMap = document.querySelector(".hero .map");
+  const heroMap = document.querySelector(".place .map");
   if (motion && droneFigure && heroMap) {
     const overlay = document.createElement("div");
     overlay.className = "zoom-map";

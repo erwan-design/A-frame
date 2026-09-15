@@ -23,7 +23,7 @@
       { s: ".ctop", x: 100, y: 60, w: 610 },
       { s: ".ctitle", x: 100, y: 144, w: 610 },
       { s: ".terrain__left-in > .body", x: 100, y: 252, w: 505 },
-      { s: ".terrain__right > .badge", x: 100, y: 588 },
+      { s: ".terrain__right > .place", x: 100, y: 560 },
       { s: ".terrain__right > .fig", x: 840, y: 60, w: 399, m: 443 },
       { s: ".quote", x: 1368, y: 60, w: 611 },
       { s: ".terrain__left-in > .fig", x: 1368, y: 365, w: 610, m: 432 },
@@ -89,7 +89,7 @@
   sections[0].before(wrap);
 
   // textes courants (taille fixe) et textes d'affichage (titres, citations : grandissent un peu)
-  const TEXT = ".ctop, .body, .amenagement__text, .table, .badge, .versions__list, .resultat__stats, .epilogue";
+  const TEXT = ".ctop, .body, .amenagement__text, .table, .place, .versions__list, .resultat__stats, .epilogue";
   const DISPLAY = ".ctitle, .quote, .versions__quote, .resultat-quote";
 
   const hasContent = (element) =>
