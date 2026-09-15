@@ -1295,7 +1295,7 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 @media (width < 800px) {
   .hero__media { height: max(70svh, 420px); }
   .hero__panel { padding: 28px var(--side) 56px; gap: 44px; }
-  .hero__title { margin-bottom: 28px; font-size: calc(56px * var(--t, 1)); }
+  .hero__title { margin-bottom: 24px; font-size: calc(42px * var(--t, 1)); line-height: 1.05; } /* même taille que les titres de section sur mobile */
   .hero__eyebrow { font-size: 12px; letter-spacing: 0.48px; margin-bottom: 20px; }
   .hero__intro { margin-bottom: 40px; }
   .nav { display: none; }
