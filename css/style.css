@@ -93,10 +93,26 @@ a { color: inherit; text-decoration: none; }
 /* ==========================================================================
    En-tête
    ========================================================================== */
-.hero { position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; flex-shrink: 0; }
-.hero__bg { position: absolute; inset: 0; overflow: clip; pointer-events: none; }
-.hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+/* En-tête en diptyque (variante B du fichier Figma « Tests ») : le récit à gauche sur le vert du
+   site, la photo à droite avec la navigation et le lieu posés dessus. Empilé sous 1100 px. */
+.hero {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: minmax(0, calc(740px * var(--t, 1))) minmax(0, 1fr); /* sur grand écran, la photo prend la place gagnée */
+  min-height: max(100svh, 760px);
+}
+.hero__panel { position: relative; display: flex; flex-direction: column; gap: 40px; padding: 36px 80px 64px var(--side); }
+.hero__logo { align-self: flex-start; }
+.hero__story { flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; width: 100%; max-width: calc(560px * var(--t, 1)); }
+.hero__eyebrow { white-space: nowrap; font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); line-height: 1; letter-spacing: calc(0.56px * var(--t, 1)); text-transform: uppercase; color: var(--light-70); }
+.hero__title { position: relative; font-family: var(--display); font-size: calc(86px * var(--t, 1)); line-height: 1; color: var(--light); }
+.hero__intro p { font-family: var(--sans); font-weight: 300; font-size: calc(16px * var(--t, 1)); line-height: 1.6; color: var(--light-70); }
 
+.hero__media { position: relative; overflow: clip; box-shadow: inset 1px 0 0 var(--light-10); }
+.hero__bg { position: absolute; inset: 0; overflow: clip; pointer-events: none; }
+.hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; }
 /* Parallax (ajout, absent de la maquette Figma) : la photo défile à 50 % de la vitesse de la
    page tant que l'en-tête est visible. Animation pilotée par le défilement, calculée par le
    compositeur (pas de script sur l'événement scroll, donc pas d'à-coups). Sans prise en charge
@@ -115,24 +131,10 @@ a { color: inherit; text-decoration: none; }
   from { transform: translateY(0); }
   to { transform: translateY(50%); }
 }
-.hero__fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 29, 31, 0) 0%, #141d1f 100%); }
+.hero__fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 29, 31, 0.45) 0%, rgba(20, 29, 31, 0) 20%, rgba(20, 29, 31, 0) 60%, rgba(20, 29, 31, 0.8) 100%); }
 
-/* Navigation */
-.nav {
-  position: relative;
-  width: 100%;
-  max-width: calc(1440px * var(--t, 1));
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 24px;
-  align-content: center;
-  padding: 32px var(--side) 24px;
-}
-.nav__side { position: relative; display: flex; }
-.nav__side--left { align-items: flex-start; gap: 8px; }
-.nav__side--right { width: 184px; flex-direction: column; align-items: flex-end; }
+/* Navigation, posée en haut à droite de la photo */
+.nav { position: absolute; top: 32px; right: var(--side); z-index: 2; display: flex; gap: 8px; }
 .nav__logo { position: relative; display: flex; align-items: center; gap: 6px; }
 .nav__mark { position: relative; width: 27px; height: 19px; flex-shrink: 0; }
 .nav__mark > .inset { top: 0; left: 0.29%; right: 0.26%; bottom: 0.19%; }
@@ -166,20 +168,11 @@ a { color: inherit; text-decoration: none; }
   color: color-mix(in srgb-linear, var(--dark) calc(var(--hover) * 100%), var(--light));
 }
 
-/* Corps de l'en-tête */
-.hero__body {
-  position: relative;
-  width: 100%;
-  max-width: calc(1440px * var(--t, 1));
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 140px;
-  padding: 160px var(--side) 120px;
-}
-.hero__top { position: relative; width: 100%; display: flex; align-items: center; flex-wrap: wrap; gap: 54px 100px; align-content: center; }
-.hero__title { position: relative; flex: 1 0 0; min-width: 540px; font-family: var(--display); font-size: calc(110px * var(--t, 1)); line-height: 1; color: var(--light); }
-.hero__place { position: relative; width: 278px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+/* Lieu, en bas à gauche de la photo : carte de l'Oise réduite, horloge, région */
+.hero__place { position: absolute; left: 80px; bottom: 80px; z-index: 2; display: flex; align-items: flex-end; gap: 24px; }
+.hero__map { zoom: 0.65; }
+.hero__where { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.hero__where .clock { width: auto; height: auto; padding: 0; align-items: flex-start; color: var(--light-70); }
 
 .clock { width: calc(175px * var(--t, 1)); height: calc(28px * var(--t, 1)); flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 8px; }
 .clock__time { font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); letter-spacing: calc(0.56px * var(--t, 1)); font-variant-numeric: tabular-nums; }
@@ -210,16 +203,37 @@ a { color: inherit; text-decoration: none; }
   color: var(--light);
 }
 
-.hero__bottom { position: relative; width: 100%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; row-gap: 40px; align-content: center; padding: 40px 0; }
-.hero__bottom::before { content: ""; position: absolute; top: -0.5px; left: 0; right: 0; bottom: 0; border-top: 1px solid var(--light-20); pointer-events: none; }
-.hero__intro { position: relative; flex: 1 0 0; min-width: 340px; max-width: 540px; }
-.hero__intro-in { width: 100%; padding-right: 40px; }
-.hero__intro p { font-family: var(--sans); font-weight: 300; font-size: calc(16px * var(--t, 1)); line-height: 1.6; color: var(--light); }
+.hero__region { padding: 0; }
 
-.facts { position: relative; display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 24px; align-content: center; }
-.fact { width: calc(120px * var(--t, 1)); display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
-.fact__value { width: 100%; font-family: var(--display); font-size: calc(30px * var(--t, 1)); line-height: 1; text-transform: uppercase; color: var(--light); }
+/* Chiffres en cases, comme les tableaux des chapitres */
+.facts { position: relative; width: 100%; display: flex; gap: 1px; background: var(--light-10); }
+.fact { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; background: var(--green-deep); }
+.fact__value { width: 100%; font-family: var(--display); font-size: calc(30px * var(--t, 1)); line-height: 1; text-transform: uppercase; white-space: nowrap; color: var(--light); }
 .fact__label { width: 100%; font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); line-height: 1; letter-spacing: calc(0.56px * var(--t, 1)); text-transform: uppercase; color: var(--light-40); }
+
+/* « Commencer le récit » : bouton plein, qui s'inverse au survol */
+.hero__start {
+  --hover: 0;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px 9px 14px;
+  font-family: var(--mono);
+  font-variation-settings: "wdth" 100;
+  font-size: calc(12px * var(--t, 1));
+  line-height: 1;
+  letter-spacing: calc(0.48px * var(--t, 1));
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: color-mix(in srgb-linear, var(--light) calc(var(--hover) * 100%), var(--dark));
+  background-color: color-mix(in srgb-linear, var(--light-10) calc(var(--hover) * 100%), var(--light));
+  transition: --hover 0.3s var(--ease) 10ms;
+}
+.hero__start:hover, .hero__start:focus-visible { --hover: 1; }
+.hero__start-arrow { display: block; width: 10px; height: 12px; overflow: hidden; }
+.hero__start-arrow svg { display: block; width: 10px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.motion .hero__start-arrow svg { animation: start-arrow 2s var(--expo) infinite; }
 
 /* ==========================================================================
    Prologue
@@ -636,8 +650,6 @@ a { color: inherit; text-decoration: none; }
 @media (width < 1440px) {
   :root { --side: 60px; }
 
-  .hero__body { gap: 80px; padding: 160px 60px 80px; }
-  .hero__title { font-size: calc(86px * var(--t, 1)); }
 
   .prologue { padding: 80px 60px; }
   .prologue__main { flex-direction: column; gap: 40px; }
@@ -686,20 +698,7 @@ a { color: inherit; text-decoration: none; }
 @media (width < 800px) {
   :root { --side: 12px; }
 
-  .nav { justify-content: center; gap: 24px 106px; padding: 32px 60px 24px; }
-  .nav__side { display: none; }
-  .nav__logo { justify-content: center; }
 
-  .hero__body { gap: 60px; padding: 40px 12px 60px; }
-  .hero__top { justify-content: center; }
-  /* Correction de la maquette : sans cette largeur mini, entre 380 et 800 px le titre se
-     tasse à côté de la carte (une lettre par ligne sur iPhone 390/414). */
-  .hero__title { min-width: 100%; font-size: calc(56px * var(--t, 1)); }
-  .hero__place { width: 255px; max-width: 255px; }
-  .hero__intro { min-width: 255px; max-width: none; }
-  .hero__intro-in { padding-right: 0; display: flex; flex-direction: column; align-items: center; }
-  .hero__intro p { width: 100%; }
-  .facts { max-width: 255px; justify-content: flex-start; }
 
   .prologue { padding: 60px 12px; }
   .prologue__main { min-width: 255px; max-width: none; }
@@ -930,49 +929,11 @@ html.lenis, html.lenis body { height: auto; }
    ========================================================================== */
 
 /* Commencer le récit */
-.start {
-  position: fixed;
-  left: 50%;
-  bottom: 28px;
-  z-index: 25;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 9px 12px 9px 14px;
-  translate: -50% 0;
-  font-family: var(--mono);
-  font-variation-settings: "wdth" 100;
-  font-size: calc(12px * var(--t, 1));
-  line-height: 1;
-  letter-spacing: calc(0.48px * var(--t, 1));
-  text-transform: uppercase;
-  white-space: nowrap;
-  color: color-mix(in srgb-linear, var(--dark) calc(var(--hover) * 100%), var(--light));
-  transition: --hover 0.3s var(--ease) 10ms, opacity 0.5s var(--expo), translate 0.7s var(--expo);
-}
-/* même matière que les boutons du menu : voile clair flouté, qui s'inverse au survol */
-.start::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: color-mix(in srgb-linear, var(--light) calc(var(--hover) * 100%), var(--light-10));
-  -webkit-backdrop-filter: blur(calc(8px - 8px * var(--hover)));
-  backdrop-filter: blur(calc(8px - 8px * var(--hover)));
-  pointer-events: none;
-}
-.start > span { position: relative; }
-.start:hover, .start:focus-visible { --hover: 1; }
-.start__arrow { display: block; width: 10px; height: 12px; overflow: hidden; }
-.start__arrow svg { display: block; width: 10px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
-.motion .start__arrow svg { animation: start-arrow 2s var(--expo) infinite; }
 @keyframes start-arrow {
   0% { translate: 0 -110%; }
   40%, 62% { translate: 0 0; }
   100% { translate: 0 110%; }
 }
-.motion .start { animation: start-in 1.2s var(--expo) 1.6s backwards; }
-@keyframes start-in { from { opacity: 0; translate: -50% 14px; } }
-.start.is-hidden { opacity: 0; translate: -50% 14px; pointer-events: none; }
 
 /* Repère de progression */
 .story {
@@ -1160,7 +1121,6 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
 .lightbox__nav--next { right: 16px; }
 
 @media (width < 800px) {
-  .start { bottom: 20px; }
   .story { left: 12px; right: 12px; translate: 0 16px; }
   .story.is-visible { translate: 0 0; }
   .story__toggle { flex: 1; min-width: 0; gap: 12px; }
@@ -1308,3 +1268,25 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   animation: hw-write var(--hw-duration, 0.8s) cubic-bezier(0.45, 0.05, 0.55, 0.95) var(--hw-delay, 0s) both;
 }
 @keyframes hw-write { from { --w: -12%; } to { --w: 112%; } }
+
+/* En-tête empilé : la photo en bandeau (logo, navigation et lieu posés dessus), le récit dessous */
+@media (width < 1100px) {
+  .hero { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; min-height: 0; }
+  .hero__media { grid-row: 1; height: max(60svh, 480px); box-shadow: none; }
+  .hero__panel { grid-row: 2; position: static; padding: 64px var(--side) 80px; }
+  .hero__logo { position: absolute; top: 34px; left: var(--side); z-index: 3; }
+  .hero__place { left: var(--side); bottom: 40px; }
+}
+@media (width < 800px) {
+  .hero__media { height: max(62svh, 380px); }
+  .hero__panel { padding: 40px var(--side) 60px; gap: 0; }
+  .hero__story { gap: 28px; }
+  .hero__title { font-size: calc(56px * var(--t, 1)); }
+  .nav { display: none; }
+  .hero__logo { left: 50%; translate: -50% 0; }
+  .hero__place { bottom: 24px; gap: 16px; }
+  .hero__map { zoom: 0.5; }
+  .fact { padding: 14px 12px; }
+  .fact__value { font-size: calc(24px * var(--t, 1)); }
+  .hero__start { align-self: stretch; justify-content: space-between; }
+}

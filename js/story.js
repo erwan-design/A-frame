@@ -35,9 +35,9 @@
   addEventListener("resize", requestUpdate, { passive: true });
 
   // ---------------------------------------------------------------------------
-  // Commencer le récit
+  // Commencer le récit (bouton de l'en-tête) : défilement fluide jusqu'au prologue
   // ---------------------------------------------------------------------------
-  const start = document.querySelector(".start");
+  const start = document.querySelector(".hero__start");
   if (start) {
     start.addEventListener("click", (event) => {
       const target = document.querySelector(start.getAttribute("href"));
@@ -45,7 +45,6 @@
       event.preventDefault();
       goTo(target);
     });
-    tasks.push(() => start.classList.toggle("is-hidden", window.scrollY > 60));
   }
 
   // ---------------------------------------------------------------------------

@@ -44,47 +44,51 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=3980da7858">
+  <link rel="stylesheet" href="css/style.css?v=60bfdb2a46">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
   <script src="js/horizontal.js?v=85239c819c" defer></script>
   <script src="js/main.js?v=dfd51bc754" defer></script>
   <script src="js/motion.js?v=705a67d0be" defer></script>
   <script src="js/ambience.js?v=4ec5d6f1e8" defer></script>
-  <script src="js/story.js?v=8fe45d301a" defer></script>
+  <script src="js/story.js?v=1ab10ff078" defer></script>
   <script src="js/sketch.js?v=78b2a98f02" defer></script>
 </head>
 <body>
 <div class="page">
 
   <header class="hero">
-    <div class="hero__bg" aria-hidden="true">
-      <img decoding="async" class="hero__photo" src="assets/img/hero-ossature.webp" srcset="assets/img/hero-ossature.webp 2400w, assets/img/hero-ossature-w512.avif 512w, assets/img/hero-ossature-w1024.avif 1024w, assets/img/hero-ossature-w1536.avif 1536w, assets/img/hero-ossature-w2048.avif 2048w" sizes="100vw" alt="">
-      <div class="hero__fade"></div>
-    </div>
-
-    <nav class="nav" data-reveal="fade">
-      <div class="nav__side nav__side--left">
-        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">prologue</p></div>
-        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">Chapitres</p></div>
-      </div>
-      <div class="nav__logo">
+    <div class="hero__panel">
+      <div class="nav__logo hero__logo" data-reveal="fade">
         <span class="nav__mark"><span class="inset"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="18.9632" overflow="visible" preserveAspectRatio="none" viewBox="0 0 26.8516 18.9632" width="26.8516">
 <path d="M19.6764 0C19.8002 0 19.9112 0.0759949 19.956 0.191351L26.8446 17.9207C26.8755 18.0002 26.7992 18.0793 26.7186 18.0514L25.0694 17.4793C25.0434 17.4703 25.0158 17.4667 24.9884 17.4688L10.8696 18.5572C10.7989 18.5626 10.7365 18.605 10.7053 18.6686L10.5885 18.9071C10.5637 18.9579 10.5017 18.978 10.4518 18.9515L0.106143 13.4503C0.00606412 13.3971 -0.0298344 13.2715 0.027034 13.1734L7.60977 0.0996565C7.64555 0.0379698 7.71146 0 7.78277 0H19.6764ZM15.2124 9.5L11.2564 17.5471C11.2222 17.6166 11.2766 17.6969 11.3538 17.6909L16.8136 17.2701C16.9178 17.2621 16.9983 17.1752 16.9983 17.0707V9.17266C16.9983 9.11993 17.0392 9.07625 17.0918 9.07287L20.4914 8.8542C20.549 8.8505 20.5978 8.89624 20.5978 8.954V16.7633C20.5978 16.8795 20.6964 16.9712 20.8122 16.9628L24.9289 16.6646C24.9958 16.6597 25.0391 16.5917 25.015 16.529L19.2841 1.59578C19.2529 1.5143 19.1395 1.50917 19.101 1.5875L15.2124 9.5Z" fill="#FBFFFE"/>
 </svg></span></span>
         <p class="nav__name">Frame</p>
       </div>
-      <div class="nav__side nav__side--right">
-        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">aujourd’hui</p></div>
-      </div>
-    </nav>
-
-    <a class="start" href="#prologue"><span>Commencer le récit</span><span class="start__arrow" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M5 1v9.5M1.5 7 5 10.5 8.5 7" /></svg></span></a>
-
-    <div class="hero__body">
-      <div class="hero__top">
+      <div class="hero__story">
+        <p class="hero__eyebrow tracked" data-reveal>Récit · février 2024 — avril 2025</p>
         <h1 class="hero__title" data-reveal="title">Chronique d'une cabane en bord d’étang</h1>
-        <div class="hero__place" data-reveal>
-          <div class="clock"><div class="clock__time" data-clock></div></div>
+        <div class="hero__intro" data-reveal><p>Récit de la construction d'une cabane de type A-frame. Un projet de 14 mois, mené sur mon temps libre et mes week-ends, pour me faire un pied-à-terre où organiser des barbecues, et passer du temps au bord de l'eau.</p></div>
+        <div class="facts">
+          <div class="fact" data-reveal><p class="fact__value">2024</p><p class="fact__label">année</p></div>
+          <div class="fact" data-reveal><p class="fact__value">1 an</p><p class="fact__label">Durée</p></div>
+          <div class="fact" data-reveal><p class="fact__value">&gt;2500€</p><p class="fact__label">budget</p></div>
+        </div>
+        <a class="hero__start" href="#prologue" data-reveal><span>Commencer le récit</span><span class="hero__start-arrow" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M5 1v9.5M1.5 7 5 10.5 8.5 7" /></svg></span></a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <div class="hero__bg" aria-hidden="true">
+        <img decoding="async" class="hero__photo" src="assets/img/hero-ossature.webp" srcset="assets/img/hero-ossature.webp 2400w, assets/img/hero-ossature-w512.avif 512w, assets/img/hero-ossature-w1024.avif 1024w, assets/img/hero-ossature-w1536.avif 1536w, assets/img/hero-ossature-w2048.avif 2048w" sizes="(width < 1100px) 100vw, 50vw" alt="">
+        <div class="hero__fade"></div>
+      </div>
+      <nav class="nav" data-reveal="fade">
+        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">prologue</p></div>
+        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">Chapitres</p></div>
+        <div class="btn" role="button" tabindex="0"><p class="btn__label tracked">aujourd’hui</p></div>
+      </nav>
+      <div class="hero__place" data-reveal>
+        <div class="hero__map">
           <div class="map" aria-hidden="true">
             <span class="map__shadow"><span class="inset"><img decoding="async" src="assets/img/map-oise-shadow.avif" alt=""></span></span>
             <span class="map__label"><span class="inset"><img decoding="async" src="assets/img/map-oise-label.avif" alt=""></span></span>
@@ -104,15 +108,10 @@
 </svg></span>
             </span>
           </div>
-          <div class="hero__region"><p class="tracked">oise, france</p></div>
         </div>
-      </div>
-      <div class="hero__bottom" data-reveal="line">
-        <div class="hero__intro" data-reveal><div class="hero__intro-in"><p>Récit de la construction d'une cabane de type A-frame. Un projet de 14 mois, mené sur mon temps libre et mes week-ends, pour me faire un pied-à-terre où organiser des barbecues, et passer du temps au bord de l'eau.</p></div></div>
-        <div class="facts">
-          <div class="fact" data-reveal><p class="fact__value">2024</p><p class="fact__label">année</p></div>
-          <div class="fact" data-reveal><p class="fact__value">1 an</p><p class="fact__label">Durée</p></div>
-          <div class="fact" data-reveal><p class="fact__value">&gt;2500€</p><p class="fact__label">budget</p></div>
+        <div class="hero__where">
+          <div class="clock"><div class="clock__time" data-clock></div></div>
+          <div class="hero__region"><p class="tracked">oise, france</p></div>
         </div>
       </div>
     </div>

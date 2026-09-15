@@ -72,9 +72,12 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 ## Écarts volontaires avec l'original
 
-- **Titre du héros en mobile** : sur le site Figma, entre 380 et 800 px, le titre se tasse à
-  côté de la carte (une lettre par ligne sur iPhone 390/414). Ici il prend toute la largeur,
-  comme sur la maquette mobile à 375 px (identique au pixel à cette largeur).
+- **En-tête en diptyque** (variante B du fichier Figma « Tests », page Test 04) : le récit à gauche
+  sur le vert du site (surtitre, titre, introduction, chiffres en cases, bouton « Commencer le
+  récit »), la photo à droite avec la navigation en haut et le lieu (carte, horloge, région) en bas ;
+  sur grand écran le panneau de texte reste à 740 px (× facteur de texte) et la photo prend la
+  place ; sous 1100 px, la photo passe en bandeau au-dessus du récit.
+
 - **Parallax sur la photo du héros** : elle défile à 50 % de la vitesse de la page
   (`animation-timeline`, calculé par le compositeur). Sans prise en charge (Firefox) ou avec
   « réduire les animations », la photo reste fixe comme sur l'original.
@@ -89,8 +92,6 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 - **Vidéos** : rien n'est téléchargé à l'ouverture (`preload="none"`) ; chaque vidéo se charge et
   se lance à l'approche de l'écran (600 px avant).
 - **Récit** (`js/story.js`, section « Récit » de `css/style.css`) :
-  - bouton « Commencer le récit » fixé en bas de l'écran à l'arrivée (style des boutons du menu),
-    masqué dès qu'on défile ;
   - repère fixe en bas d'écran pendant les chapitres : numéro, titre, date, trait de progression,
     menu pour sauter d'un chapitre à l'autre ;
   - les trois citations s'éclairent mot à mot au défilement ;
@@ -155,8 +156,8 @@ suivent le même facteur, pour que les textes gardent la même mise en ligne.
 
 | Type | Police | Taille / interligne |
 |---|---|---|
-| Titre principal (héros, journal) | Chillon | 110 px (56 px sur mobile) |
-| Titre de section (prologue, chapitres) | Chillon | 86 px (42 px sur mobile) |
+| Titre principal (journal) | Chillon | 110 px (56 px sur mobile) |
+| Titre de section (héros, prologue, chapitres) | Chillon | 86 px (héros 56 px, autres 42 px sur mobile) |
 | Titre de niveau 3 (sommaire, pied de page) | Chillon | 36 px / 1,2 |
 | Citation | Chillon | 30 px / 1,4 |
 | Chapeau | Chillon | 24 px / 1,4 |
