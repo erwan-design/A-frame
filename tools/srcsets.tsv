@@ -37,3 +37,4 @@ jpoele	src=assets/img/journal-poele.avif	srcset=assets/img/journal-poele.avif 76
 tterrain52	src=assets/img/thumb-terrain.avif	srcset=assets/img/thumb-terrain.avif 659w, assets/img/thumb-terrain-h64.avif 37w, assets/img/thumb-terrain-h128.avif 73w
 tstructure52	src=assets/img/thumb-structure.avif	srcset=assets/img/thumb-structure.avif 660w, assets/img/thumb-structure-h185.avif 131w
 tresultat52	src=assets/img/thumb-resultat.avif	srcset=assets/img/thumb-resultat.avif 643w, assets/img/thumb-resultat-h64.avif 53w, assets/img/thumb-resultat-h128.avif 105w
+herocover	src=assets/img/hero-structure.webp	srcset=assets/img/hero-structure.webp 732w, assets/img/hero-structure-w512.avif 512w

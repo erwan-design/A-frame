@@ -149,6 +149,9 @@ Sur les écrans d'au moins 1280 × 780 (MacBook 13" compris) (`js/horizontal.js`
 
 Vérification : `python3 tools/horizontal_check.py 1440 900`.
 
+Photo de l'en-tête : `assets/img/hero-structure.webp` (capture 732 × 1298 fournie par Erwan le 15/09/2026, à
+remplacer par l'original en haute définition) ; la photo « Ossature » reste utilisée au chapitre 03.
+
 ## Tailles de texte (harmonisées et fluides)
 
 Un type de texte = une taille, sur tout le site. Les tailles ci-dessous sont celles d'un écran de

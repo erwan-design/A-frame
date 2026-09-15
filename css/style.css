@@ -117,7 +117,10 @@ a { color: inherit; text-decoration: none; }
 
 .hero__media { position: relative; overflow: clip; box-shadow: inset 1px 0 0 var(--light-10); }
 .hero__bg { position: absolute; inset: 0; overflow: clip; pointer-events: none; }
-.hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 35%; }
+/* photo en portrait : la structure est au milieu ; sur les écrans ordinaires on montre plutôt le bas
+   (la structure remonte, le bloc lieu se pose sur la terre) ; sur les écrans très larges, le centre */
+.hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 50% 72%; transform-origin: 50% 55%; }
+@media (min-aspect-ratio: 2/1) { .hero__photo { object-position: 50% 55%; } }
 /* Parallax (ajout, absent de la maquette Figma) : la photo défile à 50 % de la vitesse de la
    page tant que l'en-tête est visible. Animation pilotée par le défilement, calculée par le
    compositeur (pas de script sur l'événement scroll, donc pas d'à-coups). Sans prise en charge
