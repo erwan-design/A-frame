@@ -1297,6 +1297,7 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   .hero__panel { padding: 28px var(--side) 56px; gap: 80px; }
   .hero__title { margin-bottom: 24px; font-size: calc(42px * var(--t, 1)); line-height: 1.05; } /* même taille que les titres de section sur mobile */
   .hero__eyebrow { font-size: 12px; letter-spacing: 0.48px; margin-bottom: 20px; }
+  .hero__start { display: none; }
   .hero__intro { margin-bottom: 40px; }
   .nav { display: none; }
   /* sur petit écran, pas de carte : une ligne « heure · région » en bas de la photo */
