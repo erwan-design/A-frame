@@ -252,8 +252,8 @@
   // ---------------------------------------------------------------------------
   // Écriture à la main : les textes manuscrits (et leurs traits) s'écrivent de gauche à droite,
   // l'un après l'autre, derrière un masque au bord adouci. Durée selon la longueur du texte.
-  //  - carte « Prochaine aventure à venir » du journal : au survol ;
-  //  - annotations de la planche du chapitre 03 : à l'arrivée à l'écran, puis au survol.
+  //  - carte « Prochaine aventure à venir » du journal et annotations de la planche du chapitre 03 :
+  //    vides au départ, écrites à l'arrivée à l'écran, puis réécrites au survol.
   // Sur écran tactile : une fois, à l'arrivée à l'écran.
   // ---------------------------------------------------------------------------
   const handwriting = (group, selectors, { onView, onHover, start = 0.1 }) => {
@@ -291,7 +291,7 @@
     }
   };
   const nextCard = document.querySelector(".jnext");
-  if (nextCard) handwriting(nextCard, [".jnext__words p", ".jnext__swoosh"], { onHover: true });
+  if (nextCard) handwriting(nextCard, [".jnext__words p", ".jnext__swoosh"], { onView: true, onHover: true, start: 0.3 });
   const board = document.querySelector(".board");
   if (board) {
     handwriting(board, [

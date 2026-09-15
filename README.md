@@ -116,9 +116,9 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
   reflet), qui flotte et se tourne vers le curseur ; il n'a plus d'apparition au défilement.
   Les cartes du journal ne s'inclinent plus au survol.
   Position identique à la maquette.
-- **Écriture à la main** (`js/motion.js`) : la carte « Prochaine aventure à venir » du journal se
-  réécrit au survol ; les annotations manuscrites de la planche du chapitre 03 s'écrivent à
-  l'arrivée à l'écran, puis au survol.
+- **Écriture à la main** (`js/motion.js`) : la carte « Prochaine aventure à venir » du journal et les
+  annotations manuscrites de la planche du chapitre 03 sont vides au départ, s'écrivent à l'arrivée à
+  l'écran, puis se réécrivent au survol.
 - **Carte de l'Oise en relief** (héros) : à plat au repos ; au survol, elle se soulève, s'oriente vers la souris et reçoit un reflet.
 - **Photos agrandissables** : au survol, les coins du compteur (« 01/06 ») se resserrent sur la
   photo, qui s'approche doucement ; une étiquette « Agrandir » remplace le curseur et le suit.
