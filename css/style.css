@@ -101,22 +101,23 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
   display: grid;
   grid-template-columns: minmax(0, calc(780px * var(--t, 1))) minmax(0, 1fr); /* sur grand écran, la photo prend la place gagnée */
-  min-height: max(100svh, 760px);
+  min-height: max(100svh, 640px);
 }
-.hero__panel { position: relative; display: flex; flex-direction: column; gap: calc(64px * var(--t, 1)); padding: 36px calc(120px * var(--t, 1)) calc(88px * var(--t, 1)) var(--side); }
+/* espacements proportionnels à la hauteur de l'écran (bornés) : le récit tient dans l'écran dès ~850 px de haut */
+.hero__panel { position: relative; display: flex; flex-direction: column; gap: clamp(24px, 5svh, calc(64px * var(--t, 1))); padding: 36px calc(120px * var(--t, 1)) 56px var(--side); }
 .hero__logo { align-self: flex-start; }
 /* espacements variés pour faire respirer le récit : surtitre collé au titre, puis de plus en plus d'air */
 .hero__story { flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; max-width: calc(560px * var(--t, 1)); }
-.hero__eyebrow { margin-bottom: calc(32px * var(--t, 1)); }
-.hero__title { margin-bottom: calc(44px * var(--t, 1)); }
-.hero__intro { margin-bottom: calc(60px * var(--t, 1)); max-width: calc(500px * var(--t, 1)); }
+.hero__eyebrow { margin-bottom: clamp(18px, 3.2svh, calc(32px * var(--t, 1))); }
+.hero__title { margin-bottom: clamp(22px, 4.4svh, calc(44px * var(--t, 1))); }
+.hero__intro { margin-bottom: clamp(28px, 6svh, calc(60px * var(--t, 1))); max-width: calc(500px * var(--t, 1)); }
 .hero__eyebrow { white-space: nowrap; font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); line-height: 1; letter-spacing: calc(0.56px * var(--t, 1)); text-transform: uppercase; color: var(--light-70); }
 .hero__title { position: relative; font-family: var(--display); font-size: calc(86px * var(--t, 1)); line-height: 1.04; color: var(--light); }
 .hero__intro p { font-family: var(--sans); font-weight: 300; font-size: calc(16px * var(--t, 1)); line-height: 1.6; color: var(--light-70); }
 
 .hero__media { position: relative; overflow: clip; box-shadow: inset 1px 0 0 var(--light-10); }
 .hero__bg { position: absolute; inset: 0; overflow: clip; pointer-events: none; }
-.hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.hero__photo { position: absolute; width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 35%; }
 /* Parallax (ajout, absent de la maquette Figma) : la photo défile à 50 % de la vitesse de la
    page tant que l'en-tête est visible. Animation pilotée par le défilement, calculée par le
    compositeur (pas de script sur l'événement scroll, donc pas d'à-coups). Sans prise en charge
@@ -131,9 +132,11 @@ a { color: inherit; text-decoration: none; }
     }
   }
 }
+/* la photo descend moins vite que la page et s'approche en même temps (zoom), pendant que
+   l'en-tête sort de l'écran */
 @keyframes hero-parallax {
-  from { transform: translateY(0); }
-  to { transform: translateY(50%); }
+  from { transform: translateY(0) scale(1); }
+  to { transform: translateY(32%) scale(1.22); }
 }
 .hero__fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 29, 31, 0.45) 0%, rgba(20, 29, 31, 0) 20%, rgba(20, 29, 31, 0) 60%, rgba(20, 29, 31, 0.8) 100%); }
 
@@ -175,7 +178,7 @@ a { color: inherit; text-decoration: none; }
 /* Lieu, en bas à gauche de la photo : carte de l'Oise réduite, horloge, région */
 /* colonne centrée en bas à droite, alignée sur la navigation : horloge, carte, région */
 .hero__place { position: absolute; right: var(--side); bottom: 56px; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px; }
-.hero__map { zoom: 0.7; }
+.hero__map { zoom: 1; }
 .hero__where { display: contents; }
 .hero__where .clock { order: -1; width: auto; height: auto; padding: 0; color: var(--light-70); }
 
@@ -217,18 +220,12 @@ a { color: inherit; text-decoration: none; }
 .fact__label { width: 100%; font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); line-height: 1; letter-spacing: calc(0.56px * var(--t, 1)); text-transform: uppercase; color: var(--light-40); }
 
 /* « Commencer le récit » : bouton plein, qui s'inverse au survol */
-/* ligne pleine largeur, accrochée sous les cases des chiffres (même fond, filet de séparation) ;
-   au survol, elle s'éclaire et la flèche descend */
+/* « Commencer le récit » : lien discret en bas du panneau, aligné sur le bas du bloc lieu */
 .hero__start {
-  --hover: 0;
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  justify-content: space-between;
+  align-self: flex-start;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 22px 20px;
-  box-shadow: inset 0 1px 0 var(--light-10);
+  gap: 10px;
   font-family: var(--mono);
   font-variation-settings: "wdth" 100;
   font-size: calc(12px * var(--t, 1));
@@ -236,11 +233,13 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: calc(0.48px * var(--t, 1));
   text-transform: uppercase;
   white-space: nowrap;
-  color: color-mix(in srgb-linear, var(--dark) calc(var(--hover) * 100%), var(--light));
-  background-color: color-mix(in srgb-linear, var(--light) calc(var(--hover) * 100%), var(--green-deep));
-  transition: --hover 0.3s var(--ease) 10ms;
+  color: var(--light-70);
+  transition: color 0.3s var(--ease);
 }
-.hero__start:hover, .hero__start:focus-visible { --hover: 1; }
+.hero__start > span:first-child { padding-bottom: 4px; background: linear-gradient(var(--light), var(--light)) left bottom / 0% 1px no-repeat; transition: background-size 0.5s var(--expo); }
+.hero__start:hover, .hero__start:focus-visible { color: var(--light); }
+.hero__start:hover > span:first-child, .hero__start:focus-visible > span:first-child { background-size: 100% 1px; }
+
 .hero__start-arrow { display: block; width: 10px; height: 12px; overflow: hidden; }
 .hero__start-arrow svg { display: block; width: 10px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
 .motion .hero__start-arrow svg { animation: start-arrow 2s var(--expo) infinite; }
@@ -1287,17 +1286,19 @@ html.has-lightbox .story { opacity: 0; pointer-events: none; }
   .hero__panel { grid-row: 2; position: static; padding: 80px var(--side) 96px; }
   .hero__logo { position: absolute; top: 34px; left: var(--side); z-index: 3; }
   .hero__place { bottom: 32px; }
+  .hero__map { zoom: 0.8; }
 }
 @media (width < 800px) {
   .hero__media { height: max(62svh, 380px); }
   .hero__panel { padding: 48px var(--side) 72px; gap: 0; }
   .hero__title { margin-bottom: 28px; }
   .hero__intro { margin-bottom: 40px; }
+  .hero__panel { gap: 36px; }
   .hero__title { font-size: calc(56px * var(--t, 1)); }
   .nav { display: none; }
   .hero__logo { left: 50%; translate: -50% 0; }
   .hero__place { bottom: 20px; gap: 10px; }
-  .hero__map { zoom: 0.5; }
+  .hero__map { zoom: 0.62; }
   .fact { padding: 16px 12px; }
   .fact__value { font-size: calc(24px * var(--t, 1)); }
 }

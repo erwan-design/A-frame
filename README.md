@@ -74,12 +74,14 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 - **En-tête en diptyque** (variante B du fichier Figma « Tests », page Test 04) : le récit à gauche
   sur le vert du site (surtitre, titre, introduction, chiffres en cases, bouton « Commencer le
-  récit » en ligne accrochée sous les chiffres), la photo à droite avec la navigation en haut et le
-  lieu en bas à droite (horloge, carte, région, en colonne) ; la carte n'est en relief qu'au survol ;
+  récit » en lien discret en bas du panneau), la photo à droite avec la navigation en haut et le lieu
+  en bas à droite (horloge, carte, région, en colonne) ; la carte n'est en relief qu'au survol ;
+  espacements verticaux proportionnels à la hauteur de l'écran ;
   sur grand écran le panneau de texte reste à 740 px (× facteur de texte) et la photo prend la
   place ; sous 1100 px, la photo passe en bandeau au-dessus du récit.
 
-- **Parallax sur la photo du héros** : elle défile à 50 % de la vitesse de la page
+- **Parallax sur la photo du héros** : pendant que l'en-tête sort de l'écran, elle descend moins vite
+  que la page et s'approche (zoom jusqu'à 1,22×)
   (`animation-timeline`, calculé par le compositeur). Sans prise en charge (Firefox) ou avec
   « réduire les animations », la photo reste fixe comme sur l'original.
 - **Vidéos** : mises en pause quand elles sont hors écran, pour ne pas alourdir le défilement.

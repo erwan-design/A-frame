@@ -44,7 +44,7 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=f4da0de32b">
+  <link rel="stylesheet" href="css/style.css?v=df55c0b61e">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
   <script src="js/horizontal.js?v=85239c819c" defer></script>
   <script src="js/main.js?v=dfd51bc754" defer></script>
@@ -71,13 +71,13 @@
           <div class="fact" data-reveal><p class="fact__value">{{10}}</p><p class="fact__label">{{11}}</p></div>
           <div class="fact" data-reveal><p class="fact__value">{{12}}</p><p class="fact__label">{{13}}</p></div>
         </div>
-        <a class="hero__start" href="#prologue" data-reveal><span>Commencer le récit</span><span class="hero__start-arrow" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M5 1v9.5M1.5 7 5 10.5 8.5 7" /></svg></span></a>
       </div>
+      <a class="hero__start" href="#prologue" data-reveal="fade"><span>Commencer le récit</span><span class="hero__start-arrow" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M5 1v9.5M1.5 7 5 10.5 8.5 7" /></svg></span></a>
     </div>
 
     <div class="hero__media">
       <div class="hero__bg" aria-hidden="true">
-        <img decoding="async" class="hero__photo" {{img:hero}} sizes="(width < 1100px) 100vw, 50vw" alt="">
+        <img decoding="async" class="hero__photo" {{img:hero}} sizes="(width < 1100px) max(100vw, 112svh), max(55vw, 180svh)" alt="">
         <div class="hero__fade"></div>
       </div>
       <nav class="nav" data-reveal="fade">
