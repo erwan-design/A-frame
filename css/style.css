@@ -105,7 +105,10 @@ a { color: inherit; text-decoration: none; }
 }
 /* espacements proportionnels à la hauteur de l'écran (bornés) : le récit tient dans l'écran dès ~850 px de haut */
 .hero__panel { position: relative; display: flex; flex-direction: column; gap: clamp(24px, 5svh, calc(64px * var(--t, 1))); padding: 36px calc(120px * var(--t, 1)) 56px var(--side); }
-.hero__logo { align-self: flex-start; }
+/* barre du haut : logo, puis l'heure locale du terrain, séparés par un filet */
+.hero__bar { align-self: flex-start; display: flex; align-items: center; gap: 18px; }
+.hero__bar .clock { position: relative; width: auto; height: auto; padding: 0 0 0 19px; color: var(--light-70); }
+.hero__bar .clock::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: 14px; translate: 0 -50%; background: var(--light-20); }
 /* espacements variés pour faire respirer le récit : surtitre collé au titre, puis de plus en plus d'air */
 .hero__story { flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; max-width: calc(560px * var(--t, 1)); }
 .hero__eyebrow { margin-bottom: clamp(18px, 3.2svh, calc(32px * var(--t, 1))); }
@@ -188,9 +191,9 @@ a { color: inherit; text-decoration: none; }
 /* colonne centrée en bas à droite, alignée sur la navigation : horloge, carte, région */
 /* en haut à gauche de la photo, sur le ciel, en face de la navigation */
 /* Lieu (chapitre 01) : horloge, carte de l'Oise, région, en colonne */
-.place { position: relative; align-self: flex-start; width: 278px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.place { position: relative; align-self: flex-start; width: auto; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .place__where { display: contents; }
-.place__where .clock { order: -1; width: auto; height: auto; padding: 0; color: var(--light-70); }
+.place__map { zoom: 1.15; } /* carte légèrement agrandie */
 
 .clock { width: calc(175px * var(--t, 1)); height: calc(28px * var(--t, 1)); flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 8px; }
 .clock__time { font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); letter-spacing: calc(0.56px * var(--t, 1)); font-variant-numeric: tabular-nums; }

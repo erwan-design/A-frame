@@ -44,7 +44,7 @@
       setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.remove("motion"); }, 3000);
     }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=60c066e525">
+  <link rel="stylesheet" href="css/style.css?v=603a3a02be">
   <script src="js/vendor/lenis.min.js?v=dcff041c46" defer></script>
   <script src="js/horizontal.js?v=0d514df172" defer></script>
   <script src="js/main.js?v=6e39d6e966" defer></script>
@@ -58,9 +58,12 @@
 
   <header class="hero">
     <div class="hero__panel">
-      <div class="nav__logo hero__logo" data-reveal="fade">
-        <span class="nav__mark"><span class="inset"><img decoding="async" src="assets/svg/logo-frame.svg" alt=""></span></span>
-        <p class="nav__name">{{3}}</p>
+      <div class="hero__bar" data-reveal="fade">
+        <div class="nav__logo hero__logo">
+          <span class="nav__mark"><span class="inset"><img decoding="async" src="assets/svg/logo-frame.svg" alt=""></span></span>
+          <p class="nav__name">{{3}}</p>
+        </div>
+        <div class="clock" aria-label="Heure locale sur le terrain"><div class="clock__time" data-clock></div></div>
       </div>
       <div class="hero__story">
         <p class="hero__eyebrow tracked" data-reveal>Récit · février 2024 — avril 2025</p>
@@ -216,7 +219,6 @@
             </div>
           </div>
           <div class="place__where">
-            <div class="clock"><div class="clock__time" data-clock></div></div>
             <div class="hero__region"><p class="tracked">{{6}}</p></div>
           </div>
         </div>
