@@ -22,7 +22,7 @@ css/style.css     variables Figma, mise en page desktop ≥ 1440, tablette 800�
 js/main.js        horloge, défilement lissé, clic sur une ligne du sommaire, lecture des vidéos
 js/vendor/        Lenis (défilement lissé) et sa licence
 js/motion.js      apparitions au défilement, aperçu des chapitres, inclinaison des cartes
-js/horizontal.js  prototype « défilement horizontal » des chapitres (branche prototype-horizontal)
+js/horizontal.js  lecture horizontale des chapitres (écrans ≥ 1280 × 780)
 js/story.js       repère de chapitre, citations, carte → terrain, photos plein écran, son
 js/ambience.js    ambiance sonore de forêt (Web Audio)
 js/sketch.js      croquis de l'aménagement qui se dessine au survol
@@ -31,7 +31,7 @@ assets/svg        pictogrammes, couleurs intégrées
 assets/fonts      Chillon, Mortega, GT Kotoheim Mono, Poppins
 assets/video      les 3 vidéos du récit
 assets/data       traits du croquis (relevés sur l'image, voir js/sketch.js)
-tools/            extraction depuis le site publié et outils de comparaison
+tools/            extraction depuis le site publié, outils de comparaison, export vidéo (tools/video)
 ```
 
 ## Modifier le site
@@ -76,11 +76,11 @@ navigateur) ; à 375, bruit de 0,1 % sur l'ombre de la carte.
 
 - **En-tête en diptyque** (variante B du fichier Figma « Tests », page Test 04) : le récit à gauche
   sur le vert du site (surtitre, titre, introduction, chiffres en cases, bouton « Commencer le
-  récit » en lien discret en bas du panneau), la photo à droite avec la navigation en haut et le lieu
-  en bas à droite (horloge, carte, région, en colonne) ; la carte n'est en relief qu'au survol ;
-  espacements verticaux proportionnels à la hauteur de l'écran ;
+  récit » en lien discret en bas du panneau, masqué sur mobile), l'heure locale à côté du logo, la
+  photo à droite avec la navigation en haut ; espacements verticaux proportionnels à la hauteur de
+  l'écran ;
   sur grand écran le panneau de texte reste à 740 px (× facteur de texte) et la photo prend la
-  place ; sous 1100 px, le récit vient d'abord et la photo en bandeau dessous ; 
+  place ; sous 1100 px, le récit vient d'abord et la photo en bandeau dessous.
 
 - **Parallax sur la photo du héros** : pendant que l'en-tête sort de l'écran, elle descend moins vite
   que la page et s'approche (zoom jusqu'à 1,22×)
