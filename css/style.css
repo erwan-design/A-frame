@@ -227,7 +227,9 @@ a { color: inherit; text-decoration: none; }
 .hero__region { padding: 0; }
 
 /* Chiffres en cases, comme les tableaux des chapitres */
-.facts { position: relative; width: 100%; display: flex; gap: 1px; background: var(--light-10); }
+.facts { position: relative; width: 100%; display: flex; }
+/* filets portés par les cases : pas de bloc gris visible avant l'apparition des chiffres */
+.fact + .fact { border-left: 1px solid var(--light-10); }
 .fact { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 22px 20px; background: var(--green-deep); }
 .fact__value { width: 100%; font-family: var(--display); font-size: calc(30px * var(--t, 1)); line-height: 1; text-transform: uppercase; white-space: nowrap; color: var(--light); }
 .fact__label { width: 100%; font-family: var(--mono); font-variation-settings: "wdth" 100; font-size: calc(14px * var(--t, 1)); line-height: 1; letter-spacing: calc(0.56px * var(--t, 1)); text-transform: uppercase; color: var(--light-40); }
