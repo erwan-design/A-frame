@@ -183,6 +183,14 @@ suivent le même facteur, pour que les textes gardent la même mise en ligne.
 versions 16 → 14, horloge (police système 15 px) → GT Kotoheim Mono 14, interligne des légendes
 1,2 → 1,4, crédit du pied de page Regular → Light.
 
+## Export vidéo
+
+`zsh tools/video/build.sh [sortie.mp4] [largeur] [hauteur] [durée]` enregistre une navigation
+scénarisée (en-tête, clic « Chapitres », survol du sommaire, lecture horizontale du chapitre 01,
+photo « Agrandir », flèche du repère) : Chrome sans interface avec une horloge virtuelle
+(`tools/video/clock.js`, 1/60 s exacte par image, rendu ×2 réduit), puis encodage H.264 par
+AVFoundation (`encode.swift`). Scénario dans `tools/video/record.py`.
+
 ## Publication
 
 Le site est déployé par **Cloudflare Workers Builds** (Worker `a-frame`), relié au dépôt
