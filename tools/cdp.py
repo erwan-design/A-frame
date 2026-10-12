@@ -20,6 +20,7 @@ import hashlib
 import json
 import os
 import random
+import shutil
 import socket
 import struct
 import subprocess
@@ -118,9 +119,10 @@ class Chrome:
     def __init__(self, width=1440, height=900, dpr=1, port=None, headless=True, profile=None):
         self.width, self.height, self.dpr = width, height, dpr
         self.port = port or random.randint(9500, 9899)
+        # Profil créé ici = effacé dans close() : chacun pèse jusqu'à 500 Mo et /tmp les gardait tous.
+        self._profil_jetable = profile is None
         self.profile = profile or f"/tmp/cdp-profile-{self.port}"
         if not profile:
-            import shutil
             shutil.rmtree(self.profile, ignore_errors=True)  # profil neuf : pas de CSS en cache
         self._id = 0
         args = [
@@ -254,6 +256,8 @@ class Chrome:
                 self.proc.wait(timeout=5)
             except subprocess.TimeoutExpired:
                 self.proc.kill()
+            if self._profil_jetable:
+                shutil.rmtree(self.profile, ignore_errors=True)
 
     def __enter__(self):
         return self
